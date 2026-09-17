@@ -11,7 +11,9 @@ const formatRpcServiceUrl = ({ authentication, value }: RpcUri, TOKEN: string): 
 }
 
 export const getRpcServiceUrl = (rpcUri: RpcUri): string => {
-  return 'https://rpc-evm-poa-sidechain.peersyst.tech'
+  // Allow operators to point the read-only provider at a different endpoint
+  // (e.g. a local deploy) via env, falling back to the chain config.
+  return process.env.NEXT_PUBLIC_XRPL_EVM_RPC_URL || rpcUri.value
 }
 
 export const createWeb3ReadOnly = ({ rpcUri }: ChainInfo): JsonRpcProvider => {
