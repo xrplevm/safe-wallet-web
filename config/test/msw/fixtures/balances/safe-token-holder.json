@@ -6,9 +6,9 @@
         "type": "ERC20",
         "address": "0x5aFE3855358E112B5647B952709E6165e1c1eEEe",
         "decimals": 18,
-        "symbol": "SAFE",
-        "name": "Safe Token",
-        "logoUri": "https://safe-transaction-assets.safe.global/tokens/logos/0x5aFE3855358E112B5647B952709E6165e1c1eEEe.png"
+        "symbol": "XRP",
+        "name": "XRP",
+        "logoUri": "/images/brand/logo-mark-filled.png"
       },
       "balance": "3178195646939569682462",
       "fiatBalance": "439.0073429074097",
@@ -623,7 +623,7 @@
         "address": "0x3E2A8a7D6d93db96d726161c1B1603350Bff9Cb8",
         "decimals": 6,
         "symbol": "safesmmUSDT",
-        "name": "Safe Smokehouse USDT",
+        "name": "Smokehouse USDT",
         "logoUri": "https://safe-transaction-assets.staging.5afe.dev/tokens/logos/0x3E2A8a7D6d93db96d726161c1B1603350Bff9Cb8.png"
       },
       "balance": "2473545",
@@ -637,7 +637,7 @@
         "address": "0xea33d14Dce85076Fb04e6F2e2F07180b16f48470",
         "decimals": 8,
         "symbol": "safesmmWBTC",
-        "name": "Safe Smokehouse WBTC",
+        "name": "Smokehouse WBTC",
         "logoUri": "https://safe-transaction-assets.staging.5afe.dev/tokens/logos/0xea33d14Dce85076Fb04e6F2e2F07180b16f48470.png"
       },
       "balance": "1883",

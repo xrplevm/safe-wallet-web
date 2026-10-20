@@ -7,9 +7,9 @@
       "tokenInfo": {
         "address": "0x5aFE3855358E112B5647B952709E6165e1c1eEEe",
         "decimals": 18,
-        "symbol": "SAFE",
-        "name": "Safe Token",
-        "logoUri": "https://cdn.zerion.io/0x5afe3855358e112b5647b952709e6165e1c1eeee.png",
+        "symbol": "XRP",
+        "name": "XRP",
+        "logoUri": "/images/brand/logo-mark-filled.png",
         "chainId": "1",
         "trusted": true,
         "type": "ERC20"
@@ -384,7 +384,7 @@
         "address": "0xea33d14Dce85076Fb04e6F2e2F07180b16f48470",
         "decimals": 8,
         "symbol": "safesmmWBTC",
-        "name": "Safe Smokehouse WBTC",
+        "name": "Smokehouse WBTC",
         "logoUri": "",
         "chainId": "1",
         "trusted": true,
@@ -397,8 +397,8 @@
   "positionBalances": [
     {
       "appInfo": {
-        "name": "Safe Factory",
-        "logoUrl": "https://protocol-icons.s3.amazonaws.com/icons/gnosis-safe-factory.jpg",
+        "name": "XRP Staking",
+        "logoUrl": "/images/brand/logo-mark-filled.png",
         "url": "https://gnosis.io/"
       },
       "balanceFiat": "651.888206114658",
@@ -414,9 +414,9 @@
               "tokenInfo": {
                 "address": "0x5aFE3855358E112B5647B952709E6165e1c1eEEe",
                 "decimals": 18,
-                "symbol": "SAFE",
-                "name": "Safe Token",
-                "logoUri": "https://cdn.zerion.io/0x5afe3855358e112b5647b952709e6165e1c1eeee.png",
+                "symbol": "XRP",
+                "name": "XRP",
+                "logoUri": "/images/brand/logo-mark-filled.png",
                 "chainId": "1",
                 "trusted": true,
                 "type": "ERC20"
@@ -434,9 +434,9 @@
               "tokenInfo": {
                 "address": "0x5aFE3855358E112B5647B952709E6165e1c1eEEe",
                 "decimals": 18,
-                "symbol": "SAFE",
-                "name": "Safe Token",
-                "logoUri": "https://cdn.zerion.io/0x5afe3855358e112b5647b952709e6165e1c1eeee.png",
+                "symbol": "XRP",
+                "name": "XRP",
+                "logoUri": "/images/brand/logo-mark-filled.png",
                 "chainId": "1",
                 "trusted": true,
                 "type": "ERC20"
@@ -459,9 +459,9 @@
               "tokenInfo": {
                 "address": "0x5aFE3855358E112B5647B952709E6165e1c1eEEe",
                 "decimals": 18,
-                "symbol": "SAFE",
-                "name": "Safe Token",
-                "logoUri": "https://cdn.zerion.io/0x5afe3855358e112b5647b952709e6165e1c1eeee.png",
+                "symbol": "XRP",
+                "name": "XRP",
+                "logoUri": "/images/brand/logo-mark-filled.png",
                 "chainId": "1",
                 "trusted": true,
                 "type": "ERC20"
@@ -479,9 +479,9 @@
               "tokenInfo": {
                 "address": "0x5aFE3855358E112B5647B952709E6165e1c1eEEe",
                 "decimals": 18,
-                "symbol": "SAFE",
-                "name": "Safe Token",
-                "logoUri": "https://cdn.zerion.io/0x5afe3855358e112b5647b952709e6165e1c1eeee.png",
+                "symbol": "XRP",
+                "name": "XRP",
+                "logoUri": "/images/brand/logo-mark-filled.png",
                 "chainId": "1",
                 "trusted": true,
                 "type": "ERC20"
@@ -504,9 +504,9 @@
               "tokenInfo": {
                 "address": "0x5aFE3855358E112B5647B952709E6165e1c1eEEe",
                 "decimals": 18,
-                "symbol": "SAFE",
-                "name": "Safe Token",
-                "logoUri": "https://cdn.zerion.io/0x5afe3855358e112b5647b952709e6165e1c1eeee.png",
+                "symbol": "XRP",
+                "name": "XRP",
+                "logoUri": "/images/brand/logo-mark-filled.png",
                 "chainId": "1",
                 "trusted": true,
                 "type": "ERC20"
@@ -529,9 +529,9 @@
               "tokenInfo": {
                 "address": "0x5aFE3855358E112B5647B952709E6165e1c1eEEe",
                 "decimals": 18,
-                "symbol": "SAFE",
-                "name": "Safe Token",
-                "logoUri": "https://cdn.zerion.io/0x5afe3855358e112b5647b952709e6165e1c1eeee.png",
+                "symbol": "XRP",
+                "name": "XRP",
+                "logoUri": "/images/brand/logo-mark-filled.png",
                 "chainId": "1",
                 "trusted": true,
                 "type": "ERC20"
@@ -554,9 +554,9 @@
               "tokenInfo": {
                 "address": "0x5aFE3855358E112B5647B952709E6165e1c1eEEe",
                 "decimals": 18,
-                "symbol": "SAFE",
-                "name": "Safe Token",
-                "logoUri": "https://cdn.zerion.io/0x5afe3855358e112b5647b952709e6165e1c1eeee.png",
+                "symbol": "XRP",
+                "name": "XRP",
+                "logoUri": "/images/brand/logo-mark-filled.png",
                 "chainId": "1",
                 "trusted": true,
                 "type": "ERC20"

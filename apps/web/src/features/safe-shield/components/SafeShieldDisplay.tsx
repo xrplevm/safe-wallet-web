@@ -20,7 +20,7 @@ import { useCheckSimulation } from '../hooks/useCheckSimulation'
 import type { HypernativeAuthStatus } from '@/features/hypernative'
 
 const shieldLogoOnHover = {
-  width: 108,
+  width: 100,
   height: 18,
   '&:hover': {
     cursor: 'pointer',

@@ -17,7 +17,7 @@ export const HnActivatedSettingsBanner = () => {
                 component={SafeShieldColored}
                 inheritViewBox
                 sx={{
-                  width: 108,
+                  width: 100,
                   height: 18,
                   '& rect': {
                     fill: 'var(--color-background-main)',

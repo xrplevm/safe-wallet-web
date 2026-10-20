@@ -76,9 +76,9 @@
         "type": "ERC20",
         "address": "0x5aFE3855358E112B5647B952709E6165e1c1eEEe",
         "decimals": 18,
-        "symbol": "SAFE",
-        "name": "Safe Token",
-        "logoUri": "https://safe-transaction-assets.safe.global/tokens/logos/0x5aFE3855358E112B5647B952709E6165e1c1eEEe.png"
+        "symbol": "XRP",
+        "name": "XRP",
+        "logoUri": "/images/brand/logo-mark-filled.png"
       },
       "balance": "2041370498413453871452698",
       "fiatBalance": "281976.5483163488",
@@ -454,9 +454,9 @@
         "type": "ERC20",
         "address": "0x9aE357521153FB07bE6F5792CE7a49752638fbb7",
         "decimals": 18,
-        "symbol": "SAFE",
-        "name": "Safe Token",
-        "logoUri": "https://safe-transaction-assets.staging.5afe.dev/tokens/logos/0x9aE357521153FB07bE6F5792CE7a49752638fbb7.png"
+        "symbol": "XRP",
+        "name": "XRP",
+        "logoUri": "/images/brand/logo-mark-filled.png"
       },
       "balance": "250000000000000000000000",
       "fiatBalance": "0",

@@ -47,9 +47,9 @@
   {
     "id": 67,
     "url": "https://safe-dao-governance.dev.5afe.dev",
-    "name": "Safe{Pass}|{DAO}",
-    "iconUrl": "https://safe-transaction-assets.staging.5afe.dev/safe_apps/67/icon.png",
-    "description": "The portal to the Safe community. Get your Safe{Pass}, get rewarded, and participate in governance.",
+    "name": "Community governance",
+    "iconUrl": "/images/apps/app-placeholder.svg",
+    "description": "Vote on proposals and take part in community governance.",
     "chainIds": ["11155111", "1"],
     "provider": null,
     "accessControl": { "type": "NO_RESTRICTIONS", "value": null },

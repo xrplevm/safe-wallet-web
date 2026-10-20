@@ -17,7 +17,7 @@ export const HypernativeTooltip = ({
         // We use the inverted theme mode here so that it matches the tooltip background color
         component={isDarkMode ? SafeShieldLogoFull : SafeShieldLogoFullDark}
         inheritViewBox
-        sx={{ width: 108, height: 18 }}
+        sx={{ width: 100, height: 18 }}
       />
 
       <Typography variant="body2">{title || 'Hypernative Guardian is actively monitoring this account.'}</Typography>

@@ -2,7 +2,7 @@
   {
     "protocol": "Gnosis Safe",
     "protocol_metadata": {
-      "name": "Safe Factory",
+      "name": "XRP Staking",
       "icon": {
         "url": "https://protocol-icons.s3.amazonaws.com/icons/gnosis-safe-factory.jpg"
       },
@@ -19,9 +19,9 @@
               "type": "ERC20",
               "address": "0x5aFE3855358E112B5647B952709E6165e1c1eEEe",
               "decimals": 18,
-              "symbol": "SAFE",
-              "name": "Safe Token",
-              "logoUri": "https://cdn.zerion.io/0x5afe3855358e112b5647b952709e6165e1c1eeee.png"
+              "symbol": "XRP",
+              "name": "XRP",
+              "logoUri": "/images/brand/logo-mark-filled.png"
             },
             "balance": "2034160974499438657536",
             "fiatBalance": "280.5895071911394",
@@ -34,9 +34,9 @@
               "type": "ERC20",
               "address": "0x5aFE3855358E112B5647B952709E6165e1c1eEEe",
               "decimals": 18,
-              "symbol": "SAFE",
-              "name": "Safe Token",
-              "logoUri": "https://cdn.zerion.io/0x5afe3855358e112b5647b952709e6165e1c1eeee.png"
+              "symbol": "XRP",
+              "name": "XRP",
+              "logoUri": "/images/brand/logo-mark-filled.png"
             },
             "balance": "1237784404310331228160",
             "fiatBalance": "170.73836356524285",
@@ -49,9 +49,9 @@
               "type": "ERC20",
               "address": "0x5aFE3855358E112B5647B952709E6165e1c1eEEe",
               "decimals": 18,
-              "symbol": "SAFE",
-              "name": "Safe Token",
-              "logoUri": "https://cdn.zerion.io/0x5afe3855358e112b5647b952709e6165e1c1eeee.png"
+              "symbol": "XRP",
+              "name": "XRP",
+              "logoUri": "/images/brand/logo-mark-filled.png"
             },
             "balance": "514950925272454042464",
             "fiatBalance": "71.03165784869843",
@@ -64,9 +64,9 @@
               "type": "ERC20",
               "address": "0x5aFE3855358E112B5647B952709E6165e1c1eEEe",
               "decimals": 18,
-              "symbol": "SAFE",
-              "name": "Safe Token",
-              "logoUri": "https://cdn.zerion.io/0x5afe3855358e112b5647b952709e6165e1c1eeee.png"
+              "symbol": "XRP",
+              "name": "XRP",
+              "logoUri": "/images/brand/logo-mark-filled.png"
             },
             "balance": "416000000000000000000",
             "fiatBalance": "57.382496495999995",
@@ -79,9 +79,9 @@
               "type": "ERC20",
               "address": "0x5aFE3855358E112B5647B952709E6165e1c1eEEe",
               "decimals": 18,
-              "symbol": "SAFE",
-              "name": "Safe Token",
-              "logoUri": "https://cdn.zerion.io/0x5afe3855358e112b5647b952709e6165e1c1eeee.png"
+              "symbol": "XRP",
+              "name": "XRP",
+              "logoUri": "/images/brand/logo-mark-filled.png"
             },
             "balance": "313030769561242271840",
             "fiatBalance": "43.17905537857733",
@@ -94,9 +94,9 @@
               "type": "ERC20",
               "address": "0x5aFE3855358E112B5647B952709E6165e1c1eEEe",
               "decimals": 18,
-              "symbol": "SAFE",
-              "name": "Safe Token",
-              "logoUri": "https://cdn.zerion.io/0x5afe3855358e112b5647b952709e6165e1c1eeee.png"
+              "symbol": "XRP",
+              "name": "XRP",
+              "logoUri": "/images/brand/logo-mark-filled.png"
             },
             "balance": "20000000000000000000",
             "fiatBalance": "2.7587738699999997",
@@ -114,9 +114,9 @@
               "type": "ERC20",
               "address": "0x5aFE3855358E112B5647B952709E6165e1c1eEEe",
               "decimals": 18,
-              "symbol": "SAFE",
-              "name": "Safe Token",
-              "logoUri": "https://cdn.zerion.io/0x5afe3855358e112b5647b952709e6165e1c1eeee.png"
+              "symbol": "XRP",
+              "name": "XRP",
+              "logoUri": "/images/brand/logo-mark-filled.png"
             },
             "balance": "190000000000000000000",
             "fiatBalance": "26.208351764999996",

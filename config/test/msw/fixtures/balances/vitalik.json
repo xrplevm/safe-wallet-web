@@ -9778,9 +9778,9 @@
         "type": "ERC20",
         "address": "0x9aE357521153FB07bE6F5792CE7a49752638fbb7",
         "decimals": 18,
-        "symbol": "SAFE",
-        "name": "Safe Token",
-        "logoUri": "https://safe-transaction-assets.staging.5afe.dev/tokens/logos/0x9aE357521153FB07bE6F5792CE7a49752638fbb7.png"
+        "symbol": "XRP",
+        "name": "XRP",
+        "logoUri": "/images/brand/logo-mark-filled.png"
       },
       "balance": "145386000000000000000000",
       "fiatBalance": "0",

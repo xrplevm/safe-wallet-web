@@ -294,7 +294,7 @@ exports[`./SafeShield.stories ChecksPassed 1`] = `
             >
               <mock-icon
                 aria-hidden=""
-                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium mui-style-10kb61p-MuiSvgIcon-root"
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium mui-style-1u3luln-MuiSvgIcon-root"
                 focusable="false"
               />
             </span>
@@ -370,7 +370,7 @@ exports[`./SafeShield.stories Empty 1`] = `
             >
               <mock-icon
                 aria-hidden=""
-                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium mui-style-10kb61p-MuiSvgIcon-root"
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium mui-style-1u3luln-MuiSvgIcon-root"
                 focusable="false"
               />
             </span>
@@ -676,7 +676,7 @@ exports[`./SafeShield.stories FailedThreatAnalysis 1`] = `
             >
               <mock-icon
                 aria-hidden=""
-                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium mui-style-10kb61p-MuiSvgIcon-root"
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium mui-style-1u3luln-MuiSvgIcon-root"
                 focusable="false"
               />
             </span>
@@ -904,7 +904,7 @@ exports[`./SafeShield.stories HypernativeCustomCheckFailed 1`] = `
             >
               <mock-icon
                 aria-hidden=""
-                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium mui-style-10kb61p-MuiSvgIcon-root"
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium mui-style-1u3luln-MuiSvgIcon-root"
                 focusable="false"
               />
             </span>
@@ -1132,7 +1132,7 @@ exports[`./SafeShield.stories HypernativeGuardActive 1`] = `
             >
               <mock-icon
                 aria-hidden=""
-                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium mui-style-10kb61p-MuiSvgIcon-root"
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium mui-style-1u3luln-MuiSvgIcon-root"
                 focusable="false"
               />
             </span>
@@ -1547,7 +1547,7 @@ exports[`./SafeShield.stories HypernativeMaliciousThreat 1`] = `
             >
               <mock-icon
                 aria-hidden=""
-                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium mui-style-10kb61p-MuiSvgIcon-root"
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium mui-style-1u3luln-MuiSvgIcon-root"
                 focusable="false"
               />
             </span>
@@ -1731,7 +1731,7 @@ exports[`./SafeShield.stories HypernativeNotLoggedIn 1`] = `
             >
               <mock-icon
                 aria-hidden=""
-                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium mui-style-10kb61p-MuiSvgIcon-root"
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium mui-style-1u3luln-MuiSvgIcon-root"
                 focusable="false"
               />
             </span>
@@ -1845,7 +1845,7 @@ exports[`./SafeShield.stories Loading 1`] = `
             >
               <mock-icon
                 aria-hidden=""
-                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium mui-style-10kb61p-MuiSvgIcon-root"
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium mui-style-1u3luln-MuiSvgIcon-root"
                 focusable="false"
               />
             </span>
@@ -2338,7 +2338,7 @@ exports[`./SafeShield.stories MaliciousThreat 1`] = `
             >
               <mock-icon
                 aria-hidden=""
-                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium mui-style-10kb61p-MuiSvgIcon-root"
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium mui-style-1u3luln-MuiSvgIcon-root"
                 focusable="false"
               />
             </span>
@@ -2672,7 +2672,7 @@ exports[`./SafeShield.stories MastercopyChange 1`] = `
             >
               <mock-icon
                 aria-hidden=""
-                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium mui-style-10kb61p-MuiSvgIcon-root"
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium mui-style-1u3luln-MuiSvgIcon-root"
                 focusable="false"
               />
             </span>
@@ -2995,7 +2995,7 @@ exports[`./SafeShield.stories ModerateThreat 1`] = `
             >
               <mock-icon
                 aria-hidden=""
-                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium mui-style-10kb61p-MuiSvgIcon-root"
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium mui-style-1u3luln-MuiSvgIcon-root"
                 focusable="false"
               />
             </span>
@@ -3301,7 +3301,7 @@ exports[`./SafeShield.stories ModulesChange 1`] = `
             >
               <mock-icon
                 aria-hidden=""
-                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium mui-style-10kb61p-MuiSvgIcon-root"
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium mui-style-1u3luln-MuiSvgIcon-root"
                 focusable="false"
               />
             </span>
@@ -4754,7 +4754,7 @@ exports[`./SafeShield.stories MultipleCounterparties 1`] = `
             >
               <mock-icon
                 aria-hidden=""
-                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium mui-style-10kb61p-MuiSvgIcon-root"
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium mui-style-1u3luln-MuiSvgIcon-root"
                 focusable="false"
               />
             </span>
@@ -5198,7 +5198,7 @@ exports[`./SafeShield.stories MultipleIssues 1`] = `
             >
               <mock-icon
                 aria-hidden=""
-                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium mui-style-10kb61p-MuiSvgIcon-root"
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium mui-style-1u3luln-MuiSvgIcon-root"
                 focusable="false"
               />
             </span>
@@ -5504,7 +5504,7 @@ exports[`./SafeShield.stories OwnershipChange 1`] = `
             >
               <mock-icon
                 aria-hidden=""
-                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium mui-style-10kb61p-MuiSvgIcon-root"
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium mui-style-1u3luln-MuiSvgIcon-root"
                 focusable="false"
               />
             </span>
@@ -5948,7 +5948,7 @@ exports[`./SafeShield.stories ThreatAnalysisWithError 1`] = `
             >
               <mock-icon
                 aria-hidden=""
-                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium mui-style-10kb61p-MuiSvgIcon-root"
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium mui-style-1u3luln-MuiSvgIcon-root"
                 focusable="false"
               />
             </span>
@@ -6254,7 +6254,7 @@ exports[`./SafeShield.stories UnableToVerifyContract 1`] = `
             >
               <mock-icon
                 aria-hidden=""
-                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium mui-style-10kb61p-MuiSvgIcon-root"
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium mui-style-1u3luln-MuiSvgIcon-root"
                 focusable="false"
               />
             </span>
@@ -6523,7 +6523,7 @@ exports[`./SafeShield.stories UnofficialFallbackHandler 1`] = `
             >
               <mock-icon
                 aria-hidden=""
-                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium mui-style-10kb61p-MuiSvgIcon-root"
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium mui-style-1u3luln-MuiSvgIcon-root"
                 focusable="false"
               />
             </span>
@@ -6751,7 +6751,7 @@ exports[`./SafeShield.stories UnverifiedContract 1`] = `
             >
               <mock-icon
                 aria-hidden=""
-                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium mui-style-10kb61p-MuiSvgIcon-root"
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium mui-style-1u3luln-MuiSvgIcon-root"
                 focusable="false"
               />
             </span>
