@@ -463,12 +463,12 @@
       "balanceFiat": "1385.3032520887389",
       "groups": [
         {
-          "name": "Gnosis Safe Vesting",
+          "name": "XRP Vesting",
           "items": [
             {
               "key": "0x5afe3855358e112b5647b952709e6165e1c1eeee-ethereum-gnosis safe vesting-reward",
               "type": "reward",
-              "name": "Gnosis Safe Vesting",
+              "name": "XRP Vesting",
               "groupId": "a0313296549eef5b542dbeda52b15d1fd3028e17886f3f54d27d4fe20bb84294",
               "tokenInfo": {
                 "address": "0x5aFE3855358E112B5647B952709E6165e1c1eEEe",
@@ -488,7 +488,7 @@
             {
               "key": "0x5afe3855358e112b5647b952709e6165e1c1eeee-ethereum-gnosis safe vesting-locked",
               "type": "locked",
-              "name": "Gnosis Safe Vesting",
+              "name": "XRP Vesting",
               "groupId": "a0313296549eef5b542dbeda52b15d1fd3028e17886f3f54d27d4fe20bb84294",
               "tokenInfo": {
                 "address": "0x5aFE3855358E112B5647B952709E6165e1c1eEEe",
@@ -508,12 +508,12 @@
           ]
         },
         {
-          "name": "Gnosis Safe Vesting",
+          "name": "XRP Vesting",
           "items": [
             {
               "key": "0x5afe3855358e112b5647b952709e6165e1c1eeee-ethereum-gnosis safe vesting-reward",
               "type": "reward",
-              "name": "Gnosis Safe Vesting",
+              "name": "XRP Vesting",
               "groupId": "99e212f7d6bd27510a310aecf247c94b4b418a910cba2d02f07aa8fecd573e22",
               "tokenInfo": {
                 "address": "0x5aFE3855358E112B5647B952709E6165e1c1eEEe",
@@ -533,7 +533,7 @@
             {
               "key": "0x5afe3855358e112b5647b952709e6165e1c1eeee-ethereum-gnosis safe vesting-locked",
               "type": "locked",
-              "name": "Gnosis Safe Vesting",
+              "name": "XRP Vesting",
               "groupId": "99e212f7d6bd27510a310aecf247c94b4b418a910cba2d02f07aa8fecd573e22",
               "tokenInfo": {
                 "address": "0x5aFE3855358E112B5647B952709E6165e1c1eEEe",

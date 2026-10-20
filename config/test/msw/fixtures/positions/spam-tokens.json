@@ -48,18 +48,18 @@
     ]
   },
   {
-    "protocol": "Gnosis Safe",
+    "protocol": "XRP Staking",
     "protocol_metadata": {
       "name": "XRP Staking",
       "icon": {
-        "url": "https://protocol-icons.s3.amazonaws.com/icons/gnosis-safe-factory.jpg"
+        "url": "/images/brand/logo-mark-filled.png"
       },
       "url": "https://gnosis.io/"
     },
     "fiatTotal": "1385.4311842208926",
     "items": [
       {
-        "name": "Gnosis Safe Vesting",
+        "name": "XRP Vesting",
         "items": [
           {
             "position_type": "reward",
