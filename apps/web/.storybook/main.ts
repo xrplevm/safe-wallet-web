@@ -156,8 +156,9 @@ const config: StorybookConfig = {
     NEXT_PUBLIC_HUBSPOT_CONFIG: process.env.NEXT_PUBLIC_HUBSPOT_CONFIG ?? '',
     NEXT_PUBLIC_APP_VERSION: process.env.NEXT_PUBLIC_APP_VERSION || packageJson.version,
     NEXT_PUBLIC_APP_HOMEPAGE: process.env.NEXT_PUBLIC_APP_HOMEPAGE || packageJson.homepage,
-    // Enable official host features (logo, branding) in Storybook
-    NEXT_PUBLIC_IS_OFFICIAL_HOST: 'true',
+    // The app has no default gateway. MSW mocks answer on this origin, the same as in unit tests (.env.test).
+    NEXT_PUBLIC_GATEWAY_URL_PRODUCTION: process.env.NEXT_PUBLIC_GATEWAY_URL_PRODUCTION || 'https://gateway.test',
+    NEXT_PUBLIC_GATEWAY_URL_STAGING: process.env.NEXT_PUBLIC_GATEWAY_URL_STAGING || 'https://gateway.test',
   }),
 
   typescript: {
