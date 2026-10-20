@@ -14,8 +14,6 @@ import {
 import { selectCookieBanner, openCookieBanner, closeCookieBanner } from '@/store/popupSlice'
 
 import css from './styles.module.css'
-import { AppRoutes } from '@/config/routes'
-import { useRouter } from 'next/router'
 import { COOKIE_AND_TERM_WARNING, styles } from './constants'
 import WarningMessage from './WarningMessage'
 import IntroText from './IntroText'
@@ -66,7 +64,7 @@ export const CookieAndTermBanner = ({
       <form>
         <Grid container sx={{ alignItems: 'center' }}>
           <Grid item xs>
-            <IntroText lastUpdated={metadata.lastUpdated} />
+            <IntroText />
 
             <Grid container sx={styles.optionsGrid}>
               <CookieOptionsList control={control} />
@@ -83,11 +81,8 @@ export const CookieAndTermBanner = ({
 const CookieBannerPopup = (): ReactElement | null => {
   const cookiePopup = useAppSelector(selectCookieBanner)
   const dispatch = useAppDispatch()
-  const router = useRouter()
-  const exceptionPages = [AppRoutes.safeLabsTerms]
-
   const hasAccepted = useAppSelector(hasAcceptedTerms)
-  const shouldOpen = !hasAccepted && !exceptionPages.includes(router.pathname)
+  const shouldOpen = !hasAccepted
 
   useEffect(() => {
     if (shouldOpen) {

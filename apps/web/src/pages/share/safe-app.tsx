@@ -12,7 +12,7 @@ const ShareSafeApp = () => {
   return (
     <>
       <Head>
-        <title>{`${BRAND_NAME} – Safe Apps`}</title>
+        <title>{`${BRAND_NAME} – Apps`}</title>
       </Head>
 
       <main>

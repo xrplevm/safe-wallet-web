@@ -54,7 +54,7 @@ export function _UpdateSafe({
       </Stack>
       {newVersion !== undefined ? (
         <Typography>
-          Read about the updates in the new Safe contracts version in the{' '}
+          Read about the updates in the new smart account contracts version in the{' '}
           <ExternalLink href={`https://github.com/safe-global/safe-contracts/releases/tag/v${newVersion}`}>
             version {newVersion} changelog
           </ExternalLink>

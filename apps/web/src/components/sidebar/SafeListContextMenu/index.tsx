@@ -133,7 +133,7 @@ const SafeListContextMenu = ({
               <ListItemIcon>
                 <SvgIcon component={NestedSafesIcon} inheritViewBox fontSize="small" color="success" />
               </ListItemIcon>
-              <ListItemText data-testid="nested-safes-btn">Nested Safes</ListItemText>
+              <ListItemText data-testid="nested-safes-btn">Nested accounts</ListItemText>
             </MenuItem>
           )}
 

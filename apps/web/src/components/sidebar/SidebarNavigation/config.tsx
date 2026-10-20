@@ -49,13 +49,17 @@ export const navItems: NavItem[] = [
     icon: <SvgIcon data-testid="settings-nav-icon" component={SettingsIcon} inheritViewBox />,
     href: AppRoutes.settings.setup,
   },
-  {
-    label: 'API',
-    icon: <SvgIcon component={ApiIcon} inheritViewBox />,
-    href: '',
-    externalUrl: DEVELOPER_PORTAL_URL,
-    tag: <Chip sx={{ backgroundColor: 'secondary.light', color: 'static.main' }} />,
-  },
+  ...(DEVELOPER_PORTAL_URL
+    ? [
+        {
+          label: 'API',
+          icon: <SvgIcon component={ApiIcon} inheritViewBox />,
+          href: '',
+          externalUrl: DEVELOPER_PORTAL_URL,
+          tag: <Chip sx={{ backgroundColor: 'secondary.light', color: 'static.main' }} />,
+        },
+      ]
+    : []),
 ]
 
 export const transactionNavItems = [
@@ -76,7 +80,7 @@ export const settingsNavItems = [
   { label: 'Security', href: AppRoutes.settings.security },
   { label: 'Notifications', href: AppRoutes.settings.notifications },
   { label: 'Modules', href: AppRoutes.settings.modules },
-  { label: 'Safe Apps', href: AppRoutes.settings.safeApps.index },
+  { label: 'Apps', href: AppRoutes.settings.safeApps.index },
   { label: 'Data', href: AppRoutes.settings.data },
   { label: 'Environment variables', href: AppRoutes.settings.environmentVariables },
 ]

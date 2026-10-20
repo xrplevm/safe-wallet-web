@@ -24,7 +24,7 @@ const AccountListFilters = ({ setSearchQuery }: { setSearchQuery: Dispatch<SetSt
         <TextField
           id="search-by-name"
           placeholder="Search by name, ENS, address, or chain"
-          aria-label="Search Safe list by name"
+          aria-label="Search account list by name"
           variant="filled"
           hiddenLabel
           onChange={(e) => {

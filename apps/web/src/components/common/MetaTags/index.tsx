@@ -1,8 +1,9 @@
-import { BRAND_NAME, IS_PRODUCTION, IS_BEHIND_IAP } from '@/config/constants'
+import { APP_URL, BRAND_NAME, IS_PRODUCTION, IS_BEHIND_IAP } from '@/config/constants'
 import { ContentSecurityPolicy, StrictTransportSecurity } from '@/config/securityHeaders'
 import { lightPalette, darkPalette } from '@safe-global/theme'
 
-const descriptionText = `${BRAND_NAME} is the most trusted smart account wallet on Ethereum with over $100B secured.`
+const descriptionText = `${BRAND_NAME} is a multisig smart account wallet for the XRPL EVM Sidechain.`
+const shareImageUrl = `${APP_URL}/images/brand/social-share.png`
 const titleText = BRAND_NAME
 
 const MetaTags = ({ prefetchUrl }: { prefetchUrl: string }) => (
@@ -11,14 +12,13 @@ const MetaTags = ({ prefetchUrl }: { prefetchUrl: string }) => (
     {!IS_PRODUCTION && <meta name="robots" content="noindex" />}
 
     {/* Social sharing */}
-    <meta name="og:image" content="https://app.safe.global/images/social-share.png" />
+    <meta name="og:image" content={shareImageUrl} />
     <meta name="og:description" content={descriptionText} />
     <meta name="og:title" content={titleText} />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@safe" />
     <meta name="twitter:title" content={titleText} />
     <meta name="twitter:description" content={descriptionText} />
-    <meta name="twitter:image" content="https://app.safe.global/images/social-share.png" />
+    <meta name="twitter:image" content={shareImageUrl} />
 
     {/* CSP */}
     <meta httpEquiv="Content-Security-Policy" content={ContentSecurityPolicy} />
@@ -35,7 +35,7 @@ const MetaTags = ({ prefetchUrl }: { prefetchUrl: string }) => (
     {/* PWA primary color and manifest */}
     <meta name="theme-color" content={lightPalette.background.main} media="(prefers-color-scheme: light)" />
     <meta name="theme-color" content={darkPalette.background.main} media="(prefers-color-scheme: dark)" />
-    <link rel="manifest" href="/safe.webmanifest" {...(IS_BEHIND_IAP && { crossOrigin: 'use-credentials' })} />
+    <link rel="manifest" href="/manifest.webmanifest" {...(IS_BEHIND_IAP && { crossOrigin: 'use-credentials' })} />
 
     {/* Favicons */}
     <link rel="shortcut icon" href="/favicons/favicon.ico" />

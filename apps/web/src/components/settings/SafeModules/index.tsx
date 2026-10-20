@@ -1,3 +1,4 @@
+import { HELP_CENTER_URL } from '@safe-global/utils/config/constants'
 import EthHashInfo from '@/components/common/EthHashInfo'
 import useSafeInfo from '@/hooks/useSafeInfo'
 import { Paper, Grid, Typography, Box, IconButton, SvgIcon } from '@mui/material'
@@ -73,16 +74,16 @@ const SafeModules = () => {
       <Grid container direction="row" justifyContent="space-between" spacing={3}>
         <Grid item lg={4} xs={12}>
           <Typography variant="h4" fontWeight={700}>
-            Safe modules
+            Account modules
           </Typography>
         </Grid>
 
         <Grid item xs>
           <Box>
             <Typography>
-              Modules allow you to customize the access-control logic of your Safe Account. Modules are potentially
+              Modules allow you to customize the access-control logic of your multisig account. Modules are potentially
               risky, so make sure to only use modules from trusted sources. Learn more about modules{' '}
-              <ExternalLink href="https://help.safe.global/en/articles/40827-what-is-a-module">here</ExternalLink>
+              <ExternalLink href={HELP_CENTER_URL}>here</ExternalLink>
             </Typography>
             {safeModules.length === 0 ? (
               <NoModules />

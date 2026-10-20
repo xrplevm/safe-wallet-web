@@ -7,7 +7,7 @@ import type { ReactNode } from 'react'
 import type { AnalyticsEvent } from '@/services/analytics'
 import { trackEvent, MixpanelEventParams } from '@/services/analytics'
 
-const DEFAULT_BACKGROUND = 'linear-gradient(90deg, #b0ffc9, #d7f6ff)'
+const DEFAULT_BACKGROUND = 'linear-gradient(90deg, var(--color-secondary-light), #ffffff)'
 
 export interface PromoBannerProps {
   title: string

@@ -15,13 +15,13 @@ type Story = StoryObj<typeof meta>
 
 export const Default: Story = {
   args: {
-    name: 'Safe Team',
+    name: 'Acme Team',
   },
 }
 
 export const AllSizes: Story = {
   args: {
-    name: 'Safe',
+    name: 'Acme',
   },
   render: ({ name }) => (
     <Stack direction="row" spacing={2} alignItems="center">
@@ -35,35 +35,35 @@ export const AllSizes: Story = {
 
 export const XSmall: Story = {
   args: {
-    name: 'Safe Team',
+    name: 'Acme Team',
     size: 'xsmall',
   },
 }
 
 export const Small: Story = {
   args: {
-    name: 'Safe Team',
+    name: 'Acme Team',
     size: 'small',
   },
 }
 
 export const Medium: Story = {
   args: {
-    name: 'Safe Team',
+    name: 'Acme Team',
     size: 'medium',
   },
 }
 
 export const Large: Story = {
   args: {
-    name: 'Safe Team',
+    name: 'Acme Team',
     size: 'large',
   },
 }
 
 export const Rounded: Story = {
   args: {
-    name: 'Safe Team',
+    name: 'Acme Team',
     rounded: true,
   },
 }

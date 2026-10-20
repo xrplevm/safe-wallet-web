@@ -3,8 +3,6 @@ import DialogContent from '@mui/material/DialogContent'
 import UpdateSpaceForm from './UpdateSpaceForm'
 import type { GetSpaceResponse } from '@safe-global/store/gateway/AUTO_GENERATED/spaces'
 import { Typography } from '@mui/material'
-import { AppRoutes } from '@/config/routes'
-import ExternalLink from '@/components/common/ExternalLink'
 
 const UpdateSpaceDialog = ({ space, onClose }: { space: GetSpaceResponse; onClose: () => void }) => {
   return (
@@ -12,7 +10,7 @@ const UpdateSpaceDialog = ({ space, onClose }: { space: GetSpaceResponse; onClos
       <DialogContent sx={{ mt: 2 }}>
         <Typography mb={2}>
           The space name is visible in the sidebar menu, headings to all its members. Usually it&apos;s a name of the
-          company or a business. <ExternalLink href={AppRoutes.privacy}>How is this data stored?</ExternalLink>
+          company or a business.
         </Typography>
         <UpdateSpaceForm space={space} />
       </DialogContent>

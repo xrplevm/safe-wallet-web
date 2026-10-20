@@ -49,7 +49,7 @@ const SimilarityConfirmDialog = ({ open, safe, onConfirm, onCancel }: Similarity
         </Box>
 
         <Typography variant="body2" color="text.secondary">
-          Verify the full address carefully. Continue only if you recognize this Safe.
+          Verify the full address carefully. Continue only if you recognize this account.
         </Typography>
       </DialogContent>
 

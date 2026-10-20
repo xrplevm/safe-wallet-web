@@ -1,7 +1,7 @@
 /**
  * Spaces Feature - Public API
  *
- * This feature provides collaboration spaces for managing Safe accounts, members, and address books.
+ * This feature provides collaboration spaces for managing multisig accounts, members, and address books.
  *
  * ## Usage
  *

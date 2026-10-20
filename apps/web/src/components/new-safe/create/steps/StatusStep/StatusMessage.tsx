@@ -33,12 +33,12 @@ const getStep = (status: SafeCreationEvent) => {
       }
     case SafeCreationEvent.SUCCESS:
       return {
-        description: 'Your Safe Account is being indexed..',
+        description: 'Your multisig account is being indexed..',
         instruction: 'The account will be ready for use shortly. Please do not leave this page.',
       }
     case SafeCreationEvent.INDEXED:
       return {
-        description: 'Your Safe Account was successfully created!',
+        description: 'Your multisig account was successfully created!',
         instruction: '',
       }
   }

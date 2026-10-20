@@ -5,14 +5,14 @@ exports[`./DataTable.stories Default 1`] = `
   style="background-color: rgb(255, 255, 255); padding: 1rem;"
 >
   <div
-    class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 mui-style-1xulk7h-MuiPaper-root"
+    class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 mui-style-b2a1x-MuiPaper-root"
     style="--Paper-shadow: none;"
   >
     <div
       class="MuiStack-root mui-style-1qh2y1i-MuiStack-root"
     >
       <p
-        class="MuiTypography-root MuiTypography-body1 mui-style-v6lhhw-MuiTypography-root"
+        class="MuiTypography-root MuiTypography-body1 mui-style-i9kxid-MuiTypography-root"
       >
         <b>
           Simple Data Table
@@ -28,7 +28,7 @@ exports[`./DataTable.stories Default 1`] = `
           style="word-break: break-word;"
         >
           <span
-            class="MuiTypography-root MuiTypography-body2 mui-style-1ew0eu5-MuiTypography-root"
+            class="MuiTypography-root MuiTypography-body2 mui-style-ce200z-MuiTypography-root"
           >
             Transaction Hash
           </span>
@@ -38,7 +38,7 @@ exports[`./DataTable.stories Default 1`] = `
           data-testid="tx-data-row"
         >
           <div
-            class="MuiTypography-root MuiTypography-body1 mui-style-v6lhhw-MuiTypography-root"
+            class="MuiTypography-root MuiTypography-body1 mui-style-i9kxid-MuiTypography-root"
           >
             0x536e...94f9
           </div>
@@ -54,7 +54,7 @@ exports[`./DataTable.stories Default 1`] = `
           style="word-break: break-word;"
         >
           <span
-            class="MuiTypography-root MuiTypography-body2 mui-style-1ew0eu5-MuiTypography-root"
+            class="MuiTypography-root MuiTypography-body2 mui-style-ce200z-MuiTypography-root"
           >
             Block Number
           </span>
@@ -64,7 +64,7 @@ exports[`./DataTable.stories Default 1`] = `
           data-testid="tx-data-row"
         >
           <div
-            class="MuiTypography-root MuiTypography-body1 mui-style-v6lhhw-MuiTypography-root"
+            class="MuiTypography-root MuiTypography-body1 mui-style-i9kxid-MuiTypography-root"
           >
             123456
           </div>
@@ -80,7 +80,7 @@ exports[`./DataTable.stories Default 1`] = `
           style="word-break: break-word;"
         >
           <span
-            class="MuiTypography-root MuiTypography-body2 mui-style-1ew0eu5-MuiTypography-root"
+            class="MuiTypography-root MuiTypography-body2 mui-style-ce200z-MuiTypography-root"
           >
             Gas Used
           </span>
@@ -90,7 +90,7 @@ exports[`./DataTable.stories Default 1`] = `
           data-testid="tx-data-row"
         >
           <div
-            class="MuiTypography-root MuiTypography-body1 mui-style-v6lhhw-MuiTypography-root"
+            class="MuiTypography-root MuiTypography-body1 mui-style-i9kxid-MuiTypography-root"
           >
             21000
           </div>

@@ -18,13 +18,13 @@ describe('useMnemonicName tests', () => {
 
   it('should return a random safe name with current chain', () => {
     const { result } = renderHook(() => useMnemonicSafeName())
-    const regex = new RegExp(`^[A-Z][a-z-]+ ${mockChain.chainName} Safe$`)
+    const regex = new RegExp(`^[A-Z][a-z-]+ ${mockChain.chainName} Account$`)
     expect(result.current).toMatch(regex)
   })
 
   it('should return a random safe name indicating a multichain safe', () => {
     const { result } = renderHook(() => useMnemonicSafeName(true))
-    const regex = new RegExp(`^[A-Z][a-z-]+ Multi-Chain Safe$`)
+    const regex = new RegExp(`^[A-Z][a-z-]+ Multi-Chain Account$`)
     expect(result.current).toMatch(regex)
   })
 })

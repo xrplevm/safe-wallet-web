@@ -17,12 +17,12 @@ const AddAccountsCard = () => {
       <Stack direction={{ xs: 'column-reverse', md: 'row' }} alignItems="center" spacing={3}>
         <Box sx={{ flex: 2 }}>
           <Typography variant="h4" fontWeight={700} mb={2}>
-            Add your Safe Accounts
+            Add your multisig accounts
           </Typography>
 
           <Typography variant="body1" color="primary.light" mb={2}>
-            Start by adding Safe Accounts to your space. Any accounts that are linked to your connected wallet can be
-            added to the space.
+            Start by adding multisig accounts to your space. Any accounts that are linked to your connected wallet can
+            be added to the space.
           </Typography>
 
           <Track {...SPACE_EVENTS.ADD_ACCOUNTS_MODAL} label={SPACE_LABELS.space_dashboard_card}>
@@ -34,7 +34,7 @@ const AddAccountsCard = () => {
           <Image
             className={css.image}
             src={isDarkMode ? EmptyDashboardDark : EmptyDashboard}
-            alt="Illustration of two safes with their thresholds"
+            alt="Illustration of two accounts with their thresholds"
             width={375}
             height={200}
           />

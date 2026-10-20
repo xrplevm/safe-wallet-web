@@ -17,7 +17,7 @@ type Story = StoryObj<typeof meta>
 export const Default: Story = {
   args: {
     title: 'Discover new features',
-    description: 'Learn about the latest updates and improvements to Safe',
+    description: 'Learn about the latest updates and improvements ',
     ctaLabel: 'Learn more',
     href: '#',
     trackingEvents: { action: 'Click promo banner', category: 'overview' },
@@ -41,7 +41,7 @@ export const WithoutImage: Story = {
 export const WithCustomColors: Story = {
   args: {
     title: 'Special offer',
-    description: 'Limited time promotion for Safe users',
+    description: 'Limited time promotion for users',
     ctaLabel: 'Claim now',
     href: '#',
     trackingEvents: { action: 'Click promo banner', category: 'overview' },
@@ -55,7 +55,7 @@ export const WithCustomColors: Story = {
 
 export const WithoutDismiss: Story = {
   args: {
-    title: 'Welcome to Safe',
+    title: 'Welcome',
     description: 'Your gateway to secure digital asset management',
     ctaLabel: 'Get started',
     href: '#',

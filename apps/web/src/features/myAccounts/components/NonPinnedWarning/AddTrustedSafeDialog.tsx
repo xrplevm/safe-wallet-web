@@ -60,7 +60,7 @@ const AddTrustedSafeDialog = ({
       maxWidth="sm"
       fullWidth
       data-testid="add-trusted-safe-dialog"
-      dialogTitle="Confirm trusted Safe"
+      dialogTitle="Confirm trusted account"
       hideChainIndicator
     >
       <FormProvider {...methods}>
@@ -70,7 +70,7 @@ const AddTrustedSafeDialog = ({
 
             <Box sx={{ mb: 2 }}>
               <Typography variant="body2" color="text.secondary" gutterBottom>
-                Safe to add
+                Account to add
               </Typography>
               <Box
                 sx={{
@@ -87,7 +87,7 @@ const AddTrustedSafeDialog = ({
 
             {!hasSimilarAddress && (
               <Typography variant="body2" color="text.secondary" sx={{ mb: 2 }}>
-                Review the full address above. Continue only if you recognize this Safe and want to add it to your
+                Review the full address above. Continue only if you recognize this account and want to add it to your
                 trusted list.
               </Typography>
             )}
@@ -96,8 +96,8 @@ const AddTrustedSafeDialog = ({
               <NameInput
                 data-testid="safe-name-input"
                 name="name"
-                label="Safe name"
-                placeholder="Enter a name for this Safe"
+                label="Account name"
+                placeholder="Enter a name for this account"
                 autoFocus
               />
             </Box>

@@ -1,0 +1,6 @@
+<svg width="108" height="18" viewBox="0 0 108 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect class="shield-bg" width="108" height="18" rx="9" fill="#FFFFFF"/>
+  <path class="shield-img" d="M10.25 4 5 6.1v3.6c0 3.2 2.2 6.1 5.25 6.9 3.05-.8 5.25-3.7 5.25-6.9V6.1L10.25 4z" fill="#2A2A2A"/>
+  <path class="shield-lines" d="m8.1 10.1 1.5 1.5 3-3.1" stroke="#FFFFFF" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text class="shield-text" x="20" y="12.6" font-family="Work Sans, sans-serif" font-size="10" font-weight="600" fill="#2A2A2A">Security check</text>
+</svg>

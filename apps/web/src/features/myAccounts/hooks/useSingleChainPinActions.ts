@@ -36,7 +36,7 @@ export function useSingleChainPinActions({
         dispatch(unpinSafe({ chainId, address }))
         dispatch(
           showNotification({
-            title: 'Safe removed',
+            title: 'Account removed',
             message: name ?? shortenAddress(address),
             groupKey: `unpin-safe-success-${address}`,
             variant: 'success',
@@ -57,7 +57,7 @@ export function useSingleChainPinActions({
         )
         dispatch(
           showNotification({
-            title: 'Safe trusted',
+            title: 'Account trusted',
             message: name ?? shortenAddress(address),
             groupKey: `pin-safe-success-${address}`,
             variant: 'success',

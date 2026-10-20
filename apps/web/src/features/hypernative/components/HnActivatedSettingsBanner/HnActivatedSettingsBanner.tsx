@@ -2,7 +2,7 @@ import { Paper, Grid, Typography, SvgIcon, Box } from '@mui/material'
 import ExternalLink from '@/components/common/ExternalLink'
 import { hnActivatedSettingsBannerConfig } from './config'
 import css from './styles.module.css'
-import SafeShieldColored from '@/public/images/safe-shield/safe-shield-colored.svg'
+import SafeShieldColored from '@/public/images/security/security-check-colored.svg'
 
 export const HnActivatedSettingsBanner = () => {
   const { title, description, statusLabel, buttonLabel, dashboardUrl } = hnActivatedSettingsBannerConfig
@@ -17,7 +17,7 @@ export const HnActivatedSettingsBanner = () => {
                 component={SafeShieldColored}
                 inheritViewBox
                 sx={{
-                  width: 78,
+                  width: 108,
                   height: 18,
                   '& rect': {
                     fill: 'var(--color-background-main)',

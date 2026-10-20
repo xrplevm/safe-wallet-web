@@ -96,7 +96,7 @@ describe('SignForm', () => {
 
     expect(
       queryByText(
-        'You are currently not a signer of this Safe Account and won&apos;t be able to submit this transaction.',
+        'You are currently not a signer of this multisig account and won&apos;t be able to submit this transaction.',
       ),
     ).not.toBeInTheDocument()
   })

@@ -22,7 +22,7 @@
 }
 
 .tagText {
-  color: #12ff80;
+  color: var(--color-static-text-brand);
   font-size: 14px;
   line-height: 20px;
   letter-spacing: 0.17px;
@@ -76,8 +76,8 @@
 .ctaButton {
   margin-top: var(--space-3) !important;
   margin-bottom: var(--space-1) !important;
-  border-color: #12ff80 !important;
-  color: #12ff80 !important;
+  border-color: var(--color-static-text-brand) !important;
+  color: var(--color-static-text-brand) !important;
   border-radius: 6px;
   padding: 6px var(--space-1);
   font-weight: 700;
@@ -89,7 +89,7 @@
 }
 
 .ctaButton:hover {
-  border-color: #12ff80 !important;
-  background-color: rgba(18, 255, 128, 0.1) !important;
+  border-color: var(--color-static-text-brand) !important;
+  background-color: rgba(50, 230, 133, 0.1) !important;
   max-width: 100%;
 }

@@ -19,7 +19,7 @@ import RocketLaunchIcon from '@mui/icons-material/RocketLaunch'
 import OpenInNewIcon from '@mui/icons-material/OpenInNew'
 
 /**
- * Counterfactual feature handles undeployed (counterfactual) Safe accounts.
+ * Counterfactual feature handles undeployed (counterfactual) multisig accounts.
  * These Safes exist as addresses but are not yet deployed on-chain.
  *
  * Key components:
@@ -70,16 +70,16 @@ export const ActivationAllStates: StoryObj = {
   render: () => (
     <Box sx={{ maxWidth: 600 }}>
       <Box sx={{ mb: 6, pb: 3, borderBottom: '2px solid', borderColor: 'primary.main' }}>
-        <Typography variant="h4">Safe Activation Flow</Typography>
+        <Typography variant="h4">Account Activation Flow</Typography>
         <Typography variant="body1" color="text.secondary">
-          Complete walkthrough of activating a counterfactual (undeployed) Safe. Scroll to view each state.
+          Complete walkthrough of activating a counterfactual (undeployed) account. Scroll to view each state.
         </Typography>
       </Box>
 
       {/* State 1: Not Deployed Alert */}
       <StateWrapper
         stateName="Not Deployed Alert"
-        description="Banner shown on dashboard when Safe is not yet deployed on-chain."
+        description="Banner shown on dashboard when account is not yet deployed on-chain."
       >
         <Alert
           severity="info"
@@ -91,10 +91,11 @@ export const ActivationAllStates: StoryObj = {
           }
         >
           <Typography variant="body2" fontWeight="bold" gutterBottom>
-            Safe not yet activated
+            Account not yet activated
           </Typography>
           <Typography variant="body2">
-            Your Safe needs to be activated before you can make transactions. You can receive funds to this address now.
+            Your account needs to be activated before you can make transactions. You can receive funds to this address
+            now.
           </Typography>
         </Alert>
       </StateWrapper>
@@ -109,7 +110,7 @@ export const ActivationAllStates: StoryObj = {
             Choose activation method
           </Typography>
           <Typography variant="body2" color="text.secondary" sx={{ mb: 3 }}>
-            Select how you want to pay for Safe deployment
+            Select how you want to pay for account deployment
           </Typography>
 
           <Box
@@ -124,7 +125,7 @@ export const ActivationAllStates: StoryObj = {
           >
             <Typography variant="subtitle2">Pay now</Typography>
             <Typography variant="body2" color="text.secondary">
-              Deploy your Safe immediately by paying gas fees
+              Deploy your account immediately by paying gas fees
             </Typography>
             <Typography variant="caption" color="primary">
               ~0.005 ETH
@@ -154,26 +155,27 @@ export const ActivationAllStates: StoryObj = {
       {/* State 3: Activation Form */}
       <StateWrapper
         stateName="Activation Form"
-        description="User reviews Safe details and estimated fees before activating."
+        description="User reviews account details and estimated fees before activating."
       >
         <Paper sx={{ p: 3, maxWidth: 500 }}>
           <Box sx={{ display: 'flex', alignItems: 'center', gap: 2, mb: 3 }}>
             <RocketLaunchIcon color="primary" sx={{ fontSize: 32 }} />
             <Box>
-              <Typography variant="h6">Activate your Safe</Typography>
+              <Typography variant="h6">Activate your account</Typography>
               <Typography variant="body2" color="text.secondary">
-                Deploy your Safe to start using it
+                Deploy your account to start using it
               </Typography>
             </Box>
           </Box>
 
           <Alert severity="info" sx={{ mb: 3 }}>
-            Your Safe exists as an address but is not yet deployed on-chain. Activate it to start making transactions.
+            Your account exists as an address but is not yet deployed on-chain. Activate it to start making
+            transactions.
           </Alert>
 
           <Box sx={{ bgcolor: 'background.default', p: 2, borderRadius: 1, mb: 3 }}>
             <Typography variant="body2" color="text.secondary" gutterBottom>
-              Safe address
+              Account address
             </Typography>
             <Typography variant="body2" fontFamily="monospace">
               {mockSafeAddress}
@@ -197,7 +199,7 @@ export const ActivationAllStates: StoryObj = {
           </Box>
 
           <Button variant="contained" fullWidth size="large">
-            Activate Safe
+            Activate account
           </Button>
         </Paper>
       </StateWrapper>
@@ -209,7 +211,7 @@ export const ActivationAllStates: StoryObj = {
       >
         <Paper sx={{ p: 3, maxWidth: 500 }}>
           <Typography variant="h6" gutterBottom>
-            Activate your Safe
+            Activate your account
           </Typography>
 
           <Alert severity="warning" sx={{ mb: 3 }}>
@@ -217,7 +219,7 @@ export const ActivationAllStates: StoryObj = {
               Insufficient balance
             </Typography>
             <Typography variant="body2">
-              You need at least 0.005 ETH to activate your Safe. Current balance: 0.001 ETH
+              You need at least 0.005 ETH to activate your account. Current balance: 0.001 ETH
             </Typography>
           </Alert>
 
@@ -239,20 +241,20 @@ export const ActivationAllStates: StoryObj = {
           </Box>
 
           <Button variant="contained" fullWidth disabled>
-            Activate Safe
+            Activate account
           </Button>
         </Paper>
       </StateWrapper>
 
       {/* State 5: Activating */}
-      <StateWrapper stateName="Activating" description="Loading state while Safe deployment is in progress.">
+      <StateWrapper stateName="Activating" description="Loading state while account deployment is in progress.">
         <Paper sx={{ p: 4, maxWidth: 400, textAlign: 'center' }}>
           <RocketLaunchIcon sx={{ fontSize: 48, color: 'primary.main', mb: 2 }} />
           <Typography variant="h6" gutterBottom>
-            Activating Safe...
+            Activating account...
           </Typography>
           <Typography variant="body2" color="text.secondary" sx={{ mb: 3 }}>
-            Please wait while your Safe is being deployed
+            Please wait while your account is being deployed
           </Typography>
           <LinearProgress sx={{ mb: 2 }} />
           <Typography variant="caption" color="text.secondary">
@@ -262,20 +264,20 @@ export const ActivationAllStates: StoryObj = {
       </StateWrapper>
 
       {/* State 6: Success */}
-      <StateWrapper stateName="Activation Success" description="Confirmation dialog shown after Safe is deployed.">
+      <StateWrapper stateName="Activation Success" description="Confirmation dialog shown after account is deployed.">
         <Dialog open maxWidth="sm" fullWidth>
           <DialogTitle sx={{ textAlign: 'center', pt: 4 }}>
             <CheckCircleIcon sx={{ fontSize: 64, color: 'success.main', mb: 2 }} />
-            <Typography variant="h5">Safe activated!</Typography>
+            <Typography variant="h5">Account activated!</Typography>
           </DialogTitle>
           <DialogContent sx={{ textAlign: 'center' }}>
             <Typography variant="body2" color="text.secondary" sx={{ mb: 3 }}>
-              Your Safe has been successfully deployed and is ready to use.
+              Your account has been successfully deployed and is ready to use.
             </Typography>
 
             <Box sx={{ bgcolor: 'background.default', p: 2, borderRadius: 1, mb: 2 }}>
               <Typography variant="body2" color="text.secondary" gutterBottom>
-                Safe address
+                Account address
               </Typography>
               <Typography variant="body2" fontFamily="monospace">
                 {mockSafeAddress}
@@ -293,7 +295,7 @@ export const ActivationAllStates: StoryObj = {
           </DialogContent>
           <DialogActions sx={{ justifyContent: 'center', pb: 3 }}>
             <Button variant="contained" startIcon={<AccountBalanceWalletIcon />}>
-              Open Safe
+              Open account
             </Button>
           </DialogActions>
         </Dialog>
@@ -303,7 +305,7 @@ export const ActivationAllStates: StoryObj = {
   parameters: {
     docs: {
       description: {
-        story: 'All states of the Safe activation flow displayed vertically for easy review.',
+        story: 'All states of the account activation flow displayed vertically for easy review.',
       },
     },
   },
@@ -316,20 +318,20 @@ export const FullActivateAccountFlow: StoryObj = {
       <Box sx={{ display: 'flex', alignItems: 'center', gap: 2, mb: 3 }}>
         <RocketLaunchIcon color="primary" sx={{ fontSize: 32 }} />
         <Box>
-          <Typography variant="h6">Activate your Safe</Typography>
+          <Typography variant="h6">Activate your account</Typography>
           <Typography variant="body2" color="text.secondary">
-            Deploy your Safe to start using it
+            Deploy your account to start using it
           </Typography>
         </Box>
       </Box>
 
       <Alert severity="info" sx={{ mb: 3 }}>
-        Your Safe exists as an address but is not yet deployed on-chain. Activate it to start making transactions.
+        Your account exists as an address but is not yet deployed on-chain. Activate it to start making transactions.
       </Alert>
 
       <Box sx={{ bgcolor: 'background.default', p: 2, borderRadius: 1, mb: 3 }}>
         <Typography variant="body2" color="text.secondary" gutterBottom>
-          Safe address
+          Account address
         </Typography>
         <Typography variant="body2" fontFamily="monospace">
           {mockSafeAddress}
@@ -357,14 +359,14 @@ export const FullActivateAccountFlow: StoryObj = {
       </Box>
 
       <Button variant="contained" fullWidth size="large">
-        Activate Safe
+        Activate account
       </Button>
     </Paper>
   ),
   parameters: {
     docs: {
       description: {
-        story: 'Full activation flow for deploying a counterfactual Safe.',
+        story: 'Full activation flow for deploying a counterfactual account.',
       },
     },
   },
@@ -383,17 +385,17 @@ export const CheckBalanceAlert: StoryObj = {
       }
     >
       <Typography variant="body2" fontWeight="bold" gutterBottom>
-        Safe not yet activated
+        Account not yet activated
       </Typography>
       <Typography variant="body2">
-        Your Safe needs to be activated before you can make transactions. You can receive funds to this address now.
+        Your account needs to be activated before you can make transactions. You can receive funds to this address now.
       </Typography>
     </Alert>
   ),
   parameters: {
     docs: {
       description: {
-        story: 'Alert shown when Safe is not deployed but can receive funds.',
+        story: 'Alert shown when account is not deployed but can receive funds.',
       },
     },
   },
@@ -405,16 +407,16 @@ export const ActivationSuccess: StoryObj = {
     <Dialog open maxWidth="sm" fullWidth>
       <DialogTitle sx={{ textAlign: 'center', pt: 4 }}>
         <CheckCircleIcon sx={{ fontSize: 64, color: 'success.main', mb: 2 }} />
-        <Typography variant="h5">Safe activated!</Typography>
+        <Typography variant="h5">Account activated!</Typography>
       </DialogTitle>
       <DialogContent sx={{ textAlign: 'center' }}>
         <Typography variant="body2" color="text.secondary" sx={{ mb: 3 }}>
-          Your Safe has been successfully deployed and is ready to use.
+          Your account has been successfully deployed and is ready to use.
         </Typography>
 
         <Box sx={{ bgcolor: 'background.default', p: 2, borderRadius: 1, mb: 2 }}>
           <Typography variant="body2" color="text.secondary" gutterBottom>
-            Safe address
+            Account address
           </Typography>
           <Typography variant="body2" fontFamily="monospace">
             {mockSafeAddress}
@@ -432,7 +434,7 @@ export const ActivationSuccess: StoryObj = {
       </DialogContent>
       <DialogActions sx={{ justifyContent: 'center', pb: 3 }}>
         <Button variant="contained" startIcon={<AccountBalanceWalletIcon />}>
-          Open Safe
+          Open account
         </Button>
       </DialogActions>
     </Dialog>
@@ -440,7 +442,7 @@ export const ActivationSuccess: StoryObj = {
   parameters: {
     docs: {
       description: {
-        story: 'Success dialog shown after Safe deployment.',
+        story: 'Success dialog shown after account deployment.',
       },
     },
   },
@@ -452,10 +454,10 @@ export const ActivationInProgress: StoryObj = {
     <Paper sx={{ p: 4, maxWidth: 400, textAlign: 'center' }}>
       <RocketLaunchIcon sx={{ fontSize: 48, color: 'primary.main', mb: 2 }} />
       <Typography variant="h6" gutterBottom>
-        Activating Safe...
+        Activating account...
       </Typography>
       <Typography variant="body2" color="text.secondary" sx={{ mb: 3 }}>
-        Please wait while your Safe is being deployed
+        Please wait while your account is being deployed
       </Typography>
       <LinearProgress sx={{ mb: 2 }} />
       <Typography variant="caption" color="text.secondary">
@@ -466,7 +468,7 @@ export const ActivationInProgress: StoryObj = {
   parameters: {
     docs: {
       description: {
-        story: 'Loading state during Safe deployment.',
+        story: 'Loading state during account deployment.',
       },
     },
   },
@@ -477,13 +479,13 @@ export const ActivateAccountButton: StoryObj = {
   render: () => (
     <Box sx={{ display: 'flex', flexDirection: 'column', gap: 2, maxWidth: 300 }}>
       <Button variant="contained" startIcon={<RocketLaunchIcon />} fullWidth>
-        Activate Safe
+        Activate account
       </Button>
       <Button variant="outlined" startIcon={<RocketLaunchIcon />} fullWidth>
-        Activate Safe
+        Activate account
       </Button>
       <Button variant="text" startIcon={<RocketLaunchIcon />}>
-        Activate Safe
+        Activate account
       </Button>
     </Box>
   ),
@@ -501,15 +503,15 @@ export const NotDeployedChip: StoryObj = {
   render: () => (
     <Paper sx={{ p: 3, maxWidth: 400 }}>
       <Typography variant="subtitle2" gutterBottom>
-        Safe Status Indicators
+        Account Status Indicators
       </Typography>
       <Box sx={{ display: 'flex', flexDirection: 'column', gap: 2 }}>
         <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-          <Typography variant="body2">Counterfactual Safe</Typography>
+          <Typography variant="body2">Counterfactual account</Typography>
           <Chip label="Not deployed" size="small" color="info" variant="outlined" />
         </Box>
         <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-          <Typography variant="body2">Deployed Safe</Typography>
+          <Typography variant="body2">Deployed account</Typography>
           <Chip label="Active" size="small" color="success" />
         </Box>
         <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
@@ -522,7 +524,7 @@ export const NotDeployedChip: StoryObj = {
   parameters: {
     docs: {
       description: {
-        story: 'Status chips for counterfactual Safe states.',
+        story: 'Status chips for counterfactual account states.',
       },
     },
   },
@@ -533,7 +535,7 @@ export const InsufficientBalance: StoryObj = {
   render: () => (
     <Paper sx={{ p: 3, maxWidth: 500 }}>
       <Typography variant="h6" gutterBottom>
-        Activate your Safe
+        Activate your account
       </Typography>
 
       <Alert severity="warning" sx={{ mb: 3 }}>
@@ -541,7 +543,7 @@ export const InsufficientBalance: StoryObj = {
           Insufficient balance
         </Typography>
         <Typography variant="body2">
-          You need at least 0.005 ETH to activate your Safe. Current balance: 0.001 ETH
+          You need at least 0.005 ETH to activate your account. Current balance: 0.001 ETH
         </Typography>
       </Alert>
 
@@ -563,7 +565,7 @@ export const InsufficientBalance: StoryObj = {
       </Box>
 
       <Button variant="contained" fullWidth disabled>
-        Activate Safe
+        Activate account
       </Button>
     </Paper>
   ),
@@ -584,7 +586,7 @@ export const PayNowPayLater: StoryObj = {
         Choose activation method
       </Typography>
       <Typography variant="body2" color="text.secondary" sx={{ mb: 3 }}>
-        Select how you want to pay for Safe deployment
+        Select how you want to pay for account deployment
       </Typography>
 
       <Box
@@ -599,7 +601,7 @@ export const PayNowPayLater: StoryObj = {
       >
         <Typography variant="subtitle2">Pay now</Typography>
         <Typography variant="body2" color="text.secondary">
-          Deploy your Safe immediately by paying gas fees
+          Deploy your account immediately by paying gas fees
         </Typography>
         <Typography variant="caption" color="primary">
           ~0.005 ETH
@@ -640,10 +642,10 @@ export const FirstTransactionFlow: StoryObj = {
     <Paper sx={{ p: 3, maxWidth: 500 }}>
       <Alert severity="info" sx={{ mb: 3 }}>
         <Typography variant="body2" fontWeight="bold" gutterBottom>
-          First transaction will activate your Safe
+          First transaction will activate your account
         </Typography>
         <Typography variant="body2">
-          Your Safe will be deployed as part of this transaction. Deployment cost will be added to the gas fee.
+          Your account will be deployed as part of this transaction. Deployment cost will be added to the gas fee.
         </Typography>
       </Alert>
 
@@ -689,7 +691,7 @@ export const ReceiveFundsInfo: StoryObj = {
         Ready to receive funds
       </Typography>
       <Typography variant="body2">
-        Even though your Safe is not deployed yet, you can already receive funds to this address. The Safe will be
+        Even though your account is not deployed yet, you can already receive funds to this address. The account will be
         activated when you make your first transaction.
       </Typography>
     </Alert>
@@ -697,7 +699,7 @@ export const ReceiveFundsInfo: StoryObj = {
   parameters: {
     docs: {
       description: {
-        story: 'Info about receiving funds to counterfactual Safe.',
+        story: 'Info about receiving funds to counterfactual account.',
       },
     },
   },

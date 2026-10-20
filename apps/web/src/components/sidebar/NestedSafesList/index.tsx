@@ -48,7 +48,7 @@ function NestedSafeItem({
   if (!$isReady) return null
 
   const warningIcon = showWarning ? (
-    <Tooltip title="This Safe was not created by the parent Safe or its signers" placement="top">
+    <Tooltip title="This account was not created by the parent account or its signers" placement="top">
       <SvgIcon
         component={WarningIcon}
         inheritViewBox
@@ -234,7 +234,7 @@ export function NestedSafesList({
             sx={{ cursor: 'pointer', textAlign: 'center', py: 1 }}
             onClick={onShowAll}
           >
-            Show all nested Safes
+            Show all nested accounts
             <ChevronRight color="border" sx={{ transform: 'rotate(90deg)', ml: 1 }} fontSize="inherit" />
           </Typography>
         </Track>

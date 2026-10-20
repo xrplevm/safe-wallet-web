@@ -1,12 +1,6 @@
-import ExternalLink from '@/components/common/ExternalLink'
-import { AppRoutes } from '@/config/routes'
 import { Typography } from '@mui/material'
 
 import css from './styles.module.css'
-
-const linkSx = {
-  textDecoration: 'none',
-}
 
 const WidgetDisclaimer = ({ widgetName }: { widgetName: string }) => (
   <div className={css.disclaimerContainer}>
@@ -21,19 +15,8 @@ const WidgetDisclaimer = ({ widgetName }: { widgetName: string }) => (
         with the widget, which is at your own risk.
       </Typography>
 
-      <Typography mb={4}>
-        Our{' '}
-        <ExternalLink href={AppRoutes.terms} sx={linkSx}>
-          terms
-        </ExternalLink>{' '}
-        contain more detailed provisions binding on you relating to such third party content.
-      </Typography>
       <Typography>
-        By clicking &quot;continue&quot; you re-confirm to have read and understood our{' '}
-        <ExternalLink href={AppRoutes.terms} sx={linkSx}>
-          terms
-        </ExternalLink>{' '}
-        and this message, and agree to them.
+        By clicking &quot;continue&quot; you re-confirm to have read and understood this message, and agree to it.
       </Typography>
     </div>
   </div>

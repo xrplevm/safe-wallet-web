@@ -57,7 +57,7 @@ export const Default: Story = {
   render: () => (
     <AccountItem.Link href="/safe" trackingLabel="storybook">
       <AccountItem.Icon address={MOCK_ADDRESS} chainId={MOCK_CHAIN_ID} threshold={2} owners={3} />
-      <AccountItem.Info address={MOCK_ADDRESS} chainId={MOCK_CHAIN_ID} name="My Safe" />
+      <AccountItem.Info address={MOCK_ADDRESS} chainId={MOCK_CHAIN_ID} name="My account" />
       <AccountItem.ChainBadge chainId={MOCK_CHAIN_ID} />
       <AccountItem.Balance fiatTotal="12345.67" />
     </AccountItem.Link>
@@ -72,7 +72,7 @@ export const CurrentSafe: Story = {
   render: () => (
     <AccountItem.Link href="/safe" isCurrentSafe trackingLabel="storybook">
       <AccountItem.Icon address={MOCK_ADDRESS} chainId={MOCK_CHAIN_ID} threshold={2} owners={3} />
-      <AccountItem.Info address={MOCK_ADDRESS} chainId={MOCK_CHAIN_ID} name="Current Safe" />
+      <AccountItem.Info address={MOCK_ADDRESS} chainId={MOCK_CHAIN_ID} name="Current account" />
       <AccountItem.ChainBadge chainId={MOCK_CHAIN_ID} />
       <AccountItem.Balance fiatTotal="50000.00" />
     </AccountItem.Link>
@@ -102,7 +102,7 @@ export const LoadingBalance: Story = {
   render: () => (
     <AccountItem.Link href="/safe" trackingLabel="storybook">
       <AccountItem.Icon address={MOCK_ADDRESS} chainId={MOCK_CHAIN_ID} threshold={2} owners={5} />
-      <AccountItem.Info address={MOCK_ADDRESS} chainId={MOCK_CHAIN_ID} name="Loading Balance Safe" />
+      <AccountItem.Info address={MOCK_ADDRESS} chainId={MOCK_CHAIN_ID} name="Loading Balance account" />
       <AccountItem.ChainBadge chainId={MOCK_CHAIN_ID} />
       <AccountItem.Balance isLoading />
     </AccountItem.Link>
@@ -117,7 +117,7 @@ export const WithReadOnlyChip: Story = {
   render: () => (
     <AccountItem.Link href="/safe" trackingLabel="storybook">
       <AccountItem.Icon address={MOCK_ADDRESS} chainId={MOCK_CHAIN_ID} threshold={3} owners={5} />
-      <AccountItem.Info address={MOCK_ADDRESS} chainId={MOCK_CHAIN_ID} name="Read-only Safe">
+      <AccountItem.Info address={MOCK_ADDRESS} chainId={MOCK_CHAIN_ID} name="Read-only account">
         <AccountItem.StatusChip isReadOnly />
       </AccountItem.Info>
       <AccountItem.ChainBadge chainId={MOCK_CHAIN_ID} />
@@ -134,7 +134,7 @@ export const UndeployedSafe: Story = {
   render: () => (
     <AccountItem.Link href="/safe" trackingLabel="storybook">
       <AccountItem.Icon address={MOCK_ADDRESS} chainId={MOCK_CHAIN_ID} threshold={2} owners={3} />
-      <AccountItem.Info address={MOCK_ADDRESS} chainId={MOCK_CHAIN_ID} name="New Safe">
+      <AccountItem.Info address={MOCK_ADDRESS} chainId={MOCK_CHAIN_ID} name="New account">
         <AccountItem.StatusChip undeployedSafe isActivating={false} />
       </AccountItem.Info>
       <AccountItem.ChainBadge chainId={MOCK_CHAIN_ID} />
@@ -150,7 +150,7 @@ export const ActivatingSafe: Story = {
   render: () => (
     <AccountItem.Link href="/safe" trackingLabel="storybook">
       <AccountItem.Icon address={MOCK_ADDRESS} chainId={MOCK_CHAIN_ID} threshold={2} owners={3} />
-      <AccountItem.Info address={MOCK_ADDRESS} chainId={MOCK_CHAIN_ID} name="Activating Safe">
+      <AccountItem.Info address={MOCK_ADDRESS} chainId={MOCK_CHAIN_ID} name="Activating account">
         <AccountItem.StatusChip undeployedSafe isActivating />
       </AccountItem.Info>
       <AccountItem.ChainBadge chainId={MOCK_CHAIN_ID} />
@@ -165,11 +165,11 @@ export const WithActions: Story = {
   render: () => (
     <AccountItem.Link href="/safe" trackingLabel="storybook">
       <AccountItem.Icon address={MOCK_ADDRESS} chainId={MOCK_CHAIN_ID} threshold={2} owners={3} />
-      <AccountItem.Info address={MOCK_ADDRESS} chainId={MOCK_CHAIN_ID} name="Safe with Actions" />
+      <AccountItem.Info address={MOCK_ADDRESS} chainId={MOCK_CHAIN_ID} name="Account with Actions" />
       <AccountItem.ChainBadge chainId={MOCK_CHAIN_ID} />
       <AccountItem.Balance fiatTotal="5000.00" />
       <AccountItem.PinButton safeItem={MOCK_SAFE_ITEM} threshold={2} owners={MOCK_OWNERS} />
-      <AccountItem.ContextMenu address={MOCK_ADDRESS} chainId={MOCK_CHAIN_ID} name="Safe with Actions" />
+      <AccountItem.ContextMenu address={MOCK_ADDRESS} chainId={MOCK_CHAIN_ID} name="Account with Actions" />
     </AccountItem.Link>
   ),
 }
@@ -182,7 +182,7 @@ export const PinnedSafe: Story = {
   render: () => (
     <AccountItem.Link href="/safe" trackingLabel="storybook">
       <AccountItem.Icon address={MOCK_ADDRESS} chainId={MOCK_CHAIN_ID} threshold={2} owners={3} />
-      <AccountItem.Info address={MOCK_ADDRESS} chainId={MOCK_CHAIN_ID} name="Pinned Safe" />
+      <AccountItem.Info address={MOCK_ADDRESS} chainId={MOCK_CHAIN_ID} name="Pinned account" />
       <AccountItem.ChainBadge chainId={MOCK_CHAIN_ID} />
       <AccountItem.Balance fiatTotal="25000.00" />
       <AccountItem.PinButton safeItem={MOCK_PINNED_SAFE_ITEM} threshold={2} owners={MOCK_OWNERS} />
@@ -196,9 +196,9 @@ export const PinnedSafe: Story = {
 export const SelectionMode: Story = {
   tags: ['!chromatic'],
   render: () => (
-    <AccountItem.Button onClick={() => alert('Safe selected!')}>
+    <AccountItem.Button onClick={() => alert('Account selected!')}>
       <AccountItem.Icon address={MOCK_ADDRESS} chainId={MOCK_CHAIN_ID} threshold={2} owners={3} />
-      <AccountItem.Info address={MOCK_ADDRESS} chainId={MOCK_CHAIN_ID} name="Selectable Safe" />
+      <AccountItem.Info address={MOCK_ADDRESS} chainId={MOCK_CHAIN_ID} name="Selectable account" />
       <AccountItem.ChainBadge chainId={MOCK_CHAIN_ID} />
       <AccountItem.Balance fiatTotal="7500.00" />
       <AccountItem.Checkbox checked={false} />
@@ -214,21 +214,21 @@ export const DifferentChains: Story = {
     <Box sx={{ display: 'flex', flexDirection: 'column', gap: 2 }}>
       <AccountItem.Link href="/safe" trackingLabel="storybook">
         <AccountItem.Icon address={MOCK_ADDRESS} chainId="1" threshold={2} owners={3} />
-        <AccountItem.Info address={MOCK_ADDRESS} chainId="1" name="Ethereum Safe" />
+        <AccountItem.Info address={MOCK_ADDRESS} chainId="1" name="Ethereum account" />
         <AccountItem.ChainBadge chainId="1" />
         <AccountItem.Balance fiatTotal="10000.00" />
       </AccountItem.Link>
 
       <AccountItem.Link href="/safe" trackingLabel="storybook">
         <AccountItem.Icon address={MOCK_ADDRESS} chainId="137" threshold={2} owners={3} />
-        <AccountItem.Info address={MOCK_ADDRESS} chainId="137" name="Polygon Safe" />
+        <AccountItem.Info address={MOCK_ADDRESS} chainId="137" name="Polygon account" />
         <AccountItem.ChainBadge chainId="137" />
         <AccountItem.Balance fiatTotal="5000.00" />
       </AccountItem.Link>
 
       <AccountItem.Link href="/safe" trackingLabel="storybook">
         <AccountItem.Icon address={MOCK_ADDRESS} chainId="10" threshold={2} owners={3} />
-        <AccountItem.Info address={MOCK_ADDRESS} chainId="10" name="Optimism Safe" />
+        <AccountItem.Info address={MOCK_ADDRESS} chainId="10" name="Optimism account" />
         <AccountItem.ChainBadge chainId="10" />
         <AccountItem.Balance fiatTotal="2500.00" />
       </AccountItem.Link>
@@ -265,7 +265,12 @@ export const MultiChainBadge: Story = {
     return (
       <AccountItem.Link href="/safe" trackingLabel="storybook">
         <AccountItem.Icon address={MOCK_ADDRESS} chainId={MOCK_CHAIN_ID} threshold={2} owners={3} isMultiChainItem />
-        <AccountItem.Info address={MOCK_ADDRESS} chainId={MOCK_CHAIN_ID} name="Multi-chain Safe" showPrefix={false} />
+        <AccountItem.Info
+          address={MOCK_ADDRESS}
+          chainId={MOCK_CHAIN_ID}
+          name="Multi-chain account"
+          showPrefix={false}
+        />
         <AccountItem.ChainBadge safes={mockSafes} />
         <AccountItem.Balance fiatTotal="100000.00" />
       </AccountItem.Link>
@@ -294,7 +299,7 @@ export const GroupedElements: Story = {
   render: () => (
     <AccountItem.Link href="/safe" trackingLabel="storybook">
       <AccountItem.Icon address={MOCK_ADDRESS} chainId={MOCK_CHAIN_ID} threshold={2} owners={3} />
-      <AccountItem.Info address={MOCK_ADDRESS} chainId={MOCK_CHAIN_ID} name="Grouped Safe" />
+      <AccountItem.Info address={MOCK_ADDRESS} chainId={MOCK_CHAIN_ID} name="Grouped account" />
       <AccountItem.Group>
         <AccountItem.ChainBadge chainId={MOCK_CHAIN_ID} />
         <AccountItem.Balance fiatTotal="15000.00" />

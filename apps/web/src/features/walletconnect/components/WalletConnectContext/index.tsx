@@ -24,8 +24,8 @@ const WC_AUTO_APPROVE_KEY = 'wcAutoApprove'
 
 const FALLBACK_PEER_NAME = 'WalletConnect'
 
-// The URL of the former WalletConnect Safe App
-// This is still used to differentiate these txs from Safe App txs in the analytics
+// The URL of the former WalletConnect app
+// This is still used to differentiate these txs from app txs in the analytics
 const LEGACY_WC_APP_URL = 'https://apps-portal.safe.global/wallet-connect'
 
 const getWrongChainError = (dappName: string): Error => {
@@ -107,7 +107,7 @@ export const WalletConnectProvider = ({ children }: { children: ReactNode }) => 
           return formatJsonRpcError(event.id, error)
         }
 
-        // Get response from Safe Wallet Provider
+        // Get response from wallet provider
         return safeWalletProvider.request(event.id, event.params.request, {
           url: LEGACY_WC_APP_URL, // required for server-side analytics
           name: peerName,

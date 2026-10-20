@@ -57,7 +57,7 @@ describe('CodedException', () => {
   it('creates an error with an extra message', () => {
     const err = new CodedException(Errors._901, 'getSafeBalance: Server responded with 429 Too Many Requests')
     expect(err.message).toBe(
-      'Code 901: Error processing Safe Apps SDK request (getSafeBalance: Server responded with 429 Too Many Requests)',
+      'Code 901: Error processing Apps SDK request (getSafeBalance: Server responded with 429 Too Many Requests)',
     )
     expect(err.code).toBe(901)
   })

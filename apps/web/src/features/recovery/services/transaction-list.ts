@@ -16,7 +16,7 @@ function decodeOwnerManagementTransaction(safe: SafeState, transaction: BaseTran
   const safeDeployment = getSafeSingletonDeployment({ network: safe.chainId, version: safe.version ?? undefined })
 
   if (!safeDeployment) {
-    throw new Error('No Safe deployment found')
+    throw new Error('No account deployment found')
   }
 
   const safeInterface = new Interface(safeDeployment.abi)

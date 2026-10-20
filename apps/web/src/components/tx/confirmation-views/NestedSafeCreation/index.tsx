@@ -27,7 +27,7 @@ export function NestedSafeCreation({ txData }: { txData: TransactionData }): Rea
   return (
     <Stack direction="column" gap={1}>
       <Typography variant="body2" color="text.secondary" whiteSpace="nowrap">
-        Nested Safe
+        Nested account
       </Typography>
 
       <Box>

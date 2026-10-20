@@ -1,7 +1,7 @@
 import { type ReactElement } from 'react'
 import { Box, Button, SvgIcon, Stack, Typography } from '@mui/material'
 import OpenInNewRoundedIcon from '@mui/icons-material/OpenInNewRounded'
-import SafeShieldLogo from '@/public/images/safe-shield/safe-shield-logo-no-text.svg'
+import SafeShieldLogo from '@/public/images/security/security-check-icon.svg'
 import InfoIcon from '@/public/images/notifications/info.svg'
 import { HypernativeTooltip } from '../HypernativeTooltip'
 import type { HypernativeAuthStatus } from '../../hooks/useHypernativeOAuth'

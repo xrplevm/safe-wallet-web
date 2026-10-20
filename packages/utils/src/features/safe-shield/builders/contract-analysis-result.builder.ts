@@ -103,7 +103,7 @@ export class ContractAnalysisResultBuilder<T extends CommonSharedStatus | Contra
       .type(ContractStatus.NOT_VERIFIED_BY_SAFE)
       .title('New contract')
       .description(
-        'This contract has not been interacted with on Safe{Wallet}. If verified, it will be marked as such after the first transaction.',
+        'This contract has not been interacted with in the app. If verified, it will be marked as such after the first transaction.',
       )
   }
 

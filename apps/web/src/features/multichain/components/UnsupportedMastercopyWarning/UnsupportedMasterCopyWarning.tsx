@@ -37,7 +37,7 @@ export const UnsupportedMastercopyWarning = () => {
   return (
     <ActionCard
       severity="warning"
-      title="This Safe is running an outdated version "
+      title="This account is running an outdated version "
       content="and may miss security fixes and improvements."
       action={
         canMigrate

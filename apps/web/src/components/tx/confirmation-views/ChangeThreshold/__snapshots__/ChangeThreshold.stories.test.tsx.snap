@@ -5,18 +5,18 @@ exports[`./ChangeThreshold.stories Default 1`] = `
   style="background-color: rgb(255, 255, 255); padding: 1rem;"
 >
   <div
-    class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 mui-style-1xulk7h-MuiPaper-root"
+    class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 mui-style-b2a1x-MuiPaper-root"
     style="--Paper-shadow: none;"
   >
     <div>
       <p
-        class="MuiTypography-root MuiTypography-body2 mui-style-1q9800n-MuiTypography-root"
+        class="MuiTypography-root MuiTypography-body2 mui-style-7vksk2-MuiTypography-root"
       >
         Any transaction will require the confirmation of:
       </p>
       <p
         aria-label="threshold"
-        class="MuiTypography-root MuiTypography-body1 mui-style-v6lhhw-MuiTypography-root"
+        class="MuiTypography-root MuiTypography-body1 mui-style-i9kxid-MuiTypography-root"
       >
         <b>
           1

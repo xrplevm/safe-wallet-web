@@ -32,7 +32,7 @@ import WarningIcon from '@mui/icons-material/Warning'
 import DeleteIcon from '@mui/icons-material/Delete'
 
 /**
- * WalletConnect feature enables connecting Safe accounts to dApps.
+ * WalletConnect feature enables connecting multisig accounts to dApps.
  * Users can pair with dApps, approve session proposals, and manage
  * active connections.
  *
@@ -196,7 +196,7 @@ export const WalletConnectAllStates: StoryObj = {
             </Box>
 
             <Alert severity="info" sx={{ mb: 2 }}>
-              {mockProposal.name} wants to connect to your Safe
+              {mockProposal.name} wants to connect to your account
             </Alert>
 
             <Typography variant="subtitle2" gutterBottom>
@@ -252,7 +252,7 @@ export const WalletConnectAllStates: StoryObj = {
             </Box>
 
             <Typography variant="body2" color="text.secondary">
-              Your Safe is now connected to {mockSessions[0].name}
+              Your account is now connected to {mockSessions[0].name}
             </Typography>
           </Paper>
         </StateWrapper>
@@ -307,7 +307,7 @@ export const WalletConnectAllStates: StoryObj = {
               Disconnected
             </Typography>
             <Typography variant="body2" color="text.secondary">
-              {mockSessions[0].name} has been disconnected from your Safe.
+              {mockSessions[0].name} has been disconnected from your account.
             </Typography>
           </Paper>
         </StateWrapper>
@@ -492,7 +492,7 @@ export const ProposalForm: StoryObj = {
         </Box>
 
         <Alert severity="info" sx={{ mb: 2 }}>
-          {mockProposal.name} wants to connect to your Safe
+          {mockProposal.name} wants to connect to your account
         </Alert>
 
         <Typography variant="subtitle2" gutterBottom>
@@ -589,14 +589,14 @@ export const ConnectionStateConnected: StoryObj = {
       </Box>
 
       <Typography variant="body2" color="text.secondary">
-        Your Safe is now connected to {mockSessions[0].name}
+        Your account is now connected to {mockSessions[0].name}
       </Typography>
     </Paper>
   ),
   parameters: {
     docs: {
       description: {
-        story: 'Connection success state showing Safe connected to dApp.',
+        story: 'Connection success state showing account connected to dApp.',
       },
     },
   },
@@ -612,7 +612,7 @@ export const ConnectionStateDisconnected: StoryObj = {
       </Typography>
 
       <Typography variant="body2" color="text.secondary">
-        {mockSessions[0].name} has been disconnected from your Safe.
+        {mockSessions[0].name} has been disconnected from your account.
       </Typography>
     </Paper>
   ),
@@ -761,8 +761,8 @@ export const HelpHints: StoryObj = {
         </AccordionSummary>
         <AccordionDetails>
           <Typography variant="body2" color="text.secondary">
-            WalletConnect is an open protocol that allows you to connect your Safe to decentralized applications (dApps)
-            securely.
+            WalletConnect is an open protocol that allows you to connect your account to decentralized applications
+            (dApps) securely.
           </Typography>
         </AccordionDetails>
       </Accordion>

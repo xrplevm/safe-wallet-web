@@ -74,8 +74,8 @@ export function SetUpNestedSafe(): ReactElement {
       <FormProvider {...formMethods}>
         <form onSubmit={formMethods.handleSubmit(onFormSubmit)}>
           <Typography variant="body2" mt={1}>
-            Name your Nested Safe and select which assets to fund it with. All selected assets will be transferred when
-            deployed.
+            Name your nested account and select which assets to fund it with. All selected assets will be transferred
+            when deployed.
           </Typography>
 
           <FormControl fullWidth sx={{ mt: 3 }}>

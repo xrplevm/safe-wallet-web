@@ -97,7 +97,7 @@ function NormalModeActions({
                 disabled={!ok}
               >
                 <SvgIcon component={AddIcon} inheritViewBox fontSize="small" />
-                Add nested Safe
+                Add nested account
               </Button>
             )}
           </CheckWallet>
@@ -165,7 +165,7 @@ function PopoverBody({
     <>
       {isManageMode && (
         <Typography variant="body2" color="text.secondary" sx={{ mb: 2, flexShrink: 0 }}>
-          Select which Nested Safes you want to see in your dashboard.
+          Select which nested accounts you want to see in your dashboard.
         </Typography>
       )}
       <Box className={css.scrollContainer}>
@@ -327,7 +327,7 @@ export function NestedSafesPopover({
         sx={{ mt: -0.5, borderBottom: ({ palette }) => `1px solid ${palette.border.light}` }}
       >
         <Box display="flex" alignItems="center" justifyContent="space-between" width="100%">
-          <span>Nested Safes</span>
+          <span>Nested accounts</span>
           <PopoverHeaderAction
             isManageMode={isManageMode}
             selectedCount={selectedCount}

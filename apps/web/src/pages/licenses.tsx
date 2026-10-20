@@ -3,14 +3,27 @@ import Head from 'next/head'
 import { Typography, Table, TableBody, TableRow, TableCell, TableHead, TableContainer, Box } from '@mui/material'
 import ExternalLink from '@/components/common/ExternalLink'
 import Paper from '@mui/material/Paper'
-import { useIsOfficialHost } from '@/hooks/useIsOfficialHost'
 import { BRAND_NAME } from '@/config/constants'
+import { APP_HOMEPAGE } from '@/config/version'
 
-const SafeLicenses = () => (
+const UPSTREAM_SOURCE_URL = 'https://github.com/safe-global/safe-wallet-monorepo'
+
+const LicensesList = () => (
   <>
     <Typography variant="h1" mb={2}>
       Licenses
     </Typography>
+    <Box mb={4}>
+      <Typography mb={2}>
+        {BRAND_NAME} is a modified version of open source software published at{' '}
+        <ExternalLink href={UPSTREAM_SOURCE_URL}>{UPSTREAM_SOURCE_URL}</ExternalLink> under the GNU General Public
+        License v3.0. It was modified in 2026 to use its own name, design and links. The complete source code of this
+        version is available at <ExternalLink href={APP_HOMEPAGE}>{APP_HOMEPAGE}</ExternalLink> under the same license.
+      </Typography>
+      <Typography>
+        This app is not affiliated with, endorsed by or operated by the authors of the original software.
+      </Typography>
+    </Box>
     <Typography variant="h3" mb={2}>
       Libraries we use
     </Typography>
@@ -18,6 +31,10 @@ const SafeLicenses = () => (
       <Typography mb={3}>
         This page contains a list of attribution notices for third party software that may be contained in portions of
         the {BRAND_NAME}. We thank the open source community for all of their contributions.
+      </Typography>
+      <Typography mb={3}>
+        The Work Sans font is © The Work Sans Project Authors and licensed under the{' '}
+        <ExternalLink href="/fonts/WorkSans-OFL.txt">SIL Open Font License 1.1</ExternalLink>.
       </Typography>
       <Typography variant="h2" mb={2}>
         Android
@@ -531,15 +548,15 @@ const SafeLicenses = () => (
 )
 
 const Licenses: NextPage = () => {
-  const isOfficialHost = useIsOfficialHost()
-
   return (
     <>
       <Head>
         <title>{`${BRAND_NAME} – Licenses`}</title>
       </Head>
 
-      <main>{isOfficialHost && <SafeLicenses />}</main>
+      <main>
+        <LicensesList />
+      </main>
     </>
   )
 }

@@ -1,3 +1,4 @@
+import { HELP_CENTER_URL } from '@safe-global/utils/config/constants'
 import { useCallback } from 'react'
 import type { SubmitHandler } from 'react-hook-form'
 import { useForm } from 'react-hook-form'
@@ -45,9 +46,9 @@ type CustomAppFormData = {
   safeApp: SafeAppData
 }
 
-const HELP_LINK = 'https://docs.safe.global/apps-sdk-overview'
-const APP_ALREADY_IN_THE_LIST_ERROR = 'This Safe App is already in the list'
-const MANIFEST_ERROR = "The app doesn't support Safe App functionality"
+const HELP_LINK = HELP_CENTER_URL
+const APP_ALREADY_IN_THE_LIST_ERROR = 'This app is already in the list'
+const MANIFEST_ERROR = "The app doesn't support app functionality"
 const INVALID_URL_ERROR = 'The url is invalid'
 
 export const AddCustomAppModal = ({ open, onClose, onSave, safeAppsList }: Props) => {
@@ -94,13 +95,13 @@ export const AddCustomAppModal = ({ open, onClose, onSave, safeAppsList }: Props
   const isCustomAppInTheDefaultList = errors?.appUrl?.type === 'alreadyExists'
 
   return (
-    <ModalDialog open={open} onClose={handleClose} dialogTitle="Add custom Safe App">
+    <ModalDialog open={open} onClose={handleClose} dialogTitle="Add custom app">
       <form onSubmit={handleSubmit(onSubmit)}>
         <DialogContent className={css.addCustomAppContainer}>
           <div className={css.addCustomAppFields}>
             <TextField
               required
-              label="Safe App URL"
+              label="App URL"
               error={errors?.appUrl?.type === 'validUrl'}
               helperText={errors?.appUrl?.type === 'validUrl' && errors?.appUrl?.message}
               autoComplete="off"
@@ -135,7 +136,7 @@ export const AddCustomAppModal = ({ open, onClose, onSave, safeAppsList }: Props
                           ml: 1,
                         }}
                       >
-                        This Safe App is already registered
+                        This app is already registered
                       </Typography>
                     </Box>
                   ) : (
@@ -149,7 +150,7 @@ export const AddCustomAppModal = ({ open, onClose, onSave, safeAppsList }: Props
                             })}
                           />
                         }
-                        label={`This Safe App is not part of ${BRAND_NAME} and I agree to use it at my own risk.`}
+                        label={`This app is not part of ${BRAND_NAME} and I agree to use it at my own risk.`}
                         sx={{ mt: 2 }}
                       />
 
@@ -175,7 +176,7 @@ export const AddCustomAppModal = ({ open, onClose, onSave, safeAppsList }: Props
               Learn more about building
             </Typography>
             <ExternalLink className={css.addCustomAppHelpLink} href={HELP_LINK} fontWeight={700}>
-              Safe Apps
+              Apps
             </ExternalLink>
             .
           </div>

@@ -46,7 +46,7 @@ export const WithChip: Story = {
 export const WithIconColor: Story = {
   args: {
     title: 'Add funds',
-    description: 'Deposit funds into your Safe',
+    description: 'Deposit funds into your account',
     icon: AddIcon,
     iconColor: 'success',
     onClick: () => console.log('clicked'),

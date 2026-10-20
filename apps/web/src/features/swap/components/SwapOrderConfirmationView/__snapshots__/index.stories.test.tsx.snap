@@ -5,14 +5,14 @@ exports[`./index.stories CustomRecipient 1`] = `
   style="background-color: rgb(255, 255, 255); padding: 1rem;"
 >
   <div
-    class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 mui-style-1xulk7h-MuiPaper-root"
+    class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 mui-style-b2a1x-MuiPaper-root"
     style="--Paper-shadow: none;"
   >
     <div
       class="MuiStack-root mui-style-1qh2y1i-MuiStack-root"
     >
       <p
-        class="MuiTypography-root MuiTypography-body1 mui-style-v6lhhw-MuiTypography-root"
+        class="MuiTypography-root MuiTypography-body1 mui-style-i9kxid-MuiTypography-root"
       >
         <b>
           Order details
@@ -40,7 +40,7 @@ exports[`./index.stories CustomRecipient 1`] = `
                   sandbox="allow-scripts"
                   srcdoc="
     <body style="margin: 0; overflow: hidden; display: flex; align-items: center; justify-content: center;">
-      <img src="https://safe-transaction-assets.staging.5afe.dev/tokens/logos/0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48.png" alt="Safe App logo" height="40" width="auto" style="border-radius: 100%;" />
+      <img src="https://safe-transaction-assets.staging.5afe.dev/tokens/logos/0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48.png" alt="App logo" height="40" width="auto" style="border-radius: 100%;" />
       <script>
         document.querySelector('img').onerror = (e) => {
           e.target.onerror = null
@@ -61,12 +61,12 @@ exports[`./index.stories CustomRecipient 1`] = `
               data-testid="block-label"
             >
               <p
-                class="MuiTypography-root MuiTypography-body2 mui-style-1ew0eu5-MuiTypography-root"
+                class="MuiTypography-root MuiTypography-body2 mui-style-ce200z-MuiTypography-root"
               >
                 Sell
               </p>
               <div
-                class="MuiTypography-root MuiTypography-h4 mui-style-csh7nj-MuiTypography-root"
+                class="MuiTypography-root MuiTypography-h4 mui-style-1utzril-MuiTypography-root"
               >
                 <span
                   aria-label="10 USDC"
@@ -115,7 +115,7 @@ exports[`./index.stories CustomRecipient 1`] = `
                   sandbox="allow-scripts"
                   srcdoc="
     <body style="margin: 0; overflow: hidden; display: flex; align-items: center; justify-content: center;">
-      <img src="https://safe-transaction-assets.staging.5afe.dev/tokens/logos/0xfFf9976782d46CC05630D1f6eBAb18b2324d6B14.png" alt="Safe App logo" height="40" width="auto" style="border-radius: 100%;" />
+      <img src="https://safe-transaction-assets.staging.5afe.dev/tokens/logos/0xfFf9976782d46CC05630D1f6eBAb18b2324d6B14.png" alt="App logo" height="40" width="auto" style="border-radius: 100%;" />
       <script>
         document.querySelector('img').onerror = (e) => {
           e.target.onerror = null
@@ -136,12 +136,12 @@ exports[`./index.stories CustomRecipient 1`] = `
               data-testid="block-label"
             >
               <p
-                class="MuiTypography-root MuiTypography-body2 mui-style-1ew0eu5-MuiTypography-root"
+                class="MuiTypography-root MuiTypography-body2 mui-style-ce200z-MuiTypography-root"
               >
                 For at least
               </p>
               <div
-                class="MuiTypography-root MuiTypography-h4 mui-style-csh7nj-MuiTypography-root"
+                class="MuiTypography-root MuiTypography-h4 mui-style-1utzril-MuiTypography-root"
               >
                 <span
                   aria-label="0 NPR"
@@ -171,7 +171,7 @@ exports[`./index.stories CustomRecipient 1`] = `
           style="word-break: break-word;"
         >
           <span
-            class="MuiTypography-root MuiTypography-body2 mui-style-1ew0eu5-MuiTypography-root"
+            class="MuiTypography-root MuiTypography-body2 mui-style-ce200z-MuiTypography-root"
           >
             Limit price
           </span>
@@ -181,7 +181,7 @@ exports[`./index.stories CustomRecipient 1`] = `
           data-testid="tx-data-row"
         >
           <div
-            class="MuiTypography-root MuiTypography-body1 mui-style-v6lhhw-MuiTypography-root"
+            class="MuiTypography-root MuiTypography-body1 mui-style-i9kxid-MuiTypography-root"
           >
             1 
             NPR
@@ -202,7 +202,7 @@ exports[`./index.stories CustomRecipient 1`] = `
           style="word-break: break-word;"
         >
           <span
-            class="MuiTypography-root MuiTypography-body2 mui-style-1ew0eu5-MuiTypography-root"
+            class="MuiTypography-root MuiTypography-body2 mui-style-ce200z-MuiTypography-root"
           >
             Expiry
           </span>
@@ -212,7 +212,7 @@ exports[`./index.stories CustomRecipient 1`] = `
           data-testid="tx-data-row"
         >
           <div
-            class="MuiTypography-root MuiTypography-body1 mui-style-v6lhhw-MuiTypography-root"
+            class="MuiTypography-root MuiTypography-body1 mui-style-i9kxid-MuiTypography-root"
           >
             Dec 24, 2024 - 12:54:40 AM
           </div>
@@ -228,7 +228,7 @@ exports[`./index.stories CustomRecipient 1`] = `
           style="word-break: break-word;"
         >
           <span
-            class="MuiTypography-root MuiTypography-body2 mui-style-1ew0eu5-MuiTypography-root"
+            class="MuiTypography-root MuiTypography-body2 mui-style-ce200z-MuiTypography-root"
           >
             Order ID
           </span>
@@ -238,7 +238,7 @@ exports[`./index.stories CustomRecipient 1`] = `
           data-testid="tx-data-row"
         >
           <div
-            class="MuiTypography-root MuiTypography-body1 mui-style-v6lhhw-MuiTypography-root"
+            class="MuiTypography-root MuiTypography-body1 mui-style-i9kxid-MuiTypography-root"
           >
             <div
               class="MuiStack-root mui-style-m69qwo-MuiStack-root"
@@ -300,7 +300,7 @@ exports[`./index.stories CustomRecipient 1`] = `
           style="word-break: break-word;"
         >
           <span
-            class="MuiTypography-root MuiTypography-body2 mui-style-1ew0eu5-MuiTypography-root"
+            class="MuiTypography-root MuiTypography-body2 mui-style-ce200z-MuiTypography-root"
           >
             Widget fee
              
@@ -321,7 +321,7 @@ exports[`./index.stories CustomRecipient 1`] = `
           data-testid="tx-data-row"
         >
           <div
-            class="MuiTypography-root MuiTypography-body1 mui-style-v6lhhw-MuiTypography-root"
+            class="MuiTypography-root MuiTypography-body1 mui-style-i9kxid-MuiTypography-root"
           >
             0.5
              %
@@ -338,7 +338,7 @@ exports[`./index.stories CustomRecipient 1`] = `
           style="word-break: break-word;"
         >
           <span
-            class="MuiTypography-root MuiTypography-body2 mui-style-1ew0eu5-MuiTypography-root"
+            class="MuiTypography-root MuiTypography-body2 mui-style-ce200z-MuiTypography-root"
           >
             Interact with
           </span>
@@ -348,7 +348,7 @@ exports[`./index.stories CustomRecipient 1`] = `
           data-testid="tx-data-row"
         >
           <div
-            class="MuiTypography-root MuiTypography-body1 mui-style-v6lhhw-MuiTypography-root"
+            class="MuiTypography-root MuiTypography-body1 mui-style-i9kxid-MuiTypography-root"
           >
             <div
               class="container"
@@ -422,7 +422,7 @@ exports[`./index.stories CustomRecipient 1`] = `
           style="word-break: break-word;"
         >
           <span
-            class="MuiTypography-root MuiTypography-body2 mui-style-1ew0eu5-MuiTypography-root"
+            class="MuiTypography-root MuiTypography-body2 mui-style-ce200z-MuiTypography-root"
           >
             Recipient
           </span>
@@ -432,7 +432,7 @@ exports[`./index.stories CustomRecipient 1`] = `
           data-testid="tx-data-row"
         >
           <div
-            class="MuiTypography-root MuiTypography-body1 mui-style-v6lhhw-MuiTypography-root"
+            class="MuiTypography-root MuiTypography-body1 mui-style-i9kxid-MuiTypography-root"
           >
             <div
               class="container"
@@ -498,7 +498,7 @@ exports[`./index.stories CustomRecipient 1`] = `
       </div>
       <div>
         <div
-          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 MuiAlert-root MuiAlert-colorWarning MuiAlert-standardWarning MuiAlert-standard mui-style-1wi6bbj-MuiPaper-root-MuiAlert-root"
+          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 MuiAlert-root MuiAlert-colorWarning MuiAlert-standardWarning MuiAlert-standard mui-style-pkq7z6-MuiPaper-root-MuiAlert-root"
           data-testid="recipient-alert"
           role="alert"
           style="--Paper-shadow: none;"
@@ -512,10 +512,10 @@ exports[`./index.stories CustomRecipient 1`] = `
             class="MuiAlert-message mui-style-zioonp-MuiAlert-message"
           >
             <p
-              class="MuiTypography-root MuiTypography-body2 mui-style-17vdyq3-MuiTypography-root"
+              class="MuiTypography-root MuiTypography-body2 mui-style-1js3693-MuiTypography-root"
             >
               <span
-                class="MuiTypography-root MuiTypography-body1 mui-style-w5uidf-MuiTypography-root"
+                class="MuiTypography-root MuiTypography-body1 mui-style-ccf5q-MuiTypography-root"
               >
                 Order recipient address differs from order owner.
               </span>
@@ -535,14 +535,14 @@ exports[`./index.stories Default 1`] = `
   style="background-color: rgb(255, 255, 255); padding: 1rem;"
 >
   <div
-    class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 mui-style-1xulk7h-MuiPaper-root"
+    class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 mui-style-b2a1x-MuiPaper-root"
     style="--Paper-shadow: none;"
   >
     <div
       class="MuiStack-root mui-style-1qh2y1i-MuiStack-root"
     >
       <p
-        class="MuiTypography-root MuiTypography-body1 mui-style-v6lhhw-MuiTypography-root"
+        class="MuiTypography-root MuiTypography-body1 mui-style-i9kxid-MuiTypography-root"
       >
         <b>
           Order details
@@ -570,7 +570,7 @@ exports[`./index.stories Default 1`] = `
                   sandbox="allow-scripts"
                   srcdoc="
     <body style="margin: 0; overflow: hidden; display: flex; align-items: center; justify-content: center;">
-      <img src="https://safe-transaction-assets.staging.5afe.dev/tokens/logos/0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48.png" alt="Safe App logo" height="40" width="auto" style="border-radius: 100%;" />
+      <img src="https://safe-transaction-assets.staging.5afe.dev/tokens/logos/0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48.png" alt="App logo" height="40" width="auto" style="border-radius: 100%;" />
       <script>
         document.querySelector('img').onerror = (e) => {
           e.target.onerror = null
@@ -591,12 +591,12 @@ exports[`./index.stories Default 1`] = `
               data-testid="block-label"
             >
               <p
-                class="MuiTypography-root MuiTypography-body2 mui-style-1ew0eu5-MuiTypography-root"
+                class="MuiTypography-root MuiTypography-body2 mui-style-ce200z-MuiTypography-root"
               >
                 Sell
               </p>
               <div
-                class="MuiTypography-root MuiTypography-h4 mui-style-csh7nj-MuiTypography-root"
+                class="MuiTypography-root MuiTypography-h4 mui-style-1utzril-MuiTypography-root"
               >
                 <span
                   aria-label="10 USDC"
@@ -645,7 +645,7 @@ exports[`./index.stories Default 1`] = `
                   sandbox="allow-scripts"
                   srcdoc="
     <body style="margin: 0; overflow: hidden; display: flex; align-items: center; justify-content: center;">
-      <img src="https://safe-transaction-assets.staging.5afe.dev/tokens/logos/0xfFf9976782d46CC05630D1f6eBAb18b2324d6B14.png" alt="Safe App logo" height="40" width="auto" style="border-radius: 100%;" />
+      <img src="https://safe-transaction-assets.staging.5afe.dev/tokens/logos/0xfFf9976782d46CC05630D1f6eBAb18b2324d6B14.png" alt="App logo" height="40" width="auto" style="border-radius: 100%;" />
       <script>
         document.querySelector('img').onerror = (e) => {
           e.target.onerror = null
@@ -666,12 +666,12 @@ exports[`./index.stories Default 1`] = `
               data-testid="block-label"
             >
               <p
-                class="MuiTypography-root MuiTypography-body2 mui-style-1ew0eu5-MuiTypography-root"
+                class="MuiTypography-root MuiTypography-body2 mui-style-ce200z-MuiTypography-root"
               >
                 For at least
               </p>
               <div
-                class="MuiTypography-root MuiTypography-h4 mui-style-csh7nj-MuiTypography-root"
+                class="MuiTypography-root MuiTypography-h4 mui-style-1utzril-MuiTypography-root"
               >
                 <span
                   aria-label="0 NPR"
@@ -701,7 +701,7 @@ exports[`./index.stories Default 1`] = `
           style="word-break: break-word;"
         >
           <span
-            class="MuiTypography-root MuiTypography-body2 mui-style-1ew0eu5-MuiTypography-root"
+            class="MuiTypography-root MuiTypography-body2 mui-style-ce200z-MuiTypography-root"
           >
             Limit price
           </span>
@@ -711,7 +711,7 @@ exports[`./index.stories Default 1`] = `
           data-testid="tx-data-row"
         >
           <div
-            class="MuiTypography-root MuiTypography-body1 mui-style-v6lhhw-MuiTypography-root"
+            class="MuiTypography-root MuiTypography-body1 mui-style-i9kxid-MuiTypography-root"
           >
             1 
             NPR
@@ -732,7 +732,7 @@ exports[`./index.stories Default 1`] = `
           style="word-break: break-word;"
         >
           <span
-            class="MuiTypography-root MuiTypography-body2 mui-style-1ew0eu5-MuiTypography-root"
+            class="MuiTypography-root MuiTypography-body2 mui-style-ce200z-MuiTypography-root"
           >
             Expiry
           </span>
@@ -742,7 +742,7 @@ exports[`./index.stories Default 1`] = `
           data-testid="tx-data-row"
         >
           <div
-            class="MuiTypography-root MuiTypography-body1 mui-style-v6lhhw-MuiTypography-root"
+            class="MuiTypography-root MuiTypography-body1 mui-style-i9kxid-MuiTypography-root"
           >
             Dec 24, 2024 - 12:54:40 AM
           </div>
@@ -758,7 +758,7 @@ exports[`./index.stories Default 1`] = `
           style="word-break: break-word;"
         >
           <span
-            class="MuiTypography-root MuiTypography-body2 mui-style-1ew0eu5-MuiTypography-root"
+            class="MuiTypography-root MuiTypography-body2 mui-style-ce200z-MuiTypography-root"
           >
             Order ID
           </span>
@@ -768,7 +768,7 @@ exports[`./index.stories Default 1`] = `
           data-testid="tx-data-row"
         >
           <div
-            class="MuiTypography-root MuiTypography-body1 mui-style-v6lhhw-MuiTypography-root"
+            class="MuiTypography-root MuiTypography-body1 mui-style-i9kxid-MuiTypography-root"
           >
             <div
               class="MuiStack-root mui-style-m69qwo-MuiStack-root"
@@ -830,7 +830,7 @@ exports[`./index.stories Default 1`] = `
           style="word-break: break-word;"
         >
           <span
-            class="MuiTypography-root MuiTypography-body2 mui-style-1ew0eu5-MuiTypography-root"
+            class="MuiTypography-root MuiTypography-body2 mui-style-ce200z-MuiTypography-root"
           >
             Widget fee
              
@@ -851,7 +851,7 @@ exports[`./index.stories Default 1`] = `
           data-testid="tx-data-row"
         >
           <div
-            class="MuiTypography-root MuiTypography-body1 mui-style-v6lhhw-MuiTypography-root"
+            class="MuiTypography-root MuiTypography-body1 mui-style-i9kxid-MuiTypography-root"
           >
             0.5
              %
@@ -868,7 +868,7 @@ exports[`./index.stories Default 1`] = `
           style="word-break: break-word;"
         >
           <span
-            class="MuiTypography-root MuiTypography-body2 mui-style-1ew0eu5-MuiTypography-root"
+            class="MuiTypography-root MuiTypography-body2 mui-style-ce200z-MuiTypography-root"
           >
             Interact with
           </span>
@@ -878,7 +878,7 @@ exports[`./index.stories Default 1`] = `
           data-testid="tx-data-row"
         >
           <div
-            class="MuiTypography-root MuiTypography-body1 mui-style-v6lhhw-MuiTypography-root"
+            class="MuiTypography-root MuiTypography-body1 mui-style-i9kxid-MuiTypography-root"
           >
             <div
               class="container"

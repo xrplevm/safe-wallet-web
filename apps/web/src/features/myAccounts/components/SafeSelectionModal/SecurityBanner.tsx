@@ -17,8 +17,8 @@ const SecurityBanner = ({ title, sx = { mb: 2 } }: SecurityBannerProps) => {
     <Alert severity="info" sx={sx}>
       {title && <AlertTitle sx={{ fontWeight: 700 }}>{title}</AlertTitle>}
       <Typography variant="body2">
-        Some Safes linked to your wallet may be malicious or impersonations(address poisoning). Only trust Safes you can
-        verify.{' '}
+        Some accounts linked to your wallet may be malicious or impersonations(address poisoning). Only trust accounts
+        you can verify.{' '}
         <ExternalLink href={HelpCenterArticle.ADDRESS_POISONING} noIcon>
           Learn more about address poisoning
         </ExternalLink>

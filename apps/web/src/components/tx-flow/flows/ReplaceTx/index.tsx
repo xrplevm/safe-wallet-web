@@ -1,3 +1,4 @@
+import { HelpCenterArticle } from '@safe-global/utils/config/constants'
 import { useContext, useState } from 'react'
 import { type NextRouter, useRouter } from 'next/router'
 import { Box, Tooltip, Typography } from '@mui/material'
@@ -131,9 +132,7 @@ const ReplaceTxMenu = ({
         <Typography variant="body2" mt={-1} mb={1}>
           You can replace or reject this transaction on-chain. It requires gas fees and your signature.{' '}
           <Track {...REJECT_TX_EVENTS.READ_MORE}>
-            <ExternalLink href="https://help.safe.global/en/articles/40836-why-do-i-need-to-pay-for-cancelling-a-transaction">
-              Read more
-            </ExternalLink>
+            <ExternalLink href={HelpCenterArticle.CANCELLING_TRANSACTIONS}>Read more</ExternalLink>
           </Track>
         </Typography>
 

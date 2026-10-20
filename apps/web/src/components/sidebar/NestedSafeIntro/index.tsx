@@ -15,11 +15,11 @@ export function NestedSafeIntro({ onReviewClick }: NestedSafeIntroProps): ReactE
       <NestedSafesIllustration />
 
       <Typography variant="h6" fontWeight={700} mt={2}>
-        Select Nested Safes
+        Select nested accounts
       </Typography>
 
       <Typography variant="body2" color="text.secondary" mt={1}>
-        Nested Safes can include lookalike addresses.
+        Nested accounts can include lookalike addresses.
       </Typography>
 
       <Typography variant="body2" color="text.secondary" mt={1}>
@@ -34,7 +34,7 @@ export function NestedSafeIntro({ onReviewClick }: NestedSafeIntroProps): ReactE
           onClick={onReviewClick}
           data-testid="review-nested-safes-button"
         >
-          Review Nested Safes
+          Review nested accounts
         </Button>
       </Track>
     </Box>

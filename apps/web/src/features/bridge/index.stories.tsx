@@ -98,7 +98,7 @@ export const BridgePage: StoryObj = {
         Bridge
       </Typography>
       <Typography variant="body2" color="text.secondary" sx={{ mb: 3 }}>
-        Transfer assets securely between blockchains using the Safe bridge.
+        Transfer assets securely between blockchains using the bridge.
       </Typography>
 
       <Paper>

@@ -51,7 +51,7 @@ export class RecipientAnalysisResultBuilder<T extends RecipientStatus | BridgeSt
       .severity(Severity.INFO)
       .type(RecipientStatus.UNKNOWN_RECIPIENT)
       .title('Unknown recipient')
-      .description('This recipient is not in your address book and is not an owned Safe.')
+      .description('This recipient is not in your address book and is not an owned account.')
   }
 
   static lowActivity(): RecipientAnalysisResultBuilder<RecipientStatus.LOW_ACTIVITY> {
@@ -82,9 +82,9 @@ export class RecipientAnalysisResultBuilder<T extends RecipientStatus | BridgeSt
     return new RecipientAnalysisResultBuilder<BridgeStatus.INCOMPATIBLE_SAFE>()
       .severity(Severity.CRITICAL)
       .type(BridgeStatus.INCOMPATIBLE_SAFE)
-      .title('Incompatible Safe version')
+      .title('Incompatible account version')
       .description(
-        'This Safe account cannot be created on the destination chain. You will not be able to claim ownership of the same address. Funds sent may be inaccessible.',
+        'This multisig account cannot be created on the destination chain. You will not be able to claim ownership of the same address. Funds sent may be inaccessible.',
       )
   }
 }

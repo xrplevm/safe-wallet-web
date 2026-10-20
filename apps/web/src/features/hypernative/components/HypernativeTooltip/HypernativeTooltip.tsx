@@ -1,7 +1,7 @@
 import type { ReactElement, ReactNode } from 'react'
 import { SvgIcon, Stack, Tooltip, Typography, type TooltipProps } from '@mui/material'
-import SafeShieldLogoFull from '@/public/images/safe-shield/safe-shield-logo.svg'
-import SafeShieldLogoFullDark from '@/public/images/safe-shield/safe-shield-logo-dark.svg'
+import SafeShieldLogoFull from '@/public/images/security/security-check-logo.svg'
+import SafeShieldLogoFullDark from '@/public/images/security/security-check-logo-dark.svg'
 import { useDarkMode } from '@/hooks/useDarkMode'
 
 export const HypernativeTooltip = ({
@@ -17,7 +17,7 @@ export const HypernativeTooltip = ({
         // We use the inverted theme mode here so that it matches the tooltip background color
         component={isDarkMode ? SafeShieldLogoFull : SafeShieldLogoFullDark}
         inheritViewBox
-        sx={{ width: 78, height: 18 }}
+        sx={{ width: 108, height: 18 }}
       />
 
       <Typography variant="body2">{title || 'Hypernative Guardian is actively monitoring this account.'}</Typography>

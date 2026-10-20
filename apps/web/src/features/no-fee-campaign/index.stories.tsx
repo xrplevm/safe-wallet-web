@@ -246,7 +246,7 @@ export const NotEligible: StoryObj = {
       </Typography>
       <Box component="ul" sx={{ mt: 1, pl: 2 }}>
         <Typography component="li" variant="body2" color="text.secondary">
-          Hold USDe tokens in your Safe
+          Hold USDe tokens in your account
         </Typography>
         <Typography component="li" variant="body2" color="text.secondary">
           Be on Ethereum Mainnet

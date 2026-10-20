@@ -400,7 +400,7 @@ export class SafeWalletProvider {
   // @see https://eips.ethereum.org/EIPS/eip-5792
   async wallet_sendCalls(bundle: SendCallsParams, appInfo: AppInfo): Promise<SendCallsResult> {
     if (bundle.chainId !== numberToHex(this.safe.chainId)) {
-      throw new Error(`Safe is not on chain ${this.safe.chainId}`)
+      throw new Error(`Account is not on chain ${this.safe.chainId}`)
     }
 
     if (bundle.from !== this.safe.safeAddress) {

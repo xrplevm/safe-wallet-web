@@ -9,7 +9,7 @@ const baseMockModal: UseSafeSelectionModalReturn = {
     {
       chainId: '1',
       address: '0x1234567890abcdef1234567890abcdef12345678',
-      name: 'My Main Safe',
+      name: 'My Main account',
       isPinned: false,
       isReadOnly: false,
       lastVisited: 0,
@@ -19,7 +19,7 @@ const baseMockModal: UseSafeSelectionModalReturn = {
     {
       chainId: '1',
       address: '0xabcdef1234567890abcdef1234567890abcdef12',
-      name: 'Savings Safe',
+      name: 'Savings account',
       isPinned: true,
       isReadOnly: false,
       lastVisited: 0,
@@ -29,7 +29,7 @@ const baseMockModal: UseSafeSelectionModalReturn = {
     {
       chainId: '10',
       address: '0x9876543210fedcba9876543210fedcba98765432',
-      name: 'Optimism Safe',
+      name: 'Optimism account',
       isPinned: false,
       isReadOnly: true,
       lastVisited: 0,
@@ -100,7 +100,7 @@ export const WithSimilarAddresses: Story = {
         {
           chainId: '1',
           address: '0x123456eeeeeeeeeeeeeeeeeeeeeeeeee12345678',
-          name: 'Suspicious Safe',
+          name: 'Suspicious account',
           isPinned: false,
           isReadOnly: false,
           lastVisited: 0,
@@ -122,7 +122,7 @@ export const WithPendingConfirmation: Story = {
         {
           chainId: '1',
           address: '0x123456eeeeeeeeeeeeeeeeeeeeeeeeee12345678',
-          name: 'Suspicious Safe',
+          name: 'Suspicious account',
           isPinned: false,
           isReadOnly: false,
           lastVisited: 0,
@@ -162,7 +162,7 @@ export const WithSelectAllConfirmation: Story = {
         {
           chainId: '1',
           address: '0x123456eeeeeeeeeeeeeeeeeeeeeeeeee12345678',
-          name: 'Suspicious Safe 1',
+          name: 'Suspicious account 1',
           isPinned: false,
           isReadOnly: false,
           lastVisited: 0,
@@ -172,7 +172,7 @@ export const WithSelectAllConfirmation: Story = {
         {
           chainId: '1',
           address: '0x123456ffffffffffffffffffffffffff12345678',
-          name: 'Suspicious Safe 2',
+          name: 'Suspicious account 2',
           isPinned: false,
           isReadOnly: false,
           lastVisited: 0,

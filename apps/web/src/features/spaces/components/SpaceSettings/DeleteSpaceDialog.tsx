@@ -78,11 +78,11 @@ const DeleteSpaceDialog = ({ space, onClose }: { space: GetSpaceResponse | undef
           </ListItem>
           <ListItem disablePadding>
             <ListIcon variant="danger" />
-            Will remove members and Safe Accounts names from our database
+            Will remove members and multisig account names from our database
           </ListItem>
           <ListItem disablePadding>
             <ListIcon variant="success" />
-            Will keep access to the Safe Accounts added to this space. They will not be deleted.
+            Will keep access to the multisig accounts added to this space. They will not be deleted.
           </ListItem>
         </List>
 

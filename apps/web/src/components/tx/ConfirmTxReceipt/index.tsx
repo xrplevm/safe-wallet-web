@@ -1,3 +1,4 @@
+import { HelpCenterArticle } from '@safe-global/utils/config/constants'
 import TxCard from '@/components/tx-flow/common/TxCard'
 import { Grid2 as Grid, Stack, StepIcon, Typography } from '@mui/material'
 import ExternalLink from '@/components/common/ExternalLink'
@@ -20,9 +21,7 @@ const InfoSteps = [
       <Typography>
         Signing is an irreversible action so make sure you know what you are signing.{' '}
         <Track {...MODALS_EVENTS.SIGNING_ARTICLE}>
-          <ExternalLink href="https://help.safe.global/en/articles/276343-how-to-perform-basic-transactions-checks-on-safe-wallet">
-            Read more
-          </ExternalLink>
+          <ExternalLink href={HelpCenterArticle.VERIFY_TX_DETAILS}>Read more</ExternalLink>
         </Track>
         .
       </Typography>

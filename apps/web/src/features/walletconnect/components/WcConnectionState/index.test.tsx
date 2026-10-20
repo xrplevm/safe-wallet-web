@@ -1,8 +1,9 @@
 import { render, screen } from '@testing-library/react'
 import WcConnectionState from '.'
+import { BRAND_NAME } from '@/config/constants'
 
 describe('WcConnectionState component tests', () => {
-  const SAFE_LOGO_ALT = 'Safe logo'
+  const SAFE_LOGO_ALT = BRAND_NAME
   const DAPP_NAME = 'Test dApp'
   const DAPP_LOGO_ALT = `${DAPP_NAME} logo`
   const ICON_URL = 'test-icon-url'

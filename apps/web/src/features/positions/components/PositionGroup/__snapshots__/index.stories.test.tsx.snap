@@ -5,7 +5,7 @@ exports[`./index.stories Default 1`] = `
   style="background-color: rgb(255, 255, 255); padding: 1rem;"
 >
   <div
-    class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 mui-style-15fxbpu-MuiPaper-root"
+    class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 mui-style-j024ly-MuiPaper-root"
     style="--Paper-shadow: none;"
   >
     <div
@@ -15,36 +15,36 @@ exports[`./index.stories Default 1`] = `
         class="MuiBox-root mui-style-dzaqf9"
       >
         <div
-          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 MuiTableContainer-root mui-style-15l0b46-MuiPaper-root-MuiTableContainer-root"
+          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 MuiTableContainer-root mui-style-3jd91a-MuiPaper-root-MuiTableContainer-root"
           data-testid="table-container"
           style="--Paper-shadow: none;"
         >
           <table
             aria-labelledby="tableTitle"
-            class="MuiTable-root compactTable mui-style-14ipoqq-MuiTable-root"
+            class="MuiTable-root compactTable mui-style-1aspxxl-MuiTable-root"
           >
             <thead
               class="MuiTableHead-root mui-style-1bxxo5-MuiTableHead-root"
             >
               <tr
-                class="MuiTableRow-root MuiTableRow-head mui-style-ee4r5n-MuiTableRow-root"
+                class="MuiTableRow-root MuiTableRow-head mui-style-1t7qlty-MuiTableRow-root"
               >
                 <th
-                  class="MuiTableCell-root MuiTableCell-head MuiTableCell-alignLeft MuiTableCell-sizeMedium mui-style-16mkdhd-MuiTableCell-root"
+                  class="MuiTableCell-root MuiTableCell-head MuiTableCell-alignLeft MuiTableCell-sizeMedium mui-style-mb81ms-MuiTableCell-root"
                   scope="col"
                 >
                   <span
                     class="MuiBox-root mui-style-1kuy7z7"
                   >
                     <p
-                      class="MuiTypography-root MuiTypography-body2 mui-style-df2485-MuiTypography-root"
+                      class="MuiTypography-root MuiTypography-body2 mui-style-1m3fi4x-MuiTypography-root"
                     >
                       Supply
                     </p>
                   </span>
                 </th>
                 <th
-                  class="MuiTableCell-root MuiTableCell-head MuiTableCell-alignLeft MuiTableCell-sizeMedium mui-style-14qoodj-MuiTableCell-root"
+                  class="MuiTableCell-root MuiTableCell-head MuiTableCell-alignLeft MuiTableCell-sizeMedium mui-style-n2ub9s-MuiTableCell-root"
                   scope="col"
                 >
                   <span
@@ -54,7 +54,7 @@ exports[`./index.stories Default 1`] = `
                   </span>
                 </th>
                 <th
-                  class="MuiTableCell-root MuiTableCell-head MuiTableCell-alignLeft MuiTableCell-sizeMedium mui-style-1lpfb9u-MuiTableCell-root"
+                  class="MuiTableCell-root MuiTableCell-head MuiTableCell-alignLeft MuiTableCell-sizeMedium mui-style-165p3i4-MuiTableCell-root"
                   scope="col"
                 >
                   <span
@@ -66,15 +66,15 @@ exports[`./index.stories Default 1`] = `
               </tr>
             </thead>
             <tbody
-              class="MuiTableBody-root mui-style-hvwm6q-MuiTableBody-root"
+              class="MuiTableBody-root mui-style-1x3ttcx-MuiTableBody-root"
             >
               <tr
-                class="MuiTableRow-root mui-style-ee4r5n-MuiTableRow-root"
+                class="MuiTableRow-root mui-style-1t7qlty-MuiTableRow-root"
                 data-testid="table-row"
                 tabindex="-1"
               >
                 <td
-                  class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium mui-style-v0c5dw-MuiTableCell-root"
+                  class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium mui-style-ndgvsg-MuiTableCell-root"
                   data-testid="table-cell-name"
                 >
                   <div
@@ -100,7 +100,7 @@ exports[`./index.stories Default 1`] = `
                               sandbox="allow-scripts"
                               srcdoc="
     <body style="margin: 0; overflow: hidden; display: flex; align-items: center; justify-content: center;">
-      <img src="https://assets.coingecko.com/coins/images/2518/small/weth.png" alt="Safe App logo" height="32" width="auto" style="border-radius: 100%;" />
+      <img src="https://assets.coingecko.com/coins/images/2518/small/weth.png" alt="App logo" height="32" width="auto" style="border-radius: 100%;" />
       <script>
         document.querySelector('img').onerror = (e) => {
           e.target.onerror = null
@@ -119,12 +119,12 @@ exports[`./index.stories Default 1`] = `
                             class="MuiBox-root mui-style-0"
                           >
                             <p
-                              class="MuiTypography-root MuiTypography-body2 mui-style-1ct9qkn-MuiTypography-root"
+                              class="MuiTypography-root MuiTypography-body2 mui-style-1iscbxh-MuiTypography-root"
                             >
                               Wrapped Ether
                             </p>
                             <p
-                              class="MuiTypography-root MuiTypography-body2 mui-style-1ew0eu5-MuiTypography-root"
+                              class="MuiTypography-root MuiTypography-body2 mui-style-ce200z-MuiTypography-root"
                             >
                               WETH
                                •  
@@ -137,7 +137,7 @@ exports[`./index.stories Default 1`] = `
                   </div>
                 </td>
                 <td
-                  class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium mui-style-v0c5dw-MuiTableCell-root"
+                  class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium mui-style-ndgvsg-MuiTableCell-root"
                   data-testid="table-cell-balance"
                 >
                   <div
@@ -151,7 +151,7 @@ exports[`./index.stories Default 1`] = `
                         class="MuiCollapse-wrapperInner MuiCollapse-vertical mui-style-1i4ywhz-MuiCollapse-wrapperInner"
                       >
                         <p
-                          class="MuiTypography-root MuiTypography-body1 mui-style-1gmilbo-MuiTypography-root"
+                          class="MuiTypography-root MuiTypography-body1 mui-style-10mcyfv-MuiTypography-root"
                         >
                           1.5
                            
@@ -162,7 +162,7 @@ exports[`./index.stories Default 1`] = `
                   </div>
                 </td>
                 <td
-                  class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium mui-style-v0c5dw-MuiTableCell-root"
+                  class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium mui-style-ndgvsg-MuiTableCell-root"
                   data-testid="table-cell-value"
                 >
                   <div
@@ -179,7 +179,7 @@ exports[`./index.stories Default 1`] = `
                           class="MuiBox-root mui-style-s2uf1z"
                         >
                           <p
-                            class="MuiTypography-root MuiTypography-body1 mui-style-v6lhhw-MuiTypography-root"
+                            class="MuiTypography-root MuiTypography-body1 mui-style-i9kxid-MuiTypography-root"
                           >
                             <span
                               aria-label="$ 5,475.00"
@@ -191,11 +191,11 @@ exports[`./index.stories Default 1`] = `
                             </span>
                           </p>
                           <span
-                            class="MuiTypography-root MuiTypography-caption mui-style-19nflmw-MuiTypography-root"
+                            class="MuiTypography-root MuiTypography-caption mui-style-1otqgcb-MuiTypography-root"
                           >
                             <div
                               aria-label="24h change"
-                              class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorDefault MuiChip-filledDefault mui-style-w1uylf-MuiChip-root"
+                              class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorDefault MuiChip-filledDefault mui-style-12zxa3t-MuiChip-root"
                               data-mui-internal-clone-element="true"
                             >
                               <mock-icon
@@ -217,12 +217,12 @@ exports[`./index.stories Default 1`] = `
                 </td>
               </tr>
               <tr
-                class="MuiTableRow-root mui-style-ee4r5n-MuiTableRow-root"
+                class="MuiTableRow-root mui-style-1t7qlty-MuiTableRow-root"
                 data-testid="table-row"
                 tabindex="-1"
               >
                 <td
-                  class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium mui-style-v0c5dw-MuiTableCell-root"
+                  class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium mui-style-ndgvsg-MuiTableCell-root"
                   data-testid="table-cell-name"
                 >
                   <div
@@ -248,7 +248,7 @@ exports[`./index.stories Default 1`] = `
                               sandbox="allow-scripts"
                               srcdoc="
     <body style="margin: 0; overflow: hidden; display: flex; align-items: center; justify-content: center;">
-      <img src="https://assets.coingecko.com/coins/images/6319/small/usdc.png" alt="Safe App logo" height="32" width="auto" style="border-radius: 100%;" />
+      <img src="https://assets.coingecko.com/coins/images/6319/small/usdc.png" alt="App logo" height="32" width="auto" style="border-radius: 100%;" />
       <script>
         document.querySelector('img').onerror = (e) => {
           e.target.onerror = null
@@ -267,12 +267,12 @@ exports[`./index.stories Default 1`] = `
                             class="MuiBox-root mui-style-0"
                           >
                             <p
-                              class="MuiTypography-root MuiTypography-body2 mui-style-1ct9qkn-MuiTypography-root"
+                              class="MuiTypography-root MuiTypography-body2 mui-style-1iscbxh-MuiTypography-root"
                             >
                               USD Coin
                             </p>
                             <p
-                              class="MuiTypography-root MuiTypography-body2 mui-style-1ew0eu5-MuiTypography-root"
+                              class="MuiTypography-root MuiTypography-body2 mui-style-ce200z-MuiTypography-root"
                             >
                               USDC
                                •  
@@ -285,7 +285,7 @@ exports[`./index.stories Default 1`] = `
                   </div>
                 </td>
                 <td
-                  class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium mui-style-v0c5dw-MuiTableCell-root"
+                  class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium mui-style-ndgvsg-MuiTableCell-root"
                   data-testid="table-cell-balance"
                 >
                   <div
@@ -299,7 +299,7 @@ exports[`./index.stories Default 1`] = `
                         class="MuiCollapse-wrapperInner MuiCollapse-vertical mui-style-1i4ywhz-MuiCollapse-wrapperInner"
                       >
                         <p
-                          class="MuiTypography-root MuiTypography-body1 mui-style-1gmilbo-MuiTypography-root"
+                          class="MuiTypography-root MuiTypography-body1 mui-style-10mcyfv-MuiTypography-root"
                         >
                           10,000
                            
@@ -310,7 +310,7 @@ exports[`./index.stories Default 1`] = `
                   </div>
                 </td>
                 <td
-                  class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium mui-style-v0c5dw-MuiTableCell-root"
+                  class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium mui-style-ndgvsg-MuiTableCell-root"
                   data-testid="table-cell-value"
                 >
                   <div
@@ -327,7 +327,7 @@ exports[`./index.stories Default 1`] = `
                           class="MuiBox-root mui-style-s2uf1z"
                         >
                           <p
-                            class="MuiTypography-root MuiTypography-body1 mui-style-v6lhhw-MuiTypography-root"
+                            class="MuiTypography-root MuiTypography-body1 mui-style-i9kxid-MuiTypography-root"
                           >
                             <span
                               aria-label="$ 10,000.00"
@@ -339,11 +339,11 @@ exports[`./index.stories Default 1`] = `
                             </span>
                           </p>
                           <span
-                            class="MuiTypography-root MuiTypography-caption mui-style-19nflmw-MuiTypography-root"
+                            class="MuiTypography-root MuiTypography-caption mui-style-1otqgcb-MuiTypography-root"
                           >
                             <div
                               aria-label="24h change"
-                              class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorDefault MuiChip-filledDefault mui-style-w1uylf-MuiChip-root"
+                              class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorDefault MuiChip-filledDefault mui-style-12zxa3t-MuiChip-root"
                               data-mui-internal-clone-element="true"
                             >
                               <mock-icon
@@ -365,12 +365,12 @@ exports[`./index.stories Default 1`] = `
                 </td>
               </tr>
               <tr
-                class="MuiTableRow-root mui-style-ee4r5n-MuiTableRow-root"
+                class="MuiTableRow-root mui-style-1t7qlty-MuiTableRow-root"
                 data-testid="table-row"
                 tabindex="-1"
               >
                 <td
-                  class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium mui-style-v0c5dw-MuiTableCell-root"
+                  class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium mui-style-ndgvsg-MuiTableCell-root"
                   data-testid="table-cell-name"
                 >
                   <div
@@ -396,7 +396,7 @@ exports[`./index.stories Default 1`] = `
                               sandbox="allow-scripts"
                               srcdoc="
     <body style="margin: 0; overflow: hidden; display: flex; align-items: center; justify-content: center;">
-      <img src="https://assets.coingecko.com/coins/images/9956/small/dai-multi-collateral-mcd.png" alt="Safe App logo" height="32" width="auto" style="border-radius: 100%;" />
+      <img src="https://assets.coingecko.com/coins/images/9956/small/dai-multi-collateral-mcd.png" alt="App logo" height="32" width="auto" style="border-radius: 100%;" />
       <script>
         document.querySelector('img').onerror = (e) => {
           e.target.onerror = null
@@ -415,12 +415,12 @@ exports[`./index.stories Default 1`] = `
                             class="MuiBox-root mui-style-0"
                           >
                             <p
-                              class="MuiTypography-root MuiTypography-body2 mui-style-1ct9qkn-MuiTypography-root"
+                              class="MuiTypography-root MuiTypography-body2 mui-style-1iscbxh-MuiTypography-root"
                             >
                               Dai Stablecoin
                             </p>
                             <p
-                              class="MuiTypography-root MuiTypography-body2 mui-style-1ew0eu5-MuiTypography-root"
+                              class="MuiTypography-root MuiTypography-body2 mui-style-ce200z-MuiTypography-root"
                             >
                               DAI
                                •  
@@ -433,7 +433,7 @@ exports[`./index.stories Default 1`] = `
                   </div>
                 </td>
                 <td
-                  class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium mui-style-v0c5dw-MuiTableCell-root"
+                  class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium mui-style-ndgvsg-MuiTableCell-root"
                   data-testid="table-cell-balance"
                 >
                   <div
@@ -447,7 +447,7 @@ exports[`./index.stories Default 1`] = `
                         class="MuiCollapse-wrapperInner MuiCollapse-vertical mui-style-1i4ywhz-MuiCollapse-wrapperInner"
                       >
                         <p
-                          class="MuiTypography-root MuiTypography-body1 mui-style-1gmilbo-MuiTypography-root"
+                          class="MuiTypography-root MuiTypography-body1 mui-style-10mcyfv-MuiTypography-root"
                         >
                           5,000
                            
@@ -458,7 +458,7 @@ exports[`./index.stories Default 1`] = `
                   </div>
                 </td>
                 <td
-                  class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium mui-style-v0c5dw-MuiTableCell-root"
+                  class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium mui-style-ndgvsg-MuiTableCell-root"
                   data-testid="table-cell-value"
                 >
                   <div
@@ -475,7 +475,7 @@ exports[`./index.stories Default 1`] = `
                           class="MuiBox-root mui-style-s2uf1z"
                         >
                           <p
-                            class="MuiTypography-root MuiTypography-body1 mui-style-v6lhhw-MuiTypography-root"
+                            class="MuiTypography-root MuiTypography-body1 mui-style-i9kxid-MuiTypography-root"
                           >
                             <span
                               aria-label="$ 5,000.00"
@@ -487,11 +487,11 @@ exports[`./index.stories Default 1`] = `
                             </span>
                           </p>
                           <span
-                            class="MuiTypography-root MuiTypography-caption mui-style-19nflmw-MuiTypography-root"
+                            class="MuiTypography-root MuiTypography-caption mui-style-1otqgcb-MuiTypography-root"
                           >
                             <div
                               aria-label="24h change"
-                              class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorDefault MuiChip-filledDefault mui-style-1v5d94b-MuiChip-root"
+                              class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorDefault MuiChip-filledDefault mui-style-2jveg2-MuiChip-root"
                               data-mui-internal-clone-element="true"
                             >
                               <mock-icon
@@ -513,12 +513,12 @@ exports[`./index.stories Default 1`] = `
                 </td>
               </tr>
               <tr
-                class="MuiTableRow-root mui-style-ee4r5n-MuiTableRow-root"
+                class="MuiTableRow-root mui-style-1t7qlty-MuiTableRow-root"
                 data-testid="table-row"
                 tabindex="-1"
               >
                 <td
-                  class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium mui-style-v0c5dw-MuiTableCell-root"
+                  class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium mui-style-ndgvsg-MuiTableCell-root"
                   data-testid="table-cell-name"
                 >
                   <div
@@ -544,7 +544,7 @@ exports[`./index.stories Default 1`] = `
                               sandbox="allow-scripts"
                               srcdoc="
     <body style="margin: 0; overflow: hidden; display: flex; align-items: center; justify-content: center;">
-      <img src="/images/common/token-placeholder.svg" alt="Safe App logo" height="32" width="auto" style="border-radius: 100%;" />
+      <img src="/images/common/token-placeholder.svg" alt="App logo" height="32" width="auto" style="border-radius: 100%;" />
       <script>
         document.querySelector('img').onerror = (e) => {
           e.target.onerror = null
@@ -563,12 +563,12 @@ exports[`./index.stories Default 1`] = `
                             class="MuiBox-root mui-style-0"
                           >
                             <p
-                              class="MuiTypography-root MuiTypography-body2 mui-style-1ct9qkn-MuiTypography-root"
+                              class="MuiTypography-root MuiTypography-body2 mui-style-1iscbxh-MuiTypography-root"
                             >
                               Unknown Token
                             </p>
                             <p
-                              class="MuiTypography-root MuiTypography-body2 mui-style-1ew0eu5-MuiTypography-root"
+                              class="MuiTypography-root MuiTypography-body2 mui-style-ce200z-MuiTypography-root"
                             >
                               UNK
                                •  
@@ -581,7 +581,7 @@ exports[`./index.stories Default 1`] = `
                   </div>
                 </td>
                 <td
-                  class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium mui-style-v0c5dw-MuiTableCell-root"
+                  class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium mui-style-ndgvsg-MuiTableCell-root"
                   data-testid="table-cell-balance"
                 >
                   <div
@@ -595,7 +595,7 @@ exports[`./index.stories Default 1`] = `
                         class="MuiCollapse-wrapperInner MuiCollapse-vertical mui-style-1i4ywhz-MuiCollapse-wrapperInner"
                       >
                         <p
-                          class="MuiTypography-root MuiTypography-body1 mui-style-1gmilbo-MuiTypography-root"
+                          class="MuiTypography-root MuiTypography-body1 mui-style-10mcyfv-MuiTypography-root"
                         >
                           1,000
                            
@@ -606,7 +606,7 @@ exports[`./index.stories Default 1`] = `
                   </div>
                 </td>
                 <td
-                  class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium mui-style-v0c5dw-MuiTableCell-root"
+                  class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium mui-style-ndgvsg-MuiTableCell-root"
                   data-testid="table-cell-value"
                 >
                   <div
@@ -623,7 +623,7 @@ exports[`./index.stories Default 1`] = `
                           class="MuiBox-root mui-style-s2uf1z"
                         >
                           <p
-                            class="MuiTypography-root MuiTypography-body1 mui-style-v6lhhw-MuiTypography-root"
+                            class="MuiTypography-root MuiTypography-body1 mui-style-i9kxid-MuiTypography-root"
                           >
                             <span
                               aria-label="$ 2,500.00"
@@ -635,11 +635,11 @@ exports[`./index.stories Default 1`] = `
                             </span>
                           </p>
                           <span
-                            class="MuiTypography-root MuiTypography-caption mui-style-19nflmw-MuiTypography-root"
+                            class="MuiTypography-root MuiTypography-caption mui-style-1otqgcb-MuiTypography-root"
                           >
                             <div
                               aria-label="24h change"
-                              class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorDefault MuiChip-filledDefault mui-style-w1uylf-MuiChip-root"
+                              class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorDefault MuiChip-filledDefault mui-style-12zxa3t-MuiChip-root"
                               data-mui-internal-clone-element="true"
                             >
                               <mock-icon

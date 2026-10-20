@@ -104,8 +104,8 @@ export function RecoverAccountFlowSetup({
                 mb: 1,
               }}
             >
-              Set the new signer wallet(s) of this Safe Account and how many need to confirm a transaction before it can
-              be executed.
+              Set the new signer wallet(s) of this multisig account and how many need to confirm a transaction before it
+              can be executed.
             </Typography>
           </div>
 
@@ -121,7 +121,7 @@ export function RecoverAccountFlowSetup({
                     key={field.id}
                     validate={(value) => {
                       if (sameAddress(value, safeAddress)) {
-                        return 'The Safe Account cannot own itself'
+                        return 'The multisig account cannot own itself'
                       }
 
                       const isDuplicate = newOwners.filter((owner) => owner.value === value).length > 1
@@ -193,7 +193,7 @@ export function RecoverAccountFlowSetup({
                 mb: 1,
               }}
             >
-              After recovery, Safe Account transactions will require:
+              After recovery, multisig account transactions will require:
             </Typography>
           </div>
 

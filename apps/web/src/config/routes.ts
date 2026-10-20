@@ -3,22 +3,14 @@ export const AppRoutes = {
   '404': '/404',
   wc: '/wc',
   userSettings: '/user-settings',
-  terms: '/terms',
-  safeLabsTerms: '/safe-labs-terms',
   swap: '/swap',
   stake: '/stake',
-  privacy: '/privacy',
   licenses: '/licenses',
   index: '/',
-  imprint: '/imprint',
   home: '/home',
   earn: '/earn',
-  cookie: '/cookie',
   bridge: '/bridge',
   addressBook: '/address-book',
-  hypernative: {
-    oauthCallback: '/hypernative/oauth-callback',
-  },
   addOwner: '/addOwner',
   _offline: '/_offline',
   apps: {
@@ -31,6 +23,9 @@ export const AppRoutes = {
     positions: '/balances/positions',
     nfts: '/balances/nfts',
     index: '/balances',
+  },
+  hypernative: {
+    oauthCallback: '/hypernative/oauth-callback',
   },
   newSafe: {
     load: '/new-safe/load',

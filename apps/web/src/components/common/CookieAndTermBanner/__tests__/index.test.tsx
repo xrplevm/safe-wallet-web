@@ -48,15 +48,6 @@ describe('CookieAndTermBanner', () => {
       expect(screen.getByText('Analytics')).toBeInTheDocument()
     })
 
-    it('should display intro text with terms link', () => {
-      renderWithStore(<CookieAndTermBanner />)
-
-      expect(screen.getByText(/By browsing this page, you accept our/)).toBeInTheDocument()
-      expect(screen.getByText('Terms & Conditions')).toBeInTheDocument()
-      expect(screen.getByText(/last updated/)).toBeInTheDocument()
-      expect(screen.getByText('Cookie policy')).toBeInTheDocument()
-    })
-
     it('should display both action buttons', () => {
       renderWithStore(<CookieAndTermBanner />)
 

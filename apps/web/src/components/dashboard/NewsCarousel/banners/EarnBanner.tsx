@@ -9,11 +9,11 @@ import Link from 'next/link'
 import { AppRoutes } from '@/config/routes'
 import ChevronRightIcon from '@mui/icons-material/ChevronRight'
 import { useRouter } from 'next/router'
+import { BRAND_NAME } from '@/config/constants'
 
 export const earnBannerID = 'earnBanner'
 
-export const earnBannerDisclaimer =
-  '* based on historic averages of USD stablecoin and ETH Morpho vaults. Yields are variable and subject to change. Past performance is not a guarantee of future returns. The Kiln DeFi, Morpho Borrow and Vault products and features described herein are not offered or controlled by Safe Labs GmbH, Safe Ecosystem Foundation, and/or its affiliates.'
+export const earnBannerDisclaimer = `* based on historic averages of USD stablecoin and ETH Morpho vaults. Yields are variable and subject to change. Past performance is not a guarantee of future returns. The Kiln DeFi, Morpho Borrow and Vault products and features described herein are not offered or controlled by ${BRAND_NAME} and/or its affiliates.`
 export const EarnBanner = ({ onDismiss }: { onDismiss: () => void }) => {
   const router = useRouter()
 

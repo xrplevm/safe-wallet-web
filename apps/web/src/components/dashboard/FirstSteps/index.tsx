@@ -27,6 +27,7 @@ import LightbulbOutlinedIcon from '@mui/icons-material/LightbulbOutlined'
 import css from './styles.module.css'
 import { getExplorerLink } from '@safe-global/utils/utils/gateway'
 import { BannerType, useBannerVisibility, HnDashboardBannerWithNoBalanceCheck } from '@/features/hypernative'
+import { BRAND_NAME } from '@/config/constants'
 
 const calculateProgress = (items: boolean[]) => {
   const totalNumberOfItems = items.length
@@ -113,7 +114,7 @@ const UsefulHintsWidget = () => {
         </Typography>
       }
       title="Explore over 70+ dApps"
-      content="In our Safe App section you can connect your Safe to over 70 dApps directly or via Wallet Connect to interact with any application."
+      content="In our Apps section you can connect your account to over 70 dApps directly or via Wallet Connect to interact with any application."
       completed={false}
     />
   )
@@ -162,7 +163,7 @@ const AddFundsWidget = ({ completed }: { completed: boolean }) => {
           <ModalDialog
             open={open}
             onClose={toggleDialog}
-            dialogTitle="Add funds to your Safe Account"
+            dialogTitle="Add funds to your multisig account"
             hideChainIndicator
           >
             <Box
@@ -264,7 +265,7 @@ const FirstTransactionWidget = ({
   const [open, setOpen] = useState<boolean>(false)
 
   const title = 'Create your first transaction'
-  const content = 'Simply send funds, add a new signer or swap tokens through a safe app.'
+  const content = 'Simply send funds, add a new signer or swap tokens through an app.'
 
   return (
     <>
@@ -314,7 +315,7 @@ const ActivateSafeWidget = ({
   const [open, setOpen] = useState<boolean>(false)
 
   const title = `Activate account ${chain ? 'on ' + chain.chainName : ''}`
-  const content = 'Activate your account to start using all benefits of Safe'
+  const content = `Activate your account to start using all benefits of ${BRAND_NAME}`
 
   return (
     <>
@@ -355,7 +356,7 @@ const AccountReadyWidget = () => {
           mt: 2,
         }}
       >
-        Safe Account is ready!
+        Multisig account is ready!
       </Typography>
       <Typography>Continue to improve your account security and unlock more features</Typography>
     </Card>
@@ -417,8 +418,8 @@ const FirstSteps = () => {
                   y2="22.621"
                   gradientUnits="userSpaceOnUse"
                 >
-                  <stop stopColor="#5FDDFF" />
-                  <stop offset="1" stopColor="#12FF80" />
+                  <stop style={{ stopColor: 'var(--color-secondary-light)' }} />
+                  <stop offset="1" style={{ stopColor: 'var(--color-primary-main)' }} />
                 </linearGradient>
               </defs>
             </svg>
@@ -441,7 +442,7 @@ const FirstSteps = () => {
                 mb: 1,
               }}
             >
-              {isActivating ? 'Account is being activated...' : 'Activate your Safe Account'}
+              {isActivating ? 'Account is being activated...' : 'Activate your multisig account'}
             </Typography>
 
             {isActivating ? (
@@ -453,7 +454,7 @@ const FirstSteps = () => {
                 <strong>
                   {stepsCompleted} of {completedItems.length} steps completed.
                 </strong>{' '}
-                Finish the next steps to start using all Safe Account features:
+                Finish the next steps to start using all multisig account features:
               </Typography>
             )}
           </Grid>

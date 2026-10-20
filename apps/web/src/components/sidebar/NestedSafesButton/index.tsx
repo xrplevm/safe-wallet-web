@@ -48,7 +48,7 @@ export function NestedSafesButton({
 
   return (
     <>
-      <Tooltip title="Nested Safes" placement="top">
+      <Tooltip title="Nested accounts" placement="top">
         <Badge invisible={displayCount > 0} variant="dot" className={css.badge}>
           <IconButton
             className={headerCss.iconButton}

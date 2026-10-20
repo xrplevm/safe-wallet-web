@@ -1,3 +1,4 @@
+import { HELP_CENTER_URL } from '@safe-global/utils/config/constants'
 import type { RelaysRemaining } from '@safe-global/store/gateway/AUTO_GENERATED/relay'
 
 import { Box, FormControl, FormControlLabel, Radio, RadioGroup, Typography, Tooltip, Chip, Link } from '@mui/material'
@@ -115,7 +116,7 @@ const _ExecutionMethodSelector = ({
                           <Typography className={css.notAvailableTitle}>Sponsored gas</Typography>
                           <div className={css.descriptionWrapper}>
                             <Typography className={css.descriptionText}>
-                              Part of the Free January, Safe Foundation&apos;s gas sponsorship program for USDe holders
+                              Part of the Free January gas sponsorship program for USDe holders
                             </Typography>
                           </div>
                         </div>
@@ -140,7 +141,7 @@ const _ExecutionMethodSelector = ({
                         <Typography className={css.mainLabel}>Sponsored gas</Typography>
                         <div className={css.subLabel}>
                           <Typography variant="body2" color="text.secondary">
-                            Part of the Free January, Safe Foundation&apos;s gas sponsorship program for USDe holders{' '}
+                            Part of the Free January gas sponsorship program for USDe holders{' '}
                             <Tooltip
                               title={
                                 <Box>
@@ -148,7 +149,7 @@ const _ExecutionMethodSelector = ({
                                     USDe holders enjoy gasless transactions on Ethereum Mainnet this January.{' '}
                                     <Typography component="span" fontWeight="bold">
                                       <Link
-                                        href="https://help.safe.global/en/articles/484423-no-fee-january-campaign"
+                                        href={HELP_CENTER_URL}
                                         style={{ textDecoration: 'underline', fontWeight: 'bold' }}
                                         target="_blank"
                                         rel="noopener noreferrer"

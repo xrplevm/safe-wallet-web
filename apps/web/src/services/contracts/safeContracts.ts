@@ -36,7 +36,7 @@ const getGnosisSafeContract = async (safe: SafeState, safeProvider: SafeProvider
 export const getReadOnlyCurrentGnosisSafeContract = async (safe: SafeState): Promise<SafeBaseContract<any>> => {
   const safeSDK = getSafeSDK()
   if (!safeSDK) {
-    throw new Error('Safe SDK not found.')
+    throw new Error('SDK not found.')
   }
 
   const safeProvider = safeSDK.getSafeProvider()
@@ -89,7 +89,7 @@ export const getReadOnlyMultiSendCallOnlyContract = async (
 ) => {
   const safeSDK = getSafeSDK()
   if (!safeSDK) {
-    throw new Error('Safe SDK not found.')
+    throw new Error('SDK not found.')
   }
 
   const safeProvider = safeSDK.getSafeProvider()
@@ -154,7 +154,7 @@ export const getReadOnlyFallbackHandlerContract = async (safeVersion: SafeState[
 export const getReadOnlySignMessageLibContract = async (safeVersion: SafeState['version']) => {
   const safeSDK = getSafeSDK()
   if (!safeSDK) {
-    throw new Error('Safe SDK not found.')
+    throw new Error('SDK not found.')
   }
 
   const safeProvider = safeSDK.getSafeProvider()

@@ -102,7 +102,7 @@ export const SignerForm = ({ willExecute, txId }: { willExecute?: boolean; txId?
         <SvgIcon component={SignatureIcon} inheritViewBox fontSize="small" />
         {willExecute ? 'Execute' : 'Sign'} with
         <Tooltip
-          title={`Your connected wallet controls other Safe Accounts, which can sign this transaction. You can select which Account to ${
+          title={`Your connected wallet controls other multisig accounts, which can sign this transaction. You can select which Account to ${
             willExecute ? 'execute' : 'sign'
           } with.`}
           arrow

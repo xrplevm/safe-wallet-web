@@ -53,7 +53,7 @@ export const getTransactionType = (tx: Transaction, addressBook: AddressBook): T
     case TransactionInfoType.CREATION: {
       return {
         icon: toAddress?.logoUri || '/images/transactions/settings.svg',
-        text: 'Safe Account created',
+        text: 'Multisig account created',
       }
     }
     case TransactionInfoType.SWAP_TRANSFER:
@@ -170,8 +170,8 @@ export const getTransactionType = (tx: Transaction, addressBook: AddressBook): T
 
       if (isNestedConfirmationTxInfo(tx.txInfo)) {
         return {
-          icon: <SvgIcon component={NestedSafeIcon} inheritViewBox fontSize="small" alt="Nested Safe" />,
-          text: `Nested Safe${addressBookName ? `: ${addressBookName}` : ''}`,
+          icon: <SvgIcon component={NestedSafeIcon} inheritViewBox fontSize="small" alt="Nested account" />,
+          text: `Nested account${addressBookName ? `: ${addressBookName}` : ''}`,
         }
       }
 

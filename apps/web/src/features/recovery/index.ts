@@ -2,7 +2,7 @@
  * Recovery Feature - Public API
  *
  * This feature provides account recovery functionality, allowing trusted recoverers
- * to regain access to a Safe account by changing its signers after a review period.
+ * to regain access to a multisig account by changing its signers after a review period.
  *
  * ## Usage
  *

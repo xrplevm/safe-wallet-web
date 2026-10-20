@@ -90,7 +90,7 @@ export const OwnershipChange: Story = {
       .build(),
   },
   tags: ['!chromatic'],
-  parameters: { docs: { description: { story: 'SafeShieldWidget when transaction will change Safe ownership' } } },
+  parameters: { docs: { description: { story: 'SafeShieldWidget when transaction will change account ownership' } } },
 }
 
 // Modules change
@@ -102,7 +102,7 @@ export const ModulesChange: Story = {
       .build(),
   },
   tags: ['!chromatic'],
-  parameters: { docs: { description: { story: 'SafeShieldWidget when transaction will change Safe modules' } } },
+  parameters: { docs: { description: { story: 'SafeShieldWidget when transaction will change account modules' } } },
 }
 
 // Mastercopy change
@@ -114,7 +114,7 @@ export const MastercopyChange: Story = {
       .build(),
   },
   tags: ['!chromatic'],
-  parameters: { docs: { description: { story: 'SafeShieldWidget when transaction will change Safe mastercopy' } } },
+  parameters: { docs: { description: { story: 'SafeShieldWidget when transaction will change account mastercopy' } } },
 }
 
 // Unverified contract with warnings

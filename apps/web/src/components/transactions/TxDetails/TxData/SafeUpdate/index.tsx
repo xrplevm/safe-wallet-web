@@ -14,7 +14,7 @@ function SafeUpdate({ txData }: { txData?: TransactionData | null }) {
         borderRadius={1}
         width="100%"
       >
-        Safe version update
+        Account version update
       </Box>
 
       <DecodedData txData={txData} toInfo={txData?.to} />

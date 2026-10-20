@@ -23,8 +23,8 @@ type CheckWalletProps = {
 enum Message {
   WalletNotConnected = 'Please connect your wallet',
   SDKNotInitialized = 'SDK is not initialized yet',
-  NotSafeOwner = 'Your connected wallet is not a signer of this Safe Account',
-  SafeNotActivated = 'You need to activate the Safe before transacting',
+  NotSafeOwner = 'Your connected wallet is not a signer of this multisig account',
+  SafeNotActivated = 'You need to activate the account before transacting',
 }
 
 const CheckWallet = ({

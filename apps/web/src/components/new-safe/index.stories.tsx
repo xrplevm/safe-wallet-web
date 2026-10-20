@@ -24,13 +24,13 @@ import CheckCircleIcon from '@mui/icons-material/CheckCircle'
 import AccountBalanceWalletIcon from '@mui/icons-material/AccountBalanceWallet'
 
 /**
- * New Safe components handle the creation and loading of Safe accounts.
+ * New account components handle the creation and loading of multisig accounts.
  * The creation flow includes network selection, owner configuration,
  * and threshold settings.
  *
  * Key components:
  * - CardStepper: Multi-step form navigation
- * - SetNameStep: Safe name and network selection
+ * - SetNameStep: Account name and network selection
  * - OwnerPolicyStep: Configure owners and threshold
  * - ReviewStep: Final review before creation
  *
@@ -137,7 +137,7 @@ const StepWrapper = ({
   </Box>
 )
 
-// All Steps - Scrollable view of entire Create Safe flow with full UI at each step
+// All Steps - Scrollable view of entire Create account flow with full UI at each step
 export const CreateSafeAllSteps: StoryObj = {
   render: () => {
     const steps = ['Name', 'Owners', 'Review']
@@ -145,9 +145,9 @@ export const CreateSafeAllSteps: StoryObj = {
     return (
       <Box sx={{ maxWidth: 700 }}>
         <Box sx={{ mb: 6, pb: 3, borderBottom: '2px solid', borderColor: 'primary.main' }}>
-          <Typography variant="h4">Create Safe Flow</Typography>
+          <Typography variant="h4">Create account Flow</Typography>
           <Typography variant="body1" color="text.secondary">
-            Complete walkthrough of the Safe creation process. Scroll to view each step.
+            Complete walkthrough of the account creation process. Scroll to view each step.
           </Typography>
         </Box>
 
@@ -155,11 +155,11 @@ export const CreateSafeAllSteps: StoryObj = {
         <StepWrapper
           stepNumber={1}
           stepName="Name & Network"
-          description="User enters a name for their Safe and selects the network to deploy on."
+          description="User enters a name for their account and selects the network to deploy on."
         >
           <Box sx={{ maxWidth: 600 }}>
             <Typography variant="h4" gutterBottom>
-              Create new Safe
+              Create new account
             </Typography>
             <Stepper activeStep={0} sx={{ mb: 4 }}>
               {steps.map((label) => (
@@ -170,15 +170,15 @@ export const CreateSafeAllSteps: StoryObj = {
             </Stepper>
             <Paper sx={{ p: 3 }}>
               <Typography variant="h6" gutterBottom>
-                Name your Safe
+                Name your account
               </Typography>
               <Typography variant="body2" color="text.secondary" sx={{ mb: 3 }}>
-                Choose a name for your Safe. This is stored locally.
+                Choose a name for your account. This is stored locally.
               </Typography>
               <TextField
                 fullWidth
-                label="Safe name"
-                placeholder="My Safe"
+                label="Account name"
+                placeholder="My Account"
                 defaultValue="Team Treasury"
                 sx={{ mb: 3 }}
               />
@@ -192,7 +192,7 @@ export const CreateSafeAllSteps: StoryObj = {
                 </Select>
               </FormControl>
               <Alert severity="info" sx={{ mb: 3 }}>
-                Your Safe will be created on the selected network. Make sure you have funds for deployment.
+                Your account will be created on the selected network. Make sure you have funds for deployment.
               </Alert>
               <Box sx={{ display: 'flex', justifyContent: 'flex-end' }}>
                 <Button variant="contained">Next</Button>
@@ -205,11 +205,11 @@ export const CreateSafeAllSteps: StoryObj = {
         <StepWrapper
           stepNumber={2}
           stepName="Owners & Threshold"
-          description="User configures the Safe owners and sets the required number of confirmations."
+          description="User configures the account owners and sets the required number of confirmations."
         >
           <Box sx={{ maxWidth: 600 }}>
             <Typography variant="h4" gutterBottom>
-              Create new Safe
+              Create new account
             </Typography>
             <Stepper activeStep={1} sx={{ mb: 4 }}>
               {steps.map((label) => (
@@ -223,7 +223,7 @@ export const CreateSafeAllSteps: StoryObj = {
                 Owners and confirmations
               </Typography>
               <Typography variant="body2" color="text.secondary" sx={{ mb: 3 }}>
-                Add the addresses that will own this Safe and set the number of required confirmations.
+                Add the addresses that will own this account and set the number of required confirmations.
               </Typography>
               {mockOwners.map((owner, index) => (
                 <MockOwnerRow key={index} owner={owner} index={index} onRemove={() => {}} />
@@ -251,10 +251,14 @@ export const CreateSafeAllSteps: StoryObj = {
         </StepWrapper>
 
         {/* Step 3: Review */}
-        <StepWrapper stepNumber={3} stepName="Review" description="User reviews all settings before creating the Safe.">
+        <StepWrapper
+          stepNumber={3}
+          stepName="Review"
+          description="User reviews all settings before creating the account."
+        >
           <Box sx={{ maxWidth: 600 }}>
             <Typography variant="h4" gutterBottom>
-              Create new Safe
+              Create new account
             </Typography>
             <Stepper activeStep={2} sx={{ mb: 4 }}>
               {steps.map((label) => (
@@ -267,7 +271,7 @@ export const CreateSafeAllSteps: StoryObj = {
               <Typography variant="h6" gutterBottom>
                 Review
               </Typography>
-              <MockReviewRow name="Safe name" value={<Typography variant="body2">Team Treasury</Typography>} />
+              <MockReviewRow name="Account name" value={<Typography variant="body2">Team Treasury</Typography>} />
               <MockReviewRow name="Network" value={<Chip label="Ethereum" size="small" />} />
               <MockReviewRow
                 name="Owners"
@@ -286,37 +290,41 @@ export const CreateSafeAllSteps: StoryObj = {
               />
               <MockReviewRow name="Threshold" value={<Typography variant="body2">2 out of 2</Typography>} />
               <Alert severity="warning" sx={{ mt: 3, mb: 3 }}>
-                You will need to pay network fees to deploy this Safe.
+                You will need to pay network fees to deploy this account.
               </Alert>
               <Box sx={{ display: 'flex', justifyContent: 'space-between' }}>
                 <Button>Back</Button>
-                <Button variant="contained">Create Safe</Button>
+                <Button variant="contained">Create account</Button>
               </Box>
             </Paper>
           </Box>
         </StepWrapper>
 
         {/* Step 4: Success */}
-        <StepWrapper stepNumber={4} stepName="Success" description="Confirmation screen shown after Safe is created.">
+        <StepWrapper
+          stepNumber={4}
+          stepName="Success"
+          description="Confirmation screen shown after the account is created."
+        >
           <Box sx={{ maxWidth: 600 }}>
             <Paper sx={{ p: 4, textAlign: 'center' }}>
               <CheckCircleIcon sx={{ fontSize: 64, color: 'success.main', mb: 2 }} />
               <Typography variant="h5" gutterBottom>
-                Safe created successfully!
+                Account created successfully!
               </Typography>
               <Typography variant="body2" color="text.secondary" sx={{ mb: 3 }}>
-                Your new Safe is ready to use.
+                Your new account is ready to use.
               </Typography>
               <Box sx={{ p: 2, bgcolor: 'background.default', borderRadius: 1, mb: 3 }}>
                 <Typography variant="body2" color="text.secondary">
-                  Safe address
+                  Account address
                 </Typography>
                 <Typography variant="body2" fontFamily="monospace">
                   0x1234567890123456789012345678901234567890
                 </Typography>
               </Box>
               <Button variant="contained" startIcon={<AccountBalanceWalletIcon />}>
-                Open Safe
+                Open account
               </Button>
             </Paper>
           </Box>
@@ -327,13 +335,13 @@ export const CreateSafeAllSteps: StoryObj = {
   parameters: {
     docs: {
       description: {
-        story: 'All steps of the Create Safe flow displayed vertically with full UI state at each step.',
+        story: 'All steps of the Create account flow displayed vertically with full UI state at each step.',
       },
     },
   },
 }
 
-// Interactive version - Create Safe Flow
+// Interactive version - Create account Flow
 export const CreateSafeInteractive: StoryObj = {
   tags: ['!chromatic'],
   render: () => {
@@ -354,7 +362,7 @@ export const CreateSafeInteractive: StoryObj = {
     return (
       <Box sx={{ maxWidth: 600 }}>
         <Typography variant="h4" gutterBottom>
-          Create new Safe
+          Create new account
         </Typography>
 
         <Stepper activeStep={step} sx={{ mb: 4 }}>
@@ -369,9 +377,9 @@ export const CreateSafeInteractive: StoryObj = {
           {step === 0 && (
             <>
               <Typography variant="h6" gutterBottom>
-                Name your Safe
+                Name your account
               </Typography>
-              <TextField fullWidth label="Safe name" placeholder="My Safe" sx={{ mb: 3 }} />
+              <TextField fullWidth label="Account name" placeholder="My Account" sx={{ mb: 3 }} />
 
               <FormControl fullWidth sx={{ mb: 3 }}>
                 <InputLabel>Network</InputLabel>
@@ -384,7 +392,7 @@ export const CreateSafeInteractive: StoryObj = {
               </FormControl>
 
               <Alert severity="info" sx={{ mb: 3 }}>
-                Your Safe will be created on the selected network. Make sure you have funds for deployment.
+                Your account will be created on the selected network. Make sure you have funds for deployment.
               </Alert>
 
               <Box sx={{ display: 'flex', justifyContent: 'flex-end' }}>
@@ -401,7 +409,7 @@ export const CreateSafeInteractive: StoryObj = {
                 Owners and confirmations
               </Typography>
               <Typography variant="body2" color="text.secondary" sx={{ mb: 3 }}>
-                Add the addresses that will own this Safe and set the number of required confirmations.
+                Add the addresses that will own this account and set the number of required confirmations.
               </Typography>
 
               {owners.map((owner, index) => (
@@ -443,7 +451,7 @@ export const CreateSafeInteractive: StoryObj = {
                 Review
               </Typography>
 
-              <MockReviewRow name="Safe name" value={<Typography variant="body2">My Safe</Typography>} />
+              <MockReviewRow name="Account name" value={<Typography variant="body2">My Account</Typography>} />
               <MockReviewRow name="Network" value={<Chip label="Ethereum" size="small" />} />
               <MockReviewRow
                 name="Owners"
@@ -467,12 +475,12 @@ export const CreateSafeInteractive: StoryObj = {
               />
 
               <Alert severity="warning" sx={{ mt: 3, mb: 3 }}>
-                You will need to pay network fees to deploy this Safe.
+                You will need to pay network fees to deploy this account.
               </Alert>
 
               <Box sx={{ display: 'flex', justifyContent: 'space-between' }}>
                 <Button onClick={() => setStep(1)}>Back</Button>
-                <Button variant="contained">Create Safe</Button>
+                <Button variant="contained">Create account</Button>
               </Box>
             </>
           )}
@@ -483,27 +491,27 @@ export const CreateSafeInteractive: StoryObj = {
   parameters: {
     docs: {
       description: {
-        story: 'Interactive Safe creation flow - click through to see each step.',
+        story: 'Interactive account creation flow - click through to see each step.',
       },
     },
   },
 }
 
-// Load Safe Flow
+// Load account Flow
 export const LoadSafeFlow: StoryObj = {
   tags: ['!chromatic'],
   render: () => (
     <Box sx={{ maxWidth: 600 }}>
       <Typography variant="h4" gutterBottom>
-        Add existing Safe
+        Add existing account
       </Typography>
 
       <Paper sx={{ p: 3 }}>
         <Typography variant="h6" gutterBottom>
-          Enter Safe address
+          Enter Account address
         </Typography>
         <Typography variant="body2" color="text.secondary" sx={{ mb: 3 }}>
-          Paste the address of an existing Safe you want to add to your account.
+          Paste the address of an existing account you want to add.
         </Typography>
 
         <FormControl fullWidth sx={{ mb: 3 }}>
@@ -515,10 +523,10 @@ export const LoadSafeFlow: StoryObj = {
           </Select>
         </FormControl>
 
-        <TextField fullWidth label="Safe address" placeholder="0x..." sx={{ mb: 3 }} />
+        <TextField fullWidth label="Account address" placeholder="0x..." sx={{ mb: 3 }} />
 
         <Box sx={{ display: 'flex', justifyContent: 'flex-end' }}>
-          <Button variant="contained">Add Safe</Button>
+          <Button variant="contained">Add account</Button>
         </Box>
       </Paper>
     </Box>
@@ -526,7 +534,7 @@ export const LoadSafeFlow: StoryObj = {
   parameters: {
     docs: {
       description: {
-        story: 'Load an existing Safe by entering its address.',
+        story: 'Load an existing account by entering its address.',
       },
     },
   },
@@ -538,13 +546,13 @@ export const SetNameStep: StoryObj = {
   render: () => (
     <Paper sx={{ p: 3, maxWidth: 500 }}>
       <Typography variant="h6" gutterBottom>
-        Name your Safe
+        Name your account
       </Typography>
       <Typography variant="body2" color="text.secondary" sx={{ mb: 3 }}>
-        Choose a name for your Safe. This is stored locally.
+        Choose a name for your account. This is stored locally.
       </Typography>
 
-      <TextField fullWidth label="Safe name" placeholder="My Safe" defaultValue="Team Treasury" sx={{ mb: 3 }} />
+      <TextField fullWidth label="Account name" placeholder="My Account" defaultValue="Team Treasury" sx={{ mb: 3 }} />
 
       <FormControl fullWidth>
         <InputLabel>Network</InputLabel>
@@ -559,7 +567,7 @@ export const SetNameStep: StoryObj = {
   parameters: {
     docs: {
       description: {
-        story: 'First step: set Safe name and select network.',
+        story: 'First step: set Account name and select network.',
       },
     },
   },
@@ -614,10 +622,10 @@ export const ReviewStep: StoryObj = {
   render: () => (
     <Paper sx={{ p: 3, maxWidth: 500 }}>
       <Typography variant="h6" gutterBottom>
-        Review Safe configuration
+        Review account configuration
       </Typography>
 
-      <MockReviewRow name="Safe name" value={<Typography variant="body2">Team Treasury</Typography>} />
+      <MockReviewRow name="Account name" value={<Typography variant="body2">Team Treasury</Typography>} />
       <MockReviewRow name="Network" value={<Chip label="Ethereum" size="small" />} />
       <MockReviewRow
         name="Owners"
@@ -644,7 +652,7 @@ export const ReviewStep: StoryObj = {
   parameters: {
     docs: {
       description: {
-        story: 'Final review step before Safe creation.',
+        story: 'Final review step before account creation.',
       },
     },
   },
@@ -680,7 +688,7 @@ export const ReviewRowComponent: StoryObj = {
   tags: ['!chromatic'],
   render: () => (
     <Paper sx={{ p: 3, maxWidth: 500 }}>
-      <MockReviewRow name="Safe name" value={<Typography variant="body2">My Safe</Typography>} />
+      <MockReviewRow name="Account name" value={<Typography variant="body2">My Account</Typography>} />
       <MockReviewRow name="Network" value={<Chip label="Ethereum" size="small" />} />
       <MockReviewRow name="Balance" value={<Typography variant="body2">$125,000</Typography>} />
     </Paper>
@@ -700,15 +708,15 @@ export const CreationSuccess: StoryObj = {
     <Paper sx={{ p: 4, maxWidth: 500, textAlign: 'center' }}>
       <CheckCircleIcon sx={{ fontSize: 64, color: 'success.main', mb: 2 }} />
       <Typography variant="h5" gutterBottom>
-        Safe created successfully!
+        Account created successfully!
       </Typography>
       <Typography variant="body2" color="text.secondary" sx={{ mb: 3 }}>
-        Your new Safe is ready to use.
+        Your new account is ready to use.
       </Typography>
 
       <Box sx={{ p: 2, bgcolor: 'background.default', borderRadius: 1, mb: 3 }}>
         <Typography variant="body2" color="text.secondary">
-          Safe address
+          Account address
         </Typography>
         <Typography variant="body2" fontFamily="monospace">
           0x1234567890123456789012345678901234567890
@@ -716,14 +724,14 @@ export const CreationSuccess: StoryObj = {
       </Box>
 
       <Button variant="contained" startIcon={<AccountBalanceWalletIcon />}>
-        Open Safe
+        Open account
       </Button>
     </Paper>
   ),
   parameters: {
     docs: {
       description: {
-        story: 'Success screen after Safe creation.',
+        story: 'Success screen after account creation.',
       },
     },
   },

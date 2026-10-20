@@ -26,7 +26,7 @@ export default meta
 type Story = StoryObj<typeof meta>
 
 /**
- * Default AssetsWidget showing top 4 assets from EF Safe.
+ * Default AssetsWidget showing top 4 assets from EF account.
  * Displays token icons, names, balances, and fiat values.
  *
  * Note: Values are translated 80px right and reveal action buttons on hover.
@@ -51,7 +51,7 @@ export const WhalePortfolio: Story = (() => {
 })()
 
 /**
- * Empty state when Safe has no assets.
+ * Empty state when account has no assets.
  * Shows placeholder message to deposit funds.
  */
 export const NoAssets: Story = (() => {
@@ -91,7 +91,7 @@ export const Loading: Story = (() => {
 })()
 
 /**
- * Safe Token holder with diverse portfolio (25 tokens).
+ * Token holder with diverse portfolio (25 tokens).
  *
  * Note: Values are translated 80px right and reveal action buttons on hover.
  * Hover over a row to see the full values and action buttons.

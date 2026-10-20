@@ -961,7 +961,7 @@ describe('WalletConnectProvider', () => {
       })
     })
 
-    it('passes the request onto the Safe Wallet Provider and sends the response to WalletConnect', async () => {
+    it('passes the request onto the wallet provider and sends the response to WalletConnect', async () => {
       const peerDescription = faker.lorem.sentence()
       const peerIcon = faker.image.url()
 

@@ -26,7 +26,7 @@ import StarBorderIcon from '@mui/icons-material/StarBorder'
 import AccountBalanceWalletIcon from '@mui/icons-material/AccountBalanceWallet'
 
 /**
- * MyAccounts feature displays and manages the user's Safe accounts.
+ * MyAccounts feature displays and manages the user's multisig accounts.
  * Shows pinned safes, all safes, and provides search/filter functionality.
  *
  * Key components:
@@ -134,7 +134,7 @@ const MockSafeItem = ({ safe, onPinToggle }: { safe: (typeof mockSafes)[0]; onPi
     <ListItemText
       primary={
         <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
-          <Typography variant="body1">{safe.name || 'Unnamed Safe'}</Typography>
+          <Typography variant="body1">{safe.name || 'Unnamed account'}</Typography>
           {safe.isReadOnly && <Chip label="Read only" size="small" variant="outlined" />}
           {safe.pendingTxs > 0 && <Chip label={`${safe.pendingTxs} pending`} size="small" color="warning" />}
         </Box>
@@ -207,27 +207,30 @@ export const MyAccountsAllStates: StoryObj = {
         </Box>
 
         {/* State 1: Empty */}
-        <StateWrapper stateName="Empty State" description="No Safe accounts added yet. User sees onboarding prompt.">
+        <StateWrapper
+          stateName="Empty State"
+          description="No multisig accounts added yet. User sees onboarding prompt."
+        >
           <Paper sx={{ p: 4, maxWidth: 500, textAlign: 'center' }}>
             <AccountBalanceWalletIcon sx={{ fontSize: 64, color: 'text.secondary', mb: 2 }} />
             <Typography variant="h6" gutterBottom>
-              No Safe accounts yet
+              No multisig accounts yet
             </Typography>
             <Typography variant="body2" color="text.secondary" sx={{ mb: 3 }}>
-              Create a new Safe or add an existing one to get started.
+              Create a new account or add an existing one to get started.
             </Typography>
             <Box sx={{ display: 'flex', gap: 2, justifyContent: 'center' }}>
-              <Button variant="outlined">Add existing Safe</Button>
-              <Button variant="contained">Create new Safe</Button>
+              <Button variant="outlined">Add existing account</Button>
+              <Button variant="contained">Create new account</Button>
             </Box>
           </Paper>
         </StateWrapper>
 
         {/* State 2: Loading */}
-        <StateWrapper stateName="Loading State" description="Fetching Safe accounts from the network.">
+        <StateWrapper stateName="Loading State" description="Fetching multisig accounts from the network.">
           <Paper sx={{ p: 2, maxWidth: 500 }}>
             <Typography variant="subtitle2" color="text.secondary" sx={{ mb: 2 }}>
-              My Safes
+              My accounts
             </Typography>
             {[1, 2, 3].map((i) => (
               <Box key={i} sx={{ display: 'flex', alignItems: 'center', gap: 2, p: 2 }}>
@@ -244,18 +247,18 @@ export const MyAccountsAllStates: StoryObj = {
 
         {/* State 3: With Pinned Safes */}
         <StateWrapper
-          stateName="With Pinned & All Safes"
-          description="User has both pinned favorites and regular Safe accounts."
+          stateName="With Pinned & All accounts"
+          description="User has both pinned favorites and regular multisig accounts."
         >
           <Box sx={{ maxWidth: 600 }}>
             <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', mb: 3 }}>
               <Typography variant="h4">My Accounts</Typography>
               <Box sx={{ display: 'flex', gap: 1 }}>
                 <Button variant="outlined" startIcon={<AddIcon />}>
-                  Add Safe
+                  Add account
                 </Button>
                 <Button variant="contained" startIcon={<AddIcon />}>
-                  Create Safe
+                  Create account
                 </Button>
               </Box>
             </Box>
@@ -286,7 +289,7 @@ export const MyAccountsAllStates: StoryObj = {
 
             <Paper sx={{ p: 2 }}>
               <Typography variant="subtitle2" color="text.secondary" sx={{ mb: 1 }}>
-                All Safes
+                All accounts
               </Typography>
               <List>
                 {otherSafes.map((safe) => (
@@ -327,7 +330,7 @@ export const MyAccountsAllStates: StoryObj = {
         {/* State 5: Multi-Chain Account */}
         <StateWrapper
           stateName="Multi-Chain Account"
-          description="Same Safe address deployed across multiple networks."
+          description="Same account address deployed across multiple networks."
         >
           <Paper sx={{ maxWidth: 500 }}>
             <MockMultiChainSafeItem safe={mockMultiChainSafe} />
@@ -395,10 +398,10 @@ export const FullMyAccountsPage: StoryObj = {
           <Typography variant="h4">My Accounts</Typography>
           <Box sx={{ display: 'flex', gap: 1 }}>
             <Button variant="outlined" startIcon={<AddIcon />}>
-              Add Safe
+              Add account
             </Button>
             <Button variant="contained" startIcon={<AddIcon />}>
-              Create Safe
+              Create account
             </Button>
           </Box>
         </Box>
@@ -447,7 +450,7 @@ export const FullMyAccountsPage: StoryObj = {
 
             <Paper sx={{ p: 2 }}>
               <Typography variant="subtitle2" color="text.secondary" sx={{ mb: 1 }}>
-                All Safes
+                All accounts
               </Typography>
               <List>
                 {otherSafes.map((safe) => (
@@ -502,21 +505,21 @@ export const EmptyState: StoryObj = {
     <Paper sx={{ p: 4, maxWidth: 500, textAlign: 'center' }}>
       <AccountBalanceWalletIcon sx={{ fontSize: 64, color: 'text.secondary', mb: 2 }} />
       <Typography variant="h6" gutterBottom>
-        No Safe accounts yet
+        No multisig accounts yet
       </Typography>
       <Typography variant="body2" color="text.secondary" sx={{ mb: 3 }}>
-        Create a new Safe or add an existing one to get started.
+        Create a new account or add an existing one to get started.
       </Typography>
       <Box sx={{ display: 'flex', gap: 2, justifyContent: 'center' }}>
-        <Button variant="outlined">Add existing Safe</Button>
-        <Button variant="contained">Create new Safe</Button>
+        <Button variant="outlined">Add existing account</Button>
+        <Button variant="contained">Create new account</Button>
       </Box>
     </Paper>
   ),
   parameters: {
     docs: {
       description: {
-        story: 'Empty state when user has no Safe accounts.',
+        story: 'Empty state when user has no multisig accounts.',
       },
     },
   },
@@ -527,7 +530,7 @@ export const LoadingState: StoryObj = {
   render: () => (
     <Paper sx={{ p: 2, maxWidth: 500 }}>
       <Typography variant="subtitle2" color="text.secondary" sx={{ mb: 2 }}>
-        My Safes
+        My accounts
       </Typography>
       {[1, 2, 3].map((i) => (
         <Box key={i} sx={{ display: 'flex', alignItems: 'center', gap: 2, p: 2 }}>
@@ -666,10 +669,10 @@ export const AccountsHeader: StoryObj = {
         <Typography variant="h5">My Accounts</Typography>
         <Box sx={{ display: 'flex', gap: 1 }}>
           <Button variant="outlined" size="small" startIcon={<AddIcon />}>
-            Add Safe
+            Add account
           </Button>
           <Button variant="contained" size="small" startIcon={<AddIcon />}>
-            Create Safe
+            Create account
           </Button>
         </Box>
       </Box>
