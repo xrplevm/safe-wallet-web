@@ -16,11 +16,17 @@ const readmeLicense = (root) => {
   if (start === -1) return ''
   const level = lines[start].match(/^#+/)[0].length
   const end = lines.findIndex((l, i) => i > start && (l.match(/^#+/)?.[0].length ?? 99) <= level)
-  return lines.slice(start, end === -1 ? undefined : end).join('\n').trim()
+  return lines
+    .slice(start, end === -1 ? undefined : end)
+    .join('\n')
+    .trim()
 }
 
 const licenseText = (root, pkg) => {
-  const files = fs.readdirSync(root).filter((f) => LICENSE_FILE.test(f)).sort()
+  const files = fs
+    .readdirSync(root)
+    .filter((f) => LICENSE_FILE.test(f))
+    .sort()
   if (files.length) return files.map((f) => fs.readFileSync(path.join(root, f), 'utf8').trim()).join('\n\n')
   const fromReadme = readmeLicense(root)
   if (fromReadme) return `(License section of the package README)\n\n${fromReadme}`
@@ -58,6 +64,40 @@ const repositoryOf = (pkg) => {
     .replace(/^([\w-]+\/[\w.-]+)$/, 'https://github.com/$1')
 }
 
+/** Module resource paths of a webpack compilation, including modules inside concatenated (scope-hoisted) modules. */
+export const moduleResources = (modules) => {
+  const resources = []
+  const visit = (module) => {
+    if (module.modules) module.modules.forEach(visit)
+    const resource = module.resource || module.rootModule?.resource
+    if (resource) resources.push(resource)
+  }
+  modules.forEach(visit)
+  return resources
+}
+
+/** One entry per published npm package version used by the given module paths, sorted by name. */
+export const collectPackages = (resources) => {
+  const roots = new Set(resources.map(packageRoot).filter(Boolean))
+  const packages = new Map()
+  for (const root of roots) {
+    const pkgFile = path.join(root, 'package.json')
+    if (!fs.existsSync(pkgFile)) continue
+    const pkg = JSON.parse(fs.readFileSync(pkgFile, 'utf8'))
+    if (!pkg.name || pkg.private) continue
+    const key = `${pkg.name}@${pkg.version}`
+    if (packages.has(key)) continue
+    packages.set(key, {
+      name: pkg.name,
+      version: pkg.version,
+      license: licenseOf(pkg),
+      repository: repositoryOf(pkg),
+      text: licenseText(root, pkg),
+    })
+  }
+  return [...packages.values()].sort((a, b) => a.name.localeCompare(b.name) || a.version.localeCompare(b.version))
+}
+
 /**
  * Lists every npm package that ends up in the browser bundle, with its version and license,
  * and writes the full license texts next to it. The /licenses page renders the JSON.
@@ -73,35 +113,7 @@ export class ThirdPartyLicensesWebpackPlugin {
       compilation.hooks.processAssets.tap(
         { name: pluginName, stage: compilation.constructor.PROCESS_ASSETS_STAGE_ADDITIONAL },
         () => {
-          const roots = new Set()
-          const visit = (module) => {
-            if (module.modules) module.modules.forEach(visit)
-            const resource = module.resource || module.rootModule?.resource
-            const root = resource && packageRoot(resource)
-            if (root) roots.add(root)
-          }
-          compilation.modules.forEach(visit)
-
-          const packages = new Map()
-          for (const root of roots) {
-            const pkgFile = path.join(root, 'package.json')
-            if (!fs.existsSync(pkgFile)) continue
-            const pkg = JSON.parse(fs.readFileSync(pkgFile, 'utf8'))
-            if (!pkg.name || pkg.private) continue
-            const key = `${pkg.name}@${pkg.version}`
-            if (packages.has(key)) continue
-            packages.set(key, {
-              name: pkg.name,
-              version: pkg.version,
-              license: licenseOf(pkg),
-              repository: repositoryOf(pkg),
-              text: licenseText(root, pkg),
-            })
-          }
-
-          const list = [...packages.values()].sort(
-            (a, b) => a.name.localeCompare(b.name) || a.version.localeCompare(b.version),
-          )
+          const list = collectPackages(moduleResources(compilation.modules))
           const json = list.map(({ text, ...rest }) => rest)
           const txt = list
             .map((p) => `${p.name}@${p.version} (${p.license})\n${p.repository}\n\n${p.text}`)
