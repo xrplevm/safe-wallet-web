@@ -101,13 +101,13 @@ export default meta
 type Story = StoryObj<typeof meta>
 
 /**
- * Default OwnerList showing the EF Safe owners.
+ * Default OwnerList showing the EF account owners.
  * Connected wallet is an owner, so action buttons are enabled.
  */
 export const Default: Story = {}
 
 /**
- * Safe with 2 owners (2-of-2 multisig).
+ * Account with 2 owners (2-of-2 multisig).
  * Shows remove button for both owners.
  */
 export const TwoOwners: Story = (() => {
@@ -140,7 +140,7 @@ export const TwoOwners: Story = (() => {
 })()
 
 /**
- * Safe with a single owner (1-of-1).
+ * Account with a single owner (1-of-1).
  * Remove button is hidden since there must be at least one owner.
  */
 export const SingleOwner: Story = (() => {
@@ -173,7 +173,7 @@ export const SingleOwner: Story = (() => {
 })()
 
 /**
- * Safe with many owners (5-of-7 multisig).
+ * Account with many owners (5-of-7 multisig).
  * Tests list rendering with larger owner counts.
  */
 export const ManyOwners: Story = (() => {

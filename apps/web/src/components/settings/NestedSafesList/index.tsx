@@ -49,7 +49,7 @@ export function NestedSafesList(): ReactElement | null {
                 <CheckWallet>
                   {(isOk) => (
                     <Track {...NESTED_SAFE_EVENTS.RENAME}>
-                      <Tooltip title={isOk ? 'Rename nested Safe' : undefined}>
+                      <Tooltip title={isOk ? 'Rename nested account' : undefined}>
                         <span>
                           <IconButton onClick={() => setAddressToRename(nestedSafe)} size="small" disabled={!isOk}>
                             <SvgIcon component={EditIcon} inheritViewBox fontSize="small" color="border" />
@@ -77,19 +77,19 @@ export function NestedSafesList(): ReactElement | null {
         <Grid2 container direction="row" justifyContent="space-between" spacing={3} mb={2}>
           <Grid2 size={{ lg: 4, xs: 12 }}>
             <Typography variant="h4" fontWeight={700}>
-              Nested Safes
+              Nested accounts
             </Typography>
           </Grid2>
 
           <Grid2 size="grow">
             <Typography mb={3}>
-              Nested Safes are separate wallets owned by your main Account, perfect for organizing different funds and
-              projects.
+              Nested accounts are separate wallets owned by your main Account, perfect for organizing different funds
+              and projects.
             </Typography>
 
             {rows.length === 0 && (
               <Typography mb={3}>
-                You don&apos;t have any Nested Safes yet. Set one up now to better organize your assets
+                You don&apos;t have any nested accounts yet. Set one up now to better organize your assets
               </Typography>
             )}
 
@@ -103,7 +103,7 @@ export function NestedSafesList(): ReactElement | null {
                     disabled={!isOk}
                     sx={{ mb: 3 }}
                   >
-                    Add nested Safe
+                    Add nested account
                   </Button>
                 )}
               </CheckWallet>

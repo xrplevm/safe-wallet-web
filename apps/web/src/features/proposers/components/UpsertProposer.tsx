@@ -95,8 +95,8 @@ const UpsertProposer = ({ onClose, onSuccess, proposer }: UpsertProposerProps) =
 
   const validateAddress = useCallback<Validate<string>>(
     (value) =>
-      addressIsNotCurrentSafe(safeAddress, 'Cannot add Safe Account itself as proposer')(value) ??
-      addressIsNotOwner(safeOwnerAddresses, 'Cannot add Safe Owner as proposer')(value),
+      addressIsNotCurrentSafe(safeAddress, 'Cannot add the multisig account itself as proposer')(value) ??
+      addressIsNotOwner(safeOwnerAddresses, 'Cannot add account owner as proposer')(value),
     [safeAddress, safeOwnerAddresses],
   )
 
@@ -222,13 +222,13 @@ const UpsertProposer = ({ onClose, onSuccess, proposer }: UpsertProposerProps) =
           </Alert>
 
           <Typography variant="body2" mb={2}>
-            The delegation request has been created as an off-chain message on your parent Safe. Other owners of the
-            parent Safe need to sign it before the proposer can be added.
+            The delegation request has been created as an off-chain message on your parent account. Other owners of the
+            parent account need to sign it before the proposer can be added.
           </Typography>
 
           <Typography variant="body2" color="text.secondary">
-            The other parent Safe owners can find and sign this pending delegation on the proposer settings page of this
-            Safe.
+            The other parent account owners can find and sign this pending delegation on the proposer settings page of
+            this account.
           </Typography>
         </DialogContent>
 
@@ -266,7 +266,7 @@ const UpsertProposer = ({ onClose, onSuccess, proposer }: UpsertProposerProps) =
           <DialogContent>
             {isMultiSigRequired && (
               <Alert severity="info" sx={{ mb: 2 }}>
-                This requires {parentThreshold} of {parentOwners?.length ?? '?'} parent Safe owner signatures to
+                This requires {parentThreshold} of {parentOwners?.length ?? '?'} parent account owner signatures to
                 complete.
               </Alert>
             )}

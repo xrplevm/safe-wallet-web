@@ -11,7 +11,7 @@ exports[`HexEncodedData should not cut the text in case the limit option is high
       style="word-break: break-word;"
     >
       <span
-        class="MuiTypography-root MuiTypography-body2 css-1ew0eu5-MuiTypography-root"
+        class="MuiTypography-root MuiTypography-body2 css-ce200z-MuiTypography-root"
       >
         Data (hex-encoded)
       </span>
@@ -61,7 +61,7 @@ exports[`HexEncodedData should not highlight the data if highlight option is fal
       style="word-break: break-word;"
     >
       <span
-        class="MuiTypography-root MuiTypography-body2 css-1ew0eu5-MuiTypography-root"
+        class="MuiTypography-root MuiTypography-body2 css-ce200z-MuiTypography-root"
       >
         Some arbitrary data
       </span>
@@ -104,7 +104,7 @@ exports[`HexEncodedData should render the default component markup 1`] = `
       style="word-break: break-word;"
     >
       <span
-        class="MuiTypography-root MuiTypography-body2 css-1ew0eu5-MuiTypography-root"
+        class="MuiTypography-root MuiTypography-body2 css-ce200z-MuiTypography-root"
       >
         Data (hex-encoded)
       </span>
@@ -138,7 +138,7 @@ exports[`HexEncodedData should render the default component markup 1`] = `
           </span>
         </span>
         <button
-          class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways MuiLink-button showMore css-izn2ge-MuiTypography-root-MuiLink-root"
+          class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways MuiLink-button showMore css-piiypq-MuiTypography-root-MuiLink-root"
           data-testid="show-more"
           type="button"
         >

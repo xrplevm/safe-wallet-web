@@ -63,7 +63,7 @@ export const portfolioFixtures = {
   vitalik: portfolioVitalik as Portfolio,
   /** Safe with spam tokens */
   spamTokens: portfolioSpamTokens as Portfolio,
-  /** Safe Token holder with diverse DeFi (15 different apps) */
+  /** XRP holder with diverse DeFi (15 different apps) */
   safeTokenHolder: portfolioSafeTokenHolder as Portfolio,
   /** Empty portfolio */
   empty: portfolioEmpty as Portfolio,
@@ -79,7 +79,7 @@ export const balancesFixtures = {
   vitalik: balancesVitalik as Balances,
   /** Spam tokens Safe */
   spamTokens: balancesSpamTokens as Balances,
-  /** Safe Token holder - 25 tokens */
+  /** XRP holder - 25 tokens */
   safeTokenHolder: balancesSafeTokenHolder as Balances,
   /** Empty balances */
   empty: balancesEmpty as Balances,
@@ -95,7 +95,7 @@ export const positionsFixtures = {
   vitalik: positionsVitalik as Protocol[],
   /** Spam tokens Safe - 2 protocols */
   spamTokens: positionsSpamTokens as Protocol[],
-  /** Safe Token holder - 15 diverse protocols */
+  /** XRP holder - 15 diverse protocols */
   safeTokenHolder: positionsSafeTokenHolder as Protocol[],
   /** No positions */
   empty: positionsEmpty as Protocol[],
@@ -111,7 +111,7 @@ export const safeFixtures = {
   vitalik: safeVitalik as SafeState,
   /** Spam tokens Safe */
   spamTokens: safeSpamTokens as SafeState,
-  /** Safe Token holder */
+  /** XRP holder */
   safeTokenHolder: safeSafeTokenHolder as SafeState,
 }
 

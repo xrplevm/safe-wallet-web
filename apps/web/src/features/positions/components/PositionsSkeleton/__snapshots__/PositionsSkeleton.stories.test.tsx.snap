@@ -11,11 +11,11 @@ exports[`./PositionsSkeleton.stories Default 1`] = `
       class="MuiStack-root mui-style-1ucnu3w-MuiStack-root"
     >
       <div
-        class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 MuiCard-root mui-style-10wna7a-MuiPaper-root-MuiCard-root"
+        class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 MuiCard-root mui-style-1nm3xyz-MuiPaper-root-MuiCard-root"
         style="--Paper-shadow: none;"
       >
         <div
-          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 MuiAccordion-root MuiAccordion-rounded Mui-expanded mui-style-b8kipg-MuiPaper-root-MuiAccordion-root"
+          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 MuiAccordion-root MuiAccordion-rounded Mui-expanded mui-style-1j3d3t6-MuiPaper-root-MuiAccordion-root"
           style="--Paper-shadow: none;"
         >
           <h3
@@ -23,7 +23,7 @@ exports[`./PositionsSkeleton.stories Default 1`] = `
           >
             <button
               aria-expanded="true"
-              class="MuiButtonBase-root MuiAccordionSummary-root Mui-expanded mui-style-1wczrn0-MuiButtonBase-root-MuiAccordionSummary-root"
+              class="MuiButtonBase-root MuiAccordionSummary-root Mui-expanded mui-style-1ygamdt-MuiButtonBase-root-MuiAccordionSummary-root"
               tabindex="0"
               type="button"
             >
@@ -34,34 +34,34 @@ exports[`./PositionsSkeleton.stories Default 1`] = `
                   class="MuiStack-root mui-style-1ele3rf-MuiStack-root"
                 >
                   <span
-                    class="MuiSkeleton-root MuiSkeleton-rounded MuiSkeleton-pulse mui-style-zrzlf2-MuiSkeleton-root"
+                    class="MuiSkeleton-root MuiSkeleton-rounded MuiSkeleton-pulse mui-style-14rslf3-MuiSkeleton-root"
                     style="width: 40px; height: 40px;"
                   />
                   <div
                     class="MuiBox-root mui-style-1rr4qq7"
                   >
                     <p
-                      class="MuiTypography-root MuiTypography-body1 mui-style-v6lhhw-MuiTypography-root"
+                      class="MuiTypography-root MuiTypography-body1 mui-style-i9kxid-MuiTypography-root"
                     >
                       <span
-                        class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse mui-style-1daydue-MuiSkeleton-root"
+                        class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse mui-style-1ngd83o-MuiSkeleton-root"
                         style="width: 120px;"
                       />
                     </p>
                     <p
-                      class="MuiTypography-root MuiTypography-body2 mui-style-17vdyq3-MuiTypography-root"
+                      class="MuiTypography-root MuiTypography-body2 mui-style-1js3693-MuiTypography-root"
                     >
                       <span
-                        class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse mui-style-1daydue-MuiSkeleton-root"
+                        class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse mui-style-1ngd83o-MuiSkeleton-root"
                         style="width: 80px;"
                       />
                     </p>
                   </div>
                   <p
-                    class="MuiTypography-root MuiTypography-body1 mui-style-v6lhhw-MuiTypography-root"
+                    class="MuiTypography-root MuiTypography-body1 mui-style-i9kxid-MuiTypography-root"
                   >
                     <span
-                      class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse mui-style-1daydue-MuiSkeleton-root"
+                      class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse mui-style-1ngd83o-MuiSkeleton-root"
                       style="width: 60px;"
                     />
                   </p>
@@ -108,22 +108,22 @@ exports[`./PositionsSkeleton.stories Default 1`] = `
                         class="MuiBox-root mui-style-dzaqf9"
                       >
                         <div
-                          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 MuiTableContainer-root mui-style-15l0b46-MuiPaper-root-MuiTableContainer-root"
+                          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 MuiTableContainer-root mui-style-3jd91a-MuiPaper-root-MuiTableContainer-root"
                           data-testid="table-container"
                           style="--Paper-shadow: none;"
                         >
                           <table
                             aria-labelledby="tableTitle"
-                            class="MuiTable-root compactTable mui-style-14ipoqq-MuiTable-root"
+                            class="MuiTable-root compactTable mui-style-1aspxxl-MuiTable-root"
                           >
                             <thead
                               class="MuiTableHead-root mui-style-1bxxo5-MuiTableHead-root"
                             >
                               <tr
-                                class="MuiTableRow-root MuiTableRow-head mui-style-ee4r5n-MuiTableRow-root"
+                                class="MuiTableRow-root MuiTableRow-head mui-style-1t7qlty-MuiTableRow-root"
                               >
                                 <th
-                                  class="MuiTableCell-root MuiTableCell-head MuiTableCell-alignLeft MuiTableCell-sizeMedium mui-style-16mkdhd-MuiTableCell-root"
+                                  class="MuiTableCell-root MuiTableCell-head MuiTableCell-alignLeft MuiTableCell-sizeMedium mui-style-mb81ms-MuiTableCell-root"
                                   scope="col"
                                 >
                                   <span
@@ -133,7 +133,7 @@ exports[`./PositionsSkeleton.stories Default 1`] = `
                                   </span>
                                 </th>
                                 <th
-                                  class="MuiTableCell-root MuiTableCell-head MuiTableCell-alignLeft MuiTableCell-sizeMedium mui-style-14qoodj-MuiTableCell-root"
+                                  class="MuiTableCell-root MuiTableCell-head MuiTableCell-alignLeft MuiTableCell-sizeMedium mui-style-n2ub9s-MuiTableCell-root"
                                   scope="col"
                                 >
                                   <span
@@ -143,7 +143,7 @@ exports[`./PositionsSkeleton.stories Default 1`] = `
                                   </span>
                                 </th>
                                 <th
-                                  class="MuiTableCell-root MuiTableCell-head MuiTableCell-alignLeft MuiTableCell-sizeMedium mui-style-1lpfb9u-MuiTableCell-root"
+                                  class="MuiTableCell-root MuiTableCell-head MuiTableCell-alignLeft MuiTableCell-sizeMedium mui-style-165p3i4-MuiTableCell-root"
                                   scope="col"
                                 >
                                   <span
@@ -155,15 +155,15 @@ exports[`./PositionsSkeleton.stories Default 1`] = `
                               </tr>
                             </thead>
                             <tbody
-                              class="MuiTableBody-root mui-style-hvwm6q-MuiTableBody-root"
+                              class="MuiTableBody-root mui-style-1x3ttcx-MuiTableBody-root"
                             >
                               <tr
-                                class="MuiTableRow-root mui-style-ee4r5n-MuiTableRow-root"
+                                class="MuiTableRow-root mui-style-1t7qlty-MuiTableRow-root"
                                 data-testid="table-row"
                                 tabindex="-1"
                               >
                                 <td
-                                  class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium mui-style-v0c5dw-MuiTableCell-root"
+                                  class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium mui-style-ndgvsg-MuiTableCell-root"
                                   data-testid="table-cell-name"
                                 >
                                   <div
@@ -180,25 +180,25 @@ exports[`./PositionsSkeleton.stories Default 1`] = `
                                           class="MuiStack-root mui-style-1rlitzi-MuiStack-root"
                                         >
                                           <span
-                                            class="MuiSkeleton-root MuiSkeleton-rounded MuiSkeleton-pulse mui-style-zrzlf2-MuiSkeleton-root"
+                                            class="MuiSkeleton-root MuiSkeleton-rounded MuiSkeleton-pulse mui-style-14rslf3-MuiSkeleton-root"
                                             style="width: 32px; height: 32px;"
                                           />
                                           <div
                                             class="MuiBox-root mui-style-0"
                                           >
                                             <p
-                                              class="MuiTypography-root MuiTypography-body1 mui-style-v6lhhw-MuiTypography-root"
+                                              class="MuiTypography-root MuiTypography-body1 mui-style-i9kxid-MuiTypography-root"
                                             >
                                               <span
-                                                class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse mui-style-1daydue-MuiSkeleton-root"
+                                                class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse mui-style-1ngd83o-MuiSkeleton-root"
                                                 style="width: 100px;"
                                               />
                                             </p>
                                             <p
-                                              class="MuiTypography-root MuiTypography-body2 mui-style-17vdyq3-MuiTypography-root"
+                                              class="MuiTypography-root MuiTypography-body2 mui-style-1js3693-MuiTypography-root"
                                             >
                                               <span
-                                                class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse mui-style-1daydue-MuiSkeleton-root"
+                                                class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse mui-style-1ngd83o-MuiSkeleton-root"
                                                 style="width: 80px;"
                                               />
                                             </p>
@@ -209,7 +209,7 @@ exports[`./PositionsSkeleton.stories Default 1`] = `
                                   </div>
                                 </td>
                                 <td
-                                  class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium mui-style-v0c5dw-MuiTableCell-root"
+                                  class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium mui-style-ndgvsg-MuiTableCell-root"
                                   data-testid="table-cell-balance"
                                 >
                                   <div
@@ -223,10 +223,10 @@ exports[`./PositionsSkeleton.stories Default 1`] = `
                                         class="MuiCollapse-wrapperInner MuiCollapse-vertical mui-style-1i4ywhz-MuiCollapse-wrapperInner"
                                       >
                                         <p
-                                          class="MuiTypography-root MuiTypography-body1 mui-style-1gmilbo-MuiTypography-root"
+                                          class="MuiTypography-root MuiTypography-body1 mui-style-10mcyfv-MuiTypography-root"
                                         >
                                           <span
-                                            class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse mui-style-1daydue-MuiSkeleton-root"
+                                            class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse mui-style-1ngd83o-MuiSkeleton-root"
                                             style="width: 60px;"
                                           />
                                         </p>
@@ -235,7 +235,7 @@ exports[`./PositionsSkeleton.stories Default 1`] = `
                                   </div>
                                 </td>
                                 <td
-                                  class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium mui-style-v0c5dw-MuiTableCell-root"
+                                  class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium mui-style-ndgvsg-MuiTableCell-root"
                                   data-testid="table-cell-value"
                                 >
                                   <div
@@ -252,18 +252,18 @@ exports[`./PositionsSkeleton.stories Default 1`] = `
                                           class="MuiBox-root mui-style-s2uf1z"
                                         >
                                           <p
-                                            class="MuiTypography-root MuiTypography-body1 mui-style-v6lhhw-MuiTypography-root"
+                                            class="MuiTypography-root MuiTypography-body1 mui-style-i9kxid-MuiTypography-root"
                                           >
                                             <span
-                                              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse mui-style-1daydue-MuiSkeleton-root"
+                                              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse mui-style-1ngd83o-MuiSkeleton-root"
                                               style="width: 50px;"
                                             />
                                           </p>
                                           <span
-                                            class="MuiTypography-root MuiTypography-caption mui-style-19nflmw-MuiTypography-root"
+                                            class="MuiTypography-root MuiTypography-caption mui-style-1otqgcb-MuiTypography-root"
                                           >
                                             <span
-                                              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse mui-style-1daydue-MuiSkeleton-root"
+                                              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse mui-style-1ngd83o-MuiSkeleton-root"
                                               style="width: 40px;"
                                             />
                                           </span>
@@ -274,12 +274,12 @@ exports[`./PositionsSkeleton.stories Default 1`] = `
                                 </td>
                               </tr>
                               <tr
-                                class="MuiTableRow-root mui-style-ee4r5n-MuiTableRow-root"
+                                class="MuiTableRow-root mui-style-1t7qlty-MuiTableRow-root"
                                 data-testid="table-row"
                                 tabindex="-1"
                               >
                                 <td
-                                  class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium mui-style-v0c5dw-MuiTableCell-root"
+                                  class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium mui-style-ndgvsg-MuiTableCell-root"
                                   data-testid="table-cell-name"
                                 >
                                   <div
@@ -296,25 +296,25 @@ exports[`./PositionsSkeleton.stories Default 1`] = `
                                           class="MuiStack-root mui-style-1rlitzi-MuiStack-root"
                                         >
                                           <span
-                                            class="MuiSkeleton-root MuiSkeleton-rounded MuiSkeleton-pulse mui-style-zrzlf2-MuiSkeleton-root"
+                                            class="MuiSkeleton-root MuiSkeleton-rounded MuiSkeleton-pulse mui-style-14rslf3-MuiSkeleton-root"
                                             style="width: 32px; height: 32px;"
                                           />
                                           <div
                                             class="MuiBox-root mui-style-0"
                                           >
                                             <p
-                                              class="MuiTypography-root MuiTypography-body1 mui-style-v6lhhw-MuiTypography-root"
+                                              class="MuiTypography-root MuiTypography-body1 mui-style-i9kxid-MuiTypography-root"
                                             >
                                               <span
-                                                class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse mui-style-1daydue-MuiSkeleton-root"
+                                                class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse mui-style-1ngd83o-MuiSkeleton-root"
                                                 style="width: 100px;"
                                               />
                                             </p>
                                             <p
-                                              class="MuiTypography-root MuiTypography-body2 mui-style-17vdyq3-MuiTypography-root"
+                                              class="MuiTypography-root MuiTypography-body2 mui-style-1js3693-MuiTypography-root"
                                             >
                                               <span
-                                                class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse mui-style-1daydue-MuiSkeleton-root"
+                                                class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse mui-style-1ngd83o-MuiSkeleton-root"
                                                 style="width: 80px;"
                                               />
                                             </p>
@@ -325,7 +325,7 @@ exports[`./PositionsSkeleton.stories Default 1`] = `
                                   </div>
                                 </td>
                                 <td
-                                  class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium mui-style-v0c5dw-MuiTableCell-root"
+                                  class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium mui-style-ndgvsg-MuiTableCell-root"
                                   data-testid="table-cell-balance"
                                 >
                                   <div
@@ -339,10 +339,10 @@ exports[`./PositionsSkeleton.stories Default 1`] = `
                                         class="MuiCollapse-wrapperInner MuiCollapse-vertical mui-style-1i4ywhz-MuiCollapse-wrapperInner"
                                       >
                                         <p
-                                          class="MuiTypography-root MuiTypography-body1 mui-style-1gmilbo-MuiTypography-root"
+                                          class="MuiTypography-root MuiTypography-body1 mui-style-10mcyfv-MuiTypography-root"
                                         >
                                           <span
-                                            class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse mui-style-1daydue-MuiSkeleton-root"
+                                            class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse mui-style-1ngd83o-MuiSkeleton-root"
                                             style="width: 60px;"
                                           />
                                         </p>
@@ -351,7 +351,7 @@ exports[`./PositionsSkeleton.stories Default 1`] = `
                                   </div>
                                 </td>
                                 <td
-                                  class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium mui-style-v0c5dw-MuiTableCell-root"
+                                  class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium mui-style-ndgvsg-MuiTableCell-root"
                                   data-testid="table-cell-value"
                                 >
                                   <div
@@ -368,18 +368,18 @@ exports[`./PositionsSkeleton.stories Default 1`] = `
                                           class="MuiBox-root mui-style-s2uf1z"
                                         >
                                           <p
-                                            class="MuiTypography-root MuiTypography-body1 mui-style-v6lhhw-MuiTypography-root"
+                                            class="MuiTypography-root MuiTypography-body1 mui-style-i9kxid-MuiTypography-root"
                                           >
                                             <span
-                                              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse mui-style-1daydue-MuiSkeleton-root"
+                                              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse mui-style-1ngd83o-MuiSkeleton-root"
                                               style="width: 50px;"
                                             />
                                           </p>
                                           <span
-                                            class="MuiTypography-root MuiTypography-caption mui-style-19nflmw-MuiTypography-root"
+                                            class="MuiTypography-root MuiTypography-caption mui-style-1otqgcb-MuiTypography-root"
                                           >
                                             <span
-                                              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse mui-style-1daydue-MuiSkeleton-root"
+                                              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse mui-style-1ngd83o-MuiSkeleton-root"
                                               style="width: 40px;"
                                             />
                                           </span>
@@ -390,12 +390,12 @@ exports[`./PositionsSkeleton.stories Default 1`] = `
                                 </td>
                               </tr>
                               <tr
-                                class="MuiTableRow-root mui-style-ee4r5n-MuiTableRow-root"
+                                class="MuiTableRow-root mui-style-1t7qlty-MuiTableRow-root"
                                 data-testid="table-row"
                                 tabindex="-1"
                               >
                                 <td
-                                  class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium mui-style-v0c5dw-MuiTableCell-root"
+                                  class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium mui-style-ndgvsg-MuiTableCell-root"
                                   data-testid="table-cell-name"
                                 >
                                   <div
@@ -412,25 +412,25 @@ exports[`./PositionsSkeleton.stories Default 1`] = `
                                           class="MuiStack-root mui-style-1rlitzi-MuiStack-root"
                                         >
                                           <span
-                                            class="MuiSkeleton-root MuiSkeleton-rounded MuiSkeleton-pulse mui-style-zrzlf2-MuiSkeleton-root"
+                                            class="MuiSkeleton-root MuiSkeleton-rounded MuiSkeleton-pulse mui-style-14rslf3-MuiSkeleton-root"
                                             style="width: 32px; height: 32px;"
                                           />
                                           <div
                                             class="MuiBox-root mui-style-0"
                                           >
                                             <p
-                                              class="MuiTypography-root MuiTypography-body1 mui-style-v6lhhw-MuiTypography-root"
+                                              class="MuiTypography-root MuiTypography-body1 mui-style-i9kxid-MuiTypography-root"
                                             >
                                               <span
-                                                class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse mui-style-1daydue-MuiSkeleton-root"
+                                                class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse mui-style-1ngd83o-MuiSkeleton-root"
                                                 style="width: 100px;"
                                               />
                                             </p>
                                             <p
-                                              class="MuiTypography-root MuiTypography-body2 mui-style-17vdyq3-MuiTypography-root"
+                                              class="MuiTypography-root MuiTypography-body2 mui-style-1js3693-MuiTypography-root"
                                             >
                                               <span
-                                                class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse mui-style-1daydue-MuiSkeleton-root"
+                                                class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse mui-style-1ngd83o-MuiSkeleton-root"
                                                 style="width: 80px;"
                                               />
                                             </p>
@@ -441,7 +441,7 @@ exports[`./PositionsSkeleton.stories Default 1`] = `
                                   </div>
                                 </td>
                                 <td
-                                  class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium mui-style-v0c5dw-MuiTableCell-root"
+                                  class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium mui-style-ndgvsg-MuiTableCell-root"
                                   data-testid="table-cell-balance"
                                 >
                                   <div
@@ -455,10 +455,10 @@ exports[`./PositionsSkeleton.stories Default 1`] = `
                                         class="MuiCollapse-wrapperInner MuiCollapse-vertical mui-style-1i4ywhz-MuiCollapse-wrapperInner"
                                       >
                                         <p
-                                          class="MuiTypography-root MuiTypography-body1 mui-style-1gmilbo-MuiTypography-root"
+                                          class="MuiTypography-root MuiTypography-body1 mui-style-10mcyfv-MuiTypography-root"
                                         >
                                           <span
-                                            class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse mui-style-1daydue-MuiSkeleton-root"
+                                            class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse mui-style-1ngd83o-MuiSkeleton-root"
                                             style="width: 60px;"
                                           />
                                         </p>
@@ -467,7 +467,7 @@ exports[`./PositionsSkeleton.stories Default 1`] = `
                                   </div>
                                 </td>
                                 <td
-                                  class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium mui-style-v0c5dw-MuiTableCell-root"
+                                  class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium mui-style-ndgvsg-MuiTableCell-root"
                                   data-testid="table-cell-value"
                                 >
                                   <div
@@ -484,18 +484,18 @@ exports[`./PositionsSkeleton.stories Default 1`] = `
                                           class="MuiBox-root mui-style-s2uf1z"
                                         >
                                           <p
-                                            class="MuiTypography-root MuiTypography-body1 mui-style-v6lhhw-MuiTypography-root"
+                                            class="MuiTypography-root MuiTypography-body1 mui-style-i9kxid-MuiTypography-root"
                                           >
                                             <span
-                                              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse mui-style-1daydue-MuiSkeleton-root"
+                                              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse mui-style-1ngd83o-MuiSkeleton-root"
                                               style="width: 50px;"
                                             />
                                           </p>
                                           <span
-                                            class="MuiTypography-root MuiTypography-caption mui-style-19nflmw-MuiTypography-root"
+                                            class="MuiTypography-root MuiTypography-caption mui-style-1otqgcb-MuiTypography-root"
                                           >
                                             <span
-                                              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse mui-style-1daydue-MuiSkeleton-root"
+                                              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse mui-style-1ngd83o-MuiSkeleton-root"
                                               style="width: 40px;"
                                             />
                                           </span>

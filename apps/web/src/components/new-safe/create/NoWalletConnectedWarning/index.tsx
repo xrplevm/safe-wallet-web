@@ -11,8 +11,8 @@ const NoWalletConnectedWarning = () => {
 
   return (
     <Alert severity="warning" sx={{ mt: 3 }}>
-      <AlertTitle sx={{ fontWeight: 700 }}>No wallet connected</AlertTitle>You need to connect a wallet to create a Safe
-      account.
+      <AlertTitle sx={{ fontWeight: 700 }}>No wallet connected</AlertTitle>You need to connect a wallet to create a
+      multisig account.
       <Box
         sx={{
           mt: 2,

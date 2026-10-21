@@ -13,7 +13,7 @@ exports[`./SpendingLimitLabel.stories Default 1`] = `
       focusable="false"
     />
     <p
-      class="MuiTypography-root MuiTypography-body1 mui-style-v6lhhw-MuiTypography-root"
+      class="MuiTypography-root MuiTypography-body1 mui-style-i9kxid-MuiTypography-root"
     >
       100 ETH per day
     </p>
@@ -29,7 +29,7 @@ exports[`./SpendingLimitLabel.stories OneTime 1`] = `
     class="MuiBox-root mui-style-171onha"
   >
     <p
-      class="MuiTypography-root MuiTypography-body1 mui-style-v6lhhw-MuiTypography-root"
+      class="MuiTypography-root MuiTypography-body1 mui-style-i9kxid-MuiTypography-root"
     >
       50 ETH
     </p>
@@ -50,7 +50,7 @@ exports[`./SpendingLimitLabel.stories WithCustomLabel 1`] = `
       focusable="false"
     />
     <p
-      class="MuiTypography-root MuiTypography-body1 mui-style-10qi7i0-MuiTypography-root"
+      class="MuiTypography-root MuiTypography-body1 mui-style-e2a688-MuiTypography-root"
     >
       Custom spending limit
     </p>

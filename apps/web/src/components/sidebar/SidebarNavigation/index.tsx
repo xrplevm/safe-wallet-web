@@ -122,7 +122,7 @@ const Navigation = (): ReactElement | null => {
 
         return (
           <Tooltip
-            title={isDisabled ? 'You need to activate your Safe first.' : ''}
+            title={isDisabled ? 'You need to activate your account first.' : ''}
             placement="right"
             key={item.externalUrl || item.href}
             arrow

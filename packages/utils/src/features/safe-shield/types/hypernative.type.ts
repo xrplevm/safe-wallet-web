@@ -29,8 +29,8 @@ export const HypernativeRiskTitleMap: { [key in AllowedThreatStatusForHypernativ
 
 export const HypernativeRiskDescriptionMap: { [key in AllowedThreatStatusForHypernative]?: string } = {
   [ThreatStatus.MASTERCOPY_CHANGE]: 'Verify this change as it may overwrite account ownership.',
-  [ThreatStatus.OWNERSHIP_CHANGE]: "Verify this change before proceeding as it will change the Safe's ownership.",
-  [ThreatStatus.MODULE_CHANGE]: 'Verify this change before proceeding as it will change Safe modules.',
+  [ThreatStatus.OWNERSHIP_CHANGE]: "Verify this change before proceeding as it will change the account's ownership.",
+  [ThreatStatus.MODULE_CHANGE]: 'Verify this change before proceeding as it will change account modules.',
   [ContractStatus.UNOFFICIAL_FALLBACK_HANDLER]: 'Verify the fallback handler is trusted and secure before proceeding.',
 }
 

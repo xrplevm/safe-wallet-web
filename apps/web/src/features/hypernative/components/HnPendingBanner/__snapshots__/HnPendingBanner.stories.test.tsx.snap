@@ -5,11 +5,11 @@ exports[`./HnPendingBanner.stories Default 1`] = `
   style="background-color: rgb(255, 255, 255); padding: 1rem;"
 >
   <div
-    class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 mui-style-1qhe4wj-MuiPaper-root"
+    class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 mui-style-ja5fdo-MuiPaper-root"
     style="--Paper-shadow: none;"
   >
     <div
-      class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 MuiCard-root banner mui-style-1869usn-MuiPaper-root-MuiCard-root"
+      class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 MuiCard-root banner mui-style-dm4as1-MuiPaper-root-MuiCard-root"
       style="--Paper-shadow: none;"
     >
       <div
@@ -28,12 +28,12 @@ exports[`./HnPendingBanner.stories Default 1`] = `
           class="textContainer MuiBox-root mui-style-0"
         >
           <h6
-            class="MuiTypography-root MuiTypography-subtitle1 title mui-style-yjg58m-MuiTypography-root"
+            class="MuiTypography-root MuiTypography-subtitle1 title mui-style-1kt9aiq-MuiTypography-root"
           >
             Guardian setup in progress
           </h6>
           <p
-            class="MuiTypography-root MuiTypography-body2 description mui-style-17vdyq3-MuiTypography-root"
+            class="MuiTypography-root MuiTypography-body2 description mui-style-1js3693-MuiTypography-root"
           >
             We've received your request and will follow up with next steps.
           </p>
@@ -67,11 +67,11 @@ exports[`./HnPendingBanner.stories NonDismissable 1`] = `
   style="background-color: rgb(255, 255, 255); padding: 1rem;"
 >
   <div
-    class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 mui-style-1qhe4wj-MuiPaper-root"
+    class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 mui-style-ja5fdo-MuiPaper-root"
     style="--Paper-shadow: none;"
   >
     <div
-      class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 MuiCard-root banner mui-style-1869usn-MuiPaper-root-MuiCard-root"
+      class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 MuiCard-root banner mui-style-dm4as1-MuiPaper-root-MuiCard-root"
       style="--Paper-shadow: none;"
     >
       <div
@@ -90,12 +90,12 @@ exports[`./HnPendingBanner.stories NonDismissable 1`] = `
           class="textContainer MuiBox-root mui-style-0"
         >
           <h6
-            class="MuiTypography-root MuiTypography-subtitle1 title mui-style-yjg58m-MuiTypography-root"
+            class="MuiTypography-root MuiTypography-subtitle1 title mui-style-1kt9aiq-MuiTypography-root"
           >
             Guardian setup in progress
           </h6>
           <p
-            class="MuiTypography-root MuiTypography-body2 description mui-style-17vdyq3-MuiTypography-root"
+            class="MuiTypography-root MuiTypography-body2 description mui-style-1js3693-MuiTypography-root"
           >
             We've received your request and will follow up with next steps.
           </p>

@@ -31,7 +31,7 @@ const CustomSafeApps: NextPage = () => {
   return (
     <>
       <Head>
-        <title>{`${BRAND_NAME} – Custom Safe Apps`}</title>
+        <title>{`${BRAND_NAME} – Custom apps`}</title>
       </Head>
 
       <SafeAppsSDKLink />

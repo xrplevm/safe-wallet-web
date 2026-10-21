@@ -23,7 +23,7 @@ export const getAndValidateSafeSDK = (): Safe => {
   const safeSDK = getSafeSDK()
   if (!safeSDK) {
     throw new Error(
-      'The Safe SDK could not be initialized. Please be aware that we only support v1.0.0 Safe Accounts and up.',
+      'The SDK could not be initialized. Please be aware that we only support v1.0.0 multisig accounts and up.',
     )
   }
   return safeSDK
@@ -157,7 +157,7 @@ export const prepareTxExecution = async (safeTransaction: SafeTransaction, provi
   const sdk = await getSafeSDKWithSigner(provider)
 
   if (!sdk.getContractManager().safeContract) {
-    throw new Error('Safe is not deployed')
+    throw new Error('Account is not deployed')
   }
 
   const transaction = isSafeMultisigTransactionResponse(safeTransaction)
@@ -205,7 +205,7 @@ export const prepareApproveTxHash = async (hash: string, provider: Eip1193Provid
   const safeContract = sdk.getContractManager().safeContract
 
   if (!safeContract) {
-    throw new Error('Safe is not deployed')
+    throw new Error('Account is not deployed')
   }
 
   const owners = await sdk.getOwners()
@@ -215,7 +215,7 @@ export const prepareApproveTxHash = async (hash: string, provider: Eip1193Provid
   }
   const addressIsOwner = owners.some((owner: string) => signerAddress && sameString(owner, signerAddress))
   if (!addressIsOwner) {
-    throw new Error('Transaction hashes can only be approved by Safe owners')
+    throw new Error('Transaction hashes can only be approved by account owners')
   }
 
   // @ts-ignore

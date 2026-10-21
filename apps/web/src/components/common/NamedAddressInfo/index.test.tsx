@@ -70,22 +70,22 @@ describe('NamedAddressInfo', () => {
     expect(useGetContractQueryMock).toHaveBeenCalledWith({ chainId: '4', contractAddress: address }, { skip: false })
   })
 
-  it('should show "This Safe Account" when address matches Safe address', async () => {
+  it('should show "This multisig account" when address matches Safe address', async () => {
     useSafeAddressMock.mockReturnValue(safeAddress)
 
     const result = render(<NamedAddressInfo address={safeAddress} />)
 
-    expect(result.getByText('This Safe Account')).toBeVisible()
+    expect(result.getByText('This multisig account')).toBeVisible()
     expect(useGetContractQueryMock.mock.calls.every(([, opts]: any) => opts.skip)).toBe(true)
   })
 
-  it('should not show "This Safe Account" for different addresses', async () => {
+  it('should not show "This multisig account" for different addresses', async () => {
     const differentAddress = faker.finance.ethereumAddress()
     useSafeAddressMock.mockReturnValue(safeAddress)
 
     const result = render(<NamedAddressInfo address={differentAddress} />)
 
-    expect(result.queryByText('This Safe Account')).not.toBeInTheDocument()
+    expect(result.queryByText('This multisig account')).not.toBeInTheDocument()
   })
 })
 
@@ -253,11 +253,11 @@ describe('useAddressName', () => {
     })
   })
 
-  it('should return "This Safe Account" when address matches Safe address', async () => {
+  it('should return "This multisig account" when address matches Safe address', async () => {
     const { result } = renderHook(() => useAddressName(safeAddress))
 
     expect(result.current).toEqual({
-      name: 'This Safe Account',
+      name: 'This multisig account',
       logoUri: undefined,
       isUnverifiedContract: false,
     })

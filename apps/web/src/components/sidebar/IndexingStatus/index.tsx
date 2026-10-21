@@ -62,14 +62,20 @@ const IndexingStatus = () => {
     <Tooltip title={`Last synced with the blockchain ${time}`} placement="right" arrow>
       <Button
         size="small"
-        href={STATUS_PAGE_URL}
-        target="_blank"
+        {...(STATUS_PAGE_URL ? { href: STATUS_PAGE_URL, target: '_blank' } : {})}
         data-testid="index-status"
         startIcon={
           <Box width={16} height={16} borderRadius="50%" border={`2px solid var(--color-${status.color}-main)`} />
         }
         endIcon={
-          <SvgIcon component={OpenInNewRounded} fontSize="small" inheritViewBox sx={{ color: 'border.main', ml: 1 }} />
+          STATUS_PAGE_URL ? (
+            <SvgIcon
+              component={OpenInNewRounded}
+              fontSize="small"
+              inheritViewBox
+              sx={{ color: 'border.main', ml: 1 }}
+            />
+          ) : undefined
         }
         sx={{
           fontSize: '12px',

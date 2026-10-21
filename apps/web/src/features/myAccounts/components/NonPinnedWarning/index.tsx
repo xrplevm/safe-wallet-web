@@ -42,9 +42,9 @@ const NonPinnedWarning = () => {
       <ActionCard
         severity="warning"
         title="Not in your trusted list"
-        content="You're a signer of this Safe, but you haven't marked it as trusted yet. Trusting a Safe helps you recognize it and reduces the risk of impersonation."
+        content="You're a signer of this account, but you haven't marked it as trusted yet. Trusting an account helps you recognize it and reduces the risk of impersonation."
         action={{
-          label: 'Trust this Safe',
+          label: 'Trust this account',
           onClick: openConfirmDialog,
         }}
         trackingEvent={ATTENTION_PANEL_EVENTS.TRUST_SAFE}

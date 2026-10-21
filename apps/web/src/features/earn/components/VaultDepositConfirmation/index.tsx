@@ -169,7 +169,7 @@ const VaultDepositConfirmation = ({
               <>
                 Performance fee
                 <InfoTooltip
-                  title={`The performance fee incurred here is charged by Kiln for the operation of this widget. The fee is calculated automatically. Part of the fee will contribute to a license fee that supports the Safe Community. Neither the Safe Ecosystem Foundation nor ${BRAND_NAME} operates the Kiln Widget and/or Kiln.`}
+                  title={`The performance fee incurred here is charged by Kiln for the operation of this widget. The fee is calculated automatically. ${BRAND_NAME} does not operate the Kiln Widget and/or Kiln.`}
                 />
               </>
             }

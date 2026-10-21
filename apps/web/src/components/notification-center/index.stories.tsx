@@ -57,14 +57,14 @@ const mockNotifications: MockNotification[] = [
     id: '3',
     timestamp: Date.now() - 3600000,
     isRead: true,
-    message: 'Safe created successfully',
+    message: 'Account created successfully',
     variant: 'success',
   },
   {
     id: '4',
     timestamp: Date.now() - 86400000,
     isRead: true,
-    message: 'Owner added to your Safe',
+    message: 'Owner added to your account',
     variant: 'info',
   },
 ]

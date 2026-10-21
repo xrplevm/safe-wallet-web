@@ -35,7 +35,7 @@ describe('flattenPalette', () => {
     const input = {
       colors: {
         brand: {
-          primary: '#12FF80',
+          primary: '#32E685',
         },
       },
     }
@@ -43,7 +43,7 @@ describe('flattenPalette', () => {
     const result = flattenPalette(input)
 
     expect(result).toEqual({
-      colorsBrandPrimary: '#12FF80',
+      colorsBrandPrimary: '#32E685',
     })
   })
 

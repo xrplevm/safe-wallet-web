@@ -45,8 +45,8 @@ const WelcomeLogin = () => {
 
         <Typography mb={2} textAlign="center" className={css.loginDescription}>
           {wallet
-            ? 'Open your existing Safe Accounts or create a new one'
-            : 'Connect your wallet to create a Safe Account or watch an existing one'}
+            ? 'Open your existing multisig accounts or create a new one'
+            : 'Connect your wallet to create a multisig account or watch an existing one'}
         </Typography>
 
         <Box className={css.fullWidth}>

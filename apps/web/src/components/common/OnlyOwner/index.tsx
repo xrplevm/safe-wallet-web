@@ -11,7 +11,7 @@ type CheckWalletProps = {
 
 enum Message {
   WalletNotConnected = 'Please connect your wallet',
-  NotSafeOwner = 'Your connected wallet is not a signer of this Safe Account',
+  NotSafeOwner = 'Your connected wallet is not a signer of this multisig account',
 }
 
 const OnlyOwner = ({ children, placement = 'bottom' }: CheckWalletProps): ReactElement => {

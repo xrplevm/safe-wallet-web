@@ -127,7 +127,7 @@ export const RecoveryAllStates: StoryObj = {
       {/* State 1: No Recovery Configured */}
       <StateWrapper
         stateName="No Recovery Configured"
-        description="Initial state when no recovery mechanism is set up for the Safe."
+        description="Initial state when no recovery mechanism is set up for the account."
       >
         <Box sx={{ maxWidth: 700 }}>
           <Typography variant="h4" gutterBottom>
@@ -138,7 +138,7 @@ export const RecoveryAllStates: StoryObj = {
               No recovery setup
             </Typography>
             <Typography variant="body2">
-              Set up account recovery to allow trusted addresses to recover your Safe if you lose access.
+              Set up account recovery to allow trusted addresses to recover your account if you lose access.
             </Typography>
           </Alert>
 
@@ -148,7 +148,7 @@ export const RecoveryAllStates: StoryObj = {
               <Box>
                 <Typography variant="h6">Set up account recovery</Typography>
                 <Typography variant="body2" color="text.secondary">
-                  Add trusted addresses that can help recover your Safe
+                  Add trusted addresses that can help recover your account
                 </Typography>
               </Box>
             </Box>
@@ -368,7 +368,7 @@ export const FullRecoveryPage: StoryObj = {
         Account Recovery
       </Typography>
       <Typography variant="body2" color="text.secondary" sx={{ mb: 3 }}>
-        Set up recovery options to regain access to your Safe if you lose your owner keys.
+        Set up recovery options to regain access to your account if you lose your owner keys.
       </Typography>
 
       <Paper sx={{ p: 3, mb: 3 }}>
@@ -473,7 +473,7 @@ export const NoRecoveryConfigured: StoryObj = {
         Recovery not set up
       </Typography>
       <Typography variant="body2" color="text.secondary" sx={{ mb: 3 }}>
-        Account recovery allows you to regain access to your Safe if you lose your owner keys. Set up recovery to
+        Account recovery allows you to regain access to your account if you lose your owner keys. Set up recovery to
         protect your assets.
       </Typography>
       <Button variant="contained">Set up recovery</Button>
@@ -518,7 +518,7 @@ export const RecoveryInProgress: StoryObj = {
       </Box>
 
       <Typography variant="body2" color="text.secondary" sx={{ mb: 2 }}>
-        If you did not initiate this recovery, cancel it immediately to protect your Safe.
+        If you did not initiate this recovery, cancel it immediately to protect your account.
       </Typography>
 
       <Button variant="contained" color="error" fullWidth>

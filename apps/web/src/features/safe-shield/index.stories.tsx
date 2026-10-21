@@ -18,7 +18,7 @@ import InfoIcon from '@mui/icons-material/Info'
 import SecurityIcon from '@mui/icons-material/Security'
 
 /**
- * Safe Shield provides security analysis for transactions before execution.
+ * Security check provides security analysis for transactions before execution.
  * It checks for threats, contract verification, and recipient risk.
  *
  * Key components:
@@ -153,19 +153,19 @@ const MockSafeShieldHeader = ({
           {message || config.text}
         </Typography>
         <Typography variant="caption" color="text.secondary">
-          Safe Shield Analysis
+          Security check Analysis
         </Typography>
       </Box>
     </Box>
   )
 }
 
-// All States - Scrollable view of all Safe Shield analysis states
+// All States - Scrollable view of all Security check analysis states
 export const SafeShieldAllStates: StoryObj = {
   render: () => (
     <Box sx={{ maxWidth: 500 }}>
       <Box sx={{ mb: 6, pb: 3, borderBottom: '2px solid', borderColor: 'primary.main' }}>
-        <Typography variant="h4">Safe Shield Analysis States</Typography>
+        <Typography variant="h4">Security check Analysis States</Typography>
         <Typography variant="body1" color="text.secondary">
           All possible states of the transaction security analysis. Scroll to view each state.
         </Typography>
@@ -212,7 +212,7 @@ export const SafeShieldAllStates: StoryObj = {
           </Box>
           <Box sx={{ p: 1, borderTop: 1, borderColor: 'divider', textAlign: 'center' }}>
             <Typography variant="caption" color="text.secondary">
-              Powered by Safe Shield
+              Powered by Security check
             </Typography>
           </Box>
         </Paper>
@@ -343,13 +343,13 @@ export const SafeShieldAllStates: StoryObj = {
   parameters: {
     docs: {
       description: {
-        story: 'All states of the Safe Shield security analysis displayed vertically for easy review.',
+        story: 'All states of the Security check security analysis displayed vertically for easy review.',
       },
     },
   },
 }
 
-// Individual state: Full Safe Shield widget
+// Individual state: Full Security check widget
 export const FullSafeShieldWidget: StoryObj = {
   render: () => (
     <Paper sx={{ width: 350 }}>
@@ -376,7 +376,7 @@ export const FullSafeShieldWidget: StoryObj = {
       </Box>
       <Box sx={{ p: 1, borderTop: 1, borderColor: 'divider', textAlign: 'center' }}>
         <Typography variant="caption" color="text.secondary">
-          Powered by Safe Shield
+          Powered by Security check
         </Typography>
       </Box>
     </Paper>
@@ -384,7 +384,7 @@ export const FullSafeShieldWidget: StoryObj = {
   parameters: {
     docs: {
       description: {
-        story: 'Full Safe Shield widget showing all analysis results.',
+        story: 'Full Security check widget showing all analysis results.',
       },
     },
   },
@@ -685,7 +685,7 @@ export const AddressChanges: StoryObj = {
         Address Changes Detected
       </Typography>
       <Alert severity="warning" sx={{ mb: 2 }}>
-        This transaction will modify Safe settings
+        This transaction will modify account settings
       </Alert>
       <Box sx={{ display: 'flex', flexDirection: 'column', gap: 1 }}>
         <Box sx={{ p: 2, border: 1, borderColor: 'divider', borderRadius: 1 }}>
@@ -708,7 +708,7 @@ export const AddressChanges: StoryObj = {
   parameters: {
     docs: {
       description: {
-        story: 'Display of detected Safe configuration changes.',
+        story: 'Display of detected account configuration changes.',
       },
     },
   },

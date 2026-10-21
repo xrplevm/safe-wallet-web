@@ -63,7 +63,7 @@ const SafeSelectionModal = ({ modal }: SafeSelectionModalProps) => {
             pb: 2,
           }}
         >
-          <Box>Manage trusted Safes</Box>
+          <Box>Manage trusted accounts</Box>
           <IconButton onClick={close} size="small" edge="end">
             <CloseIcon />
           </IconButton>

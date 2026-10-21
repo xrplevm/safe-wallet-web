@@ -45,11 +45,20 @@
 
 .logoMobile {
   display: none;
-  height: 20px !important;
+  height: 40px !important;
 }
 
+/* The brand assets include their required clear space, so they render taller than the visible mark. */
 .logoMobile svg {
-  height: 20px;
+  height: 40px;
+}
+
+.logo svg {
+  height: 48px;
+}
+
+.logo img {
+  max-height: 36px;
 }
 
 .logo img,
@@ -61,7 +70,7 @@
 }
 
 .logo {
-  padding: var(--space-1) var(--space-2);
+  padding: 2px var(--space-2);
 }
 
 .menuButton {

@@ -11,15 +11,15 @@ import type { SafeAccountConfig } from '@safe-global/protocol-kit'
 import { ZERO_ADDRESS } from '@safe-global/protocol-kit/dist/src/utils/constants'
 
 export const SAFE_CREATION_DATA_ERRORS = {
-  TX_NOT_FOUND: 'The Safe creation transaction could not be found. Please retry later.',
-  NO_CREATION_DATA: 'The Safe creation information for this Safe could not be found or is incomplete.',
-  UNSUPPORTED_SAFE_CREATION: 'The method this Safe was created with is not supported.',
+  TX_NOT_FOUND: 'The account creation transaction could not be found. Please retry later.',
+  NO_CREATION_DATA: 'The account creation information for this account could not be found or is incomplete.',
+  UNSUPPORTED_SAFE_CREATION: 'The method this account was created with is not supported.',
   NO_PROVIDER: 'The RPC provider for the origin network is not available.',
-  LEGACY_COUNTERFATUAL: 'This undeployed Safe cannot be replayed. Please activate the Safe first.',
-  PAYMENT_SAFE: 'The Safe creation used reimbursement. Adding networks to such Safes is not supported.',
+  LEGACY_COUNTERFATUAL: 'This undeployed account cannot be replayed. Please activate the account first.',
+  PAYMENT_SAFE: 'The account creation used reimbursement. Adding networks to such accounts is not supported.',
   UNSUPPORTED_IMPLEMENTATION:
-    'The Safe was created using an unsupported or outdated implementation. Adding networks to this Safe is not possible.',
-  UNKNOWN_SETUP_MODULES: 'The Safe creation is using an unknown internal call',
+    'The account was created using an unsupported or outdated implementation. Adding networks to this account is not possible.',
+  UNKNOWN_SETUP_MODULES: 'The account creation is using an unknown internal call',
 }
 
 export const determineMasterCopyVersion = (masterCopy: string, chainId: string): SafeVersion | undefined => {

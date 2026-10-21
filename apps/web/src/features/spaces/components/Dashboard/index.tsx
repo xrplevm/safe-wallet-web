@@ -74,7 +74,7 @@ const SpaceDashboard = () => {
             <Grid size={{ xs: 12, md: 8 }}>
               <Card data-testid="dashboard-safe-list" sx={{ p: 2 }}>
                 <Stack direction="row" justifyContent="space-between" alignItems="center" mb={2}>
-                  <Typography variant="h5">Safe Accounts ({safeItems.length})</Typography>
+                  <Typography variant="h5">Multisig accounts ({safeItems.length})</Typography>
                   {spaceId && (
                     <Track {...SPACE_EVENTS.VIEW_ALL_ACCOUNTS}>
                       <ViewAllLink url={{ pathname: AppRoutes.spaces.safeAccounts, query: { spaceId } }} />

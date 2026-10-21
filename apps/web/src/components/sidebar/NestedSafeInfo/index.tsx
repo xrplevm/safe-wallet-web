@@ -11,9 +11,9 @@ export function NestedSafeInfo(): ReactElement {
     <Box display="flex" flexDirection="column" alignItems="center" pt={1}>
       <NestedSafes />
       <Box display="flex" gap={1} py={2}>
-        <Typography fontWeight={700}>No Nested Safes yet</Typography>
+        <Typography fontWeight={700}>No nested accounts yet</Typography>
         <Tooltip
-          title="Nested Safes are separate wallets owned by your main Account, perfect for organizing different funds and projects."
+          title="Nested accounts are separate wallets owned by your main Account, perfect for organizing different funds and projects."
           placement="top"
           arrow
           sx={{ ml: 1 }}
@@ -34,14 +34,14 @@ export function NestedSafeInfo(): ReactElement {
           <SvgIcon component={NestedSafesIcon} inheritViewBox color="primary" sx={{ fontSize: 20 }} />
         </Avatar>
         <Typography variant="body2" fontWeight={700}>
-          Nested Safes allow you to:
+          Nested accounts allow you to:
         </Typography>
       </Box>
       <List sx={{ p: 0, display: 'flex', flexDirection: 'column', gap: 2 }}>
         {[
           'rebuild your organizational structure onchain',
           'explore new DeFi opportunities without exposing your main Account',
-          'deploy specialized modules and extend Safe functionality',
+          'deploy specialized modules and extend account functionality',
         ].map((item) => {
           return (
             <ListItem key={item} sx={{ p: 0, pl: 1.5, alignItems: 'unset' }}>

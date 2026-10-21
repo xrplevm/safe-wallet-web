@@ -16,7 +16,7 @@ const SimilarAddressAlert = ({ similarAddresses }: SimilarAddressAlertProps) => 
           Similar address detected
         </Typography>
         <Typography variant="body2">
-          This address is similar to another Safe in your account. This could indicate an address poisoning attack.
+          This address is similar to another account in your list. This could indicate an address poisoning attack.
           Compare the addresses carefully before proceeding.{' '}
         </Typography>
         <Typography variant="body2">
@@ -29,7 +29,7 @@ const SimilarAddressAlert = ({ similarAddresses }: SimilarAddressAlertProps) => 
       {similarAddresses.length > 0 && (
         <Box sx={{ mb: 2 }}>
           <Typography variant="body2" color="text.secondary" gutterBottom>
-            Similar {similarAddresses.length === 1 ? 'Safe' : 'Safes'} in your account
+            Similar {similarAddresses.length === 1 ? 'account' : 'accounts'} in your list
           </Typography>
           {similarAddresses.map((similar) => (
             <Box

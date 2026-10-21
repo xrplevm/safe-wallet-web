@@ -25,8 +25,8 @@ export const StakeBanner = ({ onDismiss }: { onDismiss: () => void }) => {
           </Typography>
 
           <Typography variant="body2" color="static.light" className={css.bannerText}>
-            Lock 32 ETH and become a validator easily with the Kiln widget. You can also explore Safe Apps or home
-            staking for other options. Staking involves risks like slashing.
+            Lock 32 ETH and become a validator easily with the Kiln widget. You can also explore Apps or home staking
+            for other options. Staking involves risks like slashing.
           </Typography>
 
           <Track {...OVERVIEW_EVENTS.OPEN_STAKING_WIDGET}>

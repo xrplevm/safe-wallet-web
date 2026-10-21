@@ -354,7 +354,7 @@ describe('recovery-state', () => {
           safeAddress,
           provider,
         }),
-      ).rejects.toThrow('Error fetching Safe creation details')
+      ).rejects.toThrow('Error fetching account creation details')
     })
   })
 

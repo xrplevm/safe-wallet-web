@@ -31,7 +31,7 @@ import { useSanctionedAddress } from '@/hooks/useSanctionedAddress'
 import BlockedAddress from '@/components/common/BlockedAddress'
 import { BRAND_NAME } from '@/config/constants'
 
-const UNKNOWN_APP_NAME = 'Unknown Safe App'
+const UNKNOWN_APP_NAME = 'Unknown app'
 
 type AppFrameProps = {
   appUrl: string
@@ -116,10 +116,10 @@ const AppFrame = ({ appUrl, allowedFeaturesList, safeAppFromManifest, isNativeEm
     return (
       <>
         <Head>
-          <title>{`Safe Apps - Viewer - ${remoteApp ? remoteApp.name : UNKNOWN_APP_NAME}`}</title>
+          <title>{`Apps - Viewer - ${remoteApp ? remoteApp.name : UNKNOWN_APP_NAME}`}</title>
         </Head>
         <Box p={2}>
-          <BlockedAddress address={sanctionedAddress} featureTitle="Safe{Pass} Safe app" />
+          <BlockedAddress address={sanctionedAddress} featureTitle="this app" />
         </Box>
       </>
     )
@@ -129,7 +129,7 @@ const AppFrame = ({ appUrl, allowedFeaturesList, safeAppFromManifest, isNativeEm
     <>
       {!isNativeEmbed && (
         <Head>
-          <title>{`${BRAND_NAME} - Safe Apps${remoteApp ? ' - ' + remoteApp.name : ''}`}</title>
+          <title>{`${BRAND_NAME} - Apps${remoteApp ? ' - ' + remoteApp.name : ''}`}</title>
         </Head>
       )}
 
@@ -140,7 +140,7 @@ const AppFrame = ({ appUrl, allowedFeaturesList, safeAppFromManifest, isNativeEm
           <div className={css.loadingContainer}>
             {isLoadingSlow && (
               <Typography variant="h4" gutterBottom>
-                The Safe App is taking too long to load, consider refreshing.
+                The app is taking too long to load, consider refreshing.
               </Typography>
             )}
             <CircularProgress size={48} color="primary" />

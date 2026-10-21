@@ -1,5 +1,6 @@
 import { extendedSafeInfoBuilder } from '@/tests/builders/safe'
-import { renderHook, getAppName } from '@/tests/test-utils'
+import { renderHook } from '@/tests/test-utils'
+import { BRAND_NAME } from '@/config/constants'
 import type { WalletKitTypes } from '@reown/walletkit'
 import { useCompatibilityWarning } from '../useCompatibilityWarning'
 import * as wcUtils from '../../../services/utils'
@@ -27,10 +28,8 @@ describe('useCompatibilityWarning', () => {
 
       const { result } = renderHook(() => useCompatibilityWarning(proposal, false))
 
-      const appName = getAppName()
-
       expect(result.current).toEqual({
-        message: `Fake Bridge is a bridge that is incompatible with ${appName} — the bridged funds will be lost. Consider using a different bridge.`,
+        message: `Fake Bridge is a bridge that is incompatible with ${BRAND_NAME} — the bridged funds will be lost. Consider using a different bridge.`,
         severity: 'error',
       })
     })
@@ -45,10 +44,8 @@ describe('useCompatibilityWarning', () => {
 
       const { result } = renderHook(() => useCompatibilityWarning(proposal, false))
 
-      const appName = getAppName()
-
       expect(result.current).toEqual({
-        message: `This dApp is a bridge that is incompatible with ${appName} — the bridged funds will be lost. Consider using a different bridge.`,
+        message: `This dApp is a bridge that is incompatible with ${BRAND_NAME} — the bridged funds will be lost. Consider using a different bridge.`,
         severity: 'error',
       })
     })
@@ -68,7 +65,7 @@ describe('useCompatibilityWarning', () => {
 
       expect(result.current).toEqual({
         message:
-          'While bridging via Fake Bridge, please make sure that the desination address you send funds to matches the Safe address you have on the respective chain. Otherwise, the funds will be lost.',
+          'While bridging via Fake Bridge, please make sure that the desination address you send funds to matches the account address you have on the respective chain. Otherwise, the funds will be lost.',
         severity: 'warning',
       })
     })
@@ -86,7 +83,7 @@ describe('useCompatibilityWarning', () => {
 
       expect(result.current).toEqual({
         message:
-          'While bridging via this dApp, please make sure that the desination address you send funds to matches the Safe address you have on the respective chain. Otherwise, the funds will be lost.',
+          'While bridging via this dApp, please make sure that the desination address you send funds to matches the account address you have on the respective chain. Otherwise, the funds will be lost.',
         severity: 'warning',
       })
     })
@@ -105,7 +102,7 @@ describe('useCompatibilityWarning', () => {
       const { result } = renderHook(() => useCompatibilityWarning(proposal, true))
 
       expect(result.current).toEqual({
-        message: `Fake dApp does not support this Safe Account's network (this network). Please switch to a Safe Account on one of the supported networks below.`,
+        message: `Fake dApp does not support this multisig account's network (this network). Please switch to a multisig account on one of the supported networks below.`,
         severity: 'error',
       })
     })
@@ -122,7 +119,7 @@ describe('useCompatibilityWarning', () => {
       const { result } = renderHook(() => useCompatibilityWarning(proposal, true))
 
       expect(result.current).toEqual({
-        message: `This dApp does not support this Safe Account's network (this network). Please switch to a Safe Account on one of the supported networks below.`,
+        message: `This dApp does not support this multisig account's network (this network). Please switch to a multisig account on one of the supported networks below.`,
         severity: 'error',
       })
     })

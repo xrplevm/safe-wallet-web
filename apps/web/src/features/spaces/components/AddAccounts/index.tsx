@@ -111,13 +111,13 @@ const AddAccounts = () => {
 
       if (result.error) {
         // @ts-ignore
-        setError(result.error?.data?.message || 'Something went wrong adding one or more Safe Accounts.')
+        setError(result.error?.data?.message || 'Something went wrong adding one or more multisig accounts.')
         return
       }
 
       dispatch(
         showNotification({
-          message: `Added safe account(s) to space`,
+          message: `Added multisig account(s) to space`,
           variant: 'success',
           groupKey: 'add-safe-account-success',
         }),
@@ -186,11 +186,11 @@ const AddAccounts = () => {
         <DialogContent sx={{ display: 'flex', alignItems: 'center', flexWrap: 'wrap' }}>
           <Container fixed maxWidth="sm" disableGutters>
             <Typography component="div" variant="h1" mb={1}>
-              Add Safe Accounts
+              Add multisig accounts
             </Typography>
             <Typography mb={2}>
-              You can add any Safe Account to your Space. This is currently limited to {SAFE_ACCOUNTS_LIMIT} Safe
-              Accounts.
+              You can add any multisig account to your Space. This is currently limited to {SAFE_ACCOUNTS_LIMIT}{' '}
+              multisig accounts.
             </Typography>
             <Card>
               <FormProvider {...formMethods}>
@@ -199,7 +199,7 @@ const AddAccounts = () => {
                     <TextField
                       id="search-by-name"
                       placeholder="Search"
-                      aria-label="Search Safe list by name"
+                      aria-label="Search account list by name"
                       variant="filled"
                       hiddenLabel
                       onChange={(e) => {

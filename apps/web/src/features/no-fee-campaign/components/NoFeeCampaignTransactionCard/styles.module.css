@@ -1,15 +1,15 @@
 .card {
   padding: 24px;
   background: #ffffff;
-  border: 1px solid #b0ffc9;
+  border: 1px solid var(--color-secondary-light);
   border-radius: 6px;
   height: 100%;
   position: relative;
 }
 
 .dark .card {
-  background: linear-gradient(90deg, rgba(176, 255, 201, 0.05) 0%, rgba(215, 246, 255, 0.05) 99.5%);
-  border: linear-gradient(225deg, #5fddff 12.5%, #12ff80 88.07%);
+  background: linear-gradient(90deg, rgba(200, 144, 255, 0.05) 0%, rgba(121, 25, 255, 0.05) 99.5%);
+  border: linear-gradient(225deg, var(--color-secondary-light) 12.5%, var(--color-primary-main) 88.07%);
 }
 
 .cardContent {
@@ -67,7 +67,7 @@
 }
 
 .tagText {
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Work Sans', sans-serif;
   font-size: 11px;
   font-weight: 400;
   line-height: 16px;
@@ -80,7 +80,7 @@
 }
 
 .title {
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Work Sans', sans-serif;
   font-size: 14px;
   font-weight: 700;
   line-height: 20px;
@@ -94,7 +94,7 @@
 }
 
 .description {
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Work Sans', sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;

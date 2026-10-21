@@ -14,22 +14,22 @@ type Story = StoryObj<typeof meta>
 
 export const Default: Story = {
   args: {
-    href: 'https://safe.global',
-    children: 'Visit Safe Global',
+    href: 'https://example.com',
+    children: 'Visit website',
   },
 }
 
 export const WithoutIcon: Story = {
   args: {
-    href: 'https://safe.global',
-    children: 'Visit Safe Global',
+    href: 'https://example.com',
+    children: 'Visit website',
     noIcon: true,
   },
 }
 
 export const ButtonMode: Story = {
   args: {
-    href: 'https://safe.global',
+    href: 'https://example.com',
     children: 'Open Documentation',
     mode: 'button',
   },
@@ -37,7 +37,7 @@ export const ButtonMode: Story = {
 
 export const NoChildren: Story = {
   args: {
-    href: 'https://safe.global',
+    href: 'https://example.com',
   },
 }
 

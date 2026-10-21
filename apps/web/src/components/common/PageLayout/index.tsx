@@ -17,9 +17,7 @@ const PageLayout = ({ pathname, children }: { pathname: string; children: ReactE
   const [isSidebarOpen, setSidebarOpen] = useState<boolean>(true)
   const [isBatchOpen, setBatchOpen] = useState<boolean>(false)
   const { txFlow, setFullWidth } = useContext(TxModalContext)
-  const isSafeLabsTermsPage = pathname === AppRoutes.safeLabsTerms
-  const isWelcomePage = pathname === AppRoutes.welcome.index
-  const hideHeader = isSafeLabsTermsPage || isWelcomePage
+  const hideHeader = pathname === AppRoutes.welcome.index
 
   // Hide sidebar when transaction flow is open
   const isSidebarVisible = isSidebarOpen && !txFlow
@@ -54,7 +52,7 @@ const PageLayout = ({ pathname, children }: { pathname: string; children: ReactE
 
         <BatchSidebar isOpen={isBatchOpen} onToggle={setBatchOpen} />
 
-        {!isSafeLabsTermsPage && <Footer />}
+        <Footer />
       </div>
     </>
   )

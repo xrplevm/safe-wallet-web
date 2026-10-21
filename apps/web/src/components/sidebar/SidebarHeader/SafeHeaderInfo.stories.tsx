@@ -27,7 +27,7 @@ export default meta
 type Story = StoryObj<typeof meta>
 
 /**
- * Default SafeHeaderInfo showing a deployed Safe with balance.
+ * Default SafeHeaderInfo showing a deployed account with balance.
  */
 export const Default: Story = {}
 
@@ -59,7 +59,7 @@ export const Loading: Story = (() => {
 })()
 
 /**
- * Safe with a large total balance (whale account).
+ * Account with a large total balance (whale account).
  */
 export const LargeBalance: Story = (() => {
   const setup = createMockStory({
@@ -98,7 +98,7 @@ export const LargeBalance: Story = (() => {
 })()
 
 /**
- * Safe with zero balance (empty state).
+ * Account with zero balance (empty state).
  */
 export const ZeroBalance: Story = (() => {
   const setup = createMockStory({
@@ -137,7 +137,7 @@ export const ZeroBalance: Story = (() => {
 })()
 
 /**
- * Safe with multiple owners (3-of-5 multisig).
+ * Account with multiple owners (3-of-5 multisig).
  */
 export const MultipleOwners: Story = (() => {
   const setup = createMockStory({
@@ -172,7 +172,7 @@ export const MultipleOwners: Story = (() => {
 })()
 
 /**
- * Counterfactual (not yet deployed) Safe showing native token balance.
+ * Counterfactual (not yet deployed) account showing native token balance.
  */
 export const Counterfactual: Story = (() => {
   const setup = createMockStory({
@@ -223,7 +223,7 @@ export const Counterfactual: Story = (() => {
 })()
 
 /**
- * Safe on a different chain (Polygon).
+ * Account on a different chain (Polygon).
  */
 export const PolygonChain: Story = (() => {
   const setup = createMockStory({

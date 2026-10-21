@@ -21,7 +21,7 @@ export function getRecoveryProposalTransactions({
   const safeDeployment = getSafeSingletonDeployment({ network: safe.chainId, version: safe.version ?? undefined })
 
   if (!safeDeployment) {
-    throw new Error('Safe deployment not found')
+    throw new Error('Account deployment not found')
   }
 
   const safeInterface = new Interface(safeDeployment.abi)

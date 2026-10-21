@@ -1,3 +1,4 @@
+import { HELP_CENTER_URL } from '@safe-global/utils/config/constants'
 import { Typography, Card, SvgIcon, Button, Box, Stack, Link } from '@mui/material'
 import css from './styles.module.css'
 import StakeIcon from '@/public/images/common/stake.svg'
@@ -11,7 +12,7 @@ import ExternalLink from '@/components/common/ExternalLink'
 import { AppRoutes } from '@/config/routes'
 import useIsStakingBannerVisible from '@/components/dashboard/StakingBanner/useIsStakingBannerVisible'
 
-const LEARN_MORE_LINK = 'https://help.safe.global/en/articles/222615-safe-staking'
+const LEARN_MORE_LINK = HELP_CENTER_URL
 
 const StakingBanner = ({
   hideLocalStorageKey = 'hideStakingBanner',
@@ -69,7 +70,7 @@ const StakingBanner = ({
                 passHref
                 type="link"
               >
-                <Link>explore Safe Apps</Link>
+                <Link>explore Apps</Link>
               </NextLink>{' '}
               and home staking for other options. Staking involves risks like slashing.
               {LEARN_MORE_LINK && (

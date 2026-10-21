@@ -7,7 +7,7 @@
 }
 
 .statusBadge {
-  background: #b0ffc9;
+  background: var(--color-secondary-light);
   border-radius: 100px;
   padding: 2px 8px;
   width: fit-content;
@@ -17,7 +17,7 @@
 }
 
 .statusLabel {
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Work Sans', sans-serif;
   font-weight: 700;
   font-size: 11px;
   line-height: 16px;
@@ -27,7 +27,7 @@
 }
 
 .buttonText {
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Work Sans', sans-serif;
   font-weight: 700;
   font-size: 14px;
   line-height: 24px;

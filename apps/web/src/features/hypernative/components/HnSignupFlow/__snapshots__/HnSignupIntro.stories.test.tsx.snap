@@ -17,7 +17,7 @@ exports[`./HnSignupIntro.stories Default 1`] = `
           class="header"
         >
           <h1
-            class="MuiTypography-root MuiTypography-h1 title mui-style-1t5ogpx-MuiTypography-root"
+            class="MuiTypography-root MuiTypography-h1 title mui-style-1ou837c-MuiTypography-root"
           >
             Guardian
           </h1>
@@ -25,7 +25,7 @@ exports[`./HnSignupIntro.stories Default 1`] = `
             class="poweredBy"
           >
             <p
-              class="MuiTypography-root MuiTypography-body2 poweredByText mui-style-17vdyq3-MuiTypography-root"
+              class="MuiTypography-root MuiTypography-body2 poweredByText mui-style-1js3693-MuiTypography-root"
             >
               powered by
             </p>
@@ -36,7 +36,7 @@ exports[`./HnSignupIntro.stories Default 1`] = `
             />
           </div>
           <p
-            class="MuiTypography-root MuiTypography-body2 subtitle mui-style-17vdyq3-MuiTypography-root"
+            class="MuiTypography-root MuiTypography-body2 subtitle mui-style-1js3693-MuiTypography-root"
           >
             Enterprise-level protection for teams and organizations.
           </p>
@@ -60,12 +60,12 @@ exports[`./HnSignupIntro.stories Default 1`] = `
             </svg>
             <div>
               <p
-                class="MuiTypography-root MuiTypography-body2 featureTitle mui-style-1r7djff-MuiTypography-root"
+                class="MuiTypography-root MuiTypography-body2 featureTitle mui-style-eholbh-MuiTypography-root"
               >
                 Automatic blocking
               </p>
               <p
-                class="MuiTypography-root MuiTypography-body2 featureDescription mui-style-17vdyq3-MuiTypography-root"
+                class="MuiTypography-root MuiTypography-body2 featureDescription mui-style-1js3693-MuiTypography-root"
               >
                 Automatically prevents malicious or non-compliant transactions before they're executed
               </p>
@@ -87,12 +87,12 @@ exports[`./HnSignupIntro.stories Default 1`] = `
             </svg>
             <div>
               <p
-                class="MuiTypography-root MuiTypography-body2 featureTitle mui-style-1r7djff-MuiTypography-root"
+                class="MuiTypography-root MuiTypography-body2 featureTitle mui-style-eholbh-MuiTypography-root"
               >
                 Custom security rules
               </p>
               <p
-                class="MuiTypography-root MuiTypography-body2 featureDescription mui-style-17vdyq3-MuiTypography-root"
+                class="MuiTypography-root MuiTypography-body2 featureDescription mui-style-1js3693-MuiTypography-root"
               >
                 Create tailored policies using granular parameters to stop unwanted transactions.
               </p>
@@ -114,14 +114,14 @@ exports[`./HnSignupIntro.stories Default 1`] = `
             </svg>
             <div>
               <p
-                class="MuiTypography-root MuiTypography-body2 featureTitle mui-style-1r7djff-MuiTypography-root"
+                class="MuiTypography-root MuiTypography-body2 featureTitle mui-style-eholbh-MuiTypography-root"
               >
                 Seamless integration
               </p>
               <p
-                class="MuiTypography-root MuiTypography-body2 featureDescription mui-style-17vdyq3-MuiTypography-root"
+                class="MuiTypography-root MuiTypography-body2 featureDescription mui-style-1js3693-MuiTypography-root"
               >
-                Works natively within your Safe workflow. No extra steps required.
+                Works natively within your multisig workflow. No extra steps required.
               </p>
             </div>
           </div>
@@ -133,7 +133,7 @@ exports[`./HnSignupIntro.stories Default 1`] = `
             data-track="hypernative: Guardian Form Started"
           >
             <button
-              class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary MuiButton-fullWidth MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary MuiButton-fullWidth primaryButton mui-style-1x0zw95-MuiButtonBase-root-MuiButton-root"
+              class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary MuiButton-fullWidth MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary MuiButton-fullWidth primaryButton mui-style-yl1eq2-MuiButtonBase-root-MuiButton-root"
               tabindex="0"
               type="button"
             >
@@ -141,7 +141,7 @@ exports[`./HnSignupIntro.stories Default 1`] = `
             </button>
           </span>
           <button
-            class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary MuiButton-fullWidth MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary MuiButton-fullWidth secondaryButton mui-style-bs6z38-MuiButtonBase-root-MuiButton-root"
+            class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary MuiButton-fullWidth MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary MuiButton-fullWidth secondaryButton mui-style-1t1f204-MuiButtonBase-root-MuiButton-root"
             tabindex="0"
             type="button"
           >

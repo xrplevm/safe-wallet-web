@@ -1,7 +1,7 @@
 /**
  * MyAccounts Feature - Public API (v3 Architecture)
  *
- * Core feature for managing user Safe accounts.
+ * Core feature for managing user multisig accounts.
  * Feature flag: MY_ACCOUNTS (enabled by default, can be disabled via CGW config)
  *
  * @example

@@ -3,11 +3,11 @@
 exports[`SettingsChange should display the SettingsChange component with newOwner details 1`] = `
 <div>
   <div
-    class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 css-1nt2i3f-MuiPaper-root"
+    class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 css-1ij9xpk-MuiPaper-root"
     style="--Paper-shadow: none;"
   >
     <p
-      class="MuiTypography-root MuiTypography-body1 css-qzqzle-MuiTypography-root"
+      class="MuiTypography-root MuiTypography-body1 css-wxtz85-MuiTypography-root"
     >
       <mock-icon
         aria-hidden=""
@@ -86,11 +86,11 @@ exports[`SettingsChange should display the SettingsChange component with newOwne
     </div>
   </div>
   <div
-    class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 container css-zpxm0u-MuiPaper-root"
+    class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 container css-1s47pht-MuiPaper-root"
     style="--Paper-shadow: none;"
   >
     <p
-      class="MuiTypography-root MuiTypography-body1 css-1950vt0-MuiTypography-root"
+      class="MuiTypography-root MuiTypography-body1 css-1zfir8-MuiTypography-root"
     >
       <mock-icon
         aria-hidden=""
@@ -107,7 +107,7 @@ exports[`SettingsChange should display the SettingsChange component with newOwne
         style="width: 32px; height: 32px;"
       >
         <span
-          class="MuiSkeleton-root MuiSkeleton-circular MuiSkeleton-pulse css-143xw5x-MuiSkeleton-root"
+          class="MuiSkeleton-root MuiSkeleton-circular MuiSkeleton-pulse css-1epbneo-MuiSkeleton-root"
           style="width: 32px; height: 32px;"
         />
       </div>
@@ -177,11 +177,11 @@ exports[`SettingsChange should display the SettingsChange component with newOwne
 exports[`SettingsChange should display the SettingsChange component with owner details 1`] = `
 <div>
   <div
-    class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 container css-zpxm0u-MuiPaper-root"
+    class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 container css-1s47pht-MuiPaper-root"
     style="--Paper-shadow: none;"
   >
     <p
-      class="MuiTypography-root MuiTypography-body1 css-1950vt0-MuiTypography-root"
+      class="MuiTypography-root MuiTypography-body1 css-1zfir8-MuiTypography-root"
     >
       <mock-icon
         aria-hidden=""
@@ -266,12 +266,12 @@ exports[`SettingsChange should display the SettingsChange component with owner d
     class="MuiBox-root css-0"
   >
     <p
-      class="MuiTypography-root MuiTypography-body2 css-17vdyq3-MuiTypography-root"
+      class="MuiTypography-root MuiTypography-body2 css-1js3693-MuiTypography-root"
     >
       Any transaction requires the confirmation of:
     </p>
     <p
-      class="MuiTypography-root MuiTypography-body1 css-v6lhhw-MuiTypography-root"
+      class="MuiTypography-root MuiTypography-body1 css-i9kxid-MuiTypography-root"
     >
       <b>
         1

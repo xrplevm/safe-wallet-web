@@ -189,7 +189,7 @@ export function generateMuiTheme(mode: PaletteMode): Theme {
               backgroundColor: theme.palette.background.main,
               borderColor: theme.palette.background.main,
               color: theme.palette.text.primary,
-              fontWeight: 'bold',
+              fontWeight: 600,
               fontSize: '14px',
               minHeight: '40px',
               gap: '7px',
@@ -204,7 +204,7 @@ export function generateMuiTheme(mode: PaletteMode): Theme {
           sizeLarge: { fontSize: '14px', padding: '12px 24px', height: '42px' },
           root: ({ theme }) => ({
             borderRadius: theme.shape.borderRadius,
-            fontWeight: 'bold',
+            fontWeight: 600,
             lineHeight: 1.25,
             borderColor: theme.palette.primary.main,
             textTransform: 'none',
@@ -477,7 +477,7 @@ export function generateMuiTheme(mode: PaletteMode): Theme {
       },
       MuiLink: {
         styleOverrides: {
-          root: ({ theme }) => ({ fontWeight: 700, '&:hover': { color: theme.palette.primary.light } }),
+          root: ({ theme }) => ({ fontWeight: 600, '&:hover': { color: theme.palette.primary.light } }),
         },
       },
       MuiLinearProgress: { styleOverrides: { root: ({ theme }) => ({ backgroundColor: theme.palette.border.light }) } },

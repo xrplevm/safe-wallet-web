@@ -59,7 +59,7 @@ describe('NonPinnedWarning', () => {
   it('should call openConfirmDialog when action button is clicked', () => {
     render(<NonPinnedWarning />)
 
-    fireEvent.click(screen.getByText('Trust this Safe'))
+    fireEvent.click(screen.getByText('Trust this account'))
 
     expect(mockOpenConfirmDialog).toHaveBeenCalled()
   })
@@ -89,7 +89,7 @@ describe('NonPinnedWarning', () => {
     render(<NonPinnedWarning />)
 
     expect(screen.getByTestId('add-trusted-safe-dialog')).toBeInTheDocument()
-    expect(screen.getByText('Confirm trusted Safe')).toBeInTheDocument()
+    expect(screen.getByText('Confirm trusted account')).toBeInTheDocument()
   })
 
   it('should show similar address warning in dialog when hasSimilarAddress is true', () => {
@@ -106,7 +106,7 @@ describe('NonPinnedWarning', () => {
     expect(screen.getByText('Similar address detected')).toBeInTheDocument()
     expect(screen.getByText(/address poisoning attack/i)).toBeInTheDocument()
     expect(screen.getByText('I understand, add anyway')).toBeInTheDocument()
-    expect(screen.getByText('Similar Safe in your account')).toBeInTheDocument()
+    expect(screen.getByText('Similar account in your list')).toBeInTheDocument()
   })
 
   it('should call confirmAndAddToPinnedList when confirm button is clicked in dialog', async () => {

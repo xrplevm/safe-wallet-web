@@ -147,7 +147,7 @@ export const getNestedWallet = (
           url: '',
           description: '',
           iconUrl: '',
-          name: 'Nested Safe',
+          name: 'Nested account',
         })
 
         if ('result' in result) {

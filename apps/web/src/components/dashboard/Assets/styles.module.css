@@ -76,7 +76,7 @@
   display: block;
   border-radius: 4px;
   height: 100%;
-  background: linear-gradient(225deg, #5fddff 12.5%, #12ff80 88.07%);
+  background: linear-gradient(225deg, var(--color-secondary-light) 12.5%, var(--color-primary-main) 88.07%);
 }
 
 @media (max-width: 600px) {

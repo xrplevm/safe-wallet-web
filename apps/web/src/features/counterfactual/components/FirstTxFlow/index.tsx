@@ -16,7 +16,7 @@ import AssetsIcon from '@/public/images/sidebar/assets.svg'
 import SaveAddressIcon from '@/public/images/common/save-address.svg'
 import RecoveryPlus from '@/public/images/common/recovery-plus.svg'
 import SwapIcon from '@/public/images/common/swap.svg'
-import SafeLogo from '@/public/images/logo-no-text.svg'
+import BrandLogoMark from '@/public/images/brand/logo-mark.svg'
 import HandymanOutlinedIcon from '@mui/icons-material/HandymanOutlined'
 import useIsSwapFeatureEnabled from '@/features/swap/hooks/useIsSwapFeatureEnabled'
 
@@ -84,9 +84,9 @@ const FirstTxFlow = ({ open, onClose }: { open: boolean; onClose: () => void }) 
       >
         <Grid item>
           <ChoiceButton
-            title="Activate Safe now"
-            description="Pay a one-time network fee to deploy your safe onchain"
-            icon={SafeLogo}
+            title="Activate account now"
+            description="Pay a one-time network fee to deploy your account onchain"
+            icon={BrandLogoMark}
             onClick={() => handleClick(onActivateSafe)}
           />
         </Grid>
@@ -94,7 +94,7 @@ const FirstTxFlow = ({ open, onClose }: { open: boolean; onClose: () => void }) 
         <Grid item>
           <ChoiceButton
             title="Add another signer"
-            description="Improve the security of your Safe Account"
+            description="Improve the security of your multisig account"
             icon={SaveAddressIcon}
             onClick={() => handleClick(onAddSigner)}
           />
@@ -114,7 +114,7 @@ const FirstTxFlow = ({ open, onClose }: { open: boolean; onClose: () => void }) 
         <Grid item>
           <ChoiceButton
             title="Swap tokens"
-            description="Explore Safe Apps and trade any token"
+            description="Explore apps and trade any token"
             icon={SwapIcon}
             onClick={() => handleClick(onSwap)}
           />

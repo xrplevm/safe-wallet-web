@@ -19,7 +19,7 @@
   align-items: flex-end;
   justify-content: space-between;
   overflow: hidden;
-  background: #121312;
+  background: #000000;
 }
 
 .leftSide {
@@ -37,7 +37,9 @@
 }
 
 .logo {
-  color: #000;
+  color: #000000;
+  width: auto;
+  height: 72px;
 }
 
 .rightContent {
@@ -64,12 +66,13 @@
 
 .mockupImageContainer {
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   flex-direction: column;
+  width: 100%;
 }
 
 .mockupImage {
-  max-width: 50vw;
+  max-width: min(40vw, 640px);
 }
 
 @media (max-width: 1199.95px) {

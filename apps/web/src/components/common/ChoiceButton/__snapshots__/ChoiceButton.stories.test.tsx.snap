@@ -32,12 +32,12 @@ exports[`./ChoiceButton.stories Default 1`] = `
         class="MuiBox-root mui-style-e3zcym"
       >
         <p
-          class="MuiTypography-root MuiTypography-body1 mui-style-w5uidf-MuiTypography-root"
+          class="MuiTypography-root MuiTypography-body1 mui-style-ccf5q-MuiTypography-root"
         >
           Send tokens
         </p>
         <p
-          class="MuiTypography-root MuiTypography-body2 mui-style-1ew0eu5-MuiTypography-root"
+          class="MuiTypography-root MuiTypography-body2 mui-style-ce200z-MuiTypography-root"
         >
           Send tokens to another address
         </p>
@@ -91,12 +91,12 @@ exports[`./ChoiceButton.stories Disabled 1`] = `
         class="MuiBox-root mui-style-e3zcym"
       >
         <p
-          class="MuiTypography-root MuiTypography-body1 mui-style-w5uidf-MuiTypography-root"
+          class="MuiTypography-root MuiTypography-body1 mui-style-ccf5q-MuiTypography-root"
         >
           Send tokens
         </p>
         <p
-          class="MuiTypography-root MuiTypography-body2 mui-style-1ew0eu5-MuiTypography-root"
+          class="MuiTypography-root MuiTypography-body2 mui-style-ce200z-MuiTypography-root"
         >
           Send tokens to another address
         </p>
@@ -149,7 +149,7 @@ exports[`./ChoiceButton.stories NoDescription 1`] = `
         class="MuiBox-root mui-style-e3zcym"
       >
         <p
-          class="MuiTypography-root MuiTypography-body1 mui-style-w5uidf-MuiTypography-root"
+          class="MuiTypography-root MuiTypography-body1 mui-style-ccf5q-MuiTypography-root"
         >
           Connect wallet
         </p>
@@ -202,12 +202,12 @@ exports[`./ChoiceButton.stories WithChip 1`] = `
         class="MuiBox-root mui-style-e3zcym"
       >
         <p
-          class="MuiTypography-root MuiTypography-body1 mui-style-w5uidf-MuiTypography-root"
+          class="MuiTypography-root MuiTypography-body1 mui-style-ccf5q-MuiTypography-root"
         >
           Swap tokens
         </p>
         <p
-          class="MuiTypography-root MuiTypography-body2 mui-style-1ew0eu5-MuiTypography-root"
+          class="MuiTypography-root MuiTypography-body2 mui-style-ce200z-MuiTypography-root"
         >
           Exchange one token for another
         </p>
@@ -265,14 +265,14 @@ exports[`./ChoiceButton.stories WithIconColor 1`] = `
         class="MuiBox-root mui-style-e3zcym"
       >
         <p
-          class="MuiTypography-root MuiTypography-body1 mui-style-w5uidf-MuiTypography-root"
+          class="MuiTypography-root MuiTypography-body1 mui-style-ccf5q-MuiTypography-root"
         >
           Add funds
         </p>
         <p
-          class="MuiTypography-root MuiTypography-body2 mui-style-1ew0eu5-MuiTypography-root"
+          class="MuiTypography-root MuiTypography-body2 mui-style-ce200z-MuiTypography-root"
         >
-          Deposit funds into your Safe
+          Deposit funds into your account
         </p>
       </div>
       <svg

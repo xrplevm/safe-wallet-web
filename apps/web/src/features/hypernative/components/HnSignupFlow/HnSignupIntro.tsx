@@ -22,7 +22,7 @@ const HnSignupIntro = ({ onGetStarted, onClose }: HnSignupIntroProps) => {
     },
     {
       title: 'Seamless integration',
-      description: 'Works natively within your Safe workflow. No extra steps required.',
+      description: 'Works natively within your multisig workflow. No extra steps required.',
     },
   ]
 

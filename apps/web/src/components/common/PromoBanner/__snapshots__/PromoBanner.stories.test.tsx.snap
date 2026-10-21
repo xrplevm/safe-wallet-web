@@ -5,7 +5,7 @@ exports[`./PromoBanner.stories Default 1`] = `
   style="background-color: rgb(255, 255, 255); padding: 1rem;"
 >
   <div
-    class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 MuiCard-root banner mui-style-t31lyp-MuiPaper-root-MuiCard-root"
+    class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 MuiCard-root banner mui-style-y7kus-MuiPaper-root-MuiCard-root"
     style="--Paper-shadow: none;"
   >
     <div
@@ -27,20 +27,20 @@ exports[`./PromoBanner.stories Default 1`] = `
         class="bannerContent MuiBox-root mui-style-0"
       >
         <h4
-          class="MuiTypography-root MuiTypography-h4 bannerText bannerTitle mui-style-1x3wnrt-MuiTypography-root"
+          class="MuiTypography-root MuiTypography-h4 bannerText bannerTitle mui-style-1x7bsi-MuiTypography-root"
         >
           Discover new features
         </h4>
         <p
-          class="MuiTypography-root MuiTypography-body2 bannerText bannerDescription mui-style-17vdyq3-MuiTypography-root"
+          class="MuiTypography-root MuiTypography-body2 bannerText bannerDescription mui-style-1js3693-MuiTypography-root"
         >
-          Learn about the latest updates and improvements to Safe
+          Learn about the latest updates and improvements 
         </p>
         <a
           href="#"
         >
           <button
-            class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textStatic MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorStatic MuiButton-root MuiButton-text MuiButton-textStatic MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorStatic bannerCtaText mui-style-87bahn-MuiButtonBase-root-MuiButton-root"
+            class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textStatic MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorStatic MuiButton-root MuiButton-text MuiButton-textStatic MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorStatic bannerCtaText mui-style-1hm6p4b-MuiButtonBase-root-MuiButton-root"
             tabindex="0"
             type="button"
           >
@@ -76,7 +76,7 @@ exports[`./PromoBanner.stories ShortText 1`] = `
   style="background-color: rgb(255, 255, 255); padding: 1rem;"
 >
   <div
-    class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 MuiCard-root banner mui-style-t31lyp-MuiPaper-root-MuiCard-root"
+    class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 MuiCard-root banner mui-style-y7kus-MuiPaper-root-MuiCard-root"
     style="--Paper-shadow: none;"
   >
     <div
@@ -86,7 +86,7 @@ exports[`./PromoBanner.stories ShortText 1`] = `
         class="bannerContent MuiBox-root mui-style-0"
       >
         <h4
-          class="MuiTypography-root MuiTypography-h4 bannerText bannerTitle mui-style-1x3wnrt-MuiTypography-root"
+          class="MuiTypography-root MuiTypography-h4 bannerText bannerTitle mui-style-1x7bsi-MuiTypography-root"
         >
           New update available
         </h4>
@@ -94,7 +94,7 @@ exports[`./PromoBanner.stories ShortText 1`] = `
           href="#"
         >
           <button
-            class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textStatic MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorStatic MuiButton-root MuiButton-text MuiButton-textStatic MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorStatic bannerCtaText mui-style-87bahn-MuiButtonBase-root-MuiButton-root"
+            class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textStatic MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorStatic MuiButton-root MuiButton-text MuiButton-textStatic MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorStatic bannerCtaText mui-style-1hm6p4b-MuiButtonBase-root-MuiButton-root"
             tabindex="0"
             type="button"
           >
@@ -130,7 +130,7 @@ exports[`./PromoBanner.stories WithCustomColors 1`] = `
   style="background-color: rgb(255, 255, 255); padding: 1rem;"
 >
   <div
-    class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 MuiCard-root banner mui-style-nfvyn6-MuiPaper-root-MuiCard-root"
+    class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 MuiCard-root banner mui-style-4gahyu-MuiPaper-root-MuiCard-root"
     style="--Paper-shadow: none;"
   >
     <div
@@ -152,20 +152,20 @@ exports[`./PromoBanner.stories WithCustomColors 1`] = `
         class="bannerContent MuiBox-root mui-style-0"
       >
         <h4
-          class="MuiTypography-root MuiTypography-h4 bannerText bannerTitle mui-style-1x3wnrt-MuiTypography-root"
+          class="MuiTypography-root MuiTypography-h4 bannerText bannerTitle mui-style-1x7bsi-MuiTypography-root"
         >
           Special offer
         </h4>
         <p
-          class="MuiTypography-root MuiTypography-body2 bannerText bannerDescription mui-style-b93xn3-MuiTypography-root"
+          class="MuiTypography-root MuiTypography-body2 bannerText bannerDescription mui-style-r1iiq6-MuiTypography-root"
         >
-          Limited time promotion for Safe users
+          Limited time promotion for users
         </p>
         <a
           href="#"
         >
           <button
-            class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textStatic MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorStatic MuiButton-root MuiButton-text MuiButton-textStatic MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorStatic bannerCtaText mui-style-87bahn-MuiButtonBase-root-MuiButton-root"
+            class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textStatic MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorStatic MuiButton-root MuiButton-text MuiButton-textStatic MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorStatic bannerCtaText mui-style-1hm6p4b-MuiButtonBase-root-MuiButton-root"
             tabindex="0"
             type="button"
           >
@@ -201,7 +201,7 @@ exports[`./PromoBanner.stories WithOnClick 1`] = `
   style="background-color: rgb(255, 255, 255); padding: 1rem;"
 >
   <div
-    class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 MuiCard-root banner mui-style-t31lyp-MuiPaper-root-MuiCard-root"
+    class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 MuiCard-root banner mui-style-y7kus-MuiPaper-root-MuiCard-root"
     style="--Paper-shadow: none;"
   >
     <div
@@ -223,17 +223,17 @@ exports[`./PromoBanner.stories WithOnClick 1`] = `
         class="bannerContent MuiBox-root mui-style-0"
       >
         <h4
-          class="MuiTypography-root MuiTypography-h4 bannerText bannerTitle mui-style-1x3wnrt-MuiTypography-root"
+          class="MuiTypography-root MuiTypography-h4 bannerText bannerTitle mui-style-1x7bsi-MuiTypography-root"
         >
           Take action now
         </h4>
         <p
-          class="MuiTypography-root MuiTypography-body2 bannerText bannerDescription mui-style-17vdyq3-MuiTypography-root"
+          class="MuiTypography-root MuiTypography-body2 bannerText bannerDescription mui-style-1js3693-MuiTypography-root"
         >
           Click the button to perform a custom action
         </p>
         <button
-          class="MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeSmall MuiButton-outlinedSizeSmall MuiButton-colorPrimary MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeSmall MuiButton-outlinedSizeSmall MuiButton-colorPrimary bannerCtaContained mui-style-rx2h81-MuiButtonBase-root-MuiButton-root"
+          class="MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeSmall MuiButton-outlinedSizeSmall MuiButton-colorPrimary MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeSmall MuiButton-outlinedSizeSmall MuiButton-colorPrimary bannerCtaContained mui-style-fyqnt4-MuiButtonBase-root-MuiButton-root"
           tabindex="0"
           type="button"
         >
@@ -268,7 +268,7 @@ exports[`./PromoBanner.stories WithoutDismiss 1`] = `
   style="background-color: rgb(255, 255, 255); padding: 1rem;"
 >
   <div
-    class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 MuiCard-root banner mui-style-t31lyp-MuiPaper-root-MuiCard-root"
+    class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 MuiCard-root banner mui-style-y7kus-MuiPaper-root-MuiCard-root"
     style="--Paper-shadow: none;"
   >
     <div
@@ -290,12 +290,12 @@ exports[`./PromoBanner.stories WithoutDismiss 1`] = `
         class="bannerContent MuiBox-root mui-style-0"
       >
         <h4
-          class="MuiTypography-root MuiTypography-h4 bannerText bannerTitle mui-style-1x3wnrt-MuiTypography-root"
+          class="MuiTypography-root MuiTypography-h4 bannerText bannerTitle mui-style-1x7bsi-MuiTypography-root"
         >
-          Welcome to Safe
+          Welcome
         </h4>
         <p
-          class="MuiTypography-root MuiTypography-body2 bannerText bannerDescription mui-style-17vdyq3-MuiTypography-root"
+          class="MuiTypography-root MuiTypography-body2 bannerText bannerDescription mui-style-1js3693-MuiTypography-root"
         >
           Your gateway to secure digital asset management
         </p>
@@ -303,7 +303,7 @@ exports[`./PromoBanner.stories WithoutDismiss 1`] = `
           href="#"
         >
           <button
-            class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textStatic MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorStatic MuiButton-root MuiButton-text MuiButton-textStatic MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorStatic bannerCtaText mui-style-87bahn-MuiButtonBase-root-MuiButton-root"
+            class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textStatic MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorStatic MuiButton-root MuiButton-text MuiButton-textStatic MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorStatic bannerCtaText mui-style-1hm6p4b-MuiButtonBase-root-MuiButton-root"
             tabindex="0"
             type="button"
           >
@@ -321,7 +321,7 @@ exports[`./PromoBanner.stories WithoutImage 1`] = `
   style="background-color: rgb(255, 255, 255); padding: 1rem;"
 >
   <div
-    class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 MuiCard-root banner mui-style-t31lyp-MuiPaper-root-MuiCard-root"
+    class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 MuiCard-root banner mui-style-y7kus-MuiPaper-root-MuiCard-root"
     style="--Paper-shadow: none;"
   >
     <div
@@ -331,12 +331,12 @@ exports[`./PromoBanner.stories WithoutImage 1`] = `
         class="bannerContent MuiBox-root mui-style-0"
       >
         <h4
-          class="MuiTypography-root MuiTypography-h4 bannerText bannerTitle mui-style-1x3wnrt-MuiTypography-root"
+          class="MuiTypography-root MuiTypography-h4 bannerText bannerTitle mui-style-1x7bsi-MuiTypography-root"
         >
           Important announcement
         </h4>
         <p
-          class="MuiTypography-root MuiTypography-body2 bannerText bannerDescription mui-style-17vdyq3-MuiTypography-root"
+          class="MuiTypography-root MuiTypography-body2 bannerText bannerDescription mui-style-1js3693-MuiTypography-root"
         >
           Check out our latest security features
         </p>
@@ -344,7 +344,7 @@ exports[`./PromoBanner.stories WithoutImage 1`] = `
           href="#"
         >
           <button
-            class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textStatic MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorStatic MuiButton-root MuiButton-text MuiButton-textStatic MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorStatic bannerCtaText mui-style-87bahn-MuiButtonBase-root-MuiButton-root"
+            class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textStatic MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorStatic MuiButton-root MuiButton-text MuiButton-textStatic MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorStatic bannerCtaText mui-style-1hm6p4b-MuiButtonBase-root-MuiButton-root"
             tabindex="0"
             type="button"
           >

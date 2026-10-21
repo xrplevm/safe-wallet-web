@@ -31,14 +31,14 @@ export const Default: Story = {}
 
 export const WithSafeName: Story = {
   args: {
-    safeName: 'My Treasury Safe',
+    safeName: 'My Treasury account',
   },
 }
 
 export const DialogOpen: Story = {
   args: {
     isConfirmDialogOpen: true,
-    safeName: 'My Safe',
+    safeName: 'My account',
   },
 }
 
@@ -46,7 +46,7 @@ export const DialogOpenWithSimilarAddress: Story = {
   args: {
     isConfirmDialogOpen: true,
     hasSimilarAddress: true,
-    similarAddresses: [{ address: '0x1234567890123456789012345678901234567891', name: 'My Treasury Safe' }],
+    similarAddresses: [{ address: '0x1234567890123456789012345678901234567891', name: 'My Treasury account' }],
   },
 }
 
@@ -55,7 +55,7 @@ export const DialogOpenWithMultipleSimilarAddresses: Story = {
     isConfirmDialogOpen: true,
     hasSimilarAddress: true,
     similarAddresses: [
-      { address: '0x1234567890123456789012345678901234567891', name: 'My Treasury Safe' },
+      { address: '0x1234567890123456789012345678901234567891', name: 'My Treasury account' },
       { address: '0x1234567890123456789012345678901234567892' },
     ],
   },

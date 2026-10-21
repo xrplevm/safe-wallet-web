@@ -274,7 +274,7 @@ export const createNewUndeployedSafeWithoutSalt = (
   const safeFactoryAddress = getCanonicalOrFirstAddress(safeFactoryDeployments, chain.chainId)
 
   if (!safeL2Address || !safeL1Address || !safeFactoryAddress || !fallbackHandlerAddress) {
-    throw new Error('No Safe deployment found')
+    throw new Error('No smart account deployment found')
   }
 
   const safeToL2SetupDeployments = getSafeToL2SetupDeployments({ version: '1.4.1', network: chain.chainId })
@@ -315,7 +315,7 @@ export const migrateLegacySafeProps = (predictedSafeProps: PredictedSafeProps, c
   const saltNonce = predictedSafeProps.safeDeploymentConfig?.saltNonce
   const { chainId } = chain
   if (!safeVersion || !saltNonce) {
-    throw new Error('Undeployed Safe with incomplete data.')
+    throw new Error('Undeployed account with incomplete data.')
   }
 
   const fallbackHandlerDeployment = getCompatibilityFallbackHandlerDeployment({
@@ -331,7 +331,7 @@ export const migrateLegacySafeProps = (predictedSafeProps: PredictedSafeProps, c
   const safeFactoryAddress = safeFactoryDeployment?.defaultAddress
 
   if (!masterCopyAddress || !safeFactoryAddress || !fallbackHandlerAddress) {
-    throw new Error('No Safe deployment found')
+    throw new Error('No smart account deployment found')
   }
 
   return {

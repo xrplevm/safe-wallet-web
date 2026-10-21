@@ -28,7 +28,7 @@ const NoMessages = (): ReactElement => {
           }}
         >
           Some applications allow you to interact with them via off-chain contract signatures (&ldquo;messages&ldquo;)
-          that you can generate with your Safe Account.
+          that you can generate with your multisig account.
         </Typography>
       }
     >

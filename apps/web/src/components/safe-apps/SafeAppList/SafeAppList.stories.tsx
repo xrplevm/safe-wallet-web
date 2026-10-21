@@ -85,7 +85,7 @@ export const Loading: Story = {
 
 /**
  * SafeAppList with custom app option enabled.
- * Shows "Add custom Safe App" card at the start.
+ * Shows "Add custom app" card at the start.
  */
 export const WithCustomAppOption: Story = {
   args: {

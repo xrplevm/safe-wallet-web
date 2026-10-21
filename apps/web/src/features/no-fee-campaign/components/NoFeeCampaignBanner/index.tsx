@@ -1,3 +1,4 @@
+import { HELP_CENTER_URL } from '@safe-global/utils/config/constants'
 import { Box, Button, Card, IconButton, Stack, Typography } from '@mui/material'
 import Image from 'next/image'
 import css from './styles.module.css'
@@ -33,7 +34,7 @@ const NoFeeCampaignBanner = ({ onDismiss }: { onDismiss: () => void }) => {
           <Typography variant="body2" color="static.light" className={css.bannerTextInteractive}>
             No-Fee for Ethena USDe holders on Ethereum Mainnet, this January!{' '}
             <Link
-              href="https://help.safe.global/en/articles/484423-no-fee-january-campaign"
+              href={HELP_CENTER_URL}
               target="_blank"
               rel="noopener noreferrer"
               style={{ textDecoration: 'underline', fontWeight: 'bold' }}

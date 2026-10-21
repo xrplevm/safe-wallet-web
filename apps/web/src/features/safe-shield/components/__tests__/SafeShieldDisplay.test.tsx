@@ -214,7 +214,7 @@ describe('SafeShieldDisplay', () => {
   })
 
   describe('Footer', () => {
-    it('should always render the Safe Shield logo', () => {
+    it('should always render the Security check logo', () => {
       const { container } = render(
         <SafeShieldDisplay recipient={emptyRecipient} contract={emptyContract} threat={emptyThreat} />,
       )

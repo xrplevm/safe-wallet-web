@@ -36,7 +36,7 @@ describe('generateCSSVars', () => {
 
   it('should have different values for light and dark modes', () => {
     // Light mode text-primary should be dark color
-    expect(cssOutput).toMatch(/:root \{[\s\S]*--color-text-primary: #121312/)
+    expect(cssOutput).toMatch(/:root \{[\s\S]*--color-text-primary: #000000/)
     // Dark mode text-primary should be light color
     expect(cssOutput).toMatch(/\[data-theme="dark"\] \{[\s\S]*--color-text-primary: #ffffff/i)
   })

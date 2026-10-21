@@ -1,3 +1,4 @@
+import { HELP_CENTER_URL } from '@safe-global/utils/config/constants'
 import React from 'react'
 import { Box, Card, Stack, Typography } from '@mui/material'
 import Image from 'next/image'
@@ -70,7 +71,7 @@ const NoFeeCampaignTransactionCard = () => {
               <Typography variant="body2" color="static.light" className={css.description}>
                 USDe holders enjoy gasless transactions on Ethereum Mainnet this January.{' '}
                 <Link
-                  href="https://help.safe.global/en/articles/484423-no-fee-january-campaign"
+                  href={HELP_CENTER_URL}
                   target="_blank"
                   rel="noopener noreferrer"
                   style={{ textDecoration: 'underline', fontWeight: 'bold' }}
@@ -116,7 +117,7 @@ const NoFeeCampaignTransactionCard = () => {
               <Typography variant="body2" className={css.description}>
                 USDe holders enjoy gasless transactions on Ethereum Mainnet this January.{' '}
                 <Link
-                  href="https://help.safe.global/en/articles/484423-no-fee-january-campaign"
+                  href={HELP_CENTER_URL}
                   target="_blank"
                   rel="noopener noreferrer"
                   style={{ textDecoration: 'underline', fontWeight: 'bold' }}

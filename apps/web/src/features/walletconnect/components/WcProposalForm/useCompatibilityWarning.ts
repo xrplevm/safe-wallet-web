@@ -18,11 +18,11 @@ const Warnings: Record<string, { severity: AlertColor; message: string }> = {
   },
   WARNED_BRIDGE: {
     severity: 'warning',
-    message: `While bridging via ${NAME_PLACEHOLDER}, please make sure that the desination address you send funds to matches the Safe address you have on the respective chain. Otherwise, the funds will be lost.`,
+    message: `While bridging via ${NAME_PLACEHOLDER}, please make sure that the desination address you send funds to matches the account address you have on the respective chain. Otherwise, the funds will be lost.`,
   },
   UNSUPPORTED_CHAIN: {
     severity: 'error',
-    message: `${NAME_PLACEHOLDER} does not support this Safe Account's network (${CHAIN_PLACEHOLDER}). Please switch to a Safe Account on one of the supported networks below.`,
+    message: `${NAME_PLACEHOLDER} does not support this multisig account's network (${CHAIN_PLACEHOLDER}). Please switch to a multisig account on one of the supported networks below.`,
   },
   WRONG_CHAIN: {
     severity: 'info',

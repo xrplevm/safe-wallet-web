@@ -5,7 +5,7 @@ exports[`./EurcvBoostBanner.stories Default 1`] = `
   style="background-color: rgb(255, 255, 255); padding: 1rem;"
 >
   <div
-    class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 MuiCard-root banner mui-style-t31lyp-MuiPaper-root-MuiCard-root"
+    class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 MuiCard-root banner mui-style-y7kus-MuiPaper-root-MuiCard-root"
     style="--Paper-shadow: none;"
   >
     <div
@@ -26,18 +26,18 @@ exports[`./EurcvBoostBanner.stories Default 1`] = `
         class="bannerContent MuiBox-root mui-style-0"
       >
         <h4
-          class="MuiTypography-root MuiTypography-h4 bannerText bannerTitle mui-style-1x3wnrt-MuiTypography-root"
+          class="MuiTypography-root MuiTypography-h4 bannerText bannerTitle mui-style-1x7bsi-MuiTypography-root"
         >
           EURCV is now available
         </h4>
         <p
-          class="MuiTypography-root MuiTypography-body2 bannerText bannerDescription mui-style-17vdyq3-MuiTypography-root"
+          class="MuiTypography-root MuiTypography-body2 bannerText bannerDescription mui-style-1js3693-MuiTypography-root"
         >
           Stake EURCV and earn boosted APY on deposits.
            
           <a
-            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways mui-style-1spsnlm-MuiTypography-root-MuiLink-root"
-            href="https://help.safe.global/en/articles/322149-defi-lending-in-safe-wallet"
+            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways mui-style-x14p2q-MuiTypography-root-MuiLink-root"
+            href="https://docs.xrplevm.org"
             rel="noopener noreferrer"
             target="_blank"
           >
@@ -45,7 +45,7 @@ exports[`./EurcvBoostBanner.stories Default 1`] = `
           </a>
         </p>
         <button
-          class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textStatic MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-colorStatic MuiButton-root MuiButton-text MuiButton-textStatic MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-colorStatic bannerCtaText mui-style-1wse3e8-MuiButtonBase-root-MuiButton-root"
+          class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textStatic MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-colorStatic MuiButton-root MuiButton-text MuiButton-textStatic MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-colorStatic bannerCtaText mui-style-40gkth-MuiButtonBase-root-MuiButton-root"
           tabindex="0"
           type="button"
         >

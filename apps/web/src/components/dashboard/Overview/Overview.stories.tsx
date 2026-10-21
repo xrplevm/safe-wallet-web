@@ -31,7 +31,7 @@ type Story = StoryObj<typeof meta>
 export const Default: Story = {}
 
 /**
- * Overview with wallet connected as Safe owner.
+ * Overview with wallet connected as account owner.
  * All action buttons (Send, Swap, Receive) are enabled.
  */
 export const WalletConnected: Story = (() => {
@@ -47,7 +47,7 @@ export const WalletConnected: Story = (() => {
 })()
 
 /**
- * Overview with whale portfolio data (Vitalik's Safe).
+ * Overview with whale portfolio data (Vitalik's account).
  * Tests large balance rendering.
  */
 export const WhalePortfolio: Story = (() => {
@@ -107,7 +107,7 @@ export const Loading: Story = (() => {
 })()
 
 /**
- * Undeployed Safe state.
+ * Undeployed account state.
  * Shows token balance instead of fiat value, no action buttons.
  */
 export const UndeployedSafe: Story = (() => {

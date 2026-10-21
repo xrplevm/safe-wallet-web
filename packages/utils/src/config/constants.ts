@@ -26,35 +26,37 @@ export const TENDERLY_ORG_NAME =
   process.env.NEXT_PUBLIC_TENDERLY_ORG_NAME || process.env.EXPO_PUBLIC_TENDERLY_ORG_NAME || ''
 
 // Help Center
-export const HELP_CENTER_URL = 'https://help.safe.global'
+export const HELP_CENTER_URL =
+  process.env.NEXT_PUBLIC_HELP_CENTER_URL || process.env.EXPO_PUBLIC_HELP_CENTER_URL || 'https://docs.xrplevm.org'
+// Every help topic opens the XRPL EVM docs root until topic-specific pages exist.
 export const HelpCenterArticle = {
-  ADDRESS_BOOK_DATA: `${HELP_CENTER_URL}/en/articles/40811-address-book-export-and-import`,
-  ADVANCED_PARAMS: `${HELP_CENTER_URL}/en/articles/40837-advanced-transaction-parameters`,
-  CANCELLING_TRANSACTIONS: `${HELP_CENTER_URL}/en/articles/40836-why-do-i-need-to-pay-for-cancelling-a-transaction`,
-  COOKIES: `${HELP_CENTER_URL}/en/articles/40797-why-do-i-need-to-enable-third-party-cookies-for-safe-apps`,
-  CONFLICTING_TRANSACTIONS: `${HELP_CENTER_URL}/en/articles/40839-why-are-transactions-with-the-same-nonce-conflicting-with-each-other`,
-  FALLBACK_HANDLER: `${HELP_CENTER_URL}/en/articles/40838-what-is-a-fallback-handler-and-how-does-it-relate-to-safe`,
-  MOBILE_SAFE: `${HELP_CENTER_URL}/en/articles/40801-connect-to-web-with-mobile-safe`,
-  RECOVERY: `${HELP_CENTER_URL}/en/articles/110656-account-recovery-with-safe-recoveryhub`,
-  RELAYING: `${HELP_CENTER_URL}/en/articles/59203-what-is-gas-fee-sponsoring`,
-  SAFE_SETUP: `${HELP_CENTER_URL}/en/articles/40835-what-safe-setup-should-i-use`,
-  SIGNED_MESSAGES: `${HELP_CENTER_URL}/en/articles/40783-what-are-signed-messages`,
-  SPAM_TOKENS: `${HELP_CENTER_URL}/en/articles/40784-default-token-list-local-hiding-of-spam-tokens`,
-  SPENDING_LIMITS: `${HELP_CENTER_URL}/en/articles/40842-set-up-and-use-spending-limits`,
-  TRANSACTION_GUARD: `${HELP_CENTER_URL}/en/articles/40809-what-is-a-transaction-guard`,
-  UNEXPECTED_DELEGATE_CALL: `${HELP_CENTER_URL}/en/articles/40794-why-do-i-see-an-unexpected-delegate-call-warning-in-my-transaction`,
-  PROPOSERS: `${HELP_CENTER_URL}/en/articles/235770-proposers`,
-  PUSH_NOTIFICATIONS: `${HELP_CENTER_URL}/en/articles/99197-how-to-start-receiving-web-push-notifications-in-the-web-wallet`,
-  SWAP_WIDGET_FEES: `${HELP_CENTER_URL}/en/articles/178530-how-does-the-widget-fee-work-for-native-swaps`,
-  VERIFY_TX_DETAILS: `${HELP_CENTER_URL}/en/articles/276343-how-to-perform-basic-transactions-checks-on-safe-wallet`,
-  BULK_IMPORT_OLD_DATA: `${HELP_CENTER_URL}/en/articles/359254-new-mobile-apps-bulk-import-of-old-app-data-ios-only`,
-  SAFE_SHIELD: `${HELP_CENTER_URL}/en/articles/461021-understanding-safe-shield-transaction-checks`,
-  ADDRESS_POISONING: `${HELP_CENTER_URL}/en/articles/180783-what-is-address-poisoning-and-how-does-safe-wallet-battle-it`,
+  ADDRESS_BOOK_DATA: HELP_CENTER_URL,
+  ADVANCED_PARAMS: HELP_CENTER_URL,
+  CANCELLING_TRANSACTIONS: HELP_CENTER_URL,
+  COOKIES: HELP_CENTER_URL,
+  CONFLICTING_TRANSACTIONS: HELP_CENTER_URL,
+  FALLBACK_HANDLER: HELP_CENTER_URL,
+  MOBILE_SAFE: HELP_CENTER_URL,
+  RECOVERY: HELP_CENTER_URL,
+  RELAYING: HELP_CENTER_URL,
+  SAFE_SETUP: HELP_CENTER_URL,
+  SIGNED_MESSAGES: HELP_CENTER_URL,
+  SPAM_TOKENS: HELP_CENTER_URL,
+  SPENDING_LIMITS: HELP_CENTER_URL,
+  TRANSACTION_GUARD: HELP_CENTER_URL,
+  UNEXPECTED_DELEGATE_CALL: HELP_CENTER_URL,
+  PROPOSERS: HELP_CENTER_URL,
+  PUSH_NOTIFICATIONS: HELP_CENTER_URL,
+  SWAP_WIDGET_FEES: HELP_CENTER_URL,
+  VERIFY_TX_DETAILS: HELP_CENTER_URL,
+  BULK_IMPORT_OLD_DATA: HELP_CENTER_URL,
+  SAFE_SHIELD: HELP_CENTER_URL,
+  ADDRESS_POISONING: HELP_CENTER_URL,
 } as const
 export const HelperCenterArticleTitles = {
   RECOVERY: 'Learn more about the Account recovery process',
 }
 // Social
-export const DISCORD_URL = 'https://chat.safe.global'
-export const TWITTER_URL = 'https://twitter.com/safe'
+export const DISCORD_URL = 'https://discord.gg/xrplevm'
+export const TWITTER_URL = 'https://x.com/RippleXDev'
 export const SAFE_TO_L2_MIGRATION_VERSION = '1.4.1'

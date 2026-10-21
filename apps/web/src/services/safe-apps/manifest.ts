@@ -98,7 +98,7 @@ const fetchSafeAppFromManifest = async (
   const appManifest = await fetchAppManifest(appUrl)
 
   if (!isAppManifestValid(appManifest)) {
-    throw new Error('Invalid Safe App manifest')
+    throw new Error('Invalid app manifest')
   }
 
   const iconUrl = getAppLogoUrl(normalizedAppUrl, appManifest)

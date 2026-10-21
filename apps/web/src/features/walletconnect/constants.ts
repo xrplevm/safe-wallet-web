@@ -34,9 +34,9 @@ export const SAFE_COMPATIBLE_EVENTS = ['chainChanged', 'accountsChanged']
 
 export const SAFE_WALLET_METADATA = {
   name: BRAND_NAME,
-  url: 'https://app.safe.global',
-  description: 'Smart contract wallet for Ethereum',
-  icons: ['https://app.safe.global/images/logo-round.svg'],
+  url: typeof window !== 'undefined' ? window.location.origin : '',
+  description: 'Multisig smart account wallet',
+  icons: [typeof window !== 'undefined' ? `${window.location.origin}/images/brand/logo-mark-filled.png` : ''],
 }
 
 export const EIP155 = 'eip155' as const

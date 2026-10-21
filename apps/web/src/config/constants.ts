@@ -16,12 +16,11 @@ export const DEFAULT_MAINNET_CHAIN_ID = +(process.env.NEXT_PUBLIC_DEFAULT_MAINNE
 // default chain ID used in the application
 export const DEFAULT_CHAIN_ID = IS_PRODUCTION ? DEFAULT_MAINNET_CHAIN_ID : DEFAULT_TESTNET_CHAIN_ID
 
-export const GATEWAY_URL_PRODUCTION =
-  process.env.NEXT_PUBLIC_GATEWAY_URL_PRODUCTION || 'https://safe-client.safe.global'
-export const GATEWAY_URL_STAGING = process.env.NEXT_PUBLIC_GATEWAY_URL_STAGING || 'https://safe-client.staging.5afe.dev'
+export const GATEWAY_URL_PRODUCTION = process.env.NEXT_PUBLIC_GATEWAY_URL_PRODUCTION || ''
+export const GATEWAY_URL_STAGING = process.env.NEXT_PUBLIC_GATEWAY_URL_STAGING || GATEWAY_URL_PRODUCTION
 
 // Status page
-export const STATUS_PAGE_URL = process.env.NEXT_PUBLIC_SAFE_STATUS_PAGE_URL || 'https://status.safe.global'
+export const STATUS_PAGE_URL = process.env.NEXT_PUBLIC_SAFE_STATUS_PAGE_URL || ''
 
 // Magic numbers
 export const POLLING_INTERVAL = 15_000
@@ -87,24 +86,11 @@ export const DATADOG_RUM_DEFAULT_PRIVACY_LEVEL = (process.env.NEXT_PUBLIC_DATADO
 // Wallets
 export const WC_PROJECT_ID = process.env.NEXT_PUBLIC_WC_PROJECT_ID || ''
 
-// Safe Token
-export const SAFE_TOKEN_ADDRESSES: { [chainId: string]: string } = {
-  [chains.eth]: '0x5aFE3855358E112B5647B952709E6165e1c1eEEe',
-  [chains.sep]: '0xd16d9C09d13E9Cf77615771eADC5d51a1Ae92a26',
-}
-
-export const SAFE_LOCKING_ADDRESS: { [chainId: string]: string } = {
-  [chains.eth]: '0x0a7CB434f96f65972D46A5c1A64a9654dC9959b2',
-  [chains.sep]: '0xb161ccb96b9b817F9bDf0048F212725128779DE9',
-}
-
-export const DEVELOPER_PORTAL_URL =
-  process.env.NEXT_PUBLIC_DEVELOPER_PORTAL_URL || 'https://developer.safe.global/login'
+export const DEVELOPER_PORTAL_URL = process.env.NEXT_PUBLIC_DEVELOPER_PORTAL_URL || ''
 
 export const SAFE_APPS_THIRD_PARTY_COOKIES_CHECK_URL = 'https://third-party-cookies-check.gnosis-safe.com'
 export const SAFE_APPS_DEMO_SAFE_MAINNET = 'eth:0xfF501B324DC6d78dC9F983f140B9211c3EdB4dc7'
-export const SAFE_APPS_SDK_DOCS_URL =
-  'https://help.safe.global/en/articles/145503-how-to-create-a-safe-app-with-safe-apps-sdk-and-list-it'
+export const SAFE_APPS_SDK_DOCS_URL = HELP_CENTER_URL
 
 // Google Analytics
 export const PROD_GA_TRACKING_ID = process.env.NEXT_PUBLIC_PROD_GA_TRACKING_ID || ''
@@ -132,18 +118,17 @@ export enum SafeAppsName {
   TRANSACTION_BUILDER = 'Transaction Builder',
 }
 
-// Legal
-export const IS_OFFICIAL_HOST = process.env.NEXT_PUBLIC_IS_OFFICIAL_HOST === 'true'
-export const OFFICIAL_HOSTS = /app\.safe\.global|.+\.5afe\.dev|localhost:3000|localhost:4000|localhost:6006/
-export const IPFS_HOSTS = /app\.safe\.eth\.limo|app\.5afedev\.eth\.limo/
-export const BRAND_NAME = process.env.NEXT_PUBLIC_BRAND_NAME || (IS_OFFICIAL_HOST ? 'Safe{Wallet}' : 'Wallet fork')
+// Branding
+export const BRAND_NAME = process.env.NEXT_PUBLIC_BRAND_NAME || 'XRPL EVM Multisig'
 export const BRAND_LOGO = process.env.NEXT_PUBLIC_BRAND_LOGO || ''
+// Public origin of the app, used for absolute URLs in meta tags. Empty means relative URLs.
+export const APP_URL = process.env.NEXT_PUBLIC_APP_URL || ''
 
 export const CHAINALYSIS_OFAC_CONTRACT = '0x40c57923924b5c5c5455c48d93317139addac8fb'
 
 export const ECOSYSTEM_ID_ADDRESS =
   process.env.NEXT_PUBLIC_ECOSYSTEM_ID_ADDRESS || '0x0000000000000000000000000000000000000000'
-export const MULTICHAIN_HELP_ARTICLE = `${HELP_CENTER_URL}/en/articles/222612-multi-chain-safe`
+export const MULTICHAIN_HELP_ARTICLE = HELP_CENTER_URL
 
 // Hypernative Campaign IDs
 export const PROD_HYPERNATIVE_OUTREACH_ID = parseInt(process.env.NEXT_PUBLIC_PROD_HYPERNATIVE_OUTREACH_ID ?? `${3}`)

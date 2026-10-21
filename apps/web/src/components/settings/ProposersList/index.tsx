@@ -36,7 +36,7 @@ const headCells = [
     label: '',
   },
 ]
-const SafeNotActivated = 'You need to activate the Safe before transacting'
+const SafeNotActivated = 'You need to activate the account before transacting'
 
 const ProposersList = () => {
   const [isAddDialogOpen, setIsAddDialogOpen] = useState<boolean>()

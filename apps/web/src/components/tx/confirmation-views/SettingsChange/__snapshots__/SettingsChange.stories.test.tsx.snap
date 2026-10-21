@@ -5,15 +5,15 @@ exports[`./SettingsChange.stories AddOwner 1`] = `
   style="background-color: rgb(255, 255, 255); padding: 1rem;"
 >
   <div
-    class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 mui-style-1xulk7h-MuiPaper-root"
+    class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 mui-style-b2a1x-MuiPaper-root"
     style="--Paper-shadow: none;"
   >
     <div
-      class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 container mui-style-zpxm0u-MuiPaper-root"
+      class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 container mui-style-1s47pht-MuiPaper-root"
       style="--Paper-shadow: none;"
     >
       <p
-        class="MuiTypography-root MuiTypography-body1 mui-style-1950vt0-MuiTypography-root"
+        class="MuiTypography-root MuiTypography-body1 mui-style-1zfir8-MuiTypography-root"
       >
         <mock-icon
           aria-hidden=""
@@ -119,12 +119,12 @@ exports[`./SettingsChange.stories AddOwner 1`] = `
       class="MuiBox-root mui-style-0"
     >
       <p
-        class="MuiTypography-root MuiTypography-body2 mui-style-17vdyq3-MuiTypography-root"
+        class="MuiTypography-root MuiTypography-body2 mui-style-1js3693-MuiTypography-root"
       >
         Any transaction requires the confirmation of:
       </p>
       <p
-        class="MuiTypography-root MuiTypography-body1 mui-style-v6lhhw-MuiTypography-root"
+        class="MuiTypography-root MuiTypography-body1 mui-style-i9kxid-MuiTypography-root"
       >
         <b>
           1
@@ -149,15 +149,15 @@ exports[`./SettingsChange.stories SwapOwner 1`] = `
   style="background-color: rgb(255, 255, 255); padding: 1rem;"
 >
   <div
-    class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 mui-style-1xulk7h-MuiPaper-root"
+    class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 mui-style-b2a1x-MuiPaper-root"
     style="--Paper-shadow: none;"
   >
     <div
-      class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 mui-style-1nt2i3f-MuiPaper-root"
+      class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 mui-style-1ij9xpk-MuiPaper-root"
       style="--Paper-shadow: none;"
     >
       <p
-        class="MuiTypography-root MuiTypography-body1 mui-style-qzqzle-MuiTypography-root"
+        class="MuiTypography-root MuiTypography-body1 mui-style-wxtz85-MuiTypography-root"
       >
         <mock-icon
           aria-hidden=""
@@ -174,7 +174,7 @@ exports[`./SettingsChange.stories SwapOwner 1`] = `
           style="width: 40px; height: 40px;"
         >
           <span
-            class="MuiSkeleton-root MuiSkeleton-circular MuiSkeleton-pulse mui-style-143xw5x-MuiSkeleton-root"
+            class="MuiSkeleton-root MuiSkeleton-circular MuiSkeleton-pulse mui-style-1epbneo-MuiSkeleton-root"
             style="width: 40px; height: 40px;"
           />
         </div>

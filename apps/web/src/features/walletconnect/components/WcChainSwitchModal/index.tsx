@@ -58,8 +58,8 @@ const WcChainSwitchModal = ({ appInfo, chain, safes, onSelectSafe, onCancel }: W
 
       <Typography variant="body2" color="text.secondary">
         {hasSafes
-          ? `Select one of your Safes on ${chain.chainName} to continue.`
-          : `Connected dapp wants to switch to chain ${chain.chainName} but you don't have Safe Accounts deployed on that chain.`}
+          ? `Select one of your accounts on ${chain.chainName} to continue.`
+          : `Connected dapp wants to switch to chain ${chain.chainName} but you don't have multisig accounts deployed on that chain.`}
       </Typography>
 
       {hasSafes ? (
@@ -70,7 +70,7 @@ const WcChainSwitchModal = ({ appInfo, chain, safes, onSelectSafe, onCancel }: W
         </Box>
       ) : (
         <Box p={2} sx={{ borderRadius: 2, border: '1px solid var(--color-border-light)' }}>
-          <Typography variant="body2">You can load or create a Safe on this network to continue.</Typography>
+          <Typography variant="body2">You can load or create an account on this network to continue.</Typography>
         </Box>
       )}
 

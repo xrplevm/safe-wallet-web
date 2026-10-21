@@ -1,3 +1,4 @@
+import { BRAND_NAME } from '@/config/constants'
 import type { Meta, StoryObj } from '@storybook/react'
 import { Box, Paper, Typography, Button, IconButton, Card } from '@mui/material'
 import CloseIcon from '@mui/icons-material/Close'
@@ -51,7 +52,7 @@ export const PopupOverlay: StoryObj = {
           </IconButton>
 
           <Typography variant="h6" fontWeight="bold" gutterBottom>
-            Welcome to Safe!
+            Welcome to {BRAND_NAME}!
           </Typography>
           <Typography variant="body2" color="text.secondary" sx={{ mb: 2 }}>
             Take a quick tour of your new multi-signature wallet.
@@ -97,7 +98,7 @@ export const OutreachPopup: StoryObj = {
           New Feature Available!
         </Typography>
         <Typography variant="body2" color="text.secondary">
-          Check out our latest update that makes managing your Safe even easier.
+          Check out our latest update that makes managing your account even easier.
         </Typography>
       </Box>
 
@@ -136,10 +137,10 @@ export const SurveyPopup: StoryObj = {
       </IconButton>
 
       <Typography variant="h6" fontWeight="bold" gutterBottom>
-        Help us improve Safe
+        Help us improve {BRAND_NAME}
       </Typography>
       <Typography variant="body2" color="text.secondary" sx={{ mb: 2 }}>
-        We would love to hear your feedback! Take our quick 2-minute survey to help shape the future of Safe.
+        We would love to hear your feedback! Take our quick 2-minute survey to help shape the future of {BRAND_NAME}.
       </Typography>
 
       <Box sx={{ display: 'flex', gap: 2, justifyContent: 'flex-end' }}>
@@ -169,7 +170,7 @@ export const AnnouncementPopup: StoryObj = {
         p: 3,
         maxWidth: 450,
         position: 'relative',
-        background: 'linear-gradient(135deg, #12FF80 0%, #00D9FF 100%)',
+        background: 'linear-gradient(135deg, var(--color-secondary-light) 0%, var(--color-primary-main) 100%)',
         color: 'black',
       }}
     >
@@ -181,10 +182,10 @@ export const AnnouncementPopup: StoryObj = {
         Announcement
       </Typography>
       <Typography variant="h5" fontWeight="bold" gutterBottom>
-        Safe{'{'}Wallet{'}'} is now live on Base!
+        {BRAND_NAME} is now live on Base!
       </Typography>
       <Typography variant="body2" sx={{ mb: 2, opacity: 0.9 }}>
-        Manage your assets on Base with full multi-signature security. Create a new Safe or add Base to your existing
+        Manage your assets on Base with full multi-signature security. Create a new account or add Base to your existing
         account.
       </Typography>
 
@@ -260,7 +261,7 @@ export const PopupWithImage: StoryObj = {
           Enhanced Security
         </Typography>
         <Typography variant="body2" color="text.secondary" sx={{ mb: 2 }}>
-          Enable two-factor authentication for additional protection of your Safe account.
+          Enable two-factor authentication for additional protection of your multisig account.
         </Typography>
 
         <Box sx={{ display: 'flex', gap: 2, justifyContent: 'flex-end' }}>

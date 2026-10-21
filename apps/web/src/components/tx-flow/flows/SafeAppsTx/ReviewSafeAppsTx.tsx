@@ -52,8 +52,8 @@ const ReviewSafeAppsTx = ({
     <ReviewTransaction onSubmit={onSubmit} {...props}>
       {error ? (
         <ErrorMessage error={safeTxError}>
-          This Safe App initiated a transaction which cannot be processed. Please get in touch with the developer of
-          this Safe App for more information.
+          This app initiated a transaction which cannot be processed. Please get in touch with the developer of this app
+          for more information.
         </ErrorMessage>
       ) : null}
       {children}

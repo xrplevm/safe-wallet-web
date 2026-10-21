@@ -121,7 +121,7 @@ describe('mapVisibleAnalysisResults', () => {
       const result = mapVisibleAnalysisResults(addressesResultsMap)
 
       expect(result.length).toBe(1)
-      expect(result[0].description).toContain('All these addresses are in your address book or a Safe you own.')
+      expect(result[0].description).toContain('All these addresses are in your address book or an account you own.')
     })
 
     it('should return empty array for multiple addresses with no results', () => {

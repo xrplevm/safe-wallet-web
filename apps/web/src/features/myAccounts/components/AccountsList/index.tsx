@@ -65,7 +65,7 @@ const AccountsList = ({
 
       {!migration.hasPinnedSafes && !migration.shouldShowPrompt && (
         <Typography data-testid="empty-safe-list" color="text.secondary" variant="body2" textAlign="center" py={3}>
-          You don&apos;t have any safes yet
+          You don&apos;t have any accounts yet
         </Typography>
       )}
 
