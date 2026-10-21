@@ -1,17 +1,10 @@
-# <img src="https://github.com/user-attachments/assets/b8249113-d515-4c91-a12a-f134813614e8" height="60" valign="middle" alt="Safe{Wallet}" style="background: #fff; padding: 20px; margin: 0 -20px" />
+# <img src="public/images/brand/logo-mark-filled.png" height="48" valign="middle" alt="XRPL EVM Multisig" />
 
-[![License](https://img.shields.io/github/license/safe-global/safe-wallet-web)](https://github.com/safe-global/safe-wallet-web/blob/main/LICENSE)
-![Tests](https://img.shields.io/github/actions/workflow/status/safe-global/safe-wallet-web/test.yml?branch=main&label=tests)
-![GitHub package.json version (branch)](https://img.shields.io/github/package-json/v/safe-global/safe-wallet-web)
-[![GitPOAP Badge](https://public-api.gitpoap.io/v1/repo/safe-global/safe-wallet-web/badge)](https://www.gitpoap.io/gh/safe-global/safe-wallet-web)
+[![License](https://img.shields.io/github/license/xrplevm/safe-wallet-web)](https://github.com/xrplevm/safe-wallet-web/blob/1.82.0/LICENSE)
 
-# Safe{Wallet} web app
+# XRPL EVM Multisig web app
 
-This project is now part of the **@safe-global/safe-wallet** monorepo! The monorepo setup allows centralized management
-of multiple
-applications and shared libraries. This workspace (`apps/web`) is the frontend of the Safe{Wallet} web app.
-
-Safe{Wallet} is a smart contract wallet for Ethereum and other EVM chains. Based on Gnosis Safe multisig contracts.
+This workspace (`apps/web`) is the web app of XRPL EVM Multisig, a multisig smart account wallet for the XRPL EVM Sidechain. It is a modified version of the open source [safe-wallet-monorepo](https://github.com/safe-global/safe-wallet-monorepo), used under the GNU General Public License v3.0.
 
 You can run commands for this workspace in two ways:
 
