@@ -207,7 +207,7 @@ yarn install
 
 ## Release process
 
-For information on releasing the web app, see the [Automated Release Procedure](apps/web/docs/release-procedure-automated.md).
+The web app ships as a container image. Run the **Build image** workflow (`.github/workflows/build-image.yml`) from the Actions tab on the branch to release. It pushes `ghcr.io/xrplevm/safe-wallet-web:<commit sha>`.
 
 ## Useful links
 

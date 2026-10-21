@@ -80,41 +80,6 @@ This app runs as a Safe App inside Safe{Wallet}'s iframe. It uses:
 | `VITE_TENDERLY_PROJECT_NAME`          | Tenderly project name | -       |
 | `VITE_TENDERLY_ORG_NAME`              | Tenderly organization | -       |
 
-## Deployment
-
-The app is automatically deployed via GitHub Actions (`.github/workflows/tx-builder-deploy.yml`):
-
-### Environments
-
-| Environment | Trigger                  | URL Pattern                                                |
-| ----------- | ------------------------ | ---------------------------------------------------------- |
-| PR Preview  | Pull request             | `https://{branch}--tx-builder.review.5afe.dev/tx-builder/` |
-| Staging     | Push to `dev`            | Staging environment                                        |
-| Production  | Manual workflow dispatch | Versioned release                                          |
-
-### Production Release Process
-
-1. **Bump version**: Update the version in `package.json` and merge to `main`:
-
-   ```bash
-   # Edit apps/tx-builder/package.json
-   # Change "version": "1.0.0" to "version": "1.1.0"
-   git commit -m "chore: bump tx-builder to 1.1.0"
-   ```
-
-2. **Trigger release**: Go to [GitHub Actions](../../actions/workflows/tx-builder-deploy.yml) and click "Run workflow" (from `main` or `dev` branch)
-
-3. **Automated steps**: The workflow will:
-   - Build the production bundle from `main`
-   - Upload to S3 releases bucket
-   - Create a git tag (`tx-builder-vX.X.X`)
-   - Create a GitHub release
-
-4. **Contact DevOps**: Send the git tag link to DevOps for production deployment:
-   ```
-   https://github.com/safe-global/safe-wallet-monorepo/releases/tag/tx-builder-vX.X.X
-   ```
-
 ## License
 
 See [LICENSE](../../LICENSE) in the monorepo root.

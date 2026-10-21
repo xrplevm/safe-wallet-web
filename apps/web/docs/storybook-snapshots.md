@@ -34,15 +34,6 @@ Snapshots are stored in:
 src/__tests__/__snapshots__/storybook.test.tsx.snap
 ```
 
-## CI Pipeline
-
-The GitHub Actions workflow runs on:
-
-- Pull requests that modify `apps/web/**`
-- Pushes to `main` branch
-
-Workflow file: `.github/workflows/web-storybook-tests.yml`
-
 ## When Snapshots Fail
 
 Snapshot tests will fail when:

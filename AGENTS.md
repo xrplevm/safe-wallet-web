@@ -207,29 +207,20 @@ See `apps/web/docs/feature-architecture.md` for the complete guide including pro
    - Uses Yarn 4 (managed via `corepack`)
    - Automatically runs `yarn after-install` for the web workspace, which generates TypeScript types from contract ABIs
 
-2. **Pre-commit hooks**: The repository uses Husky for git hooks:
-   - **pre-commit**: Automatically runs `lint-staged` (prettier) and type-check on staged TypeScript files
-   - **pre-push**: Runs linting before pushing
-   - These hooks ensure code quality before commits reach the repository
-   - **If hooks fail**: Fix the reported issues and try committing again. Common issues:
-     - Type errors: Run `yarn workspace @safe-global/web type-check` to see all errors
-     - Formatting: Run `yarn prettier:fix` to auto-fix
-     - Linting: Run `yarn workspace @safe-global/web lint:fix` to auto-fix where possible
-
-3. **Formatting (CRITICAL)**: **ALWAYS** run `yarn prettier:fix` before staging and committing. Do NOT rely on lint-staged alone — it can miss formatting issues due to stash/restore edge cases. Run it explicitly:
+2. **Formatting (CRITICAL)**: **ALWAYS** run `yarn prettier:fix` before staging and committing. The repository has no git hooks, so nothing formats or checks your changes automatically. Run it explicitly:
 
    ```bash
    yarn prettier:fix
    ```
 
-   Then verify with `yarn workspace @safe-global/web prettier` (the check-only command). **CI will reject unformatted code.**
+   Then verify with `yarn workspace @safe-global/web prettier` (the check-only command).
 
-4. **Linting and tests**: when you change any source code under `apps/` or `packages/`, execute, for web:
+3. **Linting and tests**: when you change any source code under `apps/` or `packages/`, execute, for web:
 
    ```bash
    yarn workspace @safe-global/web type-check
    yarn workspace @safe-global/web lint
-   yarn workspace @safe-global/web prettier   # verify formatting (CI runs this)
+   yarn workspace @safe-global/web prettier   # verify formatting
    yarn workspace @safe-global/web test
    ```
 
@@ -242,16 +233,16 @@ See `apps/web/docs/feature-architecture.md` for the complete guide including pro
    yarn workspace @safe-global/mobile test
    ```
 
-5. **Commit messages**: use [semantic commit messages](https://www.conventionalcommits.org/en/v1.0.0/) as described in `CONTRIBUTING.md`.
+4. **Commit messages**: use [semantic commit messages](https://www.conventionalcommits.org/en/v1.0.0/) as described in `CONTRIBUTING.md`.
    - Examples: `feat: add transaction history`, `fix: resolve wallet connection bug`, `refactor: simplify address validation`
    - **CI/CD changes**: Always use `chore:` prefix for CI, workflows, build configs (NEVER `feat:` or `fix:`)
    - **Test changes**: Always use `tests:` prefix for changes in unit or e2e tests (NEVER `feat:` or `fix:`)
 
-6. **Code style**: follow the guidelines in:
+5. **Code style**: follow the guidelines in:
    - `apps/web/docs/code-style.md` for the web app.
    - `apps/mobile/docs/code-style.md` for the mobile app.
 
-7. **Pull requests**: fill out the PR template and ensure all checks pass.
+6. **Pull requests**: fill out the PR template.
 
 **Environment Variables** – Web apps use `NEXT_PUBLIC_*` prefix, mobile apps use `EXPO_PUBLIC_*` prefix for environment variables. In shared packages, check for both prefixes.
 
@@ -282,12 +273,12 @@ See `apps/web/docs/feature-architecture.md` for the complete guide including pro
 
 Located in `apps/web/cypress/e2e/`. Full conventions and patterns: `apps/web/cypress/CLAUDE.md`.
 
-| Category   | Folder            | CI                           | Purpose                                    |
-| ---------- | ----------------- | ---------------------------- | ------------------------------------------ |
-| Smoke      | `e2e/smoke/`      | Every PR                     | Critical path functional tests             |
-| Visual     | `e2e/visual/`     | Manual (`workflow_dispatch`) | Chromatic visual regression (light + dark) |
-| Regression | `e2e/regression/` | On-demand                    | Feature tests                              |
-| Happy path | `e2e/happypath/`  | On-demand                    | User journey tests                         |
+| Category   | Folder            | Purpose                                    |
+| ---------- | ----------------- | ------------------------------------------ |
+| Smoke      | `e2e/smoke/`      | Critical path functional tests             |
+| Visual     | `e2e/visual/`     | Chromatic visual regression (light + dark) |
+| Regression | `e2e/regression/` | Feature tests                              |
+| Happy path | `e2e/happypath/`  | User journey tests                         |
 
 ```bash
 yarn workspace @safe-global/web cypress:open   # interactive
@@ -521,14 +512,12 @@ export const Empty: Story = (() => {
 
 ### Chromatic Visual Regression Testing
 
-Chromatic is integrated for visual regression testing. It automatically captures snapshots of all stories in both light and dark themes.
+Chromatic is integrated for visual regression testing. It captures snapshots of all stories in both light and dark themes.
 
-- **Workflow**: Runs automatically on PRs affecting `apps/web/**` or `packages/**`
 - **TurboSnap**: Only stories affected by code changes are re-snapshotted
 - **Theme modes**: Both light and dark themes are captured automatically
-- **PR checks**: Chromatic posts status checks with links to visual diffs
 
-To run locally (set `CHROMATIC_PROJECT_TOKEN` in `.env.local`):
+To run it (set `CHROMATIC_PROJECT_TOKEN` in `.env.local`):
 
 ```bash
 yarn workspace @safe-global/web chromatic
@@ -571,7 +560,6 @@ Avoid these common mistakes when contributing:
 5. **Modifying generated files** – Never manually edit auto-generated files:
    - Files in `packages/utils/src/types/contracts/` are auto-generated from ABIs
    - Files in `packages/store/src/gateway/AUTO_GENERATED/` are generated from `schema.json` (run `yarn workspace @safe-global/store build:dev` to regenerate)
-   - CI will fail if AUTO_GENERATED files don't match the schema
 6. **Not handling chain-specific logic** – Always consider multi-chain scenarios
 7. **Skipping Storybook stories** – New components should have stories for documentation
 8. **Incomplete error handling** – Always handle loading, error, and empty states in UI components

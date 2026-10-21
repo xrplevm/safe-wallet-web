@@ -27,7 +27,6 @@
     "prettier:fix": "prettier --write . --config ../../.prettierrc --ignore-path ../../.prettierignore",
     "storybook-generate": "sb-rn-get-stories",
     "generate:icons": "node ./scripts/generateIconTypes.js",
-    "prepare": "husky",
     "build-storybook": "STORYBOOK_WEB='true' storybook build",
     "e2e:metro": "EXPO_PUBLIC_ENV=e2e NODE_ENV=test RN_SRC_EXT=e2e.ts,e2e.tsx expo start",
     "e2e:metro-ios": "EXPO_PUBLIC_ENV=e2e NODE_ENV=test RN_SRC_EXT=e2e.ts,e2e.tsx expo run:ios --configuration Release",
