@@ -1,11 +1,9 @@
 import type { ReactElement, ReactNode } from 'react'
-import { SvgIcon } from '@mui/material'
-import GitHubIcon from '@mui/icons-material/GitHub'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import css from './styles.module.css'
 import { AppRoutes } from '@/config/routes'
-import { APP_VERSION, APP_HOMEPAGE } from '@/config/version'
+import { APP_HOMEPAGE } from '@/config/version'
 import ExternalLink from '../ExternalLink'
 import MUILink from '@mui/material/Link'
 import { HELP_CENTER_URL } from '@safe-global/utils/config/constants'
@@ -27,7 +25,6 @@ const FooterLink = ({ children, href }: { children: ReactNode; href: string }): 
 const Footer: React.FC<FooterProps> = ({
   forceShow,
   preferences = true,
-  versionIcon = true,
   helpCenter = true,
   className = css.container,
 }): ReactElement | null => {
@@ -57,13 +54,6 @@ const Footer: React.FC<FooterProps> = ({
             </ExternalLink>
           </li>
         )}
-
-        <li>
-          <ExternalLink href={`${APP_HOMEPAGE}/releases/tag/v${APP_VERSION}`} noIcon>
-            {versionIcon && <SvgIcon component={GitHubIcon} inheritViewBox fontSize="inherit" sx={{ mr: 0.5 }} />}v
-            {APP_VERSION}
-          </ExternalLink>
-        </li>
 
         {!IS_PRODUCTION && COMMIT_HASH && (
           <li>
