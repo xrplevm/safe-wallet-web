@@ -1,12 +1,14 @@
-# <img src="https://github.com/user-attachments/assets/b8249113-d515-4c91-a12a-f134813614e8" height="60" valign="middle" alt="Safe{Wallet}" style="background: #fff; padding: 20px; margin: 0 -20px" />
+# <img src="apps/web/public/images/brand/logo-mark-filled.png" height="48" valign="middle" alt="XRPL EVM Multisig" />
 
-# Safe{Wallet} monorepo
+# XRPL EVM Multisig
 
-🌐 [Safe{Wallet} web app](/apps/web/README.md) ・ 📱 [Safe{Wallet} mobile app](/apps/mobile/README.md)
+🌐 [Web app](/apps/web/README.md)
 
 ## Overview
 
-Welcome to the Safe{Wallet} monorepo! Safe (formerly Gnosis Safe) is a multi-signature smart contract wallet for Ethereum and other EVM chains, requiring multiple signatures to execute transactions.
+XRPL EVM Multisig is a multisig smart account wallet for the XRPL EVM Sidechain. Transactions run only when enough owners sign them.
+
+It is a modified version of the open source [safe-wallet-monorepo](https://github.com/safe-global/safe-wallet-monorepo), used under the GNU General Public License v3.0. This project is not affiliated with, endorsed by or operated by the authors of the original software.
 
 This repository houses both web and mobile applications along with shared packages, managed under a unified structure using Yarn Workspaces. The monorepo setup simplifies dependency management and ensures consistent development practices across projects.
 
@@ -216,7 +218,7 @@ For information on releasing the web app, see the [Automated Release Procedure](
 - [Jest Documentation](https://jestjs.io/)
 - [ESLint Documentation](https://eslint.org/)
 - [Prettier Documentation](https://prettier.io/)
-- [Safe Developer Docs](https://docs.safe.global/)
+- [Smart account contracts](https://github.com/safe-global/safe-smart-account)
 
 ---
 
