@@ -949,12 +949,12 @@
       "balanceFiat": "4.11628719314979",
       "groups": [
         {
-          "name": "Kiln Yield: USDT Pool (Safe Smokehouse USDT)",
+          "name": "Kiln Yield: USDT Pool (Smokehouse USDT)",
           "items": [
             {
               "key": "0xdac17f958d2ee523a2206206994597c13d831ec7-ethereum-kiln yield: usdt pool (safe smokehouse usdt)-deposit",
               "type": "deposit",
-              "name": "Kiln Yield: USDT Pool (Safe Smokehouse USDT)",
+              "name": "Kiln Yield: USDT Pool (Smokehouse USDT)",
               "groupId": "6a58cf9488e44d9f7de6534d19fc659f8d452e59d205090b99b645a9f759d32a",
               "tokenInfo": {
                 "address": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
@@ -974,12 +974,12 @@
           ]
         },
         {
-          "name": "Kiln Yield: WBTC Pool (Safe Smokehouse WBTC)",
+          "name": "Kiln Yield: WBTC Pool (Smokehouse WBTC)",
           "items": [
             {
               "key": "0x2260fac5e5542a773aa44fbcfedf7c193bc2c599-ethereum-kiln yield: wbtc pool (safe smokehouse wbtc)-deposit",
               "type": "deposit",
-              "name": "Kiln Yield: WBTC Pool (Safe Smokehouse WBTC)",
+              "name": "Kiln Yield: WBTC Pool (Smokehouse WBTC)",
               "groupId": "7f5f412b7068a18a240846643cf28220a18f045990df7b5d7d76b55dba046ace",
               "tokenInfo": {
                 "address": "0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599",

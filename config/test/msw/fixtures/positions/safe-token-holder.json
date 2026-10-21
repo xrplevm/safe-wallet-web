@@ -450,7 +450,7 @@
     "fiatTotal": "4.11628719314979",
     "items": [
       {
-        "name": "Kiln Yield: USDT Pool (Safe Smokehouse USDT)",
+        "name": "Kiln Yield: USDT Pool (Smokehouse USDT)",
         "items": [
           {
             "position_type": "deposit",
@@ -470,7 +470,7 @@
         ]
       },
       {
-        "name": "Kiln Yield: WBTC Pool (Safe Smokehouse WBTC)",
+        "name": "Kiln Yield: WBTC Pool (Smokehouse WBTC)",
         "items": [
           {
             "position_type": "deposit",
