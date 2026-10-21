@@ -31,7 +31,7 @@ const licenseText = (root, pkg) => {
   const fromReadme = readmeLicense(root)
   if (fromReadme) return `(License section of the package README)\n\n${fromReadme}`
   const author = typeof pkg.author === 'string' ? pkg.author : pkg.author?.name
-  return `The package publishes no license file. Its package.json declares the license "${licenseOf(pkg)}"${
+  return `The package publishes no license file. Its package.json declares the license "${declaredLicense(pkg)}"${
     author ? ` and the author "${author}"` : ''
   }.`
 }
@@ -46,11 +46,25 @@ const packageRoot = (resource) => {
   return resource.slice(0, index + marker.length) + rest.slice(0, depth).join(path.sep)
 }
 
-const licenseOf = (pkg) => {
+const declaredLicense = (pkg) => {
   if (typeof pkg.license === 'string') return pkg.license
   if (pkg.license?.type) return pkg.license.type
   if (Array.isArray(pkg.licenses)) return pkg.licenses.map((l) => l.type || l).join(' OR ')
   return 'UNKNOWN'
+}
+
+/** SPDX id from package.json, or the title of the license file for custom licenses ("SEE LICENSE IN <file>"). */
+const licenseOf = (pkg, root) => {
+  const declared = declaredLicense(pkg)
+  const file = declared.match(/^SEE LICEN[SC]E IN (.+)$/i)?.[1]
+  const filePath = file && root && path.join(root, file)
+  if (!filePath || !fs.existsSync(filePath)) return declared
+  const title = fs
+    .readFileSync(filePath, 'utf8')
+    .split('\n')
+    .map((l) => l.replace(/[*_#`]/g, '').trim())
+    .find(Boolean)
+  return title ? `${title} (custom)` : declared
 }
 
 const repositoryOf = (pkg) => {
@@ -90,7 +104,7 @@ export const collectPackages = (resources) => {
     packages.set(key, {
       name: pkg.name,
       version: pkg.version,
-      license: licenseOf(pkg),
+      license: licenseOf(pkg, root),
       repository: repositoryOf(pkg),
       text: licenseText(root, pkg),
     })
@@ -114,7 +128,7 @@ export class ThirdPartyLicensesWebpackPlugin {
         { name: pluginName, stage: compilation.constructor.PROCESS_ASSETS_STAGE_ADDITIONAL },
         () => {
           const list = collectPackages(moduleResources(compilation.modules))
-          const json = list.map(({ text, ...rest }) => rest)
+          const json = list.map(({ name, version, license, repository }) => ({ name, version, license, repository }))
           const txt = list
             .map((p) => `${p.name}@${p.version} (${p.license})\n${p.repository}\n\n${p.text}`)
             .join(`\n\n${'-'.repeat(80)}\n\n`)

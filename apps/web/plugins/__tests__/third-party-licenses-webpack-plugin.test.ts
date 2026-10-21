@@ -82,6 +82,19 @@ describe('third-party licenses collector', () => {
     expect(pkg.text).not.toContain('Not this.')
   })
 
+  it('names custom licenses by the title of the referenced license file', () => {
+    const file = writePackage(
+      path.join(nm, 'custom'),
+      { name: 'custom', version: '1.0.0', license: 'SEE LICENSE IN LICENSE.md' },
+      { 'LICENSE.md': '\n**ACME COMMUNITY LICENSE**\n\nTerms.' },
+    )
+
+    const [pkg] = collectPackages([file])
+
+    expect(pkg.license).toBe('ACME COMMUNITY LICENSE (custom)')
+    expect(pkg.text).toContain('Terms.')
+  })
+
   it('reports packages that publish no license text, with the declared license and author', () => {
     const file = writePackage(path.join(nm, 'bare'), {
       name: 'bare',
