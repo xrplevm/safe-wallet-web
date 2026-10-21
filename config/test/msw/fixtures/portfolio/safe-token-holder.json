@@ -1,7 +1,7 @@
 {
-  "totalBalanceFiat": "1316.9891607789668",
-  "totalTokenBalanceFiat": "609.2160990535185",
-  "totalPositionsBalanceFiat": "707.7730617254483",
+  "totalBalanceFiat": "11000.0240674380773693",
+  "totalTokenBalanceFiat": "4502.70061082728707",
+  "totalPositionsBalanceFiat": "6497.3234566107902993",
   "tokenBalances": [
     {
       "tokenInfo": {
@@ -15,9 +15,9 @@
         "type": "ERC20"
       },
       "balance": "3178195646939569682462",
-      "balanceFiat": "438.39615522623143",
-      "price": "0.1379386935",
-      "priceChangePercentage1d": "-7.275036237493005"
+      "balanceFiat": "4331.880667",
+      "price": "1.363",
+      "priceChangePercentage1d": "3.66"
     },
     {
       "tokenInfo": {
@@ -401,7 +401,7 @@
         "logoUrl": "/images/brand/logo-mark-filled.png",
         "url": "https://gnosis.io/"
       },
-      "balanceFiat": "651.888206114658",
+      "balanceFiat": "6441.4386009999999993",
       "groups": [
         {
           "name": "XRP Vesting",
@@ -423,8 +423,8 @@
               },
               "receiptTokenAddress": "0xC0fde70A65C7569Fe919bE57492228DEE8cDb585",
               "balance": "2034160974499438657536",
-              "balanceFiat": "280.5895071911394",
-              "priceChangePercentage1d": "-7.275036237493005"
+              "balanceFiat": "2772.561408",
+              "priceChangePercentage1d": "3.66"
             },
             {
               "key": "0x5afe3855358e112b5647b952709e6165e1c1eeee-ethereum-gnosis safe vesting-locked",
@@ -443,8 +443,8 @@
               },
               "receiptTokenAddress": "0xC0fde70A65C7569Fe919bE57492228DEE8cDb585",
               "balance": "514950925272454042464",
-              "balanceFiat": "71.03165784869843",
-              "priceChangePercentage1d": "-7.275036237493005"
+              "balanceFiat": "701.878111",
+              "priceChangePercentage1d": "3.66"
             }
           ]
         },
@@ -468,8 +468,8 @@
               },
               "receiptTokenAddress": "0xA0b937D5c8E32a80E3a8ed4227CD020221544ee6",
               "balance": "1237784404310331228160",
-              "balanceFiat": "170.73836356524285",
-              "priceChangePercentage1d": "-7.275036237493005"
+              "balanceFiat": "1687.100143",
+              "priceChangePercentage1d": "3.66"
             },
             {
               "key": "0x5afe3855358e112b5647b952709e6165e1c1eeee-ethereum-gnosis safe vesting-locked",
@@ -488,8 +488,8 @@
               },
               "receiptTokenAddress": "0xA0b937D5c8E32a80E3a8ed4227CD020221544ee6",
               "balance": "313030769561242271840",
-              "balanceFiat": "43.17905537857733",
-              "priceChangePercentage1d": "-7.275036237493005"
+              "balanceFiat": "426.660939",
+              "priceChangePercentage1d": "3.66"
             }
           ]
         },
@@ -513,8 +513,8 @@
               },
               "receiptTokenAddress": "0x57eC1930f3E5c8062926c2F3ee49316E116143df",
               "balance": "416000000000000000000",
-              "balanceFiat": "57.382496495999995",
-              "priceChangePercentage1d": "-7.275036237493005"
+              "balanceFiat": "567.008000",
+              "priceChangePercentage1d": "3.66"
             }
           ]
         },
@@ -538,8 +538,8 @@
               },
               "receiptTokenAddress": "0x0a7CB434f96f65972D46A5c1A64a9654dC9959b2",
               "balance": "190000000000000000000",
-              "balanceFiat": "26.208351764999996",
-              "priceChangePercentage1d": "-7.275036237493005"
+              "balanceFiat": "258.970000",
+              "priceChangePercentage1d": "3.66"
             }
           ]
         },
@@ -563,8 +563,8 @@
               },
               "receiptTokenAddress": "0xdd57784bDD85bBda811CC0B47981D9188e83f703",
               "balance": "20000000000000000000",
-              "balanceFiat": "2.7587738699999997",
-              "priceChangePercentage1d": "-7.275036237493005"
+              "balanceFiat": "27.260000",
+              "priceChangePercentage1d": "3.66"
             }
           ]
         }

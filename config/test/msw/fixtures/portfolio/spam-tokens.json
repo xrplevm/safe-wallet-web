@@ -1,7 +1,7 @@
 {
-  "totalBalanceFiat": "85412445.36473647",
-  "totalTokenBalanceFiat": "83641758.63568594",
-  "totalPositionsBalanceFiat": "1770686.7290505276",
+  "totalBalanceFiat": "87925579.79751737216088",
+  "totalTokenBalanceFiat": "86142588.6472759309",
+  "totalPositionsBalanceFiat": "1782991.15024143886088",
   "tokenBalances": [
     {
       "tokenInfo": {
@@ -95,9 +95,9 @@
         "type": "ERC20"
       },
       "balance": "2041370498413453871452698",
-      "balanceFiat": "281557.9777480091",
-      "price": "0.13792595609999997",
-      "priceChangePercentage1d": "-7.283598555458049"
+      "balanceFiat": "2782387.989338",
+      "price": "1.363",
+      "priceChangePercentage1d": "3.66"
     },
     {
       "tokenInfo": {
@@ -460,7 +460,7 @@
         "logoUrl": "/images/brand/logo-mark-filled.png",
         "url": "https://gnosis.io/"
       },
-      "balanceFiat": "1385.3032520887389",
+      "balanceFiat": "13689.72444299999978",
       "groups": [
         {
           "name": "XRP Vesting",
@@ -482,8 +482,8 @@
               },
               "receiptTokenAddress": "0xC0fde70A65C7569Fe919bE57492228DEE8cDb585",
               "balance": "5170126051567719153664",
-              "balanceFiat": "713.0945788199955",
-              "priceChangePercentage1d": "-7.283598555458049"
+              "balanceFiat": "7046.881808",
+              "priceChangePercentage1d": "3.66"
             },
             {
               "key": "0x5afe3855358e112b5647b952709e6165e1c1eeee-ethereum-gnosis safe vesting-locked",
@@ -502,8 +502,8 @@
               },
               "receiptTokenAddress": "0xC0fde70A65C7569Fe919bE57492228DEE8cDb585",
               "balance": "1253480031778953846336",
-              "balanceFiat": "172.88743183537056",
-              "priceChangePercentage1d": "-7.283598555458049"
+              "balanceFiat": "1708.493283",
+              "priceChangePercentage1d": "3.66"
             }
           ]
         },
@@ -527,8 +527,8 @@
               },
               "receiptTokenAddress": "0xA0b937D5c8E32a80E3a8ed4227CD020221544ee6",
               "balance": "2857990768787701891072",
-              "balanceFiat": "394.19110931001774",
-              "priceChangePercentage1d": "-7.283598555458049"
+              "balanceFiat": "3895.441418",
+              "priceChangePercentage1d": "3.66"
             },
             {
               "key": "0x5afe3855358e112b5647b952709e6165e1c1eeee-ethereum-gnosis safe vesting-locked",
@@ -547,8 +547,8 @@
               },
               "receiptTokenAddress": "0xA0b937D5c8E32a80E3a8ed4227CD020221544ee6",
               "balance": "762221521575918608928",
-              "balanceFiat": "105.13013212335532",
-              "priceChangePercentage1d": "-7.283598555458049"
+              "balanceFiat": "1038.907934",
+              "priceChangePercentage1d": "3.66"
             }
           ]
         }

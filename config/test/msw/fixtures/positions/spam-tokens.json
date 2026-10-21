@@ -56,7 +56,7 @@
       },
       "url": "https://gnosis.io/"
     },
-    "fiatTotal": "1385.4311842208926",
+    "fiatTotal": "13689.72444300000004",
     "items": [
       {
         "name": "XRP Vesting",
@@ -72,9 +72,9 @@
               "logoUri": "/images/brand/logo-mark-filled.png"
             },
             "balance": "5170126051567719153664",
-            "fiatBalance": "713.1604327835648",
-            "fiatBalance24hChange": "-7.275036237493005",
-            "fiatConversion": "0.1379386935"
+            "fiatBalance": "7046.881808",
+            "fiatBalance24hChange": "3.66",
+            "fiatConversion": "1.363"
           },
           {
             "position_type": "reward",
@@ -87,9 +87,9 @@
               "logoUri": "/images/brand/logo-mark-filled.png"
             },
             "balance": "2857990768787701891072",
-            "fiatBalance": "394.22751268163614",
-            "fiatBalance24hChange": "-7.275036237493005",
-            "fiatConversion": "0.1379386935"
+            "fiatBalance": "3895.441418",
+            "fiatBalance24hChange": "3.66",
+            "fiatConversion": "1.363"
           },
           {
             "position_type": "locked",
@@ -102,9 +102,9 @@
               "logoUri": "/images/brand/logo-mark-filled.png"
             },
             "balance": "1253480031778953846336",
-            "fiatBalance": "172.90339791192736",
-            "fiatBalance24hChange": "-7.275036237493005",
-            "fiatConversion": "0.1379386935"
+            "fiatBalance": "1708.493283",
+            "fiatBalance24hChange": "3.66",
+            "fiatConversion": "1.363"
           },
           {
             "position_type": "locked",
@@ -117,9 +117,9 @@
               "logoUri": "/images/brand/logo-mark-filled.png"
             },
             "balance": "762221521575918608928",
-            "fiatBalance": "105.13984084376426",
-            "fiatBalance24hChange": "-7.275036237493005",
-            "fiatConversion": "0.1379386935"
+            "fiatBalance": "1038.907934",
+            "fiatBalance24hChange": "3.66",
+            "fiatConversion": "1.363"
           }
         ]
       }

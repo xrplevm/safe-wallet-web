@@ -1,5 +1,5 @@
 {
-  "fiatTotal": "83609079.95353994",
+  "fiatTotal": "86450241.3945615912",
   "items": [
     {
       "tokenInfo": {
@@ -81,9 +81,9 @@
         "logoUri": "/images/brand/logo-mark-filled.png"
       },
       "balance": "2041370498413453871452698",
-      "fiatBalance": "281976.5483163488",
-      "fiatBalance24hChange": "-7.484727585248757",
-      "fiatConversion": "0.138131"
+      "fiatBalance": "2782387.989338",
+      "fiatBalance24hChange": "3.66",
+      "fiatConversion": "1.363"
     },
     {
       "tokenInfo": {
@@ -459,9 +459,9 @@
         "logoUri": "/images/brand/logo-mark-filled.png"
       },
       "balance": "250000000000000000000000",
-      "fiatBalance": "0",
-      "fiatBalance24hChange": null,
-      "fiatConversion": "0"
+      "fiatBalance": "340750",
+      "fiatBalance24hChange": "3.66",
+      "fiatConversion": "1.363"
     },
     {
       "tokenInfo": {

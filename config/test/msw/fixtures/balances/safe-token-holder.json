@@ -1,5 +1,5 @@
 {
-  "fiatTotal": "640.13731342144",
+  "fiatTotal": "4533.0106375140303",
   "items": [
     {
       "tokenInfo": {
@@ -11,9 +11,9 @@
         "logoUri": "/images/brand/logo-mark-filled.png"
       },
       "balance": "3178195646939569682462",
-      "fiatBalance": "439.0073429074097",
-      "fiatBalance24hChange": "-7.484727585248757",
-      "fiatConversion": "0.138131"
+      "fiatBalance": "4331.880667",
+      "fiatBalance24hChange": "3.66",
+      "fiatConversion": "1.363"
     },
     {
       "tokenInfo": {
