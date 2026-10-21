@@ -8,24 +8,24 @@ exports[`./InitialsAvatar.stories AllSizes 1`] = `
     class="MuiStack-root mui-style-1sos3zc-MuiStack-root"
   >
     <div
-      class="initialsAvatar MuiBox-root mui-style-ksqe1t"
+      class="initialsAvatar MuiBox-root mui-style-gvpvev"
     >
-      S
+      A
     </div>
     <div
-      class="initialsAvatar MuiBox-root mui-style-nmen8c"
+      class="initialsAvatar MuiBox-root mui-style-t1oum6"
     >
-      S
+      A
     </div>
     <div
-      class="initialsAvatar MuiBox-root mui-style-11n5h3k"
+      class="initialsAvatar MuiBox-root mui-style-14o5hbs"
     >
-      S
+      A
     </div>
     <div
-      class="initialsAvatar MuiBox-root mui-style-6uhehl"
+      class="initialsAvatar MuiBox-root mui-style-1t1madw"
     >
-      S
+      A
     </div>
   </div>
 </div>
@@ -36,9 +36,9 @@ exports[`./InitialsAvatar.stories Default 1`] = `
   style="background-color: rgb(255, 255, 255); padding: 1rem;"
 >
   <div
-    class="initialsAvatar MuiBox-root mui-style-1qgn1pp"
+    class="initialsAvatar MuiBox-root mui-style-282jqb"
   >
-    S
+    A
   </div>
 </div>
 `;
@@ -84,9 +84,9 @@ exports[`./InitialsAvatar.stories Large 1`] = `
   style="background-color: rgb(255, 255, 255); padding: 1rem;"
 >
   <div
-    class="initialsAvatar MuiBox-root mui-style-1qgn1pp"
+    class="initialsAvatar MuiBox-root mui-style-282jqb"
   >
-    S
+    A
   </div>
 </div>
 `;
@@ -96,9 +96,9 @@ exports[`./InitialsAvatar.stories Medium 1`] = `
   style="background-color: rgb(255, 255, 255); padding: 1rem;"
 >
   <div
-    class="initialsAvatar MuiBox-root mui-style-7emiao"
+    class="initialsAvatar MuiBox-root mui-style-15snzl2"
   >
-    S
+    A
   </div>
 </div>
 `;
@@ -108,9 +108,9 @@ exports[`./InitialsAvatar.stories Rounded 1`] = `
   style="background-color: rgb(255, 255, 255); padding: 1rem;"
 >
   <div
-    class="initialsAvatar MuiBox-root mui-style-1r6vwch"
+    class="initialsAvatar MuiBox-root mui-style-1vw45bh"
   >
-    S
+    A
   </div>
 </div>
 `;
@@ -120,9 +120,9 @@ exports[`./InitialsAvatar.stories Small 1`] = `
   style="background-color: rgb(255, 255, 255); padding: 1rem;"
 >
   <div
-    class="initialsAvatar MuiBox-root mui-style-1bxo8he"
+    class="initialsAvatar MuiBox-root mui-style-1kgi5v6"
   >
-    S
+    A
   </div>
 </div>
 `;
@@ -132,9 +132,9 @@ exports[`./InitialsAvatar.stories XSmall 1`] = `
   style="background-color: rgb(255, 255, 255); padding: 1rem;"
 >
   <div
-    class="initialsAvatar MuiBox-root mui-style-13lurrd"
+    class="initialsAvatar MuiBox-root mui-style-1kj609t"
   >
-    S
+    A
   </div>
 </div>
 `;

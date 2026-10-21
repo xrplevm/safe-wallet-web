@@ -23,7 +23,7 @@ export function NestedSafeBreadcrumbs(): ReactElement | null {
   return (
     <>
       <BreadcrumbItem
-        title="Parent Safe"
+        title="Parent account"
         address={parentSafe.address.value}
         href={{
           pathname,
@@ -31,7 +31,7 @@ export function NestedSafeBreadcrumbs(): ReactElement | null {
         }}
       />
       <Typography variant="body2">/</Typography>
-      <BreadcrumbItem title="Nested Safe" address={safeAddress} />
+      <BreadcrumbItem title="Nested account" address={safeAddress} />
     </>
   )
 }

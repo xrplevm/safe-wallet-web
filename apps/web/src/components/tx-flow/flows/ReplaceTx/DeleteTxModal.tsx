@@ -1,3 +1,4 @@
+import { HelpCenterArticle } from '@safe-global/utils/config/constants'
 import useWallet from '@/hooks/wallets/useWallet'
 import { useState } from 'react'
 import {
@@ -118,10 +119,8 @@ const InternalDeleteTxModal = ({
 
         <Box mt={2}>
           Make sure that you are aware of the{' '}
-          <ExternalLink href="https://help.safe.global/en/articles/40836-why-do-i-need-to-pay-for-cancelling-a-transaction">
-            potential risks
-          </ExternalLink>{' '}
-          related to deleting a transaction off-chain.
+          <ExternalLink href={HelpCenterArticle.CANCELLING_TRANSACTIONS}>potential risks</ExternalLink> related to
+          deleting a transaction off-chain.
         </Box>
 
         <Box mt={2}>

@@ -33,7 +33,7 @@ export const CONTRACT_CHANGE_TITLES_MAPPING: Record<
   ProxyUpgradeManagement['type'] | OwnershipChangeManagement['type'] | ModulesChangeManagement['type'],
   string
 > = {
-  PROXY_UPGRADE: 'This transaction will change the mastercopy of the Safe',
-  OWNERSHIP_CHANGE: 'This transaction will change the ownership of the Safe',
-  MODULES_CHANGE: 'This transaction contains a Safe modules change',
+  PROXY_UPGRADE: 'This transaction will change the mastercopy of the account',
+  OWNERSHIP_CHANGE: 'This transaction will change the ownership of the account',
+  MODULES_CHANGE: 'This transaction contains an account modules change',
 }

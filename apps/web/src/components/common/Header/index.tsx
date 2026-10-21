@@ -10,11 +10,10 @@ import classnames from 'classnames'
 import css from './styles.module.css'
 import ConnectWallet from '@/components/common/ConnectWallet'
 import NetworkSelector from '@/components/common/NetworkSelector'
-import SafeTokenWidget from '@/components/common/SafeTokenWidget'
 import NotificationCenter from '@/components/notification-center/NotificationCenter'
 import { AppRoutes } from '@/config/routes'
-import SafeLabsLogo from '@/public/images/logo-safe-labs.svg'
-import SafeLogoMobile from '@/public/images/logo-no-text.svg'
+import BrandLogo from '@/public/images/brand/logo.svg'
+import BrandLogoMark from '@/public/images/brand/logo-mark.svg'
 import Link from 'next/link'
 import useSafeAddress from '@/hooks/useSafeAddress'
 import BatchIndicator from '@/components/batch/BatchIndicator'
@@ -22,8 +21,6 @@ import { useLoadFeature } from '@/features/__core__'
 import { WalletConnectFeature } from '@/features/walletconnect'
 import Track from '@/components/common/Track'
 import { OVERVIEW_EVENTS, OVERVIEW_LABELS } from '@/services/analytics'
-import { useSafeTokenEnabled } from '@/hooks/useSafeTokenEnabled'
-import { useIsOfficialHost } from '@/hooks/useIsOfficialHost'
 import { BRAND_LOGO, BRAND_NAME } from '@/config/constants'
 
 type HeaderProps = {
@@ -41,12 +38,10 @@ export function getLogoLink(router: ReturnType<typeof useRouter>): Url {
 
 const Header = ({ onMenuToggle, onBatchToggle }: HeaderProps): ReactElement => {
   const safeAddress = useSafeAddress()
-  const showSafeToken = useSafeTokenEnabled()
   const isProposer = useIsWalletProposer()
   const isSafeOwner = useIsSafeOwner()
   const router = useRouter()
   const { WalletConnectWidget } = useLoadFeature(WalletConnectFeature)
-  const isOfficialHost = useIsOfficialHost()
 
   // If on the home page, the logo should link to the Accounts or Welcome page, otherwise to the home page
   const logoHref = getLogoLink(router)
@@ -79,21 +74,15 @@ const Header = ({ onMenuToggle, onBatchToggle }: HeaderProps): ReactElement => {
 
       <div className={classnames(css.element, css.logoMobile)}>
         <Link href={logoHref} passHref>
-          {isOfficialHost ? <SafeLogoMobile alt="Safe logo" /> : null}
+          <BrandLogoMark alt={BRAND_NAME} />
         </Link>
       </div>
 
       <div className={classnames(css.element, css.hideMobile, css.logo)}>
         <Link href={logoHref} passHref>
-          {isOfficialHost ? <SafeLabsLogo alt={BRAND_NAME} /> : BRAND_LOGO && <img src={BRAND_LOGO} alt={BRAND_NAME} />}
+          {BRAND_LOGO ? <img src={BRAND_LOGO} alt={BRAND_NAME} /> : <BrandLogo alt={BRAND_NAME} />}
         </Link>
       </div>
-
-      {showSafeToken && (
-        <div className={classnames(css.element, css.hideMobile)}>
-          <SafeTokenWidget />
-        </div>
-      )}
 
       <Box className={css.rightSideGroup}>
         <div data-testid="notifications-center" className={css.element}>

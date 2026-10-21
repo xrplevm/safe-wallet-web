@@ -214,7 +214,7 @@ const UndeployedNetworks = ({
             <InfoOutlined color="info" fontSize="medium" />
           </Tooltip>
         )}
-        <Typography>Adding another network is not possible for this Safe. </Typography>
+        <Typography>Adding another network is not possible for this account. </Typography>
       </Stack>
     ) : isUnsupportedSafeCreationVersion ? (
       'This account was created from an outdated mastercopy. Adding another network is not possible.'

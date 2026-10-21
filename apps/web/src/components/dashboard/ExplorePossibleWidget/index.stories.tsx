@@ -8,7 +8,7 @@ import { Box } from '@mui/material'
 const meta = {
   component: ExplorePossibleWidget,
   parameters: {
-    componentSubtitle: 'Renders a horizontal scrollable carousel showcasing key Safe features',
+    componentSubtitle: 'Renders a horizontal scrollable carousel showcasing key features',
     nextjs: {
       appDirectory: true,
       navigation: {

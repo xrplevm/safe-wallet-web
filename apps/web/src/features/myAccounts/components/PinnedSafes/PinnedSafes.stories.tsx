@@ -26,7 +26,7 @@ const pinnedSafes: AllSafeItems = [
     lastVisited: Date.now(),
   },
   {
-    name: 'Optimism Safe',
+    name: 'Optimism account',
     address: '0xabcdef1234567890abcdef1234567890abcdef12',
     isPinned: true,
     chainId: '10',
@@ -60,7 +60,7 @@ export const NoPinnedWithOtherSafes: Story = {
   args: {
     allSafes: [
       {
-        name: 'Unpinned Safe',
+        name: 'Unpinned account',
         address: '0x9876543210fedcba9876543210fedcba98765432',
         isPinned: false,
         chainId: '1',

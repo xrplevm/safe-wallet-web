@@ -50,18 +50,18 @@ const RemoveSafeDialog = ({
 
       dispatch(
         showNotification({
-          message: `Removed safe account from space`,
+          message: `Removed multisig account from space`,
           variant: 'success',
           groupKey: 'remove-safe-account-success',
         }),
       )
     } catch (e) {
-      setError('Error removing safe account.')
+      setError('Error removing multisig account.')
     }
   }
 
   return (
-    <ModalDialog open onClose={handleClose} dialogTitle="Remove Safe Account" hideChainIndicator>
+    <ModalDialog open onClose={handleClose} dialogTitle="Remove multisig account" hideChainIndicator>
       <DialogContent sx={{ p: '24px !important' }}>
         <Typography>
           Are you sure you want to remove <b>{address}</b> from this space?

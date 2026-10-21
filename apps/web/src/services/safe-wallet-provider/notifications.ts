@@ -7,7 +7,7 @@ export const showNotification = (title: string, options?: NotificationOptions) =
   }
 
   const notification = new Notification(title, {
-    icon: '/images/safe-logo-green.png',
+    icon: '/images/brand/logo-mark-filled.png',
     ...options,
   })
 

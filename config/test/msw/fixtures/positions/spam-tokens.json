@@ -48,18 +48,18 @@
     ]
   },
   {
-    "protocol": "Gnosis Safe",
+    "protocol": "XRP Staking",
     "protocol_metadata": {
-      "name": "Safe Factory",
+      "name": "XRP Staking",
       "icon": {
-        "url": "https://protocol-icons.s3.amazonaws.com/icons/gnosis-safe-factory.jpg"
+        "url": "/images/brand/logo-mark-filled.png"
       },
       "url": "https://gnosis.io/"
     },
-    "fiatTotal": "1385.4311842208926",
+    "fiatTotal": "13689.72444300000004",
     "items": [
       {
-        "name": "Gnosis Safe Vesting",
+        "name": "XRP Vesting",
         "items": [
           {
             "position_type": "reward",
@@ -67,14 +67,14 @@
               "type": "ERC20",
               "address": "0x5aFE3855358E112B5647B952709E6165e1c1eEEe",
               "decimals": 18,
-              "symbol": "SAFE",
-              "name": "Safe Token",
-              "logoUri": "https://cdn.zerion.io/0x5afe3855358e112b5647b952709e6165e1c1eeee.png"
+              "symbol": "XRP",
+              "name": "XRP",
+              "logoUri": "/images/brand/logo-mark-filled.png"
             },
             "balance": "5170126051567719153664",
-            "fiatBalance": "713.1604327835648",
-            "fiatBalance24hChange": "-7.275036237493005",
-            "fiatConversion": "0.1379386935"
+            "fiatBalance": "7046.881808",
+            "fiatBalance24hChange": "3.66",
+            "fiatConversion": "1.363"
           },
           {
             "position_type": "reward",
@@ -82,14 +82,14 @@
               "type": "ERC20",
               "address": "0x5aFE3855358E112B5647B952709E6165e1c1eEEe",
               "decimals": 18,
-              "symbol": "SAFE",
-              "name": "Safe Token",
-              "logoUri": "https://cdn.zerion.io/0x5afe3855358e112b5647b952709e6165e1c1eeee.png"
+              "symbol": "XRP",
+              "name": "XRP",
+              "logoUri": "/images/brand/logo-mark-filled.png"
             },
             "balance": "2857990768787701891072",
-            "fiatBalance": "394.22751268163614",
-            "fiatBalance24hChange": "-7.275036237493005",
-            "fiatConversion": "0.1379386935"
+            "fiatBalance": "3895.441418",
+            "fiatBalance24hChange": "3.66",
+            "fiatConversion": "1.363"
           },
           {
             "position_type": "locked",
@@ -97,14 +97,14 @@
               "type": "ERC20",
               "address": "0x5aFE3855358E112B5647B952709E6165e1c1eEEe",
               "decimals": 18,
-              "symbol": "SAFE",
-              "name": "Safe Token",
-              "logoUri": "https://cdn.zerion.io/0x5afe3855358e112b5647b952709e6165e1c1eeee.png"
+              "symbol": "XRP",
+              "name": "XRP",
+              "logoUri": "/images/brand/logo-mark-filled.png"
             },
             "balance": "1253480031778953846336",
-            "fiatBalance": "172.90339791192736",
-            "fiatBalance24hChange": "-7.275036237493005",
-            "fiatConversion": "0.1379386935"
+            "fiatBalance": "1708.493283",
+            "fiatBalance24hChange": "3.66",
+            "fiatConversion": "1.363"
           },
           {
             "position_type": "locked",
@@ -112,14 +112,14 @@
               "type": "ERC20",
               "address": "0x5aFE3855358E112B5647B952709E6165e1c1eEEe",
               "decimals": 18,
-              "symbol": "SAFE",
-              "name": "Safe Token",
-              "logoUri": "https://cdn.zerion.io/0x5afe3855358e112b5647b952709e6165e1c1eeee.png"
+              "symbol": "XRP",
+              "name": "XRP",
+              "logoUri": "/images/brand/logo-mark-filled.png"
             },
             "balance": "762221521575918608928",
-            "fiatBalance": "105.13984084376426",
-            "fiatBalance24hChange": "-7.275036237493005",
-            "fiatConversion": "0.1379386935"
+            "fiatBalance": "1038.907934",
+            "fiatBalance24hChange": "3.66",
+            "fiatConversion": "1.363"
           }
         ]
       }

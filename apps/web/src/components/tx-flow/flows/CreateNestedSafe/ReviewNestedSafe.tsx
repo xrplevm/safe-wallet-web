@@ -109,7 +109,7 @@ export function ReviewNestedSafe({
   }, [onSubmit, predictedSafeAddress])
 
   return (
-    <ReviewTransaction onSubmit={handleSubmit} title="Confirm Nested Safe">
+    <ReviewTransaction onSubmit={handleSubmit} title="Confirm nested account">
       {children}
     </ReviewTransaction>
   )

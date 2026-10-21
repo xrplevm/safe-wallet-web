@@ -29,8 +29,8 @@ const SelectAllConfirmDialog = ({ open, similarAddresses, onConfirm, onCancel }:
       <DialogContent>
         <Alert severity="warning" sx={{ mb: 2 }}>
           <Typography variant="body2">
-            {similarAddresses.length} Safe{similarAddresses.length === 1 ? '' : 's'} in your list closely resemble other
-            addresses. Review them carefully before continuing.
+            {similarAddresses.length} account{similarAddresses.length === 1 ? '' : 's'} in your list closely resemble
+            other addresses. Review them carefully before continuing.
           </Typography>
         </Alert>
 

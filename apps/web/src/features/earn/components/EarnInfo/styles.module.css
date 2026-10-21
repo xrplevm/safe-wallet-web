@@ -37,7 +37,7 @@
 .gradientShadow {
   width: 400px;
   height: 243px;
-  background: linear-gradient(#b0ffc9, #5fddff);
+  background: linear-gradient(var(--color-secondary-light), var(--color-secondary-main));
   filter: blur(40px);
   position: absolute;
   right: 0;
@@ -46,7 +46,7 @@
 }
 
 .gradientShadowDarkMode {
-  background: linear-gradient(#04491a, #087796);
+  background: linear-gradient(#2a2a2a, #7919ff);
 }
 
 .kilnIcon {
@@ -70,7 +70,7 @@
 }
 
 .gradientText {
-  background: linear-gradient(225deg, #5fddff 12.5%, #12ff80 88.07%);
+  background: linear-gradient(225deg, var(--color-primary-dark) 12.5%, var(--color-primary-main) 88.07%);
   background-clip: text;
   color: transparent;
 }

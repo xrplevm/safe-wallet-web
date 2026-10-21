@@ -108,7 +108,7 @@ export const useSafeShield = () => {
 }
 
 /**
- * Hook to register recipient addresses for Safe Shield analysis
+ * Hook to register recipient addresses for Security check analysis
  * @param recipientAddresses - Array of recipient addresses to analyze
  */
 export const useSafeShieldForRecipients = (recipientAddresses: string[]) => {
@@ -122,7 +122,7 @@ export const useSafeShieldForRecipients = (recipientAddresses: string[]) => {
 }
 
 /**
- * Hook to register transaction data for Safe Shield analysis
+ * Hook to register transaction data for Security check analysis
  * @param txData - Transaction data to analyze
  */
 export const useSafeShieldForTxData = (txData: SafeTransaction | undefined) => {

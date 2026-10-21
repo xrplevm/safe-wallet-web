@@ -141,7 +141,7 @@ const SafeSelectionList = ({ items, isLoading, searchQuery, onSearchChange, onTo
         {items.length === 0 ? (
           <Box sx={{ py: 4, textAlign: 'center' }}>
             <Typography color="text.secondary">
-              {searchQuery ? 'No safes found matching your search' : 'No safes available'}
+              {searchQuery ? 'No accounts found matching your search' : 'No accounts available'}
             </Typography>
           </Box>
         ) : (

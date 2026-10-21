@@ -82,7 +82,7 @@ describe('DelegateCallModule', () => {
       severity: 3,
       payload: {
         description: {
-          long: 'This transaction is a DelegateCall. It calls a smart contract that will be able to modify your Safe Account.',
+          long: 'This transaction is a DelegateCall. It calls a smart contract that will be able to modify your multisig account.',
           short: 'Unexpected DelegateCall',
         },
       },

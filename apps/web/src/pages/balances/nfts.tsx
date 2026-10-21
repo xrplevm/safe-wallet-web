@@ -34,7 +34,7 @@ const NftApps = memo(function NftApps(): ReactElement | null {
           mt: 0.75,
         }}
       >
-        NFT Safe Apps
+        NFT apps
       </Typography>
       <Grid container spacing={3}>
         {nftApps ? (

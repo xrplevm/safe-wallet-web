@@ -51,7 +51,7 @@ export function usePinActions(
 
     dispatch(
       showNotification({
-        title: 'Trusted multi-chain Safe',
+        title: 'Trusted multi-chain account',
         message: name ?? shortenAddress(address),
         groupKey: `pin-safe-success-${address}`,
         variant: 'success',
@@ -68,7 +68,7 @@ export function usePinActions(
 
     dispatch(
       showNotification({
-        title: 'Removed multi-chain Safe',
+        title: 'Removed multi-chain account',
         message: name ?? shortenAddress(address),
         groupKey: `unpin-safe-success-${address}`,
         variant: 'success',

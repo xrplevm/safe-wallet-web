@@ -17,7 +17,7 @@ import EditIcon from '@mui/icons-material/Edit'
 import DeleteIcon from '@mui/icons-material/Delete'
 
 /**
- * Proposers feature allows non-owners to propose transactions for a Safe.
+ * Proposers feature allows non-owners to propose transactions for an account.
  * Proposers can create transactions but cannot sign them - owners must
  * review and confirm/reject proposed transactions.
  *
@@ -265,7 +265,7 @@ export const DeleteProposer: StoryObj = {
   parameters: {
     docs: {
       description: {
-        story: 'DeleteProposerDialog confirms removal of a proposer from the Safe.',
+        story: 'DeleteProposerDialog confirms removal of a proposer from the account.',
       },
     },
   },

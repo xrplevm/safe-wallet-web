@@ -104,9 +104,9 @@ const AdvancedOptionsStep = ({ onSubmit, onBack, data, setStep }: StepRenderProp
                 gap: 1,
               }}
             >
-              Safe version
+              Account version
               <Tooltip
-                title="The threshold of a Safe Account specifies how many signers need to confirm a Safe Account transaction before it can be executed."
+                title="The threshold of a multisig account specifies how many signers need to confirm a multisig account transaction before it can be executed."
                 arrow
                 placement="top"
               >
@@ -116,13 +116,13 @@ const AdvancedOptionsStep = ({ onSubmit, onBack, data, setStep }: StepRenderProp
               </Tooltip>
             </Typography>
             <Typography variant="body2" mb={2}>
-              Changes the used master copy and fallback handler of the Safe.
+              Changes the used master copy and fallback handler of the account.
             </Typography>
             <Controller
               control={control}
               name="safeVersion"
               render={({ field }) => (
-                <TextField select {...field} label="Safe version">
+                <TextField select {...field} label="Account version">
                   <MenuItem value="1.4.1">1.4.1 (latest)</MenuItem>
                   <MenuItem value="1.3.0">1.3.0</MenuItem>
                 </TextField>
@@ -142,7 +142,7 @@ const AdvancedOptionsStep = ({ onSubmit, onBack, data, setStep }: StepRenderProp
             >
               Salt nonce
               <Tooltip
-                title="The salt nonce changes the predicted Safe address. It can be used to re-create a Safe from another chain or to create a specific Safe address"
+                title="The salt nonce changes the predicted account address. It can be used to re-create an account from another chain or to create a specific account address"
                 arrow
                 placement="top"
               >
@@ -152,7 +152,7 @@ const AdvancedOptionsStep = ({ onSubmit, onBack, data, setStep }: StepRenderProp
               </Tooltip>
             </Typography>
             <Typography variant="body2" mb={2}>
-              Impacts the derived Safe address
+              Impacts the derived account address
             </Typography>
             <NumberField
               {...register(AdvancedOptionsFields.saltNonce, {
@@ -171,7 +171,7 @@ const AdvancedOptionsStep = ({ onSubmit, onBack, data, setStep }: StepRenderProp
               error={Boolean(formState.errors[AdvancedOptionsFields.saltNonce]) || Boolean(isDeployed)}
               helperText={
                 formState.errors[AdvancedOptionsFields.saltNonce]?.message ??
-                (Boolean(isDeployed) ? 'The Safe is already deployed. Use a different salt nonce.' : undefined)
+                (Boolean(isDeployed) ? 'The account is already deployed. Use a different salt nonce.' : undefined)
               }
             />
 
@@ -187,7 +187,7 @@ const AdvancedOptionsStep = ({ onSubmit, onBack, data, setStep }: StepRenderProp
               }}
             >
               Payment receiver
-              <Tooltip title="The payment receiver changes the predicted Safe address." arrow placement="top">
+              <Tooltip title="The payment receiver changes the predicted account address." arrow placement="top">
                 <span style={{ display: 'flex' }}>
                   <SvgIcon component={InfoIcon} inheritViewBox color="border" fontSize="small" />
                 </span>
@@ -199,7 +199,7 @@ const AdvancedOptionsStep = ({ onSubmit, onBack, data, setStep }: StepRenderProp
                 mb: 2,
               }}
             >
-              Impacts the derived Safe address
+              Impacts the derived account address
             </Typography>
             <TextField
               {...register(AdvancedOptionsFields.paymentReceiver, {
@@ -209,7 +209,7 @@ const AdvancedOptionsStep = ({ onSubmit, onBack, data, setStep }: StepRenderProp
               error={Boolean(formState.errors[AdvancedOptionsFields.paymentReceiver]) || Boolean(isDeployed)}
               helperText={
                 formState.errors[AdvancedOptionsFields.paymentReceiver]?.message ??
-                (Boolean(isDeployed) ? 'The Safe is already deployed. Use a different payment receiver.' : undefined)
+                (Boolean(isDeployed) ? 'The account is already deployed. Use a different payment receiver.' : undefined)
               }
               fullWidth
             />
@@ -225,7 +225,7 @@ const AdvancedOptionsStep = ({ onSubmit, onBack, data, setStep }: StepRenderProp
                 mb: 1,
               }}
             >
-              New Safe address
+              New account address
             </Typography>
             {predictedSafeAddress ? (
               <EthHashInfo address={predictedSafeAddress} hasExplorer showCopyButton />

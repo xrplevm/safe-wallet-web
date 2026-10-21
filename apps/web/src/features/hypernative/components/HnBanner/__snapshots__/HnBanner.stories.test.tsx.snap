@@ -5,7 +5,7 @@ exports[`./HnBanner.stories Default 1`] = `
   style="background-color: rgb(255, 255, 255); padding: 1rem;"
 >
   <div
-    class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 MuiCard-root banner mui-style-1o21zae-MuiPaper-root-MuiCard-root"
+    class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 MuiCard-root banner mui-style-11zcjdh-MuiPaper-root-MuiCard-root"
     role="button"
     style="--Paper-shadow: none;"
   >
@@ -27,12 +27,12 @@ exports[`./HnBanner.stories Default 1`] = `
         class="bannerContent MuiBox-root mui-style-0"
       >
         <h4
-          class="MuiTypography-root MuiTypography-h4 bannerText bannerTitle mui-style-1smelnd-MuiTypography-root"
+          class="MuiTypography-root MuiTypography-h4 bannerText bannerTitle mui-style-f80bep-MuiTypography-root"
         >
           Enforce enterprise-grade security
         </h4>
         <p
-          class="MuiTypography-root MuiTypography-body2 bannerText bannerDescription mui-style-6sro4l-MuiTypography-root"
+          class="MuiTypography-root MuiTypography-body2 bannerText bannerDescription mui-style-1i9u80p-MuiTypography-root"
         >
           Automatically monitor and block risky transactions using advanced, user-defined security policies, powered by
            
@@ -44,7 +44,7 @@ exports[`./HnBanner.stories Default 1`] = `
           .
         </p>
         <button
-          class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-colorPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-colorPrimary bannerCtaText mui-style-pt4u5h-MuiButtonBase-root-MuiButton-root"
+          class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-colorPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-colorPrimary bannerCtaText mui-style-1x7mfmw-MuiButtonBase-root-MuiButton-root"
           tabindex="0"
           type="button"
         >
@@ -94,7 +94,7 @@ exports[`./HnBanner.stories NonDismissable 1`] = `
   style="background-color: rgb(255, 255, 255); padding: 1rem;"
 >
   <div
-    class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 MuiCard-root banner mui-style-1o21zae-MuiPaper-root-MuiCard-root"
+    class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 MuiCard-root banner mui-style-11zcjdh-MuiPaper-root-MuiCard-root"
     role="button"
     style="--Paper-shadow: none;"
   >
@@ -116,12 +116,12 @@ exports[`./HnBanner.stories NonDismissable 1`] = `
         class="bannerContent MuiBox-root mui-style-0"
       >
         <h4
-          class="MuiTypography-root MuiTypography-h4 bannerText bannerTitle mui-style-1smelnd-MuiTypography-root"
+          class="MuiTypography-root MuiTypography-h4 bannerText bannerTitle mui-style-f80bep-MuiTypography-root"
         >
           Enforce enterprise-grade security
         </h4>
         <p
-          class="MuiTypography-root MuiTypography-body2 bannerText bannerDescription mui-style-6sro4l-MuiTypography-root"
+          class="MuiTypography-root MuiTypography-body2 bannerText bannerDescription mui-style-1i9u80p-MuiTypography-root"
         >
           Automatically monitor and block risky transactions using advanced, user-defined security policies, powered by
            
@@ -133,7 +133,7 @@ exports[`./HnBanner.stories NonDismissable 1`] = `
           .
         </p>
         <button
-          class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-colorPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-colorPrimary bannerCtaText mui-style-pt4u5h-MuiButtonBase-root-MuiButton-root"
+          class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-colorPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-colorPrimary bannerCtaText mui-style-1x7mfmw-MuiButtonBase-root-MuiButton-root"
           tabindex="0"
           type="button"
         >

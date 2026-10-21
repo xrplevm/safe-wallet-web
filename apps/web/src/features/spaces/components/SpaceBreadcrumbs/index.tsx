@@ -53,7 +53,7 @@ const SpaceBreadcrumbs = () => {
       <Typography variant="body2">/</Typography>
 
       {/* In case the nested breadcrumbs are not rendered we want to show the current safe address */}
-      {!parentSafe && <BreadcrumbItem title="Current Safe" address={safeAddress} />}
+      {!parentSafe && <BreadcrumbItem title="Current account" address={safeAddress} />}
     </>
   )
 }

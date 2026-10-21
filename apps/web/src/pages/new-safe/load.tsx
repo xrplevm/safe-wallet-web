@@ -12,7 +12,7 @@ const Load: NextPage = () => {
   return (
     <main>
       <Head>
-        <title>{`${BRAND_NAME} – Add Safe Account`}</title>
+        <title>{`${BRAND_NAME} – Add Multisig account`}</title>
       </Head>
 
       {safeAddress ? (

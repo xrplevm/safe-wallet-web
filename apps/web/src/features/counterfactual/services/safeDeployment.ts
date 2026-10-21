@@ -27,7 +27,7 @@ export const getUndeployedSafeInfo = (undeployedSafe: UndeployedSafe, address: s
   const safeSetup = extractCounterfactualSafeSetup(undeployedSafe, chain.chainId)
 
   if (!safeSetup) {
-    throw Error('Could not determine Safe Setup.')
+    throw Error('Could not determine account setup.')
   }
   const latestSafeVersion = getLatestSafeVersion(chain)
 
@@ -118,7 +118,7 @@ export const replayCounterfactualSafeDeployment = (
     chainId,
   )
   if (!setup) {
-    throw Error('Safe Setup could not be decoded')
+    throw Error('Account setup could not be decoded')
   }
 
   dispatch(addUndeployedSafe(undeployedSafe))

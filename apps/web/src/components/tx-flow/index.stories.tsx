@@ -66,7 +66,7 @@ const MockTxLayout = ({
     {/* Sidebar */}
     <Paper sx={{ width: 280, p: 2, flexShrink: 0 }}>
       <Typography variant="subtitle2" color="text.secondary" gutterBottom>
-        Safe Account
+        multisig account
       </Typography>
       <Typography variant="body2" fontFamily="monospace" sx={{ mb: 2 }}>
         0x1234...5678
@@ -165,7 +165,7 @@ export const TokenTransferAllSteps: StoryObj = {
       >
         <MockTxLayout
           title="Send tokens"
-          subtitle="Transfer tokens from your Safe"
+          subtitle="Transfer tokens from your account"
           icon={<SendIcon color="primary" />}
           step={0}
           totalSteps={3}
@@ -200,7 +200,7 @@ export const TokenTransferAllSteps: StoryObj = {
       >
         <MockTxLayout
           title="Send tokens"
-          subtitle="Transfer tokens from your Safe"
+          subtitle="Transfer tokens from your account"
           icon={<SendIcon color="primary" />}
           step={1}
           totalSteps={3}
@@ -275,7 +275,7 @@ export const TokenTransferAllSteps: StoryObj = {
       >
         <MockTxLayout
           title="Send tokens"
-          subtitle="Transfer tokens from your Safe"
+          subtitle="Transfer tokens from your account"
           icon={<SendIcon color="primary" />}
           step={2}
           totalSteps={3}
@@ -313,7 +313,7 @@ export const TokenTransferAllSteps: StoryObj = {
       >
         <MockTxLayout
           title="Send tokens"
-          subtitle="Transfer tokens from your Safe"
+          subtitle="Transfer tokens from your account"
           icon={<SendIcon color="primary" />}
           step={2}
           totalSteps={3}
@@ -364,7 +364,7 @@ export const TokenTransferInteractive: StoryObj = {
     return (
       <MockTxLayout
         title="Send tokens"
-        subtitle="Transfer tokens from your Safe"
+        subtitle="Transfer tokens from your account"
         icon={<SendIcon color="primary" />}
         step={step}
         totalSteps={3}
@@ -560,7 +560,7 @@ export const SignMessageFlow: StoryObj = {
         </Typography>
         <Box sx={{ p: 2, bgcolor: 'background.default', borderRadius: 1, mb: 2 }}>
           <Typography variant="body2" fontFamily="monospace">
-            Hello, this is a test message to be signed by the Safe.
+            Hello, this is a test message to be signed by the account.
           </Typography>
         </Box>
         <Alert severity="info">This is an off-chain signature. No transaction will be executed on-chain.</Alert>
@@ -673,7 +673,7 @@ export const ErrorState: StoryObj = {
           Transaction failed: Insufficient funds for gas
         </Alert>
         <Typography variant="body2" color="text.secondary">
-          Your Safe does not have enough ETH to pay for the transaction gas fees.
+          Your account does not have enough ETH to pay for the transaction gas fees.
         </Typography>
       </MockTxCard>
     </MockTxLayout>

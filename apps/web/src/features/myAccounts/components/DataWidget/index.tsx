@@ -42,9 +42,9 @@ export const DataWidget = (): ReactElement => {
         className={css.cardHeader}
         title={
           <>
-            <b>{hasData ? 'Export or import your Safe data' : 'Import your Safe data'}</b>
+            <b>{hasData ? 'Export or import your account data' : 'Import your account data'}</b>
             <Tooltip
-              title="Download or upload your local data with your added Safe Accounts, address book and settings."
+              title="Download or upload your local data with your added multisig accounts, address book and settings."
               placement="top"
               arrow
             >

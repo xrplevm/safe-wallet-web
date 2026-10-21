@@ -13,7 +13,7 @@ export const DelegateCallCardItem = ({ result, isPrimary = false }: DelegateCall
     <AnalysisCardItemWithLink
       result={result}
       isPrimary={isPrimary}
-      beforeLinkText="This transaction calls a smart contract that will be able to modify your Safe account. "
+      beforeLinkText="This transaction calls a smart contract that will be able to modify your multisig account. "
       linkText="Learn more"
       linkUrl={HelpCenterArticle.UNEXPECTED_DELEGATE_CALL}
     />

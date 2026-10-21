@@ -1,3 +1,4 @@
+import { HELP_CENTER_URL } from '@safe-global/utils/config/constants'
 import {
   Button,
   Chip,
@@ -45,7 +46,7 @@ const ListIcon = () => (
   </ListItemIcon>
 )
 
-const SPACE_HELP_ARTICLE_LINK = 'https://help.safe.global/en/articles/285386-spaces'
+const SPACE_HELP_ARTICLE_LINK = HELP_CENTER_URL
 
 const SpaceInfoModal = ({
   showButtons = true,
@@ -77,7 +78,7 @@ const SpaceInfoModal = ({
             <List sx={{ display: 'flex', flexDirection: 'column', gap: 2 }}>
               <ListItem disablePadding>
                 <ListIcon />
-                Bring all your Safe Accounts into one shared space.
+                Bring all your multisig accounts into one shared space.
               </ListItem>
 
               <ListItem disablePadding>
@@ -136,7 +137,11 @@ const SpaceInfoModal = ({
           </Grid2>
 
           <Grid2 size={6} display={{ xs: 'none', md: 'flex' }} justifyContent="center" flex={1} bgcolor="#121312">
-            <Image src={CreateSpaceInfo} style={{ width: '100%' }} alt="An illustration of multiple safe accounts" />
+            <Image
+              src={CreateSpaceInfo}
+              style={{ width: '100%' }}
+              alt="An illustration of multiple multisig accounts"
+            />
           </Grid2>
         </Grid2>
 

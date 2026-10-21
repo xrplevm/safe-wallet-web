@@ -6,8 +6,8 @@ import { Notifications } from './notification-mapper'
 import { getChainsConfig, setBaseUrl } from './gateway-utils'
 import type { WebhookEvent } from './webhook-types'
 
-const GATEWAY_URL_PRODUCTION = process.env.NEXT_PUBLIC_GATEWAY_URL_PRODUCTION || 'https://safe-client.safe.global'
-const GATEWAY_URL_STAGING = process.env.NEXT_PUBLIC_GATEWAY_URL_STAGING || 'https://safe-client.staging.5afe.dev'
+const GATEWAY_URL_PRODUCTION = process.env.NEXT_PUBLIC_GATEWAY_URL_PRODUCTION || ''
+const GATEWAY_URL_STAGING = process.env.NEXT_PUBLIC_GATEWAY_URL_STAGING || GATEWAY_URL_PRODUCTION
 
 // localStorage cannot be accessed in service workers so we reference the flag from the environment
 const GATEWAY_URL = FIREBASE_IS_PRODUCTION ? GATEWAY_URL_PRODUCTION : GATEWAY_URL_STAGING

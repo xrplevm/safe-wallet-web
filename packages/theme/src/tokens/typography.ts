@@ -1,12 +1,12 @@
 /**
- * Typography tokens for Safe Wallet theme.
+ * Typography tokens for the app theme.
  * Unified font family, sizes, and variants across web and mobile.
  */
 
 /**
  * Font family used across all platforms.
  */
-export const fontFamily = 'DM Sans, sans-serif'
+export const fontFamily = 'Work Sans, sans-serif'
 
 /**
  * Font size scale (in pixels).
@@ -39,12 +39,12 @@ export const typographyVariants = {
   h1: {
     fontSize: 32,
     lineHeight: 36,
-    fontWeight: 700,
+    fontWeight: 600,
   },
   h2: {
     fontSize: 27,
     lineHeight: 34,
-    fontWeight: 700,
+    fontWeight: 600,
   },
   h3: {
     fontSize: 24,
@@ -59,7 +59,7 @@ export const typographyVariants = {
   h5: {
     fontSize: 16,
     lineHeight: 22,
-    fontWeight: 700,
+    fontWeight: 600,
   },
   body1: {
     fontSize: 16,

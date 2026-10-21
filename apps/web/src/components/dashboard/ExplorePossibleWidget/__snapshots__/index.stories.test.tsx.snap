@@ -8,7 +8,7 @@ exports[`./index.stories DarkMode 1`] = `
     class="MuiBox-root mui-style-9whsf3"
   >
     <section
-      class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 MuiCard-root mui-style-18ctci2-MuiPaper-root-MuiCard-root"
+      class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 MuiCard-root mui-style-xo1e8f-MuiPaper-root-MuiCard-root"
       style="--Paper-shadow: none;"
     >
       <div
@@ -37,9 +37,9 @@ exports[`./index.stories DarkMode 1`] = `
             class="carouselItem"
           >
             <a
-              aria-label="Manage multiple Safes"
+              aria-label="Manage multiple accounts"
               class="cardLink"
-              href="https://app.safe.global/welcome/spaces"
+              href="/welcome/spaces"
             >
               <div
                 class="card "
@@ -48,7 +48,7 @@ exports[`./index.stories DarkMode 1`] = `
                   class="iconContainer"
                 >
                   <img
-                    alt="Manage multiple Safes icon"
+                    alt="Manage multiple accounts icon"
                     class="icon"
                     src="/images/explore-possible/spaces-large.svg"
                   />
@@ -59,7 +59,7 @@ exports[`./index.stories DarkMode 1`] = `
                   <p
                     class="title"
                   >
-                    Manage multiple Safes
+                    Manage multiple accounts
                   </p>
                 </div>
               </div>
@@ -71,7 +71,7 @@ exports[`./index.stories DarkMode 1`] = `
             <a
               aria-label="Build custom transactions"
               class="cardLink"
-              href="/apps/open?safe=sep%3A0x0000000000000000000000000000000000000001&appUrl=https%3A%2F%2Fsafe-apps.dev.5afe.dev%2Ftx-builder"
+              href="/apps?safe=sep%3A0x0000000000000000000000000000000000000001"
             >
               <div
                 class="card "
@@ -144,7 +144,7 @@ exports[`./index.stories Default 1`] = `
     class="MuiBox-root mui-style-9whsf3"
   >
     <section
-      class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 MuiCard-root mui-style-18ctci2-MuiPaper-root-MuiCard-root"
+      class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 MuiCard-root mui-style-xo1e8f-MuiPaper-root-MuiCard-root"
       style="--Paper-shadow: none;"
     >
       <div
@@ -173,9 +173,9 @@ exports[`./index.stories Default 1`] = `
             class="carouselItem"
           >
             <a
-              aria-label="Manage multiple Safes"
+              aria-label="Manage multiple accounts"
               class="cardLink"
-              href="https://app.safe.global/welcome/spaces"
+              href="/welcome/spaces"
             >
               <div
                 class="card "
@@ -184,7 +184,7 @@ exports[`./index.stories Default 1`] = `
                   class="iconContainer"
                 >
                   <img
-                    alt="Manage multiple Safes icon"
+                    alt="Manage multiple accounts icon"
                     class="icon"
                     src="/images/explore-possible/spaces-large.svg"
                   />
@@ -195,7 +195,7 @@ exports[`./index.stories Default 1`] = `
                   <p
                     class="title"
                   >
-                    Manage multiple Safes
+                    Manage multiple accounts
                   </p>
                 </div>
               </div>
@@ -207,7 +207,7 @@ exports[`./index.stories Default 1`] = `
             <a
               aria-label="Build custom transactions"
               class="cardLink"
-              href="/apps/open?safe=sep%3A0x0000000000000000000000000000000000000001&appUrl=https%3A%2F%2Fsafe-apps.dev.5afe.dev%2Ftx-builder"
+              href="/apps?safe=sep%3A0x0000000000000000000000000000000000000001"
             >
               <div
                 class="card "
@@ -280,7 +280,7 @@ exports[`./index.stories LightMode 1`] = `
     class="MuiBox-root mui-style-9whsf3"
   >
     <section
-      class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 MuiCard-root mui-style-18ctci2-MuiPaper-root-MuiCard-root"
+      class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 MuiCard-root mui-style-xo1e8f-MuiPaper-root-MuiCard-root"
       style="--Paper-shadow: none;"
     >
       <div
@@ -309,9 +309,9 @@ exports[`./index.stories LightMode 1`] = `
             class="carouselItem"
           >
             <a
-              aria-label="Manage multiple Safes"
+              aria-label="Manage multiple accounts"
               class="cardLink"
-              href="https://app.safe.global/welcome/spaces"
+              href="/welcome/spaces"
             >
               <div
                 class="card "
@@ -320,7 +320,7 @@ exports[`./index.stories LightMode 1`] = `
                   class="iconContainer"
                 >
                   <img
-                    alt="Manage multiple Safes icon"
+                    alt="Manage multiple accounts icon"
                     class="icon"
                     src="/images/explore-possible/spaces-large.svg"
                   />
@@ -331,7 +331,7 @@ exports[`./index.stories LightMode 1`] = `
                   <p
                     class="title"
                   >
-                    Manage multiple Safes
+                    Manage multiple accounts
                   </p>
                 </div>
               </div>
@@ -343,7 +343,7 @@ exports[`./index.stories LightMode 1`] = `
             <a
               aria-label="Build custom transactions"
               class="cardLink"
-              href="/apps/open?safe=sep%3A0x0000000000000000000000000000000000000001&appUrl=https%3A%2F%2Fsafe-apps.dev.5afe.dev%2Ftx-builder"
+              href="/apps?safe=sep%3A0x0000000000000000000000000000000000000001"
             >
               <div
                 class="card "
@@ -416,7 +416,7 @@ exports[`./index.stories NarrowViewport 1`] = `
     class="MuiBox-root mui-style-9whsf3"
   >
     <section
-      class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 MuiCard-root mui-style-18ctci2-MuiPaper-root-MuiCard-root"
+      class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 MuiCard-root mui-style-xo1e8f-MuiPaper-root-MuiCard-root"
       style="--Paper-shadow: none;"
     >
       <div
@@ -445,9 +445,9 @@ exports[`./index.stories NarrowViewport 1`] = `
             class="carouselItem"
           >
             <a
-              aria-label="Manage multiple Safes"
+              aria-label="Manage multiple accounts"
               class="cardLink"
-              href="https://app.safe.global/welcome/spaces"
+              href="/welcome/spaces"
             >
               <div
                 class="card "
@@ -456,7 +456,7 @@ exports[`./index.stories NarrowViewport 1`] = `
                   class="iconContainer"
                 >
                   <img
-                    alt="Manage multiple Safes icon"
+                    alt="Manage multiple accounts icon"
                     class="icon"
                     src="/images/explore-possible/spaces-large.svg"
                   />
@@ -467,7 +467,7 @@ exports[`./index.stories NarrowViewport 1`] = `
                   <p
                     class="title"
                   >
-                    Manage multiple Safes
+                    Manage multiple accounts
                   </p>
                 </div>
               </div>
@@ -479,7 +479,7 @@ exports[`./index.stories NarrowViewport 1`] = `
             <a
               aria-label="Build custom transactions"
               class="cardLink"
-              href="/apps/open?safe=sep%3A0x0000000000000000000000000000000000000001&appUrl=https%3A%2F%2Fsafe-apps.dev.5afe.dev%2Ftx-builder"
+              href="/apps?safe=sep%3A0x0000000000000000000000000000000000000001"
             >
               <div
                 class="card "

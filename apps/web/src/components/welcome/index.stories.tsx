@@ -3,8 +3,8 @@ import { Box, Paper, Typography, Button, Divider } from '@mui/material'
 
 /**
  * Welcome components are displayed on the landing page to help users
- * get started with Safe. They provide options to connect wallet,
- * create a new Safe, or watch an existing one.
+ * get started. They provide options to connect wallet,
+ * create a new account, or watch an existing one.
  *
  * Note: Actual WelcomeLogin requires multiple hooks (useWallet, useHasSafes, router).
  * These stories show the UI patterns.
@@ -26,7 +26,7 @@ export const LoginCard: StoryObj = {
         Get started
       </Typography>
       <Typography variant="body1" color="text.secondary" sx={{ mt: 2, mb: 3 }}>
-        Connect your wallet to create a Safe Account or watch an existing one
+        Connect your wallet to create a multisig account or watch an existing one
       </Typography>
       <Button variant="contained" size="large" fullWidth>
         Connect wallet
@@ -44,7 +44,7 @@ export const LoginCard: StoryObj = {
   parameters: {
     docs: {
       description: {
-        story: 'The WelcomeLogin card prompts users to connect their wallet or watch an existing Safe account.',
+        story: 'The WelcomeLogin card prompts users to connect their wallet or watch an existing multisig account.',
       },
     },
   },
@@ -58,7 +58,7 @@ export const LoginCardConnected: StoryObj = {
         Get started
       </Typography>
       <Typography variant="body1" color="text.secondary" sx={{ mt: 2, mb: 3 }}>
-        Open your existing Safe Accounts or create a new one
+        Open your existing multisig accounts or create a new one
       </Typography>
       <Button variant="contained" size="large" fullWidth>
         Continue
@@ -81,7 +81,7 @@ export const LoginCardMobile: StoryObj = {
         Get started
       </Typography>
       <Typography variant="body2" color="text.secondary" sx={{ mt: 1, mb: 2 }}>
-        Connect your wallet to create a Safe Account
+        Connect your wallet to create a multisig account
       </Typography>
       <Button variant="contained" size="medium" fullWidth>
         Connect wallet
@@ -113,17 +113,17 @@ export const NewSafeCard: StoryObj = {
   render: () => (
     <Paper sx={{ p: 4, maxWidth: 450 }}>
       <Typography variant="h5" fontWeight={700} gutterBottom>
-        Create new Safe
+        Create new account
       </Typography>
       <Typography variant="body2" color="text.secondary" sx={{ mb: 3 }}>
-        A new Safe will be created on your chosen network with your connected wallet as the first owner.
+        A new account will be created on your chosen network with your connected wallet as the first owner.
       </Typography>
       <Box sx={{ display: 'flex', flexDirection: 'column', gap: 2 }}>
         <Button variant="contained" fullWidth>
-          Create new Safe
+          Create new account
         </Button>
         <Button variant="outlined" fullWidth>
-          Add existing Safe
+          Add existing account
         </Button>
       </Box>
     </Paper>
@@ -131,7 +131,7 @@ export const NewSafeCard: StoryObj = {
   parameters: {
     docs: {
       description: {
-        story: 'The NewSafe card provides options to create a new Safe account.',
+        story: 'The NewSafe card provides options to create a new multisig account.',
       },
     },
   },
@@ -154,7 +154,7 @@ export const WelcomePage: StoryObj = {
           Get started
         </Typography>
         <Typography variant="body1" color="text.secondary" sx={{ mt: 2, mb: 3 }}>
-          Connect your wallet to create a Safe Account or watch an existing one
+          Connect your wallet to create a multisig account or watch an existing one
         </Typography>
         <Button variant="contained" size="large" fullWidth>
           Connect wallet
@@ -198,7 +198,7 @@ export const OnDarkBackground: StoryObj = {
           Get started
         </Typography>
         <Typography variant="body1" color="text.secondary" sx={{ mt: 2, mb: 3 }}>
-          Connect your wallet to create a Safe Account
+          Connect your wallet to create a multisig account
         </Typography>
         <Button variant="contained" size="large" fullWidth>
           Connect wallet

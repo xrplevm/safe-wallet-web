@@ -167,7 +167,7 @@ describe('create/logic', () => {
           },
           chainBuilder().with({ chainId: 'NON_EXISTING' }).build(),
         ),
-      ).toThrowError(new Error('No Safe deployment found'))
+      ).toThrowError(new Error('No smart account deployment found'))
     })
 
     it('should use l1 masterCopy and no migration on l1s without multichain feature', () => {

@@ -4,7 +4,7 @@ import css from '@/components/tx-flow/flows/SuccessScreen/styles.module.css'
 import { isTimeoutError } from '@/utils/ethers-utils'
 
 const TRANSACTION_FAILED = 'Transaction failed'
-const NESTED_SAFE_SUCCESSFUL = 'Nested Safe was created'
+const NESTED_SAFE_SUCCESSFUL = 'Nested account was created'
 const TRANSACTION_SUCCESSFUL = 'Transaction was successful'
 
 type Props = {

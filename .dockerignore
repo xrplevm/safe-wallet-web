@@ -1,0 +1,10 @@
+.git
+.devenv
+.direnv
+**/node_modules
+**/.next
+**/out
+.yarn/install-state.gz
+.yarn/cache
+**/.env
+**/.env.local

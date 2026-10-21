@@ -81,7 +81,7 @@ const ReplaySafeDialog = ({
       // 1. Double check that the creation Data will lead to the correct address
       const predictedAddress = await predictAddressBasedOnReplayData(safeCreationData, provider)
       if (!sameAddress(safeAddress, predictedAddress)) {
-        setCreationError(new Error('The replayed Safe leads to an unexpected address'))
+        setCreationError(new Error('The replayed account leads to an unexpected address'))
         return
       }
 
@@ -157,7 +157,7 @@ const ReplaySafeDialog = ({
         <DialogContent data-testid="add-chain-dialog">
           <FormProvider {...formMethods}>
             <Stack spacing={2}>
-              <Typography>Add this Safe to another network with the same address.</Typography>
+              <Typography>Add this account to another network with the same address.</Typography>
 
               {chain && (
                 <Box
@@ -173,8 +173,8 @@ const ReplaySafeDialog = ({
               )}
 
               <ErrorMessage level="info">
-                The Safe will use the initial setup of the copied Safe. Any changes to owners, threshold, modules or the
-                Safe&apos;s version will not be reflected in the copy.
+                The account will use the initial setup of the copied account. Any changes to owners, threshold, modules
+                or the account&apos;s version will not be reflected in the copy.
               </ErrorMessage>
 
               {safeCreationDataLoading ? (
@@ -186,18 +186,18 @@ const ReplaySafeDialog = ({
                   }}
                 >
                   <CircularProgress />
-                  <Typography variant="body2">Loading Safe data</Typography>
+                  <Typography variant="body2">Loading account data</Typography>
                 </Stack>
               ) : safeCreationDataError ? (
                 <ErrorMessage error={safeCreationDataError} level="error">
-                  Could not determine the Safe creation parameters.
+                  Could not determine the account creation parameters.
                 </ErrorMessage>
               ) : isUnsupportedSafeCreationVersion ? (
                 <ErrorMessage>
                   This account was created from an outdated mastercopy. Adding another network is not possible.
                 </ErrorMessage>
               ) : noChainsAvailable ? (
-                <ErrorMessage level="error">This Safe cannot be replayed on any chains.</ErrorMessage>
+                <ErrorMessage level="error">This account cannot be replayed on any chains.</ErrorMessage>
               ) : (
                 <>
                   {!chain && (
@@ -212,7 +212,7 @@ const ReplaySafeDialog = ({
 
               {creationError && (
                 <ErrorMessage error={creationError} level="error">
-                  The Safe could not be created with the same address.
+                  The account could not be created with the same address.
                 </ErrorMessage>
               )}
             </Stack>

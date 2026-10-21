@@ -18,11 +18,11 @@ export const MULTI_RESULT_DESCRIPTION: Record<
   [RecipientStatus.KNOWN_RECIPIENT]: (number, totalNumber) =>
     `${capitalise(formatCount(number, 'address', totalNumber, 'addresses'))} ${
       number === 1 ? 'is' : 'are'
-    } in your address book or a Safe you own.`,
+    } in your address book or an account you own.`,
   [RecipientStatus.UNKNOWN_RECIPIENT]: (number, totalNumber) =>
     `${capitalise(formatCount(number, 'address', totalNumber, 'addresses'))} ${
       number === 1 ? 'is' : 'are'
-    } not in your address book or a Safe you own.`,
+    } not in your address book or an account you own.`,
   [RecipientStatus.LOW_ACTIVITY]: (number, totalNumber) =>
     `${capitalise(formatCount(number, 'address', totalNumber, 'addresses'))} ${
       number === 1 ? 'has' : 'have'
@@ -33,23 +33,23 @@ export const MULTI_RESULT_DESCRIPTION: Record<
     `You have interacted with ${formatCount(number, 'address', totalNumber, 'addresses')} before.`,
   [BridgeStatus.INCOMPATIBLE_SAFE]: (number, totalNumber) =>
     `${capitalise(
-      formatCount(number, 'Safe account', totalNumber),
+      formatCount(number, 'multisig account', totalNumber),
     )} cannot be created on the destination chain. You will not be able to claim ownership of the same address. Funds sent may be inaccessible.`,
   [BridgeStatus.MISSING_OWNERSHIP]: (number, totalNumber) =>
-    `${capitalise(formatCount(number, 'Safe account', totalNumber))} ${
+    `${capitalise(formatCount(number, 'multisig account', totalNumber))} ${
       number === 1 ? 'is' : 'are'
     } not activated on the target chain. First, create the ${pluralise(
       number,
-      'Safe',
+      'account',
     )}, execute a test transaction, and then proceed with bridging. Funds sent may be inaccessible.`,
   [BridgeStatus.UNSUPPORTED_NETWORK]: (number, totalNumber) =>
-    `app.safe.global does not support the network for ${formatCount(
+    `This app does not support the network for ${formatCount(
       number,
       'recipient',
       totalNumber,
     )}. Unless you have a wallet deployed there, we recommend not to bridge. Funds sent may be inaccessible.`,
   [BridgeStatus.DIFFERENT_SAFE_SETUP]: (number, totalNumber) =>
-    `Your Safe exists on the target chain for ${formatCount(
+    `Your account exists on the target chain for ${formatCount(
       number,
       'recipient',
       totalNumber,
@@ -67,7 +67,7 @@ export const MULTI_RESULT_DESCRIPTION: Record<
   [ContractStatus.NOT_VERIFIED_BY_SAFE]: (number, totalNumber) =>
     `${capitalise(formatCount(number, 'contract', totalNumber))} ${
       number === 1 ? 'has' : 'have'
-    } not been interacted with on Safe{Wallet}. If verified, ${
+    } not been interacted with in the app. If verified, ${
       number === 1 ? 'it' : 'they'
     } will be marked as such after the first transaction.`,
   [ContractStatus.VERIFICATION_UNAVAILABLE]: undefined,

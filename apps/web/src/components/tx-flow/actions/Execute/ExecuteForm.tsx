@@ -213,7 +213,7 @@ export const ExecuteForm = ({
           <NonOwnerError />
         ) : isExecutionLoop ? (
           <ErrorMessage>
-            Cannot execute a transaction from the Safe Account itself, please connect a different account.
+            Cannot execute a transaction from the multisig account itself, please connect a different account.
           </ErrorMessage>
         ) : !walletCanPay && !willRelay && !willNoFeeCampaign ? (
           <ErrorMessage level="info">

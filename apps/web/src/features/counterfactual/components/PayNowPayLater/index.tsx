@@ -1,3 +1,4 @@
+import { BRAND_NAME } from '@/config/constants'
 import type { ChangeEvent, Dispatch, SetStateAction } from 'react'
 import classnames from 'classnames'
 import { useCurrentChain } from '@/hooks/useChains'
@@ -78,7 +79,7 @@ const PayNowPayLater = ({
           <ListItemIcon className={css.listItem}>
             <CheckRoundedIcon fontSize="small" color="inherit" />
           </ListItemIcon>
-          <Typography variant="body2">Safe doesn&apos;t profit from the fees.</Typography>
+          <Typography variant="body2">{BRAND_NAME} doesn&apos;t profit from the fees.</Typography>
         </ListItem>
       </List>
       {!isMultiChain && (

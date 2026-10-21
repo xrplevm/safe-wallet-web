@@ -1,7 +1,7 @@
 import { useMemo, type ReactElement } from 'react'
 import { Card, SvgIcon, Stack } from '@mui/material'
-import SafeShieldLogoFull from '@/public/images/safe-shield/safe-shield-logo.svg'
-import SafeShieldLogoFullDark from '@/public/images/safe-shield/safe-shield-logo-dark.svg'
+import SafeShieldLogoFull from '@/public/images/security/security-check-logo.svg'
+import SafeShieldLogoFullDark from '@/public/images/security/security-check-logo-dark.svg'
 import { useDarkMode } from '@/hooks/useDarkMode'
 import ExternalLink from '@/components/common/ExternalLink'
 import { HelpCenterArticle } from '@safe-global/utils/config/constants'
@@ -20,7 +20,7 @@ import { useCheckSimulation } from '../hooks/useCheckSimulation'
 import type { HypernativeAuthStatus } from '@/features/hypernative'
 
 const shieldLogoOnHover = {
-  width: 78,
+  width: 100,
   height: 18,
   '&:hover': {
     cursor: 'pointer',

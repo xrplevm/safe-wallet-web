@@ -106,7 +106,7 @@ describe('CheckWallet', () => {
     const { getByText, getByLabelText } = renderButton()
 
     expect(getByText('Continue')).toBeDisabled()
-    expect(getByLabelText('Your connected wallet is not a signer of this Safe Account')).toBeInTheDocument()
+    expect(getByLabelText('Your connected wallet is not a signer of this multisig account')).toBeInTheDocument()
   })
 
   it('should be disabled when connected to the wrong network', () => {
@@ -184,7 +184,7 @@ describe('CheckWallet', () => {
     const { getByText, getByLabelText } = renderButton()
 
     expect(getByText('Continue')).toBeDisabled()
-    expect(getByLabelText('You need to activate the Safe before transacting')).toBeInTheDocument()
+    expect(getByLabelText('You need to activate the account before transacting')).toBeInTheDocument()
   })
 
   it('should enable the button for counterfactual Safes if allowed', () => {

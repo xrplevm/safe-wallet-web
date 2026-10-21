@@ -382,7 +382,7 @@ export const GlobalPushNotifications = (): ReactElement | null => {
   if (totalNotifiableSafes === 0) {
     return (
       <Typography sx={{ color: ({ palette }) => palette.primary.light }}>
-        {address ? 'No owned Safes' : 'No wallet connected'}
+        {address ? 'No owned accounts' : 'No wallet connected'}
       </Typography>
     )
   }
@@ -391,13 +391,13 @@ export const GlobalPushNotifications = (): ReactElement | null => {
     <Grid container>
       <Grid item xs={12} display="flex" alignItems="center" justifyContent="space-between" mb={1}>
         <Typography variant="h4" fontWeight={700} display="inline">
-          My Safes Accounts ({totalNotifiableSafes})
+          My multisig accounts ({totalNotifiableSafes})
         </Typography>
 
         <Box display="flex" alignItems="center">
           {totalSignaturesRequired > 0 && (
             <Typography display="inline" mr={2} textAlign="right">
-              We&apos;ll ask you to verify ownership of each Safe Account with your signature per chain{' '}
+              We&apos;ll ask you to verify ownership of each multisig account with your signature per chain{' '}
               {totalSignaturesRequired} time{maybePlural(totalSignaturesRequired)}
             </Typography>
           )}
@@ -453,7 +453,7 @@ export const GlobalPushNotifications = (): ReactElement | null => {
                         <Checkbox edge="start" checked={isChainSelected} disableRipple />
                       </ListItemIcon>
                       <ListItemText
-                        primary={`${chain?.chainName} Safe Accounts`}
+                        primary={`${chain?.chainName} multisig accounts`}
                         primaryTypographyProps={{ variant: 'h5' }}
                       />
                     </ListItemButton>

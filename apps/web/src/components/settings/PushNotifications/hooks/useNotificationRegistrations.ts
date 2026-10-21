@@ -93,7 +93,7 @@ export const useNotificationRegistrations = (): {
       dispatch(
         showNotification({
           message: `You will now receive notifications for ${
-            totalRegistered > 1 ? 'these Safe Accounts' : 'this Safe Account'
+            totalRegistered > 1 ? 'these multisig accounts' : 'this multisig account'
           } in your browser.`,
           variant: 'success',
           groupKey: 'notifications',

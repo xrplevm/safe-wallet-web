@@ -31,20 +31,20 @@ const getSubmitNotification = (
 ): { title: string; message: string } | null => {
   if (pinnedCount > 0 && unpinnedCount > 0) {
     return {
-      title: 'Trusted Safes updated',
-      message: `${pinnedCount} Safe${pinnedCount !== 1 ? 's' : ''} added, ${unpinnedCount} Safe${unpinnedCount !== 1 ? 's' : ''} removed`,
+      title: 'Trusted accounts updated',
+      message: `${pinnedCount} account${pinnedCount !== 1 ? 's' : ''} added, ${unpinnedCount} account${unpinnedCount !== 1 ? 's' : ''} removed`,
     }
   }
   if (pinnedCount > 0) {
     return {
-      title: pinnedCount === 1 ? 'Safe confirmed' : `${pinnedCount} Safes confirmed`,
-      message: 'Trusted Safe(s) added to your list',
+      title: pinnedCount === 1 ? 'Account confirmed' : `${pinnedCount} accounts confirmed`,
+      message: 'Trusted account(s) added to your list',
     }
   }
   if (unpinnedCount > 0) {
     return {
-      title: unpinnedCount === 1 ? 'Safe removed' : `${unpinnedCount} Safes removed`,
-      message: 'Safes have been removed from your Trusted Safes list',
+      title: unpinnedCount === 1 ? 'Account removed' : `${unpinnedCount} accounts removed`,
+      message: 'Accounts have been removed from your trusted accounts list',
     }
   }
   return null

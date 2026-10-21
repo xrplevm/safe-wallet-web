@@ -8346,15 +8346,15 @@
       "tokenInfo": {
         "address": "0xD351f065eD3e27adCBb8387DD445D6eC793f1c70",
         "decimals": 6,
-        "symbol": "SAFE",
-        "name": "SAFE",
-        "logoUri": "",
+        "symbol": "XRP",
+        "name": "XRP",
+        "logoUri": "/images/brand/logo-mark-filled.png",
         "chainId": "56",
         "trusted": true,
         "type": "ERC20"
       },
       "balance": "85000000000",
-      "price": "0"
+      "price": "1.363"
     },
     {
       "tokenInfo": {
@@ -9312,15 +9312,15 @@
       "tokenInfo": {
         "address": "0x85299Bf5978a362f58267827Ac7B88e64f7178C0",
         "decimals": 6,
-        "symbol": "SAFE",
-        "name": "SAFE",
-        "logoUri": "",
+        "symbol": "XRP",
+        "name": "XRP",
+        "logoUri": "/images/brand/logo-mark-filled.png",
         "chainId": "56",
         "trusted": true,
         "type": "ERC20"
       },
       "balance": "20000000000",
-      "price": "0"
+      "price": "1.363"
     },
     {
       "tokenInfo": {

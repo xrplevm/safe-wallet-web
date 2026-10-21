@@ -87,7 +87,7 @@ export const ExecTransaction = ({
                 passHref
                 legacyBehavior
               >
-                <ExternalLink>Open Safe</ExternalLink>
+                <ExternalLink>Open account</ExternalLink>
               </Link>
             </Box>
           )}

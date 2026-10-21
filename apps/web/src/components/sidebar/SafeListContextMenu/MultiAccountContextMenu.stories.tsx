@@ -14,7 +14,7 @@ const meta = {
     (Story) => (
       <Paper sx={{ padding: 2 }}>
         <Box sx={{ display: 'flex', alignItems: 'center', gap: 2 }}>
-          <span>My Safe Account</span>
+          <span>My multisig account</span>
           <Story />
         </Box>
       </Paper>
@@ -24,15 +24,15 @@ const meta = {
   argTypes: {
     name: {
       control: 'text',
-      description: 'The name of the Safe account',
+      description: 'The name of the multisig account',
     },
     address: {
       control: 'text',
-      description: 'The Safe address',
+      description: 'The Account address',
     },
     chainIds: {
       control: 'object',
-      description: 'Array of chain IDs where this Safe is deployed',
+      description: 'Array of chain IDs where this account is deployed',
     },
     addNetwork: {
       control: 'boolean',
@@ -49,7 +49,7 @@ type Story = StoryObj<typeof meta>
  */
 export const Default: Story = {
   args: {
-    name: 'My Safe',
+    name: 'My Account',
     address: MOCK_SAFE_ADDRESS,
     chainIds: ['1'],
     addNetwork: true,
@@ -61,7 +61,7 @@ export const Default: Story = {
  */
 export const WithoutAddNetwork: Story = {
   args: {
-    name: 'My Safe',
+    name: 'My Account',
     address: MOCK_SAFE_ADDRESS,
     chainIds: ['1'],
     addNetwork: false,
@@ -69,11 +69,11 @@ export const WithoutAddNetwork: Story = {
 }
 
 /**
- * Safe deployed on multiple chains.
+ * Account deployed on multiple chains.
  */
 export const MultipleChains: Story = {
   args: {
-    name: 'Multichain Safe',
+    name: 'Multichain Account',
     address: MOCK_SAFE_ADDRESS,
     chainIds: ['1', '137', '42161', '10'],
     addNetwork: true,
@@ -81,11 +81,11 @@ export const MultipleChains: Story = {
 }
 
 /**
- * Safe with a long name.
+ * Account with a long name.
  */
 export const LongName: Story = {
   args: {
-    name: 'This is a very long Safe name that might need truncation in the UI',
+    name: 'This is a very long Account name that might need truncation in the UI',
     address: MOCK_SAFE_ADDRESS,
     chainIds: ['1'],
     addNetwork: true,
@@ -93,7 +93,7 @@ export const LongName: Story = {
 }
 
 /**
- * Safe with no custom name (empty string).
+ * Account with no custom name (empty string).
  */
 export const NoName: Story = {
   args: {
@@ -105,11 +105,11 @@ export const NoName: Story = {
 }
 
 /**
- * Safe deployed only on testnets.
+ * Account deployed only on testnets.
  */
 export const TestnetOnly: Story = {
   args: {
-    name: 'Testnet Safe',
+    name: 'Testnet Account',
     address: MOCK_SAFE_ADDRESS,
     chainIds: ['5', '11155111'],
     addNetwork: true,

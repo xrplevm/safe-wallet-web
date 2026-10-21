@@ -15,8 +15,8 @@ const EmptyBatch = ({ children }: { children: ReactNode }) => (
     </Typography>
 
     <Typography variant="body2" mt={2} mb={4} px={8} sx={{ textWrap: 'balance' }}>
-      Save gas and signatures by adding multiple Safe transactions to a single batch transaction. You can reorder and
-      delete individual transactions in a batch.
+      Save gas and signatures by adding multiple multisig transactions to a single batch transaction. You can reorder
+      and delete individual transactions in a batch.
     </Typography>
 
     {children}
@@ -36,12 +36,12 @@ const EmptyBatch = ({ children }: { children: ReactNode }) => (
 
         <div>
           <SvgIcon component={AppsIcon} inheritViewBox />
-          <div>Safe App transactions</div>
+          <div>App transactions</div>
         </div>
 
         <div>
           <SvgIcon component={SettingsIcon} inheritViewBox />
-          <div>Safe Account settings</div>
+          <div>Multisig account settings</div>
         </div>
       </Box>
     </Typography>

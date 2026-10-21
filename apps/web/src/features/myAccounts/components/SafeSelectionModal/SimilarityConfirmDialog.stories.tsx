@@ -6,7 +6,7 @@ import type { SelectableSafe } from '../../hooks/useSafeSelectionModal.types'
 const baseSafe: SelectableSafe = {
   chainId: '1',
   address: '0x1234567890abcdef1234567890abcdef12345678',
-  name: 'Suspicious Safe',
+  name: 'Suspicious account',
   isPinned: false,
   isReadOnly: false,
   lastVisited: 0,
@@ -39,7 +39,7 @@ export const HighRisk: Story = {
 export const WithName: Story = {
   args: {
     open: true,
-    safe: { ...baseSafe, name: 'My Treasury Safe' },
+    safe: { ...baseSafe, name: 'My Treasury account' },
     onConfirm: () => alert('Confirmed!'),
     onCancel: () => alert('Cancelled'),
   },

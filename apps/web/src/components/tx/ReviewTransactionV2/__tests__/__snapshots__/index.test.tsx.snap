@@ -3,7 +3,7 @@
 exports[`ReviewTransaction should display a confirmation screen 1`] = `
 <div>
   <div
-    class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 MuiCard-root css-1w4z6qv-MuiPaper-root-MuiCard-root"
+    class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 MuiCard-root css-156d94n-MuiPaper-root-MuiCard-root"
     style="--Paper-shadow: none;"
   >
     <div
@@ -25,7 +25,7 @@ exports[`ReviewTransaction should display a confirmation screen 1`] = `
               style="word-break: break-word;"
             >
               <span
-                class="MuiTypography-root MuiTypography-body2 css-1ew0eu5-MuiTypography-root"
+                class="MuiTypography-root MuiTypography-body2 css-ce200z-MuiTypography-root"
               >
                 Interacted with
               </span>
@@ -35,7 +35,7 @@ exports[`ReviewTransaction should display a confirmation screen 1`] = `
               data-testid="tx-data-row"
             >
               <div
-                class="MuiTypography-root MuiTypography-body2 css-17vdyq3-MuiTypography-root"
+                class="MuiTypography-root MuiTypography-body2 css-1js3693-MuiTypography-root"
               >
                 <div
                   class="container"
@@ -104,7 +104,7 @@ exports[`ReviewTransaction should display a confirmation screen 1`] = `
         class="MuiBox-root css-1yuhvjn"
       >
         <div
-          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 MuiAccordion-root MuiAccordion-rounded MuiAccordion-gutters css-wrhbuy-MuiPaper-root-MuiAccordion-root"
+          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 MuiAccordion-root MuiAccordion-rounded MuiAccordion-gutters css-fk9vvr-MuiPaper-root-MuiAccordion-root"
           color="info"
           style="--Paper-shadow: none;"
         >
@@ -113,7 +113,7 @@ exports[`ReviewTransaction should display a confirmation screen 1`] = `
           >
             <button
               aria-expanded="false"
-              class="MuiButtonBase-root MuiAccordionSummary-root MuiAccordionSummary-gutters accordion css-10sjung-MuiButtonBase-root-MuiAccordionSummary-root"
+              class="MuiButtonBase-root MuiAccordionSummary-root MuiAccordionSummary-gutters accordion css-1j0rt6s-MuiButtonBase-root-MuiAccordionSummary-root"
               data-testid="decoded-tx-summary"
               tabindex="0"
               type="button"
@@ -125,7 +125,7 @@ exports[`ReviewTransaction should display a confirmation screen 1`] = `
                   class="MuiStack-root css-1bujbuo-MuiStack-root"
                 >
                   <h6
-                    class="MuiTypography-root MuiTypography-subtitle2 css-8ydk8b-MuiTypography-root"
+                    class="MuiTypography-root MuiTypography-subtitle2 css-1j92j3q-MuiTypography-root"
                     data-testid="tx-advanced-details"
                   >
                     Transaction details
@@ -184,17 +184,17 @@ exports[`ReviewTransaction should display a confirmation screen 1`] = `
                         class="MuiBox-root css-0"
                       >
                         <h6
-                          class="MuiTypography-root MuiTypography-subtitle2 css-4lr168-MuiTypography-root"
+                          class="MuiTypography-root MuiTypography-subtitle2 css-88dfa1-MuiTypography-root"
                         >
                           Advanced details
                         </h6>
                         <p
-                          class="MuiTypography-root MuiTypography-body2 css-gkag80-MuiTypography-root"
+                          class="MuiTypography-root MuiTypography-body2 css-kx4q07-MuiTypography-root"
                         >
                           Cross-verify your transaction data with external tools like
                            
                           <a
-                            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-r9pq5a-MuiTypography-root-MuiLink-root"
+                            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1kwawn7-MuiTypography-root-MuiLink-root"
                             href="https://safeutils.openzeppelin.com"
                             rel="noreferrer noopener"
                             target="_blank"
@@ -219,7 +219,7 @@ exports[`ReviewTransaction should display a confirmation screen 1`] = `
                            and
                            
                           <a
-                            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-r9pq5a-MuiTypography-root-MuiLink-root"
+                            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1kwawn7-MuiTypography-root-MuiLink-root"
                             href="https://transaction-decoder.pages.dev"
                             rel="noreferrer noopener"
                             target="_blank"
@@ -244,7 +244,7 @@ exports[`ReviewTransaction should display a confirmation screen 1`] = `
                           .
                         </p>
                         <div
-                          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 css-shqplw-MuiPaper-root"
+                          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 css-yq6ny1-MuiPaper-root"
                           style="--Paper-shadow: none;"
                         >
                           <div
@@ -260,7 +260,7 @@ exports[`ReviewTransaction should display a confirmation screen 1`] = `
                               >
                                 <button
                                   aria-pressed="true"
-                                  class="MuiButtonBase-root MuiToggleButtonGroup-grouped MuiToggleButtonGroup-groupedHorizontal MuiToggleButton-root Mui-selected MuiToggleButton-sizeSmall MuiToggleButton-standard MuiToggleButtonGroup-grouped MuiToggleButtonGroup-groupedHorizontal MuiToggleButtonGroup-firstButton css-u2ogzi-MuiButtonBase-root-MuiToggleButton-root"
+                                  class="MuiButtonBase-root MuiToggleButtonGroup-grouped MuiToggleButtonGroup-groupedHorizontal MuiToggleButton-root Mui-selected MuiToggleButton-sizeSmall MuiToggleButton-standard MuiToggleButtonGroup-grouped MuiToggleButtonGroup-groupedHorizontal MuiToggleButtonGroup-firstButton css-1bkswug-MuiButtonBase-root-MuiToggleButton-root"
                                   tabindex="0"
                                   type="button"
                                   value="0"
@@ -273,7 +273,7 @@ exports[`ReviewTransaction should display a confirmation screen 1`] = `
                                 </button>
                                 <button
                                   aria-pressed="false"
-                                  class="MuiButtonBase-root MuiToggleButtonGroup-grouped MuiToggleButtonGroup-groupedHorizontal MuiToggleButton-root MuiToggleButton-sizeSmall MuiToggleButton-standard MuiToggleButtonGroup-grouped MuiToggleButtonGroup-groupedHorizontal MuiToggleButtonGroup-middleButton css-u2ogzi-MuiButtonBase-root-MuiToggleButton-root"
+                                  class="MuiButtonBase-root MuiToggleButtonGroup-grouped MuiToggleButtonGroup-groupedHorizontal MuiToggleButton-root MuiToggleButton-sizeSmall MuiToggleButton-standard MuiToggleButtonGroup-grouped MuiToggleButtonGroup-groupedHorizontal MuiToggleButtonGroup-middleButton css-1bkswug-MuiButtonBase-root-MuiToggleButton-root"
                                   tabindex="0"
                                   type="button"
                                   value="1"
@@ -286,7 +286,7 @@ exports[`ReviewTransaction should display a confirmation screen 1`] = `
                                 </button>
                                 <button
                                   aria-pressed="false"
-                                  class="MuiButtonBase-root MuiToggleButtonGroup-grouped MuiToggleButtonGroup-groupedHorizontal MuiToggleButton-root MuiToggleButton-sizeSmall MuiToggleButton-standard MuiToggleButtonGroup-grouped MuiToggleButtonGroup-groupedHorizontal MuiToggleButtonGroup-lastButton css-u2ogzi-MuiButtonBase-root-MuiToggleButton-root"
+                                  class="MuiButtonBase-root MuiToggleButtonGroup-grouped MuiToggleButtonGroup-groupedHorizontal MuiToggleButton-root MuiToggleButton-sizeSmall MuiToggleButton-standard MuiToggleButtonGroup-grouped MuiToggleButtonGroup-groupedHorizontal MuiToggleButtonGroup-lastButton css-1bkswug-MuiButtonBase-root-MuiToggleButton-root"
                                   tabindex="0"
                                   type="button"
                                   value="2"
@@ -309,7 +309,7 @@ exports[`ReviewTransaction should display a confirmation screen 1`] = `
                                   class="MuiStack-root css-665wph-MuiStack-root"
                                 >
                                   <p
-                                    class="MuiTypography-root MuiTypography-body2 css-1korokw-MuiTypography-root"
+                                    class="MuiTypography-root MuiTypography-body2 css-1q2i7vw-MuiTypography-root"
                                   >
                                     To
                                   </p>
@@ -317,7 +317,7 @@ exports[`ReviewTransaction should display a confirmation screen 1`] = `
                                     class="MuiBox-root css-0"
                                   >
                                     <p
-                                      class="MuiTypography-root MuiTypography-body2 css-m9op2-MuiTypography-root"
+                                      class="MuiTypography-root MuiTypography-body2 css-13kxjn9-MuiTypography-root"
                                     >
                                       <div
                                         class="container"
@@ -374,12 +374,12 @@ exports[`ReviewTransaction should display a confirmation screen 1`] = `
                                   class="MuiStack-root css-665wph-MuiStack-root"
                                 >
                                   <p
-                                    class="MuiTypography-root MuiTypography-body2 css-1korokw-MuiTypography-root"
+                                    class="MuiTypography-root MuiTypography-body2 css-1q2i7vw-MuiTypography-root"
                                   >
                                     Value
                                   </p>
                                   <p
-                                    class="MuiTypography-root MuiTypography-body2 css-17vdyq3-MuiTypography-root"
+                                    class="MuiTypography-root MuiTypography-body2 css-1js3693-MuiTypography-root"
                                   >
                                     0x0
                                   </p>
@@ -391,12 +391,12 @@ exports[`ReviewTransaction should display a confirmation screen 1`] = `
                                   class="MuiStack-root css-665wph-MuiStack-root"
                                 >
                                   <p
-                                    class="MuiTypography-root MuiTypography-body2 css-1korokw-MuiTypography-root"
+                                    class="MuiTypography-root MuiTypography-body2 css-1q2i7vw-MuiTypography-root"
                                   >
                                     Data
                                   </p>
                                   <p
-                                    class="MuiTypography-root MuiTypography-body2 css-n5xdb5-MuiTypography-root"
+                                    class="MuiTypography-root MuiTypography-body2 css-xkwd54-MuiTypography-root"
                                   >
                                     <div
                                       class="encodedData MuiBox-root css-0"
@@ -431,12 +431,12 @@ exports[`ReviewTransaction should display a confirmation screen 1`] = `
                                   class="MuiStack-root css-665wph-MuiStack-root"
                                 >
                                   <p
-                                    class="MuiTypography-root MuiTypography-body2 css-1korokw-MuiTypography-root"
+                                    class="MuiTypography-root MuiTypography-body2 css-1q2i7vw-MuiTypography-root"
                                   >
                                     Operation
                                   </p>
                                   <p
-                                    class="MuiTypography-root MuiTypography-body2 css-1hy3mdy-MuiTypography-root"
+                                    class="MuiTypography-root MuiTypography-body2 css-1qwhf3a-MuiTypography-root"
                                   >
                                     0
                                      (
@@ -462,7 +462,7 @@ exports[`ReviewTransaction should display a confirmation screen 1`] = `
                                   class="MuiStack-root css-665wph-MuiStack-root"
                                 >
                                   <p
-                                    class="MuiTypography-root MuiTypography-body2 css-1korokw-MuiTypography-root"
+                                    class="MuiTypography-root MuiTypography-body2 css-1q2i7vw-MuiTypography-root"
                                   >
                                     SafeTxGas
                                   </p>
@@ -474,7 +474,7 @@ exports[`ReviewTransaction should display a confirmation screen 1`] = `
                                   class="MuiStack-root css-665wph-MuiStack-root"
                                 >
                                   <p
-                                    class="MuiTypography-root MuiTypography-body2 css-1korokw-MuiTypography-root"
+                                    class="MuiTypography-root MuiTypography-body2 css-1q2i7vw-MuiTypography-root"
                                   >
                                     BaseGas
                                   </p>
@@ -486,7 +486,7 @@ exports[`ReviewTransaction should display a confirmation screen 1`] = `
                                   class="MuiStack-root css-665wph-MuiStack-root"
                                 >
                                   <p
-                                    class="MuiTypography-root MuiTypography-body2 css-1korokw-MuiTypography-root"
+                                    class="MuiTypography-root MuiTypography-body2 css-1q2i7vw-MuiTypography-root"
                                   >
                                     GasPrice
                                   </p>
@@ -498,12 +498,12 @@ exports[`ReviewTransaction should display a confirmation screen 1`] = `
                                   class="MuiStack-root css-665wph-MuiStack-root"
                                 >
                                   <p
-                                    class="MuiTypography-root MuiTypography-body2 css-1korokw-MuiTypography-root"
+                                    class="MuiTypography-root MuiTypography-body2 css-1q2i7vw-MuiTypography-root"
                                   >
                                     GasToken
                                   </p>
                                   <p
-                                    class="MuiTypography-root MuiTypography-body2 css-17vdyq3-MuiTypography-root"
+                                    class="MuiTypography-root MuiTypography-body2 css-1js3693-MuiTypography-root"
                                   >
                                     <div
                                       class="container"
@@ -513,7 +513,7 @@ exports[`ReviewTransaction should display a confirmation screen 1`] = `
                                         style="width: 20px; height: 20px;"
                                       >
                                         <span
-                                          class="MuiSkeleton-root MuiSkeleton-circular MuiSkeleton-pulse css-143xw5x-MuiSkeleton-root"
+                                          class="MuiSkeleton-root MuiSkeleton-circular MuiSkeleton-pulse css-1epbneo-MuiSkeleton-root"
                                           style="width: 20px; height: 20px;"
                                         />
                                       </div>
@@ -550,12 +550,12 @@ exports[`ReviewTransaction should display a confirmation screen 1`] = `
                                   class="MuiStack-root css-665wph-MuiStack-root"
                                 >
                                   <p
-                                    class="MuiTypography-root MuiTypography-body2 css-1korokw-MuiTypography-root"
+                                    class="MuiTypography-root MuiTypography-body2 css-1q2i7vw-MuiTypography-root"
                                   >
                                     RefundReceiver
                                   </p>
                                   <p
-                                    class="MuiTypography-root MuiTypography-body2 css-17vdyq3-MuiTypography-root"
+                                    class="MuiTypography-root MuiTypography-body2 css-1js3693-MuiTypography-root"
                                   >
                                     <div
                                       class="container"
@@ -565,7 +565,7 @@ exports[`ReviewTransaction should display a confirmation screen 1`] = `
                                         style="width: 20px; height: 20px;"
                                       >
                                         <span
-                                          class="MuiSkeleton-root MuiSkeleton-circular MuiSkeleton-pulse css-143xw5x-MuiSkeleton-root"
+                                          class="MuiSkeleton-root MuiSkeleton-circular MuiSkeleton-pulse css-1epbneo-MuiSkeleton-root"
                                           style="width: 20px; height: 20px;"
                                         />
                                       </div>
@@ -602,12 +602,12 @@ exports[`ReviewTransaction should display a confirmation screen 1`] = `
                                   class="MuiStack-root css-665wph-MuiStack-root"
                                 >
                                   <p
-                                    class="MuiTypography-root MuiTypography-body2 css-1korokw-MuiTypography-root"
+                                    class="MuiTypography-root MuiTypography-body2 css-1q2i7vw-MuiTypography-root"
                                   >
                                     Nonce
                                   </p>
                                   <p
-                                    class="MuiTypography-root MuiTypography-body2 css-17vdyq3-MuiTypography-root"
+                                    class="MuiTypography-root MuiTypography-body2 css-1js3693-MuiTypography-root"
                                   >
                                     100
                                   </p>
@@ -640,7 +640,7 @@ exports[`ReviewTransaction should display a confirmation screen 1`] = `
             data-mui-internal-clone-element="true"
           >
             <button
-              class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary Mui-disabled MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary css-2zc3nx-MuiButtonBase-root-MuiButton-root"
+              class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary Mui-disabled MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary css-1xili2s-MuiButtonBase-root-MuiButton-root"
               data-testid="continue-sign-btn"
               disabled=""
               tabindex="-1"
@@ -659,7 +659,7 @@ exports[`ReviewTransaction should display a confirmation screen 1`] = `
 exports[`ReviewTransaction should display a loading component 1`] = `
 <div>
   <div
-    class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 MuiCard-root css-1w4z6qv-MuiPaper-root-MuiCard-root"
+    class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 MuiCard-root css-156d94n-MuiPaper-root-MuiCard-root"
     style="--Paper-shadow: none;"
   >
     <div
@@ -724,7 +724,7 @@ exports[`ReviewTransaction should display a loading component 1`] = `
 exports[`ReviewTransaction should display an error screen 1`] = `
 <div>
   <div
-    class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 MuiCard-root css-1w4z6qv-MuiPaper-root-MuiCard-root"
+    class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 MuiCard-root css-156d94n-MuiPaper-root-MuiCard-root"
     style="--Paper-shadow: none;"
   >
     <div
@@ -736,7 +736,7 @@ exports[`ReviewTransaction should display an error screen 1`] = `
         data-testid="error-transaction-preview"
       >
         <p
-          class="MuiTypography-root MuiTypography-body1 css-w5uidf-MuiTypography-root"
+          class="MuiTypography-root MuiTypography-body1 css-ccf5q-MuiTypography-root"
         >
           Error loading preview. Please try again.
         </p>

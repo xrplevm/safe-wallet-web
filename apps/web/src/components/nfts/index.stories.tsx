@@ -21,10 +21,10 @@ import OpenInNewIcon from '@mui/icons-material/OpenInNew'
 import CloseIcon from '@mui/icons-material/Close'
 
 /**
- * NFT components display and manage collectibles (NFTs) owned by a Safe account.
+ * NFT components display and manage collectibles (NFTs) owned by a multisig account.
  * Includes a grid view, collection grouping, and preview modal functionality.
  *
- * Note: Actual NftGrid, NftCollections, NftPreviewModal require Safe context.
+ * Note: Actual NftGrid, NftCollections, NftPreviewModal require account context.
  * These stories document the UI patterns.
  */
 const meta: Meta = {
@@ -146,7 +146,7 @@ const MockNftGrid = ({
           No NFTs found
         </Typography>
         <Typography variant="body2" color="text.secondary" sx={{ mt: 1 }}>
-          This Safe does not own any collectibles yet.
+          This account does not own any collectibles yet.
         </Typography>
       </Paper>
     )

@@ -240,7 +240,7 @@ describe('swapOrderSlice', () => {
 
       expect(showNotificationSpy).toHaveBeenCalledWith({
         title: 'Order created',
-        message: 'Waiting for confirmation from signers of your Safe',
+        message: 'Waiting for confirmation from signers of your account',
         groupKey: 'swap-order-status',
         variant: 'info',
       })
@@ -309,7 +309,7 @@ describe('swapOrderSlice', () => {
 
       expect(showNotificationSpy).toHaveBeenCalledWith({
         title: 'Order waiting for signature',
-        message: 'Waiting for confirmation from signers of your Safe',
+        message: 'Waiting for confirmation from signers of your account',
         groupKey: 'swap-order-status',
         variant: 'info',
       })

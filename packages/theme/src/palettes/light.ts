@@ -6,21 +6,21 @@ import type { ColorPalette } from './types'
  */
 const lightPalette: ColorPalette = {
   text: {
-    primary: '#121312',
+    primary: '#000000',
     secondary: '#A1A3A7',
     disabled: '#DDDEE0',
     contrast: '#FFFFFF',
   },
   primary: {
-    dark: '#3c3c3c',
-    main: '#121312',
+    dark: '#5B13BF',
+    main: '#7919FF',
     light: '#636669',
   },
   secondary: {
-    dark: '#0FDA6D',
-    main: '#12FF80',
-    light: '#B0FFC9',
-    background: '#EFFFF4',
+    dark: '#7919FF',
+    main: '#C890FF',
+    light: '#E4C8FF',
+    background: '#F7EEFF',
   },
   border: {
     main: '#A1A3A7',
@@ -65,7 +65,7 @@ const lightPalette: ColorPalette = {
     main: '#F4F4F4',
     sheet: '#F4F4F4',
     paper: '#FFFFFF',
-    light: '#EFFFF4',
+    light: '#F7EEFF',
     secondary: '#DDDEE0',
     skeleton: 'rgba(0, 0, 0, 0.04)',
     disabled: '#7878801F',
@@ -74,15 +74,15 @@ const lightPalette: ColorPalette = {
     main: '#636669',
   },
   logo: {
-    main: '#121312',
+    main: '#000000',
     background: '#EEEFF0',
   },
   static: {
-    main: '#121312',
+    main: '#000000',
     light: '#636669',
     primary: '#FFFFFF',
     textSecondary: '#A1A3A7',
-    textBrand: '#12FF80',
+    textBrand: '#32E685',
   },
 }
 

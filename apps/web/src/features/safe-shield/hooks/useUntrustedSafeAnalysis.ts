@@ -25,9 +25,9 @@ const useUntrustedSafeAnalysis = (): UntrustedSafeAnalysisResult => {
     return {
       severity: Severity.CRITICAL,
       type: SafeStatus.UNTRUSTED,
-      title: 'Untrusted Safe',
+      title: 'Untrusted account',
       description:
-        "You're creating a transaction from a Safe that isn't in your trusted list. Trust it if you recognize it.",
+        "You're creating a transaction from an account that isn't in your trusted list. Trust it if you recognize it.",
     }
   }, [isTrusted])
 

@@ -1,3 +1,4 @@
+import { BRAND_NAME } from '@/config/constants'
 import { Card, Box, Grid2 as Grid, Typography, Button, SvgIcon, Stack, Tooltip } from '@mui/material'
 import Image from 'next/image'
 import EarnIllustrationLight from '@/public/images/common/earn-illustration-light.png'
@@ -138,7 +139,7 @@ const EarnInfo = ({ onGetStarted }: { onGetStarted: () => void }) => {
                   <Typography fontWeight="bold" mb={0.5}>
                     Never leave the app
                   </Typography>
-                  <Typography>Interact with your assets right in Safe Wallet UI.</Typography>
+                  <Typography>Interact with your assets right in {BRAND_NAME}.</Typography>
                 </Box>
               </Stack>
 

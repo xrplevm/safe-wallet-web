@@ -4,7 +4,8 @@ import * as router from 'next/router'
 
 import * as web3ReadOnly from '@/hooks/wallets/web3ReadOnly'
 import * as notifications from './notifications'
-import { act, renderHook, getAppName } from '@/tests/test-utils'
+import { act, renderHook } from '@/tests/test-utils'
+import { BRAND_NAME } from '@/config/constants'
 import { TxModalContext } from '@/components/tx-flow'
 import useSafeWalletProvider, { useTxFlowApi } from './useSafeWalletProvider'
 import { RpcErrorCode, SafeWalletProvider } from '.'
@@ -177,10 +178,8 @@ describe('useSafeWalletProvider', () => {
 
       const resp = result?.current?.signMessage('message', appInfo)
 
-      const appName = getAppName()
-
       expect(showNotificationSpy).toHaveBeenCalledWith('Signature request', {
-        body: `test wants you to sign a message. Open the ${appName} to continue.`,
+        body: `test wants you to sign a message. Open the ${BRAND_NAME} to continue.`,
       })
 
       expect(mockSetTxFlow.mock.calls[0][0].props).toStrictEqual({
@@ -231,10 +230,8 @@ describe('useSafeWalletProvider', () => {
 
       const resp2 = result?.current?.signMessage('message', appInfo)
 
-      const appName = getAppName()
-
       expect(showNotificationSpy).toHaveBeenCalledWith('Signature request', {
-        body: `test wants you to sign a message. Open the ${appName} to continue.`,
+        body: `test wants you to sign a message. Open the ${BRAND_NAME} to continue.`,
       })
 
       // SignMessageOnChainFlow props
@@ -304,10 +301,8 @@ describe('useSafeWalletProvider', () => {
 
       const resp = result?.current?.signTypedMessage(typedMessage, appInfo)
 
-      const appName = getAppName()
-
       expect(showNotificationSpy).toHaveBeenCalledWith('Signature request', {
-        body: `test wants you to sign a message. Open the ${appName} to continue.`,
+        body: `test wants you to sign a message. Open the ${BRAND_NAME} to continue.`,
       })
 
       expect(mockSetTxFlow.mock.calls[0][0].props).toStrictEqual({
@@ -356,10 +351,8 @@ describe('useSafeWalletProvider', () => {
         appInfo,
       )
 
-      const appName = getAppName()
-
       expect(showNotificationSpy).toHaveBeenCalledWith('Transaction request', {
-        body: `test wants to submit a transaction. Open the ${appName} to continue.`,
+        body: `test wants to submit a transaction. Open the ${BRAND_NAME} to continue.`,
       })
 
       expect(mockSetTxFlow.mock.calls[0][0].props).toStrictEqual({

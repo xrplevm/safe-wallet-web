@@ -84,7 +84,7 @@ class SafeOverviewFetcher {
         item.callback({ data: overview })
       })
     } catch {
-      itemsToProcess.forEach((item) => item.callback({ error: 'Could not fetch Safe overview' }))
+      itemsToProcess.forEach((item) => item.callback({ error: 'Could not fetch account overview' }))
     }
   }
 

@@ -139,7 +139,7 @@ export class ThreatAnalysisResultBuilder<
       .title('Ownership change')
       .type(ThreatStatus.OWNERSHIP_CHANGE)
       .severity(Severity.WARN)
-      .description("Verify this change before proceeding as it will change the Safe's ownership")
+      .description("Verify this change before proceeding as it will change the account's ownership")
   }
 
   static moduleChange() {
@@ -147,7 +147,7 @@ export class ThreatAnalysisResultBuilder<
       .title('Modules change')
       .type(ThreatStatus.MODULE_CHANGE)
       .severity(Severity.WARN)
-      .description('Verify this change before proceeding as it will change Safe modules.')
+      .description('Verify this change before proceeding as it will change account modules.')
   }
 
   static masterCopyChange() {

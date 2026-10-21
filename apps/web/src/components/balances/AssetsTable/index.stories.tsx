@@ -43,7 +43,7 @@ export default meta
 type Story = StoryObj<typeof meta>
 
 /**
- * Default AssetsTable with EF Safe balance data (~$4.5M, 32 tokens).
+ * Default AssetsTable with EF account balance data (~$4.5M, 32 tokens).
  * Data is fetched via MSW from real API fixtures.
  */
 export const Default: Story = {

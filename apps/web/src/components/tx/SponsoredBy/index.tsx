@@ -1,5 +1,6 @@
 import chains from '@/config/chains'
 import css from './styles.module.css'
+import { BRAND_NAME } from '@/config/constants'
 
 export const RELAY_SPONSORS = {
   [chains.gno]: {
@@ -7,8 +8,8 @@ export const RELAY_SPONSORS = {
     logo: '/images/common/gnosis-chain-logo.png',
   },
   default: {
-    name: 'Safe',
-    logo: '/images/logo-no-text.svg',
+    name: BRAND_NAME,
+    logo: '/images/brand/logo-mark-filled.svg',
   },
 }
 

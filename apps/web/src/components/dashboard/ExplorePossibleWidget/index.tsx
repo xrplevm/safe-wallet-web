@@ -54,12 +54,12 @@ const EXPLORE_POSSIBLE_CONFIG = [
   },
   {
     id: 'spaces',
-    title: 'Manage multiple Safes',
+    title: 'Manage multiple accounts',
     iconUrl: {
       light: '/images/explore-possible/spaces-large.svg',
       dark: '/images/explore-possible/spaces-large-dark.svg',
     },
-    getLink: () => 'https://app.safe.global/welcome/spaces',
+    getLink: () => AppRoutes.welcome.spaces,
   },
   {
     id: 'transaction-builder',

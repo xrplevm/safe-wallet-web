@@ -6,7 +6,7 @@ import CheckCircleIcon from '@mui/icons-material/CheckCircle'
 import HourglassEmptyIcon from '@mui/icons-material/HourglassEmpty'
 
 /**
- * Safe Messages components handle off-chain message signing for Safe accounts.
+ * Account Messages components handle off-chain message signing for multisig accounts.
  * Messages require threshold signatures before being considered "signed".
  *
  * This includes EIP-191 personal messages and EIP-712 typed data signing.
@@ -135,14 +135,14 @@ export const FullMessagePage: StoryObj = {
         Messages
       </Typography>
       <Typography variant="body2" color="text.secondary" sx={{ mb: 3 }}>
-        View and sign off-chain messages for your Safe account.
+        View and sign off-chain messages for your multisig account.
       </Typography>
 
       <Paper sx={{ mb: 2 }}>
         <Box sx={{ p: 2, borderBottom: 1, borderColor: 'divider' }}>
           <Typography variant="subtitle1">Pending Messages</Typography>
         </Box>
-        <MockMsgSummary message="Hello, Safe!" confirmations={1} required={2} />
+        <MockMsgSummary message="Hello, account!" confirmations={1} required={2} />
         <MockMsgSummary
           message='{"types":{"Permit":[...]},"domain":{...}}'
           isTypedData
@@ -201,7 +201,7 @@ export const MessageSummary: StoryObj = {
       <Typography variant="subtitle2" sx={{ p: 2, borderBottom: 1, borderColor: 'divider' }}>
         Message Queue
       </Typography>
-      <MockMsgSummary message="Hello, Safe!" confirmations={1} required={2} />
+      <MockMsgSummary message="Hello, account!" confirmations={1} required={2} />
       <MockMsgSummary message='{"types":{"Permit":[...]},"domain":{...}}' isTypedData confirmations={1} required={2} />
       <MockMsgSummary message="Signed agreement for contract XYZ" confirmations={2} required={2} isConfirmed />
     </Paper>
@@ -272,7 +272,7 @@ export const MessageInfoBox: StoryObj = {
           Message Signing
         </Typography>
         <Typography variant="body2" color="text.secondary">
-          This is an off-chain message that will be signed by your Safe. No transaction will be executed.
+          This is an off-chain message that will be signed by your account. No transaction will be executed.
         </Typography>
       </Box>
     </Paper>

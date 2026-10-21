@@ -1,23 +1,23 @@
 {
-  "totalBalanceFiat": "1316.9891607789668",
-  "totalTokenBalanceFiat": "609.2160990535185",
-  "totalPositionsBalanceFiat": "707.7730617254483",
+  "totalBalanceFiat": "11000.0240674380773693",
+  "totalTokenBalanceFiat": "4502.70061082728707",
+  "totalPositionsBalanceFiat": "6497.3234566107902993",
   "tokenBalances": [
     {
       "tokenInfo": {
         "address": "0x5aFE3855358E112B5647B952709E6165e1c1eEEe",
         "decimals": 18,
-        "symbol": "SAFE",
-        "name": "Safe Token",
-        "logoUri": "https://cdn.zerion.io/0x5afe3855358e112b5647b952709e6165e1c1eeee.png",
+        "symbol": "XRP",
+        "name": "XRP",
+        "logoUri": "/images/brand/logo-mark-filled.png",
         "chainId": "1",
         "trusted": true,
         "type": "ERC20"
       },
       "balance": "3178195646939569682462",
-      "balanceFiat": "438.39615522623143",
-      "price": "0.1379386935",
-      "priceChangePercentage1d": "-7.275036237493005"
+      "balanceFiat": "4331.880667",
+      "price": "1.363",
+      "priceChangePercentage1d": "3.66"
     },
     {
       "tokenInfo": {
@@ -384,7 +384,7 @@
         "address": "0xea33d14Dce85076Fb04e6F2e2F07180b16f48470",
         "decimals": 8,
         "symbol": "safesmmWBTC",
-        "name": "Safe Smokehouse WBTC",
+        "name": "Smokehouse WBTC",
         "logoUri": "",
         "chainId": "1",
         "trusted": true,
@@ -397,174 +397,174 @@
   "positionBalances": [
     {
       "appInfo": {
-        "name": "Safe Factory",
-        "logoUrl": "https://protocol-icons.s3.amazonaws.com/icons/gnosis-safe-factory.jpg",
+        "name": "XRP Staking",
+        "logoUrl": "/images/brand/logo-mark-filled.png",
         "url": "https://gnosis.io/"
       },
-      "balanceFiat": "651.888206114658",
+      "balanceFiat": "6441.4386009999999993",
       "groups": [
         {
-          "name": "Gnosis Safe Vesting",
+          "name": "XRP Vesting",
           "items": [
             {
               "key": "0x5afe3855358e112b5647b952709e6165e1c1eeee-ethereum-gnosis safe vesting-reward",
               "type": "reward",
-              "name": "Gnosis Safe Vesting",
+              "name": "XRP Vesting",
               "groupId": "a0313296549eef5b542dbeda52b15d1fd3028e17886f3f54d27d4fe20bb84294",
               "tokenInfo": {
                 "address": "0x5aFE3855358E112B5647B952709E6165e1c1eEEe",
                 "decimals": 18,
-                "symbol": "SAFE",
-                "name": "Safe Token",
-                "logoUri": "https://cdn.zerion.io/0x5afe3855358e112b5647b952709e6165e1c1eeee.png",
+                "symbol": "XRP",
+                "name": "XRP",
+                "logoUri": "/images/brand/logo-mark-filled.png",
                 "chainId": "1",
                 "trusted": true,
                 "type": "ERC20"
               },
               "receiptTokenAddress": "0xC0fde70A65C7569Fe919bE57492228DEE8cDb585",
               "balance": "2034160974499438657536",
-              "balanceFiat": "280.5895071911394",
-              "priceChangePercentage1d": "-7.275036237493005"
+              "balanceFiat": "2772.561408",
+              "priceChangePercentage1d": "3.66"
             },
             {
               "key": "0x5afe3855358e112b5647b952709e6165e1c1eeee-ethereum-gnosis safe vesting-locked",
               "type": "locked",
-              "name": "Gnosis Safe Vesting",
+              "name": "XRP Vesting",
               "groupId": "a0313296549eef5b542dbeda52b15d1fd3028e17886f3f54d27d4fe20bb84294",
               "tokenInfo": {
                 "address": "0x5aFE3855358E112B5647B952709E6165e1c1eEEe",
                 "decimals": 18,
-                "symbol": "SAFE",
-                "name": "Safe Token",
-                "logoUri": "https://cdn.zerion.io/0x5afe3855358e112b5647b952709e6165e1c1eeee.png",
+                "symbol": "XRP",
+                "name": "XRP",
+                "logoUri": "/images/brand/logo-mark-filled.png",
                 "chainId": "1",
                 "trusted": true,
                 "type": "ERC20"
               },
               "receiptTokenAddress": "0xC0fde70A65C7569Fe919bE57492228DEE8cDb585",
               "balance": "514950925272454042464",
-              "balanceFiat": "71.03165784869843",
-              "priceChangePercentage1d": "-7.275036237493005"
+              "balanceFiat": "701.878111",
+              "priceChangePercentage1d": "3.66"
             }
           ]
         },
         {
-          "name": "Gnosis Safe Vesting",
+          "name": "XRP Vesting",
           "items": [
             {
               "key": "0x5afe3855358e112b5647b952709e6165e1c1eeee-ethereum-gnosis safe vesting-reward",
               "type": "reward",
-              "name": "Gnosis Safe Vesting",
+              "name": "XRP Vesting",
               "groupId": "99e212f7d6bd27510a310aecf247c94b4b418a910cba2d02f07aa8fecd573e22",
               "tokenInfo": {
                 "address": "0x5aFE3855358E112B5647B952709E6165e1c1eEEe",
                 "decimals": 18,
-                "symbol": "SAFE",
-                "name": "Safe Token",
-                "logoUri": "https://cdn.zerion.io/0x5afe3855358e112b5647b952709e6165e1c1eeee.png",
+                "symbol": "XRP",
+                "name": "XRP",
+                "logoUri": "/images/brand/logo-mark-filled.png",
                 "chainId": "1",
                 "trusted": true,
                 "type": "ERC20"
               },
               "receiptTokenAddress": "0xA0b937D5c8E32a80E3a8ed4227CD020221544ee6",
               "balance": "1237784404310331228160",
-              "balanceFiat": "170.73836356524285",
-              "priceChangePercentage1d": "-7.275036237493005"
+              "balanceFiat": "1687.100143",
+              "priceChangePercentage1d": "3.66"
             },
             {
               "key": "0x5afe3855358e112b5647b952709e6165e1c1eeee-ethereum-gnosis safe vesting-locked",
               "type": "locked",
-              "name": "Gnosis Safe Vesting",
+              "name": "XRP Vesting",
               "groupId": "99e212f7d6bd27510a310aecf247c94b4b418a910cba2d02f07aa8fecd573e22",
               "tokenInfo": {
                 "address": "0x5aFE3855358E112B5647B952709E6165e1c1eEEe",
                 "decimals": 18,
-                "symbol": "SAFE",
-                "name": "Safe Token",
-                "logoUri": "https://cdn.zerion.io/0x5afe3855358e112b5647b952709e6165e1c1eeee.png",
+                "symbol": "XRP",
+                "name": "XRP",
+                "logoUri": "/images/brand/logo-mark-filled.png",
                 "chainId": "1",
                 "trusted": true,
                 "type": "ERC20"
               },
               "receiptTokenAddress": "0xA0b937D5c8E32a80E3a8ed4227CD020221544ee6",
               "balance": "313030769561242271840",
-              "balanceFiat": "43.17905537857733",
-              "priceChangePercentage1d": "-7.275036237493005"
+              "balanceFiat": "426.660939",
+              "priceChangePercentage1d": "3.66"
             }
           ]
         },
         {
-          "name": "Gnosis Safe Vesting",
+          "name": "XRP Vesting",
           "items": [
             {
               "key": "0x5afe3855358e112b5647b952709e6165e1c1eeee-ethereum-gnosis safe vesting-reward",
               "type": "reward",
-              "name": "Gnosis Safe Vesting",
+              "name": "XRP Vesting",
               "groupId": "f2e5beab4766fda0fe7fecdea67e0be111326de6f60ed3ae5933ad56fd790f51",
               "tokenInfo": {
                 "address": "0x5aFE3855358E112B5647B952709E6165e1c1eEEe",
                 "decimals": 18,
-                "symbol": "SAFE",
-                "name": "Safe Token",
-                "logoUri": "https://cdn.zerion.io/0x5afe3855358e112b5647b952709e6165e1c1eeee.png",
+                "symbol": "XRP",
+                "name": "XRP",
+                "logoUri": "/images/brand/logo-mark-filled.png",
                 "chainId": "1",
                 "trusted": true,
                 "type": "ERC20"
               },
               "receiptTokenAddress": "0x57eC1930f3E5c8062926c2F3ee49316E116143df",
               "balance": "416000000000000000000",
-              "balanceFiat": "57.382496495999995",
-              "priceChangePercentage1d": "-7.275036237493005"
+              "balanceFiat": "567.008000",
+              "priceChangePercentage1d": "3.66"
             }
           ]
         },
         {
-          "name": "Gnosis Safe SAFE Pool",
+          "name": "XRP Pool",
           "items": [
             {
               "key": "0x5afe3855358e112b5647b952709e6165e1c1eeee-ethereum-gnosis safe safe pool-locked",
               "type": "locked",
-              "name": "Gnosis Safe SAFE Pool",
+              "name": "XRP Pool",
               "groupId": "b90b31c094b1453794a47b42eac52d485a18e2a9d61077c1a7199861637f0538",
               "tokenInfo": {
                 "address": "0x5aFE3855358E112B5647B952709E6165e1c1eEEe",
                 "decimals": 18,
-                "symbol": "SAFE",
-                "name": "Safe Token",
-                "logoUri": "https://cdn.zerion.io/0x5afe3855358e112b5647b952709e6165e1c1eeee.png",
+                "symbol": "XRP",
+                "name": "XRP",
+                "logoUri": "/images/brand/logo-mark-filled.png",
                 "chainId": "1",
                 "trusted": true,
                 "type": "ERC20"
               },
               "receiptTokenAddress": "0x0a7CB434f96f65972D46A5c1A64a9654dC9959b2",
               "balance": "190000000000000000000",
-              "balanceFiat": "26.208351764999996",
-              "priceChangePercentage1d": "-7.275036237493005"
+              "balanceFiat": "258.970000",
+              "priceChangePercentage1d": "3.66"
             }
           ]
         },
         {
-          "name": "Gnosis Safe Vesting",
+          "name": "XRP Vesting",
           "items": [
             {
               "key": "0x5afe3855358e112b5647b952709e6165e1c1eeee-ethereum-gnosis safe vesting-reward",
               "type": "reward",
-              "name": "Gnosis Safe Vesting",
+              "name": "XRP Vesting",
               "groupId": "958fc8f36e6ce8174d126384b138d4b93151e77ed66d292727b92c7b2308c4a9",
               "tokenInfo": {
                 "address": "0x5aFE3855358E112B5647B952709E6165e1c1eEEe",
                 "decimals": 18,
-                "symbol": "SAFE",
-                "name": "Safe Token",
-                "logoUri": "https://cdn.zerion.io/0x5afe3855358e112b5647b952709e6165e1c1eeee.png",
+                "symbol": "XRP",
+                "name": "XRP",
+                "logoUri": "/images/brand/logo-mark-filled.png",
                 "chainId": "1",
                 "trusted": true,
                 "type": "ERC20"
               },
               "receiptTokenAddress": "0xdd57784bDD85bBda811CC0B47981D9188e83f703",
               "balance": "20000000000000000000",
-              "balanceFiat": "2.7587738699999997",
-              "priceChangePercentage1d": "-7.275036237493005"
+              "balanceFiat": "27.260000",
+              "priceChangePercentage1d": "3.66"
             }
           ]
         }
@@ -949,12 +949,12 @@
       "balanceFiat": "4.11628719314979",
       "groups": [
         {
-          "name": "Kiln Yield: USDT Pool (Safe Smokehouse USDT)",
+          "name": "Kiln Yield: USDT Pool (Smokehouse USDT)",
           "items": [
             {
               "key": "0xdac17f958d2ee523a2206206994597c13d831ec7-ethereum-kiln yield: usdt pool (safe smokehouse usdt)-deposit",
               "type": "deposit",
-              "name": "Kiln Yield: USDT Pool (Safe Smokehouse USDT)",
+              "name": "Kiln Yield: USDT Pool (Smokehouse USDT)",
               "groupId": "6a58cf9488e44d9f7de6534d19fc659f8d452e59d205090b99b645a9f759d32a",
               "tokenInfo": {
                 "address": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
@@ -974,12 +974,12 @@
           ]
         },
         {
-          "name": "Kiln Yield: WBTC Pool (Safe Smokehouse WBTC)",
+          "name": "Kiln Yield: WBTC Pool (Smokehouse WBTC)",
           "items": [
             {
               "key": "0x2260fac5e5542a773aa44fbcfedf7c193bc2c599-ethereum-kiln yield: wbtc pool (safe smokehouse wbtc)-deposit",
               "type": "deposit",
-              "name": "Kiln Yield: WBTC Pool (Safe Smokehouse WBTC)",
+              "name": "Kiln Yield: WBTC Pool (Smokehouse WBTC)",
               "groupId": "7f5f412b7068a18a240846643cf28220a18f045990df7b5d7d76b55dba046ace",
               "tokenInfo": {
                 "address": "0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599",

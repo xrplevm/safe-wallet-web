@@ -106,7 +106,7 @@ export const swapOrderStatusListener = (listenerMiddleware: typeof listenerMiddl
               message:
                 safeInfo.data?.threshold === 1
                   ? 'Waiting for the transaction to be executed'
-                  : 'Waiting for confirmation from signers of your Safe',
+                  : 'Waiting for confirmation from signers of your account',
               groupKey,
               variant: 'info',
               link,
@@ -118,7 +118,7 @@ export const swapOrderStatusListener = (listenerMiddleware: typeof listenerMiddl
           dispatch(
             showNotification({
               title: 'Order waiting for signature',
-              message: 'Waiting for confirmation from signers of your Safe',
+              message: 'Waiting for confirmation from signers of your account',
               groupKey,
               variant: 'info',
               link,

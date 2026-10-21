@@ -11,8 +11,8 @@ import path from 'path'
 import { fileURLToPath } from 'url'
 
 const IS_PRODUCTION = process.env.NEXT_PUBLIC_IS_PRODUCTION === 'true'
-const GATEWAY_URL_PRODUCTION = process.env.NEXT_PUBLIC_GATEWAY_URL_PRODUCTION || 'https://safe-client.safe.global'
-const GATEWAY_URL_STAGING = process.env.NEXT_PUBLIC_GATEWAY_URL_STAGING || 'https://safe-client.staging.5afe.dev'
+const GATEWAY_URL_PRODUCTION = process.env.NEXT_PUBLIC_GATEWAY_URL_PRODUCTION || ''
+const GATEWAY_URL_STAGING = process.env.NEXT_PUBLIC_GATEWAY_URL_STAGING || GATEWAY_URL_PRODUCTION
 
 const GATEWAY_URL = IS_PRODUCTION ? GATEWAY_URL_PRODUCTION : GATEWAY_URL_STAGING
 

@@ -61,7 +61,9 @@ export const FallbackHandler = (): ReactElement | null => {
       txBuilderLinkPrefix="It can be set via the"
     />
   ) : isTWAPFallbackHandler ? (
-    <>This is CoW&apos;s fallback handler. It is needed for this Safe to be able to use the TWAP feature for Swaps.</>
+    <>
+      This is CoW&apos;s fallback handler. It is needed for this account to be able to use the TWAP feature for Swaps.
+    </>
   ) : isUntrusted ? (
     <FallbackHandlerWarning
       message={
@@ -96,7 +98,7 @@ export const FallbackHandler = (): ReactElement | null => {
         <Grid item xs>
           <Box>
             <Typography>
-              The fallback handler adds fallback logic for funtionality that may not be present in the Safe Account
+              The fallback handler adds fallback logic for funtionality that may not be present in the smart account
               contract. Learn more about the fallback handler{' '}
               <ExternalLink href={HelpCenterArticle.FALLBACK_HANDLER}>here</ExternalLink>
             </Typography>

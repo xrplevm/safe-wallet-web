@@ -1,3 +1,4 @@
+import { HelpCenterArticle } from '@safe-global/utils/config/constants'
 import { TradeType, type CowSwapWidgetParams } from '@cowprotocol/widget-lib'
 import { type OnTradeParamsPayload, type CowEventListeners, CowEvents } from '@cowprotocol/events'
 import { type MutableRefObject, useEffect, useMemo, useRef, useState } from 'react'
@@ -149,7 +150,7 @@ const SwapWidget = ({ sell }: Params) => {
     },
     content: {
       feeLabel: 'Widget Fee',
-      feeTooltipMarkdown: `The [tiered widget fee](https://help.safe.global/en/articles/178530-how-does-the-widget-fee-work-for-native-swaps) incurred here is charged by CoW Protocol for the operation of this widget. The fee is automatically calculated into this quote. Part of the fee will contribute to a license fee that supports the Safe Community. Neither the Safe Ecosystem Foundation nor ${BRAND_NAME} operate the CoW Swap Widget and/or CoW Swap`,
+      feeTooltipMarkdown: `The [tiered widget fee](${HelpCenterArticle.SWAP_WIDGET_FEES}) incurred here is charged by CoW Protocol for the operation of this widget. The fee is automatically calculated into this quote. ${BRAND_NAME} does not operate the CoW Swap Widget and/or CoW Swap`,
     },
   })
 
@@ -159,7 +160,7 @@ const SwapWidget = ({ sell }: Params) => {
       url: cowSwapBaseUrl,
       name: SWAP_TITLE,
       iconUrl: darkMode ? './images/common/safe-swap-dark.svg' : './images/common/safe-swap.svg',
-      description: 'Safe Apps',
+      description: 'Apps',
       chainIds: ['1', '100'],
       accessControl: { type: SafeAppAccessPolicyTypes.NoRestrictions },
       tags: ['safe-apps'],

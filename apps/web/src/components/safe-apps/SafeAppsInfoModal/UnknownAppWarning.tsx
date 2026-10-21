@@ -26,7 +26,7 @@ const UnknownAppWarning = ({ url, onHideWarning }: UnknownAppWarningProps): Reac
         </Typography>
       </Box>
       <Typography my={2} fontWeight={700} color={lightPalette.warning.main}>
-        The application you are trying to access is not in the default Safe Apps list
+        The application you are trying to access is not in the default apps list
       </Typography>
 
       <Typography my={2} textAlign="center">

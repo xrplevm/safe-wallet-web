@@ -79,7 +79,7 @@ export const Notifications: PushNotificationsMap = {
     const didFail = failed === 'true'
     return {
       title: `Transaction ${didFail ? 'failed' : 'executed'}`,
-      body: `Safe ${shortenAddress(address)} on ${getChainName(chainId, chain)} ${
+      body: `Account ${shortenAddress(address)} on ${getChainName(chainId, chain)} ${
         didFail ? 'failed to execute' : 'executed'
       } transaction ${shortenAddress(txHash)}.`,
     }
@@ -87,7 +87,7 @@ export const Notifications: PushNotificationsMap = {
   [WebhookType.INCOMING_ETHER]: ({ address, txHash, value, chainId }, chain) => {
     return {
       title: `${getCurrencyName(chain)} received`,
-      body: `Safe ${shortenAddress(address)} on ${getChainName(chainId, chain)} received ${formatUnits(
+      body: `Account ${shortenAddress(address)} on ${getChainName(chainId, chain)} received ${formatUnits(
         value,
         chain?.nativeCurrency?.decimals,
       ).toString()} ${getCurrencySymbol(chain)} in transaction ${shortenAddress(txHash)}.`,
@@ -97,7 +97,7 @@ export const Notifications: PushNotificationsMap = {
     const token = await getTokenInfo(chainId, address, tokenAddress, value)
     return {
       title: `${token.name} received`,
-      body: `Safe ${shortenAddress(address)} on ${getChainName(chainId, chain)} received ${token.value} ${
+      body: `Account ${shortenAddress(address)} on ${getChainName(chainId, chain)} received ${token.value} ${
         token.symbol
       } in transaction ${shortenAddress(txHash)}.`,
     }
@@ -105,7 +105,7 @@ export const Notifications: PushNotificationsMap = {
   [WebhookType.MODULE_TRANSACTION]: ({ address, module, txHash, chainId }, chain) => {
     return {
       title: 'Module transaction',
-      body: `Safe ${shortenAddress(address)} on ${getChainName(
+      body: `Account ${shortenAddress(address)} on ${getChainName(
         chainId,
         chain,
       )} executed a module transaction ${shortenAddress(txHash)} from module ${shortenAddress(module)}.`,
@@ -114,7 +114,7 @@ export const Notifications: PushNotificationsMap = {
   [WebhookType.CONFIRMATION_REQUEST]: ({ address, safeTxHash, chainId }, chain) => {
     return {
       title: 'Confirmation request',
-      body: `Safe ${shortenAddress(address)} on ${getChainName(
+      body: `Account ${shortenAddress(address)} on ${getChainName(
         chainId,
         chain,
       )} has a new confirmation request for transaction ${shortenAddress(safeTxHash)}.`,

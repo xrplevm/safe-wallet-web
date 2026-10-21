@@ -2,7 +2,8 @@ import React from 'react'
 import { Typography } from '@mui/material'
 import css from './styles.module.css'
 import WelcomeLogin from './WelcomeLogin'
-import SafeLabsLogo from '@/public/images/logo-safe-labs.svg'
+import BrandLogo from '@/public/images/brand/logo.svg'
+import { BRAND_NAME } from '@/config/constants'
 import footerCss from './welcomeFooter.module.css'
 import Footer from '../common/Footer'
 
@@ -11,7 +12,7 @@ const NewSafe = () => {
     <div className={css.loginPage}>
       <div className={css.leftSide}>
         <div className={css.logoContainer}>
-          <SafeLabsLogo className={css.logo} />
+          <BrandLogo className={css.logo} aria-label={BRAND_NAME} />
         </div>
         <div className={css.loginContainer}>
           <WelcomeLogin />
@@ -25,7 +26,7 @@ const NewSafe = () => {
           <Typography className={css.mainTitle}>Own your assets onchain securely</Typography>
         </div>
         <div className={css.mockupImageContainer}>
-          <img src="/images/welcome/safe-mockup.png" alt="Safe interface mockup" className={css.mockupImage} />
+          <img src="/images/brand/welcome.png" alt="" className={css.mockupImage} />
         </div>
       </div>
     </div>

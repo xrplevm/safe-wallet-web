@@ -28,7 +28,7 @@ describe('showNotification', () => {
     showNotification(title, options)
 
     expect(global.Notification).toHaveBeenCalledWith(title, {
-      icon: '/images/safe-logo-green.png',
+      icon: '/images/brand/logo-mark-filled.png',
       ...options,
     })
   })

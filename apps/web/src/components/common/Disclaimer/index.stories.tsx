@@ -18,7 +18,7 @@ export const BlockedAddress: Story = {
     subtitle: '0xD3a484faEa53313eF85b5916C9302a3E304ae622',
     title: 'Blocked Address',
     content:
-      'This signer address is blocked by the Safe interface, due to being associated with the blocked activities by the U.S. Department of Treasury in the Specially Designated Nationals (SDN) list.',
+      'This signer address is blocked by the app interface, due to being associated with the blocked activities by the U.S. Department of Treasury in the Specially Designated Nationals (SDN) list.',
     onAccept: () => {},
   },
   parameters: {

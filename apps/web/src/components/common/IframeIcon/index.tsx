@@ -6,7 +6,7 @@ const getIframeContent = (url: string, height: number, borderRadius?: string, fa
   const fallback = fallbackSrc ? safeEncodeURI(fallbackSrc) : ''
   return `
     <body style="margin: 0; overflow: hidden; display: flex; align-items: center; justify-content: center;">
-      <img src="${safeEncodeURI(url)}" alt="Safe App logo" height="${height}" width="auto" style="${style}" />
+      <img src="${safeEncodeURI(url)}" alt="App logo" height="${height}" width="auto" style="${style}" />
       <script>
         document.querySelector('img').onerror = (e) => {
           e.target.onerror = null

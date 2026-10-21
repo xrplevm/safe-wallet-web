@@ -113,7 +113,7 @@ export const _getSafeCreationReceipt = memoize(
       if (res.ok && res.status === 200) {
         return res.json() as Promise<{ transactionHash: string } & unknown>
       } else {
-        throw new Error('Error fetching Safe creation details')
+        throw new Error('Error fetching account creation details')
       }
     })
 
