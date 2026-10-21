@@ -10,6 +10,7 @@ import { readFile } from 'fs/promises'
 import { fileURLToPath } from 'url'
 import { execSync } from 'child_process'
 import { SriManifestWebpackPlugin } from './plugins/sri-manifest-webpack-plugin.mjs'
+import { ThirdPartyLicensesWebpackPlugin } from './plugins/third-party-licenses-webpack-plugin.mjs'
 
 let withRspack = null
 if (process.env.USE_RSPACK === '1') {
@@ -160,6 +161,10 @@ const nextConfig = {
         },
       }
       config.optimization.minimize = false
+    }
+
+    if (!dev) {
+      config.plugins.push(new ThirdPartyLicensesWebpackPlugin())
     }
 
     // Add SRI manifest plugin (production only, skip for Cypress tests)

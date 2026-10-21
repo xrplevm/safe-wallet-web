@@ -1,6 +1,8 @@
 #!/bin/sh
 # Fails when the static export still contains Safe trademarks, links to Safe-hosted pages or the Safe logo path.
 # Source maps (*.map) are skipped: they carry the published GPL source, including code comments.
+# third-party-licenses.* is skipped: it holds the dependencies' license texts, and their copyright notices
+# (for example "Safe Ecosystem Foundation" on @safe-global/* MIT packages) must be kept by license.
 # Works with GNU and BusyBox grep. Usage: scripts/check-brand.sh [export dir, default: out]
 set -eu
 
@@ -12,13 +14,13 @@ if [ ! -d "$DIR" ]; then
   exit 2
 fi
 
-MATCHES=$(find "$DIR" -type f ! -name '*.map' -exec grep -hoE "$PATTERN" {} + | sort | uniq -c | sort -rn || true)
+MATCHES=$(find "$DIR" -type f ! -name '*.map' ! -name 'third-party-licenses.*' -exec grep -hoE "$PATTERN" {} + | sort | uniq -c | sort -rn || true)
 
 if [ -n "$MATCHES" ]; then
   echo "check-brand: Safe branding found in $DIR:" >&2
   echo "$MATCHES" >&2
   echo "Files:" >&2
-  find "$DIR" -type f ! -name '*.map' -exec grep -lE "$PATTERN" {} + >&2 || true
+  find "$DIR" -type f ! -name '*.map' ! -name 'third-party-licenses.*' -exec grep -lE "$PATTERN" {} + >&2 || true
   exit 1
 fi
 
