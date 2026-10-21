@@ -7,7 +7,7 @@
 set -eu
 
 DIR="${1:-out}"
-PATTERN='Safe\{(Wallet|WALLET|Pass|DAO|Core)\}|Safe Labs|Safe Shield|Safe Ecosystem Foundation|Gnosis Safe|Safe Accounts?([^a-zA-Z]|$)|(app|help|docs|chat|status)\.safe\.global|M21\.757 11\.998h-2\.485'
+PATTERN='Safe\{(Wallet|WALLET|Pass|DAO|Core)\}|Safe Labs|Safe Shield|Safe Ecosystem Foundation|Gnosis Safe|Safe Accounts?([^a-zA-Z]|$)|(app|help|docs|chat|status)\.safe\.global|M21\.757 11\.998h-2\.485|io\.gnosis\.multisig|global\.safe\.mobileapp'
 
 if [ ! -d "$DIR" ]; then
   echo "check-brand: directory '$DIR' not found" >&2
