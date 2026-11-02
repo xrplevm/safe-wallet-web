@@ -1,6 +1,6 @@
 import { ImplementationVersionState } from '@safe-global/store/gateway/types'
 import { Gnosis_safe__factory } from '@safe-global/utils/types/contracts'
-import { JsonRpcProvider, toBeHex } from 'ethers'
+import { JsonRpcProvider, toBeHex, ZeroAddress } from 'ethers'
 import Safe from '@safe-global/protocol-kit'
 import {
   getSafeContract,
@@ -8,6 +8,8 @@ import {
 } from '@safe-global/protocol-kit/dist/src/contracts/safeDeploymentContracts'
 import { initSafeSDK } from '../safeCoreSDK'
 import { isValidSafeVersion } from '@safe-global/utils/services/contracts/utils'
+import { PendingSafeStatus } from '@safe-global/utils/features/counterfactual/store/types'
+import { PayMethod } from '@safe-global/utils/features/counterfactual/types'
 
 jest.mock('@/services/contracts/safeContracts', () => {
   return {
@@ -215,6 +217,49 @@ describe('safeCoreSDK', () => {
           provider: expect.anything(),
           safeAddress: expect.anything(),
         })
+      })
+
+      it('should pass the version and salt of a replayed undeployed Safe in safeDeploymentConfig', async () => {
+        const chainId = '137' // Polygon
+        const safeAccountConfig = {
+          owners: [toBeHex('0x2', 20)],
+          threshold: 1,
+          fallbackHandler: toBeHex('0x3', 20),
+          to: ZeroAddress,
+          data: '0x',
+          paymentReceiver: ZeroAddress,
+        }
+
+        const mockProvider = new JsonRpcProvider()
+        mockProvider.getNetwork = jest.fn().mockReturnValue({ chainId: BigInt(chainId) })
+
+        await initSafeSDK({
+          provider: mockProvider,
+          chainId,
+          address: toBeHex('0x1', 20),
+          version: '1.4.1+L2',
+          implementation: POLYGON_MASTER_COPY,
+          implementationVersionState: ImplementationVersionState.UP_TO_DATE,
+          undeployedSafe: {
+            props: {
+              factoryAddress: toBeHex('0x4', 20),
+              masterCopy: POLYGON_MASTER_COPY,
+              safeAccountConfig,
+              safeVersion: '1.4.1',
+              saltNonce: '0',
+            },
+            status: { status: PendingSafeStatus.AWAITING_EXECUTION, type: PayMethod.PayLater },
+          },
+        })
+
+        expect(Safe.init).toHaveBeenCalledWith(
+          expect.objectContaining({
+            predictedSafe: {
+              safeAccountConfig,
+              safeDeploymentConfig: { safeVersion: '1.4.1', saltNonce: '0' },
+            },
+          }),
+        )
       })
     })
 

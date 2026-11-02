@@ -101,16 +101,25 @@ export const initSafeSDK = async ({
   })
 
   if (undeployedSafe) {
-    if (isPredictedSafeProps(undeployedSafe.props) || isReplayedSafeProps(undeployedSafe.props)) {
-      return Safe.init({
-        provider: provider._getConnection().url,
-        isL1SafeSingleton,
-        ...(contractNetworks ? { contractNetworks } : {}),
-        predictedSafe: undeployedSafe.props,
-      })
-    }
-    // We cannot initialize a Core SDK for replayed Safes yet.
-    return
+    const { props } = undeployedSafe
+    // protocol-kit reads the version and salt only from safeDeploymentConfig, and defaults to 1.3.0 without it
+    const predictedSafe = isReplayedSafeProps(props)
+      ? {
+          safeAccountConfig: props.safeAccountConfig,
+          safeDeploymentConfig: { safeVersion: props.safeVersion, saltNonce: props.saltNonce },
+        }
+      : isPredictedSafeProps(props)
+        ? props
+        : undefined
+
+    if (!predictedSafe) return
+
+    return Safe.init({
+      provider: provider._getConnection().url,
+      isL1SafeSingleton,
+      ...(contractNetworks ? { contractNetworks } : {}),
+      predictedSafe,
+    })
   }
 
   return Safe.init({
