@@ -349,7 +349,7 @@ const ReviewStep = ({ data, onSubmit, onBack, setStep }: StepRenderProps<NewSafe
         trackEvent(CREATE_SAFE_EVENTS.SUBMIT_CREATE_SAFE)
         trackEvent({ ...OVERVIEW_EVENTS.PROCEED_WITH_TX, label: 'deployment', category: CREATE_SAFE_CATEGORY })
 
-        onSubmit(data)
+        onSubmit({ ...data, safeAddress })
       }
 
       if (willRelay) {

@@ -15,7 +15,8 @@ import { useAppDispatch } from '@/store'
 import { Alert, AlertTitle, Box, Button, Paper, Stack, SvgIcon, Typography } from '@mui/material'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
+import { sameAddress } from '@safe-global/utils/utils/addresses'
 import { getLatestSafeVersion } from '@safe-global/utils/utils/chains'
 
 const SPEED_UP_THRESHOLD_IN_SECONDS = 15
@@ -28,8 +29,10 @@ export const CreateSafeStatus = ({
 }: StepRenderProps<NewSafeFormData>) => {
   const [status, setStatus] = useState<SafeCreationEvent>(SafeCreationEvent.PROCESSING)
   const [safeAddress, pendingSafe] = useUndeployedSafe()
+  const hasRedirected = useRef(false)
   const router = useRouter()
   const chain = useCurrentChain()
+  const chainId = chain?.chainId
   const dispatch = useAppDispatch()
 
   const counter = useCounter(pendingSafe?.status.submittedAt)
@@ -38,7 +41,10 @@ export const CreateSafeStatus = ({
 
   useEffect(() => {
     const unsubFns = Object.entries(safeCreationPendingStatuses).map(([event]) =>
-      safeCreationSubscribe(event as SafeCreationEvent, async () => {
+      safeCreationSubscribe(event as SafeCreationEvent, async (detail) => {
+        // Other pending Safes, also on other chains, can send events while this screen is open
+        const isOtherChain = 'chainId' in detail && detail.chainId !== chainId
+        if (isOtherChain || !sameAddress(detail.safeAddress, data.safeAddress)) return
         setStatus(event as SafeCreationEvent)
       }),
     )
@@ -46,18 +52,20 @@ export const CreateSafeStatus = ({
     return () => {
       unsubFns.forEach((unsub) => unsub())
     }
-  }, [])
+  }, [chainId, data.safeAddress])
 
   useEffect(() => {
-    if (!chain || !safeAddress) return
+    if (!chain || !data.safeAddress || hasRedirected.current) return
 
-    if (status === SafeCreationEvent.SUCCESS) {
-      const redirect = getRedirect(chain.shortName, safeAddress, router.query?.safeViewRedirectURL)
+    // INDEXED can follow SUCCESS in the same tick, so the screen may never render SUCCESS
+    if (status === SafeCreationEvent.SUCCESS || status === SafeCreationEvent.INDEXED) {
+      const redirect = getRedirect(chain.shortName, data.safeAddress, router.query?.safeViewRedirectURL)
       if (typeof redirect !== 'string' || redirect.startsWith('/')) {
+        hasRedirected.current = true
         router.push(redirect)
       }
     }
-  }, [dispatch, chain, data.name, data.owners, data.threshold, router, safeAddress, status])
+  }, [dispatch, chain, data.name, data.owners, data.threshold, data.safeAddress, router, status])
 
   useEffect(() => {
     if (!setProgressColor) return
