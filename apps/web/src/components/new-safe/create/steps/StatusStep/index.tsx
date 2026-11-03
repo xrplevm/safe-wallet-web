@@ -1,7 +1,7 @@
 import { useCounter } from '@/components/common/Notifications/useCounter'
 import type { StepRenderProps } from '@/components/new-safe/CardStepper/useCardStepper'
 import type { NewSafeFormData } from '@/components/new-safe/create'
-import { getRedirect } from '@/components/new-safe/create/logic'
+import { getRedirect, pollSafeInfo } from '@/components/new-safe/create/logic'
 import StatusMessage from '@/components/new-safe/create/steps/StatusStep/StatusMessage'
 import useUndeployedSafe from '@/components/new-safe/create/steps/StatusStep/useUndeployedSafe'
 import { lightPalette } from '@safe-global/theme'
@@ -28,6 +28,8 @@ export const CreateSafeStatus = ({
   setStepData,
 }: StepRenderProps<NewSafeFormData>) => {
   const [status, setStatus] = useState<SafeCreationEvent>(SafeCreationEvent.PROCESSING)
+  const [isIndexed, setIsIndexed] = useState(false)
+  const [isIndexingSlow, setIsIndexingSlow] = useState(false)
   const [safeAddress, pendingSafe] = useUndeployedSafe()
   const hasRedirected = useRef(false)
   const router = useRouter()
@@ -38,6 +40,8 @@ export const CreateSafeStatus = ({
   const counter = useCounter(pendingSafe?.status.submittedAt)
 
   const isError = status === SafeCreationEvent.FAILED || status === SafeCreationEvent.REVERTED
+  // INDEXED can follow SUCCESS in the same tick, so the screen may never render SUCCESS
+  const isCreated = status === SafeCreationEvent.SUCCESS || status === SafeCreationEvent.INDEXED
 
   useEffect(() => {
     const unsubFns = Object.entries(safeCreationPendingStatuses).map(([event]) =>
@@ -54,18 +58,29 @@ export const CreateSafeStatus = ({
     }
   }, [chainId, data.safeAddress])
 
+  // INDEXED does not wait for the gateway here, so wait for it before opening the Safe
   useEffect(() => {
-    if (!chain || !data.safeAddress || hasRedirected.current) return
+    if (!isCreated || !chainId || !data.safeAddress) return
 
-    // INDEXED can follow SUCCESS in the same tick, so the screen may never render SUCCESS
-    if (status === SafeCreationEvent.SUCCESS || status === SafeCreationEvent.INDEXED) {
-      const redirect = getRedirect(chain.shortName, data.safeAddress, router.query?.safeViewRedirectURL)
-      if (typeof redirect !== 'string' || redirect.startsWith('/')) {
-        hasRedirected.current = true
-        router.push(redirect)
-      }
+    let isCancelled = false
+    pollSafeInfo(chainId, data.safeAddress)
+      .then(() => !isCancelled && setIsIndexed(true))
+      .catch(() => !isCancelled && setIsIndexingSlow(true))
+
+    return () => {
+      isCancelled = true
     }
-  }, [dispatch, chain, data.name, data.owners, data.threshold, data.safeAddress, router, status])
+  }, [isCreated, chainId, data.safeAddress])
+
+  useEffect(() => {
+    if (!chain || !data.safeAddress || !isIndexed || hasRedirected.current) return
+
+    const redirect = getRedirect(chain.shortName, data.safeAddress, router.query?.safeViewRedirectURL)
+    if (typeof redirect !== 'string' || redirect.startsWith('/')) {
+      hasRedirected.current = true
+      router.push(redirect)
+    }
+  }, [dispatch, chain, data.name, data.owners, data.threshold, data.safeAddress, router, isIndexed])
 
   useEffect(() => {
     if (!setProgressColor) return
@@ -113,9 +128,14 @@ export const CreateSafeStatus = ({
           p: { xs: 2, sm: 8 },
         }}
       >
-        <StatusMessage status={status} isError={isError} pendingSafe={pendingSafe} />
+        <StatusMessage
+          // While waiting for the gateway, show the "being indexed" step even if INDEXED already arrived
+          status={isCreated && !isIndexed && !isIndexingSlow ? SafeCreationEvent.SUCCESS : status}
+          isError={isError}
+          pendingSafe={pendingSafe}
+        />
 
-        {counter && counter > SPEED_UP_THRESHOLD_IN_SECONDS && !isError && (
+        {counter && counter > SPEED_UP_THRESHOLD_IN_SECONDS && !isError && !isCreated && (
           <Alert severity="warning" icon={<SvgIcon component={Rocket} />} sx={{ mt: 5 }}>
             <AlertTitle>
               <Typography
@@ -137,6 +157,20 @@ export const CreateSafeStatus = ({
               Try to speed it up with better gas parameters in your wallet.
             </Typography>
           </Alert>
+        )}
+
+        {isIndexingSlow && chain && (
+          <Stack sx={{ mt: 5, gap: 2, alignItems: 'center' }}>
+            <Typography variant="body2">
+              Your account is created, but it is still being indexed. It can take a few more minutes.
+            </Typography>
+            <Link
+              href={{ pathname: AppRoutes.home, query: { safe: `${chain.shortName}:${data.safeAddress}` } }}
+              passHref
+            >
+              <Button variant="contained">Open account</Button>
+            </Link>
+          </Stack>
         )}
 
         {isError && (
