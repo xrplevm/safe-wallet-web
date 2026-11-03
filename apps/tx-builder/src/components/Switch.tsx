@@ -6,7 +6,7 @@ import { alpha } from '@mui/material/styles'
 const StyledSwitch = styled(({ ...rest }) => <SwitchMui {...rest} />)`
   && {
     .MuiSwitch-thumb {
-      background: ${({ theme, checked }) => (checked ? '#12FF80' : theme.palette.common.white)};
+      background: ${({ theme, checked }) => (checked ? theme.palette.primary.main : theme.palette.common.white)};
       box-shadow:
         1px 1px 2px rgba(0, 0, 0, 0.2),
         0 0 1px rgba(0, 0, 0, 0.5);

@@ -11,13 +11,9 @@ import {
 import { useTransactionLibrary } from '../store'
 import ChecksumWarning from './ChecksumWarning'
 import ErrorAlert from './ErrorAlert'
-import { Tooltip } from './Tooltip'
-import { Icon } from './Icon'
 import FixedIcon from './FixedIcon'
 import { Typography } from '@mui/material'
 import Text from './Text'
-
-const HELP_ARTICLE_LINK = 'https://help.safe.global/en/articles/234052-transaction-builder'
 
 const goBackLabel: Record<string, string> = {
   [CREATE_BATCH_PATH]: 'Back to Transaction Creation',
@@ -53,15 +49,7 @@ const Header = () => {
     <>
       <HeaderWrapper>
         {showTitle ? (
-          <>
-            {/* Transaction Builder Title */}
-            <StyledTitle>Transaction Builder</StyledTitle>
-            <Tooltip placement="top" title="Help Article" backgroundColor="primary" arrow>
-              <StyledIconLink href={HELP_ARTICLE_LINK} target="_blank" rel="noreferrer">
-                <Icon size="md" type="info" />
-              </StyledIconLink>
-            </Tooltip>
-          </>
+          <StyledTitle>Transaction Builder</StyledTitle>
         ) : (
           <StyledLink to={HOME_PATH} onClick={goBack}>
             {/* Go Back link */}
@@ -143,9 +131,4 @@ const StyledRightLinkLabel = styled(Text)`
     font-weight: 700;
     margin-right: 8px;
   }
-`
-
-const StyledIconLink = styled.a`
-  display: flex;
-  align-items: center;
 `

@@ -1,6 +1,6 @@
 {
   "name": "Transaction Builder",
-  "description": "A Safe app to compose custom transactions",
+  "description": "Compose custom contract interactions and batch them into one multisig transaction",
   "iconPath": "tx-builder.png",
   "icons": [
     {

@@ -129,7 +129,7 @@ const createSafeTheme = (mode: PaletteMode): Theme => {
           },
           root: ({ theme }) => ({
             borderRadius: theme.shape.borderRadius,
-            fontWeight: 'bold',
+            fontWeight: 600,
             lineHeight: 1.25,
             borderColor: theme.palette.primary.main,
             textTransform: 'none',
@@ -489,7 +489,7 @@ const createSafeTheme = (mode: PaletteMode): Theme => {
       MuiLink: {
         styleOverrides: {
           root: ({ theme }) => ({
-            fontWeight: 700,
+            fontWeight: 600,
             '&:hover': {
               color: theme.palette.primary.light,
             },

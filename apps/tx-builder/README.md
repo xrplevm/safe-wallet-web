@@ -76,9 +76,12 @@ This app runs as a Safe App inside Safe{Wallet}'s iframe. It uses:
 
 | Variable                              | Description           | Default |
 | ------------------------------------- | --------------------- | ------- |
+| `VITE_GATEWAY_URL` | Client Gateway URL. Required by `static-serve`. A trailing slash is optional. | - |
 | `VITE_TENDERLY_SIMULATE_ENDPOINT_URL` | Tenderly API endpoint | -       |
 | `VITE_TENDERLY_PROJECT_NAME`          | Tenderly project name | -       |
 | `VITE_TENDERLY_ORG_NAME`              | Tenderly organization | -       |
+
+`static-serve` checks the build with `../web/scripts/check-brand.sh`. The checker exits with status 1 when it finds branding and status 2 when its pattern is invalid or the build directory is missing. It does not serve the app after either failure.
 
 ## License
 

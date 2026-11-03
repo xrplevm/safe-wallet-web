@@ -1,6 +1,6 @@
 import { createGlobalStyle } from 'styled-components'
-import DMSansFont from './assets/fonts/DMSansRegular.woff2'
-import DMSansBoldFont from './assets/fonts/DMSans700.woff2'
+import WorkSansLatinFont from './assets/fonts/WorkSans-latin.woff2'
+import WorkSansLatinExtFont from './assets/fonts/WorkSans-latin-ext.woff2'
 
 const GlobalStyle = createGlobalStyle`
     html {
@@ -19,17 +19,25 @@ const GlobalStyle = createGlobalStyle`
     }
     
     @font-face {
-        font-family: 'DM Sans';
+        font-family: 'Work Sans';
+        font-style: normal;
         font-display: swap;
-        font-weight: 400;
-        src: url(${DMSansFont}) format('woff2');
+        font-weight: 400 600;
+        src: url(${WorkSansLatinExtFont}) format('woff2');
+        unicode-range:
+            U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F,
+            U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
     }
 
     @font-face {
-        font-family: 'DM Sans';
+        font-family: 'Work Sans';
+        font-style: normal;
         font-display: swap;
-        font-weight: bold;
-        src: url(${DMSansBoldFont}) format('woff2');
+        font-weight: 400 600;
+        src: url(${WorkSansLatinFont}) format('woff2');
+        unicode-range:
+            U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC,
+            U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
     }
 
     input:-webkit-autofill,

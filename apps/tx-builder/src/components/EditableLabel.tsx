@@ -27,7 +27,7 @@ const EditableLabel = ({ children, onEdit }: EditableLabelProps) => {
 export default EditableLabel
 
 const EditableComponent = styled.div`
-  font-family: Averta, 'Roboto', sans-serif;
+  font-family: ${({ theme }) => theme.typography.fontFamily};
   display: block;
   white-space: nowrap;
   overflow: hidden;
@@ -42,6 +42,6 @@ const EditableComponent = styled.div`
   }
 
   &:focus {
-    outline-color: #008c73;
+    outline-color: ${({ theme }) => theme.palette.primary.main};
   }
 `

@@ -3,14 +3,25 @@
 # Source maps (*.map) are skipped: they carry the published GPL source, including code comments.
 # third-party-licenses.* is skipped: it holds the dependencies' license texts, and their copyright notices
 # (for example "Safe Ecosystem Foundation" on @safe-global/* MIT packages) must be kept by license.
-# Works with GNU and BusyBox grep. Usage: scripts/check-brand.sh [export dir, default: out]
+# Works with GNU and BusyBox grep. Usage: scripts/check-brand.sh [export dir, default: out] [extra ERE alternatives]
+# The Transaction Builder passes 'Safe [Aa]pp([^a-zA-Z]|$)'. The wallet cannot: its analytics events still name "Safe App".
 set -eu
 
 DIR="${1:-out}"
 PATTERN='Safe\{(Wallet|WALLET|Pass|DAO|Core)\}|Safe Labs|Safe Shield|Safe Ecosystem Foundation|Gnosis Safe|Safe Accounts?([^a-zA-Z]|$)|(app|help|docs|chat|status)\.safe\.global|M21\.757 11\.998h-2\.485|io\.gnosis\.multisig|global\.safe\.mobileapp'
+if [ -n "${2:-}" ]; then
+  PATTERN="$PATTERN|$2"
+fi
 
 if [ ! -d "$DIR" ]; then
   echo "check-brand: directory '$DIR' not found" >&2
+  exit 2
+fi
+
+PATTERN_STATUS=0
+printf '\n' | grep -E "$PATTERN" > /dev/null || PATTERN_STATUS=$?
+if [ "$PATTERN_STATUS" -gt 1 ]; then
+  echo "check-brand: invalid branding pattern" >&2
   exit 2
 fi
 

@@ -1,50 +1,29 @@
 import type { TypographyOptions } from '@mui/material/styles/createTypography'
+import { fontFamily, typographyVariants } from '@safe-global/theme/tokens/typography.ts'
 
-const safeFontFamily = 'DM Sans, sans-serif'
+type Variant = (typeof typographyVariants)[keyof typeof typographyVariants]
 
+const px = (value: number) => `${value}px`
+
+const toMui = ({ fontSize, lineHeight, ...rest }: Variant) => ({
+  ...rest,
+  fontSize: px(fontSize),
+  lineHeight: px(lineHeight),
+  ...('letterSpacing' in rest && { letterSpacing: px(rest.letterSpacing) }),
+})
+
+// The wallet typography tokens, in the px strings that MUI expects.
 const typography: TypographyOptions = {
-  fontFamily: safeFontFamily,
-  h1: {
-    fontSize: '32px',
-    lineHeight: '36px',
-    fontWeight: 700,
-  },
-  h2: {
-    fontSize: '27px',
-    lineHeight: '34px',
-    fontWeight: 700,
-  },
-  h3: {
-    fontSize: '24px',
-    lineHeight: '30px',
-  },
-  h4: {
-    fontSize: '20px',
-    lineHeight: '26px',
-  },
-  h5: {
-    fontSize: '16px',
-    fontWeight: 700,
-  },
-  body1: {
-    fontSize: '16px',
-    lineHeight: '22px',
-  },
-  body2: {
-    fontSize: '14px',
-    lineHeight: '20px',
-  },
-  caption: {
-    fontSize: '12px',
-    lineHeight: '16px',
-    letterSpacing: '0.4px',
-  },
-  overline: {
-    fontSize: '11px',
-    lineHeight: '14px',
-    textTransform: 'uppercase',
-    letterSpacing: '1px',
-  },
+  fontFamily,
+  h1: toMui(typographyVariants.h1),
+  h2: toMui(typographyVariants.h2),
+  h3: toMui(typographyVariants.h3),
+  h4: toMui(typographyVariants.h4),
+  h5: toMui(typographyVariants.h5),
+  body1: toMui(typographyVariants.body1),
+  body2: toMui(typographyVariants.body2),
+  caption: toMui(typographyVariants.caption),
+  overline: toMui(typographyVariants.overline),
 }
 
 export default typography
